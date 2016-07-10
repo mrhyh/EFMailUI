@@ -27,12 +27,14 @@ PODS:
   - MJExtension (2.5.16)
   - MJRefresh (3.1.1)
   - MKMapView-ZoomLevel (1.1.0)
+  - MLeaksFinder (0.1.1)
   - Reachability (3.0.0)
   - SDAutoLayout (1.53)
   - SDWebImage (3.7.6):
     - SDWebImage/Core (= 3.7.6)
   - SDWebImage/Core (3.7.6)
   - SVProgressHUD (2.0.3)
+  - SVWebViewController (1.0)
   - TencentOpenApiSDK (2.9.5):
     - TencentOpenApiSDK/Basic (= 2.9.5)
   - TencentOpenApiSDK/Basic (2.9.5)
@@ -50,10 +52,12 @@ DEPENDENCIES:
   - MJExtension (~> 2.5.16)
   - MJRefresh (~> 3.1.0)
   - MKMapView-ZoomLevel (~> 1.1.0)
+  - MLeaksFinder
   - Reachability (~> 3.0.0)
   - SDAutoLayout (~> 1.52)
   - SDWebImage (~> 3.7.2)
   - SVProgressHUD (~> 2.0.3)
+  - SVWebViewController (~> 1.0)
   - TencentOpenApiSDK
   - UIScrollView+PullBig
   - WeiboSDK (from `https://github.com/sinaweibosdk/weibo_ios_sdk`)
@@ -78,16 +82,18 @@ SPEC CHECKSUMS:
   MJExtension: b8c1321a77d91bcc007b94d38cbf5383c95ea30e
   MJRefresh: 70a47c5543b567cdaf70ead5a6e99ce820652eb9
   MKMapView-ZoomLevel: 30f2f957e34c363387372de059f10127d2b1236f
+  MLeaksFinder: 25e38f8ca9438354aa4184f65148e671f5d18620
   Reachability: 31e4272bd8378e094beaf6609dc182c85c4e6574
   SDAutoLayout: ea6e2ae9fbb438aa2feb0c4363dba9297e98638a
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+  SVWebViewController: c36dda7326e81fcae0abf5d02bf7bbf7e41be901
   TencentOpenApiSDK: a0d7716edd6eb438d65828168e8e5137301b436d
   UIScrollView+PullBig: 60f3107f44cb958c9c4071bfb67e27a1f85a0350
   WeiboSDK: bceab625ec59b7039ba721cc4ba9f5868804f63e
   XHImageViewer: 7b275d2aa829e56761c30303b9d51cae086a90b9
   YYModel: 63142c2f07c5c8c9d1c261689cf3827ea6ab2886
 
-PODFILE CHECKSUM: d1f7efd20b97560ee0a8b884e4e0e1ce10a58c37
+PODFILE CHECKSUM: 05b68c779843f06e47d1a70e872105275abbce63
 
 COCOAPODS: 1.0.1
