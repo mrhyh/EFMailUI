@@ -1,0 +1,52 @@
+//
+//  EFThirdPartyLoginView.m
+//  demo
+//
+//  Created by HqLee on 16/5/20.
+//  Copyright © 2016年 KingYon LLC. All rights reserved.
+//
+
+#import "EFThirdPartyLoginView.h"
+
+@interface EFThirdPartyLoginView()
+@property (weak, nonatomic) IBOutlet UIButton *weiboBtn;
+@property (weak, nonatomic) IBOutlet UIButton *wexinBtn;
+@property (weak, nonatomic) IBOutlet UIButton *QQBtn;
+
+@end
+@implementation EFThirdPartyLoginView
++ (instancetype)thirdPartyView{
+    return [[[NSBundle mainBundle] loadNibNamed:@"EFThirdPartyLoginView" owner:nil options:nil] lastObject];
+}
+
+- (void)awakeFromNib{
+    
+    [self.wexinBtn setTitleColor:[EFSkinThemeManager getTextColorWithKey:SkinThemeKey_TextColorLoginPrimary] forState:UIControlStateNormal];
+    [self.wexinBtn setImage:[UIImage imageNamed:@"resource.bundle/reg_weixin.png"] forState:UIControlStateNormal];
+    [self.weiboBtn setTitleColor:[EFSkinThemeManager getTextColorWithKey:SkinThemeKey_TextColorLoginPrimary] forState:UIControlStateNormal];
+    [self.weiboBtn setImage:[UIImage imageNamed:@"resource.bundle/reg_weibo.png"] forState:UIControlStateNormal];
+    [self.QQBtn setTitleColor:[EFSkinThemeManager getTextColorWithKey:SkinThemeKey_TextColorLoginPrimary] forState:UIControlStateNormal];
+    [self.QQBtn setImage:[UIImage imageNamed:@"resource.bundle/reg_qq.png"] forState:UIControlStateNormal];
+
+
+}
+
+//微信按钮点击
+- (IBAction)weixinBtnClick {
+    if ([self.delegate respondsToSelector:@selector(weixinBtnClick)]) {
+        [self.delegate weixinBtnClick];
+    }
+}
+//微博按钮点击
+- (IBAction)weiboBtnClick {
+    if ([self.delegate respondsToSelector:@selector(weiboBtnClick)]) {
+        [self.delegate weiboBtnClick];
+    }
+}
+//QQ按钮点击
+- (IBAction)QQBtnClick {
+    if ([self.delegate respondsToSelector:@selector(QQBtnClick)]) {
+        [self.delegate QQBtnClick];
+    }
+}
+@end

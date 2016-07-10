@@ -1,0 +1,26 @@
+//
+//  fourViewController.m
+//  demo
+//
+//  Created by HqLee on 16/5/23.
+//  Copyright © 2016年 KingYon LLC. All rights reserved.
+//
+
+#import "fourViewController.h"
+
+@interface fourViewController ()
+
+@end
+
+@implementation fourViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+@end

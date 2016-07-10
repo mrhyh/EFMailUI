@@ -1,0 +1,18 @@
+//
+//  StarView.h
+//  star
+//
+//  Created by KingYon on 15/4/17.
+//  Copyright (c) 2015年 KingYon. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface StarView : UIView
+
+@property (nonatomic,assign)float starLevel;
+@property (nonatomic,assign)BOOL isTouchaAailable;
+@property (nonatomic,assign)float starScale;
+
+
+@end

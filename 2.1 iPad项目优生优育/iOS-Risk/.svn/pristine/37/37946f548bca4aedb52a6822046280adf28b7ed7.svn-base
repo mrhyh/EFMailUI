@@ -1,0 +1,2461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		279C0F491D2CF73D00D005E3 /* SecondCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0F481D2CF73D00D005E3 /* SecondCollectionViewCell.m */; };
+		27FA32371D2DEB35006FFD0B /* RSMoreDataVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FA32361D2DEB35006FFD0B /* RSMoreDataVC.m */; };
+		27FA323E1D2DEF12006FFD0B /* MoreDataCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FA323D1D2DEF12006FFD0B /* MoreDataCollectionViewCell.m */; };
+		2A6B22A2355246410B0E1A5F /* libPods-Risk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29DAD738107DB2EAB0F59EAC /* libPods-Risk.a */; };
+		7A709CD089D61EBC1AB3C1C3 /* libPods-Risk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29DAD738107DB2EAB0F59EAC /* libPods-Risk.a */; };
+		EB33F7B31D2368C300FA4E12 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33F7B21D2368C300FA4E12 /* main.m */; };
+		EB33F7B61D2368C300FA4E12 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33F7B51D2368C300FA4E12 /* AppDelegate.m */; };
+		EB33F7B91D2368C300FA4E12 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33F7B81D2368C300FA4E12 /* ViewController.m */; };
+		EB33F7BC1D2368C300FA4E12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB33F7BA1D2368C300FA4E12 /* Main.storyboard */; };
+		EB33F7BE1D2368C300FA4E12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB33F7BD1D2368C300FA4E12 /* Assets.xcassets */; };
+		EB33F7C11D2368C300FA4E12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB33F7BF1D2368C300FA4E12 /* LaunchScreen.storyboard */; };
+		EB33FA041D23779A00FA4E12 /* EasyFrame_.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB33FA031D23779A00FA4E12 /* EasyFrame_.plist */; };
+		EB33FC541D23A32F00FA4E12 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EB33FC531D23A32F00FA4E12 /* libxml2.tbd */; };
+		EB33FC561D23A33800FA4E12 /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EB33FC551D23A33800FA4E12 /* libxml2.2.tbd */; };
+		EB33FEBB1D23B02000FA4E12 /* EFThemeConfig_.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB33FEB81D23B02000FA4E12 /* EFThemeConfig_.plist */; };
+		EB33FEBC1D23B02000FA4E12 /* MainLayoutConfig_.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB33FEB91D23B02000FA4E12 /* MainLayoutConfig_.plist */; };
+		EB33FEBD1D23B02000FA4E12 /* PushConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB33FEBA1D23B02000FA4E12 /* PushConfig.plist */; };
+		EB33FED81D23B8F200FA4E12 /* RSHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33FED71D23B8F200FA4E12 /* RSHomeVC.m */; };
+		EB33FEDB1D23B90500FA4E12 /* RSRiskKindVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33FEDA1D23B90500FA4E12 /* RSRiskKindVC.m */; };
+		EB33FEDE1D23B91700FA4E12 /* RSVisitArchiveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33FEDD1D23B91700FA4E12 /* RSVisitArchiveVC.m */; };
+		EB33FEE11D23B92600FA4E12 /* RSDataCenterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33FEE01D23B92600FA4E12 /* RSDataCenterVC.m */; };
+		EB33FEE41D23BA1500FA4E12 /* RSStatisticsReportVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33FEE31D23BA1500FA4E12 /* RSStatisticsReportVC.m */; };
+		EB33FEE71D23BA2300FA4E12 /* RSMineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33FEE61D23BA2300FA4E12 /* RSMineVC.m */; };
+		EB33FEF11D2509E000FA4E12 /* RiskTypesLeftVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33FEF01D2509E000FA4E12 /* RiskTypesLeftVC.m */; };
+		EB33FEF41D250A5400FA4E12 /* RiskTypesRightVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33FEF31D250A5400FA4E12 /* RiskTypesRightVC.m */; };
+		EB33FEF71D250ACA00FA4E12 /* RiskTypeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33FEF61D250ACA00FA4E12 /* RiskTypeModel.m */; };
+		EB33FEFA1D25163400FA4E12 /* RiskDetailTypeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33FEF91D25163400FA4E12 /* RiskDetailTypeModel.m */; };
+		EB33FF101D25170000FA4E12 /* MJArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33FEFE1D25170000FA4E12 /* MJArgument.m */; };
+		EB33FF111D25170000FA4E12 /* MJIvar.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33FF011D25170000FA4E12 /* MJIvar.m */; };
+		EB33FF121D25170000FA4E12 /* MJMember.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33FF031D25170000FA4E12 /* MJMember.m */; };
+		EB33FF131D25170000FA4E12 /* MJMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33FF051D25170000FA4E12 /* MJMethod.m */; };
+		EB33FF141D25170000FA4E12 /* MJType.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33FF071D25170000FA4E12 /* MJType.m */; };
+		EB33FF151D25170000FA4E12 /* MJTypeEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33FF091D25170000FA4E12 /* MJTypeEncoding.m */; };
+		EB33FF161D25170000FA4E12 /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33FF0B1D25170000FA4E12 /* NSObject+MJCoding.m */; };
+		EB33FF171D25170000FA4E12 /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33FF0D1D25170000FA4E12 /* NSObject+MJKeyValue.m */; };
+		EB33FF181D25170000FA4E12 /* NSObject+MJMember.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33FF0F1D25170000FA4E12 /* NSObject+MJMember.m */; };
+		EB60E04C1D2A0595008BFA89 /* RSDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB60E04B1D2A0595008BFA89 /* RSDataView.m */; };
+		EB60E0501D2A0BCB008BFA89 /* RiskDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB60E04F1D2A0BCB008BFA89 /* RiskDataModel.m */; };
+		EB60E0551D2A5EFC008BFA89 /* RSSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB60E0541D2A5EFC008BFA89 /* RSSearchVC.m */; };
+		EB60E0581D2A5F94008BFA89 /* RSSearchHistoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB60E0571D2A5F94008BFA89 /* RSSearchHistoryCell.m */; };
+		EB60E05B1D2A6717008BFA89 /* RSRiskDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB60E05A1D2A6717008BFA89 /* RSRiskDetailVC.m */; };
+		EB6A61B81D27BC5A0052EB0C /* RiskTypeDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6A61B71D27BC5A0052EB0C /* RiskTypeDetailVC.m */; };
+		EB6FC4D61D2B627B00A446D0 /* RiskTypeFDALeftVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6FC4D51D2B627B00A446D0 /* RiskTypeFDALeftVC.m */; };
+		EB6FC4D91D2B629D00A446D0 /* RiskTypeFDARightVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6FC4D81D2B629D00A446D0 /* RiskTypeFDARightVC.m */; };
+		EB6FC4DC1D2B637800A446D0 /* RiskTypeFDARightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6FC4DB1D2B637800A446D0 /* RiskTypeFDARightCell.m */; };
+		EB6FC4E51D2BB47000A446D0 /* RiskTypeFDALeftTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6FC4E41D2BB47000A446D0 /* RiskTypeFDALeftTwoVC.m */; };
+		EB7922EB1D2915F5001DDF72 /* RSDataVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7922EA1D2915F5001DDF72 /* RSDataVC.m */; };
+		EB852ECF1D2E16EA009BD9E0 /* EasyFrame.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB852D4E1D2E16E9009BD9E0 /* EasyFrame.plist */; };
+		EB852ED01D2E16EA009BD9E0 /* EFAppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852D511D2E16E9009BD9E0 /* EFAppManager.m */; };
+		EB852ED11D2E16EA009BD9E0 /* EFBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852D561D2E16E9009BD9E0 /* EFBaseNavigationController.m */; };
+		EB852ED21D2E16EA009BD9E0 /* EFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852D591D2E16E9009BD9E0 /* EFBaseViewController.m */; };
+		EB852ED31D2E16EA009BD9E0 /* EFHomeSideAndTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852D5C1D2E16E9009BD9E0 /* EFHomeSideAndTabViewController.m */; };
+		EB852ED41D2E16EA009BD9E0 /* EFHomeSideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852D5F1D2E16E9009BD9E0 /* EFHomeSideViewController.m */; };
+		EB852ED51D2E16EA009BD9E0 /* EFSideMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852D611D2E16E9009BD9E0 /* EFSideMenuCell.m */; };
+		EB852ED61D2E16EA009BD9E0 /* EFSideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852D631D2E16E9009BD9E0 /* EFSideMenuViewController.m */; };
+		EB852ED71D2E16EA009BD9E0 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852D651D2E16E9009BD9E0 /* HomeViewController.m */; };
+		EB852ED81D2E16EA009BD9E0 /* EFHomeSingleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852D681D2E16E9009BD9E0 /* EFHomeSingleViewController.m */; };
+		EB852ED91D2E16EA009BD9E0 /* EFHomeTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852D6B1D2E16E9009BD9E0 /* EFHomeTabBarController.m */; };
+		EB852EDA1D2E16EA009BD9E0 /* EFBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852D6E1D2E16E9009BD9E0 /* EFBaseViewModel.m */; };
+		EB852EDB1D2E16EA009BD9E0 /* EFPageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852D701D2E16E9009BD9E0 /* EFPageRequest.m */; };
+		EB852EDC1D2E16EA009BD9E0 /* EFPageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852D721D2E16E9009BD9E0 /* EFPageViewModel.m */; };
+		EB852EDD1D2E16EA009BD9E0 /* EFRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852D741D2E16E9009BD9E0 /* EFRequest.m */; };
+		EB852EDE1D2E16EA009BD9E0 /* EFRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852D761D2E16E9009BD9E0 /* EFRequestManager.m */; };
+		EB852EDF1D2E16EA009BD9E0 /* InputError.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852D781D2E16E9009BD9E0 /* InputError.m */; };
+		EB852EE01D2E16EA009BD9E0 /* NetworkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852D7A1D2E16E9009BD9E0 /* NetworkModel.m */; };
+		EB852EE11D2E16EA009BD9E0 /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = EB852D7B1D2E16E9009BD9E0 /* readme.txt */; };
+		EB852EE21D2E16EA009BD9E0 /* EFSkinThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852D7E1D2E16E9009BD9E0 /* EFSkinThemeManager.m */; };
+		EB852EE31D2E16EA009BD9E0 /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = EB852D7F1D2E16E9009BD9E0 /* readme.txt */; };
+		EB852EE41D2E16EA009BD9E0 /* TKAlertCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852D841D2E16E9009BD9E0 /* TKAlertCenter.m */; };
+		EB852EE51D2E16EA009BD9E0 /* UIView+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852D861D2E16E9009BD9E0 /* UIView+TKCategory.m */; };
+		EB852EE61D2E16EA009BD9E0 /* YRSideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852D891D2E16E9009BD9E0 /* YRSideViewController.m */; };
+		EB852EE71D2E16EA009BD9E0 /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = EB852D8B1D2E16E9009BD9E0 /* readme.txt */; };
+		EB852EE81D2E16EA009BD9E0 /* EFFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852D8F1D2E16EA009BD9E0 /* EFFileManager.m */; };
+		EB852EE91D2E16EA009BD9E0 /* BlockAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852D971D2E16EA009BD9E0 /* BlockAlert.m */; };
+		EB852EEA1D2E16EA009BD9E0 /* BlockButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852D991D2E16EA009BD9E0 /* BlockButton.m */; };
+		EB852EEB1D2E16EA009BD9E0 /* UIButton+TouchAreaInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852D9C1D2E16EA009BD9E0 /* UIButton+TouchAreaInsets.m */; };
+		EB852EEC1D2E16EA009BD9E0 /* UIColor+UIColor_Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852D9E1D2E16EA009BD9E0 /* UIColor+UIColor_Hex.m */; };
+		EB852EED1D2E16EA009BD9E0 /* UIView+JSMAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852DA01D2E16EA009BD9E0 /* UIView+JSMAdd.m */; };
+		EB852EEE1D2E16EA009BD9E0 /* EFCTTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852DA31D2E16EA009BD9E0 /* EFCTTextField.m */; };
+		EB852EEF1D2E16EA009BD9E0 /* EF_AlbumView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852DA51D2E16EA009BD9E0 /* EF_AlbumView.m */; };
+		EB852EF01D2E16EA009BD9E0 /* EFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852DA81D2E16EA009BD9E0 /* EFHpple.m */; };
+		EB852EF11D2E16EA009BD9E0 /* EFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852DAA1D2E16EA009BD9E0 /* EFHppleElement.m */; };
+		EB852EF21D2E16EA009BD9E0 /* EFXPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852DAC1D2E16EA009BD9E0 /* EFXPathQuery.m */; };
+		EB852EF31D2E16EA009BD9E0 /* EFMyAutoAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852DAE1D2E16EA009BD9E0 /* EFMyAutoAlertView.m */; };
+		EB852EF41D2E16EA009BD9E0 /* EFPopupViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852DB01D2E16EA009BD9E0 /* EFPopupViewManager.m */; };
+		EB852EF51D2E16EA009BD9E0 /* EFShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852DB21D2E16EA009BD9E0 /* EFShareView.m */; };
+		EB852EF61D2E16EA009BD9E0 /* HYDActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852DB51D2E16EA009BD9E0 /* HYDActivityIndicatorView.m */; };
+		EB852EF71D2E16EA009BD9E0 /* HYDActivityMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852DB71D2E16EA009BD9E0 /* HYDActivityMessageView.m */; };
+		EB852EF81D2E16EA009BD9E0 /* HYDActivityProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852DB91D2E16EA009BD9E0 /* HYDActivityProgressView.m */; };
+		EB852EF91D2E16EA009BD9E0 /* HYDAsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852DBC1D2E16EA009BD9E0 /* HYDAsyncImageView.m */; };
+		EB852EFA1D2E16EA009BD9E0 /* HYDFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852DBE1D2E16EA009BD9E0 /* HYDFileManager.m */; };
+		EB852EFB1D2E16EA009BD9E0 /* KYDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852DC11D2E16EA009BD9E0 /* KYDatePickerView.m */; };
+		EB852EFC1D2E16EA009BD9E0 /* KYShaker.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852DC31D2E16EA009BD9E0 /* KYShaker.m */; };
+		EB852EFD1D2E16EA009BD9E0 /* KYTableViewNoDataCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852DC51D2E16EA009BD9E0 /* KYTableViewNoDataCategory.m */; };
+		EB852EFE1D2E16EA009BD9E0 /* LocationUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852DC81D2E16EA009BD9E0 /* LocationUtil.m */; };
+		EB852EFF1D2E16EA009BD9E0 /* mapLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852DCA1D2E16EA009BD9E0 /* mapLocation.m */; };
+		EB852F001D2E16EA009BD9E0 /* WGS84TOGCJ02.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852DCC1D2E16EA009BD9E0 /* WGS84TOGCJ02.m */; };
+		EB852F011D2E16EA009BD9E0 /* UIImageView+UIActivityIndicatorForSDWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852DCF1D2E16EA009BD9E0 /* UIImageView+UIActivityIndicatorForSDWebImage.m */; };
+		EB852F021D2E16EA009BD9E0 /* StarView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852DD11D2E16EA009BD9E0 /* StarView.m */; };
+		EB852F031D2E16EA009BD9E0 /* KYMHButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852DD41D2E16EA009BD9E0 /* KYMHButton.m */; };
+		EB852F041D2E16EA009BD9E0 /* KYMHImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852DD61D2E16EA009BD9E0 /* KYMHImageView.m */; };
+		EB852F051D2E16EA009BD9E0 /* KYMHLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852DD81D2E16EA009BD9E0 /* KYMHLabel.m */; };
+		EB852F061D2E16EA009BD9E0 /* KYTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852DDA1D2E16EA009BD9E0 /* KYTableView.m */; };
+		EB852F071D2E16EA009BD9E0 /* UIUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852DDC1D2E16EA009BD9E0 /* UIUtil.m */; };
+		EB852F081D2E16EA009BD9E0 /* WebUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852DDE1D2E16EA009BD9E0 /* WebUtil.m */; };
+		EB852F091D2E16EA009BD9E0 /* XYAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852DE01D2E16EA009BD9E0 /* XYAttributedString.m */; };
+		EB852F0A1D2E16EA009BD9E0 /* EFViewControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852DE31D2E16EA009BD9E0 /* EFViewControllerManager.m */; };
+		EB852F0B1D2E16EA009BD9E0 /* EFForgetPasswordRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852DE61D2E16EA009BD9E0 /* EFForgetPasswordRequest.m */; };
+		EB852F0C1D2E16EA009BD9E0 /* EFForgetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852DE81D2E16EA009BD9E0 /* EFForgetPasswordViewController.m */; };
+		EB852F0D1D2E16EA009BD9E0 /* EFForgetPasswordViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852DEA1D2E16EA009BD9E0 /* EFForgetPasswordViewModel.m */; };
+		EB852F0E1D2E16EA009BD9E0 /* EFLoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852DED1D2E16EA009BD9E0 /* EFLoginRequest.m */; };
+		EB852F0F1D2E16EA009BD9E0 /* EFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852DEF1D2E16EA009BD9E0 /* EFLoginViewController.m */; };
+		EB852F101D2E16EA009BD9E0 /* EFLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852DF11D2E16EA009BD9E0 /* EFLoginViewModel.m */; };
+		EB852F111D2E16EA009BD9E0 /* EFLoginWithThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852DF31D2E16EA009BD9E0 /* EFLoginWithThirdViewController.m */; };
+		EB852F121D2E16EA009BD9E0 /* EFThirdPartyLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852DF51D2E16EA009BD9E0 /* EFThirdPartyLoginView.m */; };
+		EB852F131D2E16EA009BD9E0 /* EFThirdPartyLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB852DF61D2E16EA009BD9E0 /* EFThirdPartyLoginView.xib */; };
+		EB852F141D2E16EA009BD9E0 /* EFVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852DF81D2E16EA009BD9E0 /* EFVerticalButton.m */; };
+		EB852F151D2E16EA009BD9E0 /* resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EB852DF91D2E16EA009BD9E0 /* resource.bundle */; };
+		EB852F161D2E16EA009BD9E0 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852DFB1D2E16EA009BD9E0 /* UserModel.m */; };
+		EB852F171D2E16EA009BD9E0 /* EFMineCenterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852DFE1D2E16EA009BD9E0 /* EFMineCenterCell.m */; };
+		EB852F181D2E16EA009BD9E0 /* EFMineCenterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E001D2E16EA009BD9E0 /* EFMineCenterVC.m */; };
+		EB852F191D2E16EA009BD9E0 /* EFRegisterRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E031D2E16EA009BD9E0 /* EFRegisterRequest.m */; };
+		EB852F1A1D2E16EA009BD9E0 /* EFRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E051D2E16EA009BD9E0 /* EFRegisterViewController.m */; };
+		EB852F1B1D2E16EA009BD9E0 /* EFRegisterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E071D2E16EA009BD9E0 /* EFRegisterViewModel.m */; };
+		EB852F1C1D2E16EA009BD9E0 /* EFAccountSettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E0A1D2E16EA009BD9E0 /* EFAccountSettingVC.m */; };
+		EB852F1D1D2E16EA009BD9E0 /* EFEditCommonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E0C1D2E16EA009BD9E0 /* EFEditCommonCell.m */; };
+		EB852F1E1D2E16EA009BD9E0 /* EFEditCommonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB852E0D1D2E16EA009BD9E0 /* EFEditCommonCell.xib */; };
+		EB852F1F1D2E16EA009BD9E0 /* EFEditMineProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E0F1D2E16EA009BD9E0 /* EFEditMineProfileVC.m */; };
+		EB852F201D2E16EA009BD9E0 /* EFEditNicknameVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E111D2E16EA009BD9E0 /* EFEditNicknameVC.m */; };
+		EB852F211D2E16EA009BD9E0 /* EFMineProfileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E131D2E16EA009BD9E0 /* EFMineProfileCell.m */; };
+		EB852F221D2E16EA009BD9E0 /* EFMineProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB852E141D2E16EA009BD9E0 /* EFMineProfileCell.xib */; };
+		EB852F231D2E16EA009BD9E0 /* EFSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E161D2E16EA009BD9E0 /* EFSettingCell.m */; };
+		EB852F241D2E16EA009BD9E0 /* EFSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E181D2E16EA009BD9E0 /* EFSettingViewController.m */; };
+		EB852F251D2E16EA009BD9E0 /* EFUserAvatarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E1A1D2E16EA009BD9E0 /* EFUserAvatarCell.m */; };
+		EB852F261D2E16EA009BD9E0 /* EFUserAvatarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB852E1B1D2E16EA009BD9E0 /* EFUserAvatarCell.xib */; };
+		EB852F271D2E16EA009BD9E0 /* EFAddAddressVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E211D2E16EA009BD9E0 /* EFAddAddressVC.m */; };
+		EB852F281D2E16EA009BD9E0 /* EFConsigneeAddressVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E231D2E16EA009BD9E0 /* EFConsigneeAddressVC.m */; };
+		EB852F291D2E16EA009BD9E0 /* EFEditAddressVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E251D2E16EA009BD9E0 /* EFEditAddressVC.m */; };
+		EB852F2A1D2E16EA009BD9E0 /* region.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB852E261D2E16EA009BD9E0 /* region.plist */; };
+		EB852F2B1D2E16EA009BD9E0 /* EFAftermarketStatusVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E281D2E16EA009BD9E0 /* EFAftermarketStatusVC.m */; };
+		EB852F2C1D2E16EA009BD9E0 /* EFAfterSaleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E2A1D2E16EA009BD9E0 /* EFAfterSaleVC.m */; };
+		EB852F2D1D2E16EA009BD9E0 /* EFAgencyInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E2C1D2E16EA009BD9E0 /* EFAgencyInfoVC.m */; };
+		EB852F2E1D2E16EA009BD9E0 /* EFCommentListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E2E1D2E16EA009BD9E0 /* EFCommentListVC.m */; };
+		EB852F2F1D2E16EA009BD9E0 /* EFGoodsCommentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E301D2E16EA009BD9E0 /* EFGoodsCommentVC.m */; };
+		EB852F301D2E16EA009BD9E0 /* EFMallDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E321D2E16EA009BD9E0 /* EFMallDetailsVC.m */; };
+		EB852F311D2E16EA009BD9E0 /* EFMallSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E341D2E16EA009BD9E0 /* EFMallSearchVC.m */; };
+		EB852F321D2E16EA009BD9E0 /* EFMallVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E361D2E16EA009BD9E0 /* EFMallVC.m */; };
+		EB852F331D2E16EA009BD9E0 /* EFMyOrderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E381D2E16EA009BD9E0 /* EFMyOrderVC.m */; };
+		EB852F341D2E16EA009BD9E0 /* EFOrderCommentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E3A1D2E16EA009BD9E0 /* EFOrderCommentVC.m */; };
+		EB852F351D2E16EA009BD9E0 /* EFOrderConfirmTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E3C1D2E16EA009BD9E0 /* EFOrderConfirmTwoVC.m */; };
+		EB852F361D2E16EA009BD9E0 /* EFOrderConfirmVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E3E1D2E16EA009BD9E0 /* EFOrderConfirmVC.m */; };
+		EB852F371D2E16EA009BD9E0 /* EFOrderDetailTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E401D2E16EA009BD9E0 /* EFOrderDetailTwoVC.m */; };
+		EB852F381D2E16EA009BD9E0 /* EFOrderDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E421D2E16EA009BD9E0 /* EFOrderDetailVC.m */; };
+		EB852F391D2E16EA009BD9E0 /* EFPushCommentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E441D2E16EA009BD9E0 /* EFPushCommentVC.m */; };
+		EB852F3A1D2E16EA009BD9E0 /* EFSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E461D2E16EA009BD9E0 /* EFSearchVC.m */; };
+		EB852F3B1D2E16EA009BD9E0 /* EFShopCartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E481D2E16EA009BD9E0 /* EFShopCartVC.m */; };
+		EB852F3C1D2E16EA009BD9E0 /* EFStoreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E4A1D2E16EA009BD9E0 /* EFStoreVC.m */; };
+		EB852F3D1D2E16EA009BD9E0 /* EFCartModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E4D1D2E16EA009BD9E0 /* EFCartModel.m */; };
+		EB852F3E1D2E16EA009BD9E0 /* EFGoodModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E4F1D2E16EA009BD9E0 /* EFGoodModel.m */; };
+		EB852F3F1D2E16EA009BD9E0 /* EFMallListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E511D2E16EA009BD9E0 /* EFMallListModel.m */; };
+		EB852F401D2E16EA009BD9E0 /* EFMallModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E531D2E16EA009BD9E0 /* EFMallModel.m */; };
+		EB852F411D2E16EA009BD9E0 /* EFOrderDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E551D2E16EA009BD9E0 /* EFOrderDetailModel.m */; };
+		EB852F421D2E16EA009BD9E0 /* EFOrderListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E571D2E16EA009BD9E0 /* EFOrderListModel.m */; };
+		EB852F431D2E16EA009BD9E0 /* EFTagModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E591D2E16EA009BD9E0 /* EFTagModel.m */; };
+		EB852F441D2E16EA009BD9E0 /* GoodModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E5B1D2E16EA009BD9E0 /* GoodModel.m */; };
+		EB852F451D2E16EA009BD9E0 /* ReturnOfGoodsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E5D1D2E16EA009BD9E0 /* ReturnOfGoodsModel.m */; };
+		EB852F461D2E16EA009BD9E0 /* EFMallRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E611D2E16EA009BD9E0 /* EFMallRequest.m */; };
+		EB852F471D2E16EA009BD9E0 /* EFShopCartRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E631D2E16EA009BD9E0 /* EFShopCartRequest.m */; };
+		EB852F481D2E16EA009BD9E0 /* EFAddAddressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E661D2E16EA009BD9E0 /* EFAddAddressCell.m */; };
+		EB852F491D2E16EA009BD9E0 /* EFAgencyInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E681D2E16EA009BD9E0 /* EFAgencyInfoCell.m */; };
+		EB852F4A1D2E16EA009BD9E0 /* EFAgencyPictureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E6A1D2E16EA009BD9E0 /* EFAgencyPictureCell.m */; };
+		EB852F4B1D2E16EA009BD9E0 /* EFCommentListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E6C1D2E16EA009BD9E0 /* EFCommentListCell.m */; };
+		EB852F4C1D2E16EA009BD9E0 /* EFGoodsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E6E1D2E16EA009BD9E0 /* EFGoodsCell.m */; };
+		EB852F4D1D2E16EA009BD9E0 /* EFGoodsCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E701D2E16EA009BD9E0 /* EFGoodsCommentCell.m */; };
+		EB852F4E1D2E16EA009BD9E0 /* EFGoodSpecificationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E721D2E16EA009BD9E0 /* EFGoodSpecificationCell.m */; };
+		EB852F4F1D2E16EA009BD9E0 /* EFGoodsTwoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E741D2E16EA009BD9E0 /* EFGoodsTwoCell.m */; };
+		EB852F501D2E16EA009BD9E0 /* EFMallCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E761D2E16EA009BD9E0 /* EFMallCell.m */; };
+		EB852F511D2E16EA009BD9E0 /* EFMallDetailsStoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E781D2E16EA009BD9E0 /* EFMallDetailsStoreCell.m */; };
+		EB852F521D2E16EA009BD9E0 /* EFMallDetailsTopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E7A1D2E16EA009BD9E0 /* EFMallDetailsTopCell.m */; };
+		EB852F531D2E16EA009BD9E0 /* EFOrderConfirmCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E7C1D2E16EA009BD9E0 /* EFOrderConfirmCell.m */; };
+		EB852F541D2E16EA009BD9E0 /* EFOrderDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E7E1D2E16EA009BD9E0 /* EFOrderDetailCell.m */; };
+		EB852F551D2E16EA009BD9E0 /* EFOrderDetailTwoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E801D2E16EA009BD9E0 /* EFOrderDetailTwoCell.m */; };
+		EB852F561D2E16EA009BD9E0 /* EFOrderInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E821D2E16EA009BD9E0 /* EFOrderInfoCell.m */; };
+		EB852F571D2E16EA009BD9E0 /* EFOrderStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E841D2E16EA009BD9E0 /* EFOrderStatusCell.m */; };
+		EB852F581D2E16EA009BD9E0 /* EFPushCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E861D2E16EA009BD9E0 /* EFPushCommentCell.m */; };
+		EB852F591D2E16EA009BD9E0 /* EFSearchHistroyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E881D2E16EA009BD9E0 /* EFSearchHistroyCell.m */; };
+		EB852F5A1D2E16EA009BD9E0 /* EFSelecteSpecificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E8A1D2E16EA009BD9E0 /* EFSelecteSpecificationView.m */; };
+		EB852F5B1D2E16EA009BD9E0 /* EFShopCartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E8C1D2E16EA009BD9E0 /* EFShopCartCell.m */; };
+		EB852F5C1D2E16EA009BD9E0 /* EFShopCartHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E8E1D2E16EA009BD9E0 /* EFShopCartHeadView.m */; };
+		EB852F5D1D2E16EA009BD9E0 /* EFTagButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E901D2E16EA009BD9E0 /* EFTagButton.m */; };
+		EB852F5E1D2E16EA009BD9E0 /* EFTagsView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E921D2E16EA009BD9E0 /* EFTagsView.m */; };
+		EB852F5F1D2E16EA009BD9E0 /* EFMallViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E951D2E16EA009BD9E0 /* EFMallViewModel.m */; };
+		EB852F601D2E16EA009BD9E0 /* EFShopCartViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E971D2E16EA009BD9E0 /* EFShopCartViewModel.m */; };
+		EB852F611D2E16EA009BD9E0 /* UIButton+LXMImagePosition.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E9B1D2E16EA009BD9E0 /* UIButton+LXMImagePosition.m */; };
+		EB852F621D2E16EA009BD9E0 /* STConst.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852E9F1D2E16EA009BD9E0 /* STConst.m */; };
+		EB852F631D2E16EA009BD9E0 /* STPickerArea.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852EA11D2E16EA009BD9E0 /* STPickerArea.m */; };
+		EB852F641D2E16EA009BD9E0 /* STPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852EA31D2E16EA009BD9E0 /* STPickerView.m */; };
+		EB852F651D2E16EA009BD9E0 /* STUI.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852EA51D2E16EA009BD9E0 /* STUI.m */; };
+		EB852F661D2E16EA009BD9E0 /* UIView+ST.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852EA71D2E16EA009BD9E0 /* UIView+ST.m */; };
+		EB852F671D2E16EA009BD9E0 /* YFViewPager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852EAB1D2E16EA009BD9E0 /* YFViewPager.m */; };
+		EB852F681D2E16EA009BD9E0 /* YJSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852EAF1D2E16EA009BD9E0 /* YJSegmentedControl.m */; };
+		EB852F691D2E16EA009BD9E0 /* EFCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852EB21D2E16EA009BD9E0 /* EFCarousel.m */; };
+		EB852F6A1D2E16EA009BD9E0 /* EFCarouselObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852EB41D2E16EA009BD9E0 /* EFCarouselObject.m */; };
+		EB852F6B1D2E16EA009BD9E0 /* DCPaymentAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852EB71D2E16EA009BD9E0 /* DCPaymentAlert.m */; };
+		EB852F6C1D2E16EA009BD9E0 /* DCPaymentView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852EB91D2E16EA009BD9E0 /* DCPaymentView.m */; };
+		EB852F6D1D2E16EA009BD9E0 /* DCPwdTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852EBB1D2E16EA009BD9E0 /* DCPwdTextField.m */; };
+		EB852F6E1D2E16EA009BD9E0 /* EFPayAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852EBF1D2E16EA009BD9E0 /* EFPayAlertView.m */; };
+		EB852F6F1D2E16EA009BD9E0 /* EFSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852EC11D2E16EA009BD9E0 /* EFSelectView.m */; };
+		EB852F701D2E16EA009BD9E0 /* back_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB852EC31D2E16EA009BD9E0 /* back_button@2x.png */; };
+		EB852F711D2E16EA009BD9E0 /* cart_addBtn_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB852EC41D2E16EA009BD9E0 /* cart_addBtn_highlight@2x.png */; };
+		EB852F721D2E16EA009BD9E0 /* cart_addBtn_nomal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB852EC51D2E16EA009BD9E0 /* cart_addBtn_nomal@2x.png */; };
+		EB852F731D2E16EA009BD9E0 /* cart_cutBtn_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB852EC61D2E16EA009BD9E0 /* cart_cutBtn_highlight@2x.png */; };
+		EB852F741D2E16EA009BD9E0 /* cart_cutBtn_nomal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB852EC71D2E16EA009BD9E0 /* cart_cutBtn_nomal@2x.png */; };
+		EB852F751D2E16EA009BD9E0 /* cart_default_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = EB852EC81D2E16EA009BD9E0 /* cart_default_bg.png */; };
+		EB852F761D2E16EA009BD9E0 /* cart_selected_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB852EC91D2E16EA009BD9E0 /* cart_selected_btn@2x.png */; };
+		EB852F771D2E16EA009BD9E0 /* cart_unSelect_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB852ECA1D2E16EA009BD9E0 /* cart_unSelect_btn@2x.png */; };
+		EB852F781D2E16EA009BD9E0 /* ic_pass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB852ECB1D2E16EA009BD9E0 /* ic_pass@2x.png */; };
+		EB852F791D2E16EA009BD9E0 /* ic_pass@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB852ECC1D2E16EA009BD9E0 /* ic_pass@3x.png */; };
+		EB852F7A1D2E16EA009BD9E0 /* ic_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB852ECD1D2E16EA009BD9E0 /* ic_select@2x.png */; };
+		EB852F7B1D2E16EA009BD9E0 /* ic_select@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB852ECE1D2E16EA009BD9E0 /* ic_select@3x.png */; };
+		EB852F901D2E1847009BD9E0 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		EB852F931D2E1917009BD9E0 /* RSVAPatientArchiveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB852F921D2E1917009BD9E0 /* RSVAPatientArchiveVC.m */; };
+		EB8B52361D2D2A2300C40010 /* RSVAArchivesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB8B52351D2D2A2300C40010 /* RSVAArchivesModel.m */; };
+		EB8B52391D2D2A3700C40010 /* RSVAArchivesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB8B52381D2D2A3700C40010 /* RSVAArchivesCell.m */; };
+		EB9A067E1D260D07001D52C8 /* RiskTypesLeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9A067D1D260D07001D52C8 /* RiskTypesLeftCell.m */; };
+		EB9A06901D26785D001D52C8 /* RiskFactorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9A068F1D26785D001D52C8 /* RiskFactorModel.m */; };
+		EBCB96001D2BDE0700C9E118 /* RiskTypeDetailLeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCB95FF1D2BDE0700C9E118 /* RiskTypeDetailLeftCell.m */; };
+		EBCB96041D2BDF5900C9E118 /* RiskTypeDetailLeftModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCB96031D2BDF5900C9E118 /* RiskTypeDetailLeftModel.m */; };
+		EBF3F6EA1D2E70DD008FE59E /* SecondSmallToolCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF3F6E91D2E70DD008FE59E /* SecondSmallToolCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB852F7D1D2E16EA009BD9E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB852D4A1D2E16E9009BD9E0 /* EasyFrame_iOS2.0.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EC3135671CF296B5000B8944;
+			remoteInfo = EasyFrame_iOS2.0;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		279C0F471D2CF73D00D005E3 /* SecondCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondCollectionViewCell.h; sourceTree = "<group>"; };
+		279C0F481D2CF73D00D005E3 /* SecondCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondCollectionViewCell.m; sourceTree = "<group>"; };
+		27FA32351D2DEB35006FFD0B /* RSMoreDataVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSMoreDataVC.h; sourceTree = "<group>"; };
+		27FA32361D2DEB35006FFD0B /* RSMoreDataVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSMoreDataVC.m; sourceTree = "<group>"; };
+		27FA323C1D2DEF12006FFD0B /* MoreDataCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreDataCollectionViewCell.h; sourceTree = "<group>"; };
+		27FA323D1D2DEF12006FFD0B /* MoreDataCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreDataCollectionViewCell.m; sourceTree = "<group>"; };
+		29DAD738107DB2EAB0F59EAC /* libPods-Risk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Risk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F6386731BC1D5B55EA67FE /* Pods-Risk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Risk.release.xcconfig"; path = "Pods/Target Support Files/Pods-Risk/Pods-Risk.release.xcconfig"; sourceTree = "<group>"; };
+		9E2AF876FC8430237EEAFB42 /* Pods-Risk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Risk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Risk/Pods-Risk.debug.xcconfig"; sourceTree = "<group>"; };
+		EB33F7AE1D2368C300FA4E12 /* Risk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Risk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB33F7B21D2368C300FA4E12 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EB33F7B41D2368C300FA4E12 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EB33F7B51D2368C300FA4E12 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EB33F7B71D2368C300FA4E12 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EB33F7B81D2368C300FA4E12 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EB33F7BB1D2368C300FA4E12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB33F7BD1D2368C300FA4E12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB33F7C01D2368C300FA4E12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB33F7C21D2368C300FA4E12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB33F9FB1D2368F400FA4E12 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		EB33F9FC1D23691100FA4E12 /* RiskHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RiskHeader.h; sourceTree = "<group>"; };
+		EB33FA031D23779A00FA4E12 /* EasyFrame_.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EasyFrame_.plist; sourceTree = "<group>"; };
+		EB33FC531D23A32F00FA4E12 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		EB33FC551D23A33800FA4E12 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
+		EB33FEB81D23B02000FA4E12 /* EFThemeConfig_.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EFThemeConfig_.plist; sourceTree = "<group>"; };
+		EB33FEB91D23B02000FA4E12 /* MainLayoutConfig_.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MainLayoutConfig_.plist; sourceTree = "<group>"; };
+		EB33FEBA1D23B02000FA4E12 /* PushConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PushConfig.plist; sourceTree = "<group>"; };
+		EB33FED61D23B8F200FA4E12 /* RSHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSHomeVC.h; sourceTree = "<group>"; };
+		EB33FED71D23B8F200FA4E12 /* RSHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSHomeVC.m; sourceTree = "<group>"; };
+		EB33FED91D23B90500FA4E12 /* RSRiskKindVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSRiskKindVC.h; sourceTree = "<group>"; };
+		EB33FEDA1D23B90500FA4E12 /* RSRiskKindVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSRiskKindVC.m; sourceTree = "<group>"; };
+		EB33FEDC1D23B91700FA4E12 /* RSVisitArchiveVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSVisitArchiveVC.h; sourceTree = "<group>"; };
+		EB33FEDD1D23B91700FA4E12 /* RSVisitArchiveVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSVisitArchiveVC.m; sourceTree = "<group>"; };
+		EB33FEDF1D23B92600FA4E12 /* RSDataCenterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSDataCenterVC.h; sourceTree = "<group>"; };
+		EB33FEE01D23B92600FA4E12 /* RSDataCenterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSDataCenterVC.m; sourceTree = "<group>"; };
+		EB33FEE21D23BA1500FA4E12 /* RSStatisticsReportVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSStatisticsReportVC.h; sourceTree = "<group>"; };
+		EB33FEE31D23BA1500FA4E12 /* RSStatisticsReportVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSStatisticsReportVC.m; sourceTree = "<group>"; };
+		EB33FEE51D23BA2300FA4E12 /* RSMineVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSMineVC.h; sourceTree = "<group>"; };
+		EB33FEE61D23BA2300FA4E12 /* RSMineVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSMineVC.m; sourceTree = "<group>"; };
+		EB33FEEF1D2509E000FA4E12 /* RiskTypesLeftVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RiskTypesLeftVC.h; sourceTree = "<group>"; };
+		EB33FEF01D2509E000FA4E12 /* RiskTypesLeftVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RiskTypesLeftVC.m; sourceTree = "<group>"; };
+		EB33FEF21D250A5400FA4E12 /* RiskTypesRightVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RiskTypesRightVC.h; sourceTree = "<group>"; };
+		EB33FEF31D250A5400FA4E12 /* RiskTypesRightVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RiskTypesRightVC.m; sourceTree = "<group>"; };
+		EB33FEF51D250ACA00FA4E12 /* RiskTypeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RiskTypeModel.h; sourceTree = "<group>"; };
+		EB33FEF61D250ACA00FA4E12 /* RiskTypeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RiskTypeModel.m; sourceTree = "<group>"; };
+		EB33FEF81D25163400FA4E12 /* RiskDetailTypeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RiskDetailTypeModel.h; sourceTree = "<group>"; };
+		EB33FEF91D25163400FA4E12 /* RiskDetailTypeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RiskDetailTypeModel.m; sourceTree = "<group>"; };
+		EB33FEFD1D25170000FA4E12 /* MJArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJArgument.h; sourceTree = "<group>"; };
+		EB33FEFE1D25170000FA4E12 /* MJArgument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJArgument.m; sourceTree = "<group>"; };
+		EB33FEFF1D25170000FA4E12 /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
+		EB33FF001D25170000FA4E12 /* MJIvar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJIvar.h; sourceTree = "<group>"; };
+		EB33FF011D25170000FA4E12 /* MJIvar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJIvar.m; sourceTree = "<group>"; };
+		EB33FF021D25170000FA4E12 /* MJMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJMember.h; sourceTree = "<group>"; };
+		EB33FF031D25170000FA4E12 /* MJMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJMember.m; sourceTree = "<group>"; };
+		EB33FF041D25170000FA4E12 /* MJMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJMethod.h; sourceTree = "<group>"; };
+		EB33FF051D25170000FA4E12 /* MJMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJMethod.m; sourceTree = "<group>"; };
+		EB33FF061D25170000FA4E12 /* MJType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJType.h; sourceTree = "<group>"; };
+		EB33FF071D25170000FA4E12 /* MJType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJType.m; sourceTree = "<group>"; };
+		EB33FF081D25170000FA4E12 /* MJTypeEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJTypeEncoding.h; sourceTree = "<group>"; };
+		EB33FF091D25170000FA4E12 /* MJTypeEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJTypeEncoding.m; sourceTree = "<group>"; };
+		EB33FF0A1D25170000FA4E12 /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
+		EB33FF0B1D25170000FA4E12 /* NSObject+MJCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJCoding.m"; sourceTree = "<group>"; };
+		EB33FF0C1D25170000FA4E12 /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
+		EB33FF0D1D25170000FA4E12 /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
+		EB33FF0E1D25170000FA4E12 /* NSObject+MJMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJMember.h"; sourceTree = "<group>"; };
+		EB33FF0F1D25170000FA4E12 /* NSObject+MJMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJMember.m"; sourceTree = "<group>"; };
+		EB60E04A1D2A0595008BFA89 /* RSDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSDataView.h; sourceTree = "<group>"; };
+		EB60E04B1D2A0595008BFA89 /* RSDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSDataView.m; sourceTree = "<group>"; };
+		EB60E04E1D2A0BCB008BFA89 /* RiskDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RiskDataModel.h; sourceTree = "<group>"; };
+		EB60E04F1D2A0BCB008BFA89 /* RiskDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RiskDataModel.m; sourceTree = "<group>"; };
+		EB60E0531D2A5EFC008BFA89 /* RSSearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSearchVC.h; sourceTree = "<group>"; };
+		EB60E0541D2A5EFC008BFA89 /* RSSearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSearchVC.m; sourceTree = "<group>"; };
+		EB60E0561D2A5F94008BFA89 /* RSSearchHistoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSearchHistoryCell.h; sourceTree = "<group>"; };
+		EB60E0571D2A5F94008BFA89 /* RSSearchHistoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSearchHistoryCell.m; sourceTree = "<group>"; };
+		EB60E0591D2A6717008BFA89 /* RSRiskDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSRiskDetailVC.h; sourceTree = "<group>"; };
+		EB60E05A1D2A6717008BFA89 /* RSRiskDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSRiskDetailVC.m; sourceTree = "<group>"; };
+		EB6A61B61D27BC5A0052EB0C /* RiskTypeDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RiskTypeDetailVC.h; sourceTree = "<group>"; };
+		EB6A61B71D27BC5A0052EB0C /* RiskTypeDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RiskTypeDetailVC.m; sourceTree = "<group>"; };
+		EB6FC4D41D2B627B00A446D0 /* RiskTypeFDALeftVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RiskTypeFDALeftVC.h; sourceTree = "<group>"; };
+		EB6FC4D51D2B627B00A446D0 /* RiskTypeFDALeftVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RiskTypeFDALeftVC.m; sourceTree = "<group>"; };
+		EB6FC4D71D2B629D00A446D0 /* RiskTypeFDARightVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RiskTypeFDARightVC.h; sourceTree = "<group>"; };
+		EB6FC4D81D2B629D00A446D0 /* RiskTypeFDARightVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RiskTypeFDARightVC.m; sourceTree = "<group>"; };
+		EB6FC4DA1D2B637800A446D0 /* RiskTypeFDARightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RiskTypeFDARightCell.h; sourceTree = "<group>"; };
+		EB6FC4DB1D2B637800A446D0 /* RiskTypeFDARightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RiskTypeFDARightCell.m; sourceTree = "<group>"; };
+		EB6FC4E31D2BB47000A446D0 /* RiskTypeFDALeftTwoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RiskTypeFDALeftTwoVC.h; sourceTree = "<group>"; };
+		EB6FC4E41D2BB47000A446D0 /* RiskTypeFDALeftTwoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RiskTypeFDALeftTwoVC.m; sourceTree = "<group>"; };
+		EB7922E91D2915F5001DDF72 /* RSDataVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSDataVC.h; sourceTree = "<group>"; };
+		EB7922EA1D2915F5001DDF72 /* RSDataVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSDataVC.m; sourceTree = "<group>"; };
+		EB852D4A1D2E16E9009BD9E0 /* EasyFrame_iOS2.0.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = EasyFrame_iOS2.0.xcodeproj; sourceTree = "<group>"; };
+		EB852D4E1D2E16E9009BD9E0 /* EasyFrame.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EasyFrame.plist; sourceTree = "<group>"; };
+		EB852D4F1D2E16E9009BD9E0 /* EFAppHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFAppHeader.h; sourceTree = "<group>"; };
+		EB852D501D2E16E9009BD9E0 /* EFAppManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFAppManager.h; sourceTree = "<group>"; };
+		EB852D511D2E16E9009BD9E0 /* EFAppManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFAppManager.m; sourceTree = "<group>"; };
+		EB852D551D2E16E9009BD9E0 /* EFBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFBaseNavigationController.h; sourceTree = "<group>"; };
+		EB852D561D2E16E9009BD9E0 /* EFBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFBaseNavigationController.m; sourceTree = "<group>"; };
+		EB852D581D2E16E9009BD9E0 /* EFBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFBaseViewController.h; sourceTree = "<group>"; };
+		EB852D591D2E16E9009BD9E0 /* EFBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFBaseViewController.m; sourceTree = "<group>"; };
+		EB852D5B1D2E16E9009BD9E0 /* EFHomeSideAndTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFHomeSideAndTabViewController.h; sourceTree = "<group>"; };
+		EB852D5C1D2E16E9009BD9E0 /* EFHomeSideAndTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFHomeSideAndTabViewController.m; sourceTree = "<group>"; };
+		EB852D5E1D2E16E9009BD9E0 /* EFHomeSideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFHomeSideViewController.h; sourceTree = "<group>"; };
+		EB852D5F1D2E16E9009BD9E0 /* EFHomeSideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFHomeSideViewController.m; sourceTree = "<group>"; };
+		EB852D601D2E16E9009BD9E0 /* EFSideMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFSideMenuCell.h; sourceTree = "<group>"; };
+		EB852D611D2E16E9009BD9E0 /* EFSideMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFSideMenuCell.m; sourceTree = "<group>"; };
+		EB852D621D2E16E9009BD9E0 /* EFSideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFSideMenuViewController.h; sourceTree = "<group>"; };
+		EB852D631D2E16E9009BD9E0 /* EFSideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFSideMenuViewController.m; sourceTree = "<group>"; };
+		EB852D641D2E16E9009BD9E0 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		EB852D651D2E16E9009BD9E0 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		EB852D671D2E16E9009BD9E0 /* EFHomeSingleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFHomeSingleViewController.h; sourceTree = "<group>"; };
+		EB852D681D2E16E9009BD9E0 /* EFHomeSingleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFHomeSingleViewController.m; sourceTree = "<group>"; };
+		EB852D6A1D2E16E9009BD9E0 /* EFHomeTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFHomeTabBarController.h; sourceTree = "<group>"; };
+		EB852D6B1D2E16E9009BD9E0 /* EFHomeTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFHomeTabBarController.m; sourceTree = "<group>"; };
+		EB852D6D1D2E16E9009BD9E0 /* EFBaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFBaseViewModel.h; sourceTree = "<group>"; };
+		EB852D6E1D2E16E9009BD9E0 /* EFBaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFBaseViewModel.m; sourceTree = "<group>"; };
+		EB852D6F1D2E16E9009BD9E0 /* EFPageRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFPageRequest.h; sourceTree = "<group>"; };
+		EB852D701D2E16E9009BD9E0 /* EFPageRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFPageRequest.m; sourceTree = "<group>"; };
+		EB852D711D2E16E9009BD9E0 /* EFPageViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFPageViewModel.h; sourceTree = "<group>"; };
+		EB852D721D2E16E9009BD9E0 /* EFPageViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFPageViewModel.m; sourceTree = "<group>"; };
+		EB852D731D2E16E9009BD9E0 /* EFRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFRequest.h; sourceTree = "<group>"; };
+		EB852D741D2E16E9009BD9E0 /* EFRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFRequest.m; sourceTree = "<group>"; };
+		EB852D751D2E16E9009BD9E0 /* EFRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFRequestManager.h; sourceTree = "<group>"; };
+		EB852D761D2E16E9009BD9E0 /* EFRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFRequestManager.m; sourceTree = "<group>"; };
+		EB852D771D2E16E9009BD9E0 /* InputError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputError.h; sourceTree = "<group>"; };
+		EB852D781D2E16E9009BD9E0 /* InputError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputError.m; sourceTree = "<group>"; };
+		EB852D791D2E16E9009BD9E0 /* NetworkModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkModel.h; sourceTree = "<group>"; };
+		EB852D7A1D2E16E9009BD9E0 /* NetworkModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkModel.m; sourceTree = "<group>"; };
+		EB852D7B1D2E16E9009BD9E0 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		EB852D7D1D2E16E9009BD9E0 /* EFSkinThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFSkinThemeManager.h; sourceTree = "<group>"; };
+		EB852D7E1D2E16E9009BD9E0 /* EFSkinThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFSkinThemeManager.m; sourceTree = "<group>"; };
+		EB852D7F1D2E16E9009BD9E0 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		EB852D801D2E16E9009BD9E0 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		EB852D831D2E16E9009BD9E0 /* TKAlertCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKAlertCenter.h; sourceTree = "<group>"; };
+		EB852D841D2E16E9009BD9E0 /* TKAlertCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKAlertCenter.m; sourceTree = "<group>"; };
+		EB852D851D2E16E9009BD9E0 /* UIView+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TKCategory.h"; sourceTree = "<group>"; };
+		EB852D861D2E16E9009BD9E0 /* UIView+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TKCategory.m"; sourceTree = "<group>"; };
+		EB852D881D2E16E9009BD9E0 /* YRSideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRSideViewController.h; sourceTree = "<group>"; };
+		EB852D891D2E16E9009BD9E0 /* YRSideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRSideViewController.m; sourceTree = "<group>"; };
+		EB852D8A1D2E16E9009BD9E0 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		EB852D8B1D2E16E9009BD9E0 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		EB852D8E1D2E16E9009BD9E0 /* EFFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFFileManager.h; sourceTree = "<group>"; };
+		EB852D8F1D2E16EA009BD9E0 /* EFFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFFileManager.m; sourceTree = "<group>"; };
+		EB852D961D2E16EA009BD9E0 /* BlockAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockAlert.h; sourceTree = "<group>"; };
+		EB852D971D2E16EA009BD9E0 /* BlockAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockAlert.m; sourceTree = "<group>"; };
+		EB852D981D2E16EA009BD9E0 /* BlockButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockButton.h; sourceTree = "<group>"; };
+		EB852D991D2E16EA009BD9E0 /* BlockButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockButton.m; sourceTree = "<group>"; };
+		EB852D9B1D2E16EA009BD9E0 /* UIButton+TouchAreaInsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+TouchAreaInsets.h"; sourceTree = "<group>"; };
+		EB852D9C1D2E16EA009BD9E0 /* UIButton+TouchAreaInsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+TouchAreaInsets.m"; sourceTree = "<group>"; };
+		EB852D9D1D2E16EA009BD9E0 /* UIColor+UIColor_Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+UIColor_Hex.h"; sourceTree = "<group>"; };
+		EB852D9E1D2E16EA009BD9E0 /* UIColor+UIColor_Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+UIColor_Hex.m"; sourceTree = "<group>"; };
+		EB852D9F1D2E16EA009BD9E0 /* UIView+JSMAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JSMAdd.h"; sourceTree = "<group>"; };
+		EB852DA01D2E16EA009BD9E0 /* UIView+JSMAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JSMAdd.m"; sourceTree = "<group>"; };
+		EB852DA21D2E16EA009BD9E0 /* EFCTTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFCTTextField.h; sourceTree = "<group>"; };
+		EB852DA31D2E16EA009BD9E0 /* EFCTTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFCTTextField.m; sourceTree = "<group>"; };
+		EB852DA41D2E16EA009BD9E0 /* EF_AlbumView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EF_AlbumView.h; sourceTree = "<group>"; };
+		EB852DA51D2E16EA009BD9E0 /* EF_AlbumView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EF_AlbumView.m; sourceTree = "<group>"; };
+		EB852DA71D2E16EA009BD9E0 /* EFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFHpple.h; sourceTree = "<group>"; };
+		EB852DA81D2E16EA009BD9E0 /* EFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFHpple.m; sourceTree = "<group>"; };
+		EB852DA91D2E16EA009BD9E0 /* EFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFHppleElement.h; sourceTree = "<group>"; };
+		EB852DAA1D2E16EA009BD9E0 /* EFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFHppleElement.m; sourceTree = "<group>"; };
+		EB852DAB1D2E16EA009BD9E0 /* EFXPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFXPathQuery.h; sourceTree = "<group>"; };
+		EB852DAC1D2E16EA009BD9E0 /* EFXPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFXPathQuery.m; sourceTree = "<group>"; };
+		EB852DAD1D2E16EA009BD9E0 /* EFMyAutoAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMyAutoAlertView.h; sourceTree = "<group>"; };
+		EB852DAE1D2E16EA009BD9E0 /* EFMyAutoAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMyAutoAlertView.m; sourceTree = "<group>"; };
+		EB852DAF1D2E16EA009BD9E0 /* EFPopupViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFPopupViewManager.h; sourceTree = "<group>"; };
+		EB852DB01D2E16EA009BD9E0 /* EFPopupViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFPopupViewManager.m; sourceTree = "<group>"; };
+		EB852DB11D2E16EA009BD9E0 /* EFShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFShareView.h; sourceTree = "<group>"; };
+		EB852DB21D2E16EA009BD9E0 /* EFShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFShareView.m; sourceTree = "<group>"; };
+		EB852DB41D2E16EA009BD9E0 /* HYDActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYDActivityIndicatorView.h; sourceTree = "<group>"; };
+		EB852DB51D2E16EA009BD9E0 /* HYDActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYDActivityIndicatorView.m; sourceTree = "<group>"; };
+		EB852DB61D2E16EA009BD9E0 /* HYDActivityMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYDActivityMessageView.h; sourceTree = "<group>"; };
+		EB852DB71D2E16EA009BD9E0 /* HYDActivityMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYDActivityMessageView.m; sourceTree = "<group>"; };
+		EB852DB81D2E16EA009BD9E0 /* HYDActivityProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYDActivityProgressView.h; sourceTree = "<group>"; };
+		EB852DB91D2E16EA009BD9E0 /* HYDActivityProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYDActivityProgressView.m; sourceTree = "<group>"; };
+		EB852DBB1D2E16EA009BD9E0 /* HYDAsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYDAsyncImageView.h; sourceTree = "<group>"; };
+		EB852DBC1D2E16EA009BD9E0 /* HYDAsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYDAsyncImageView.m; sourceTree = "<group>"; };
+		EB852DBD1D2E16EA009BD9E0 /* HYDFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYDFileManager.h; sourceTree = "<group>"; };
+		EB852DBE1D2E16EA009BD9E0 /* HYDFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYDFileManager.m; sourceTree = "<group>"; };
+		EB852DBF1D2E16EA009BD9E0 /* HYDImageCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYDImageCategory.h; sourceTree = "<group>"; };
+		EB852DC01D2E16EA009BD9E0 /* KYDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYDatePickerView.h; sourceTree = "<group>"; };
+		EB852DC11D2E16EA009BD9E0 /* KYDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYDatePickerView.m; sourceTree = "<group>"; };
+		EB852DC21D2E16EA009BD9E0 /* KYShaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYShaker.h; sourceTree = "<group>"; };
+		EB852DC31D2E16EA009BD9E0 /* KYShaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYShaker.m; sourceTree = "<group>"; };
+		EB852DC41D2E16EA009BD9E0 /* KYTableViewNoDataCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTableViewNoDataCategory.h; sourceTree = "<group>"; };
+		EB852DC51D2E16EA009BD9E0 /* KYTableViewNoDataCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTableViewNoDataCategory.m; sourceTree = "<group>"; };
+		EB852DC71D2E16EA009BD9E0 /* LocationUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationUtil.h; sourceTree = "<group>"; };
+		EB852DC81D2E16EA009BD9E0 /* LocationUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationUtil.m; sourceTree = "<group>"; };
+		EB852DC91D2E16EA009BD9E0 /* mapLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mapLocation.h; sourceTree = "<group>"; };
+		EB852DCA1D2E16EA009BD9E0 /* mapLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mapLocation.m; sourceTree = "<group>"; };
+		EB852DCB1D2E16EA009BD9E0 /* WGS84TOGCJ02.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGS84TOGCJ02.h; sourceTree = "<group>"; };
+		EB852DCC1D2E16EA009BD9E0 /* WGS84TOGCJ02.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGS84TOGCJ02.m; sourceTree = "<group>"; };
+		EB852DCE1D2E16EA009BD9E0 /* UIImageView+UIActivityIndicatorForSDWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+UIActivityIndicatorForSDWebImage.h"; sourceTree = "<group>"; };
+		EB852DCF1D2E16EA009BD9E0 /* UIImageView+UIActivityIndicatorForSDWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+UIActivityIndicatorForSDWebImage.m"; sourceTree = "<group>"; };
+		EB852DD01D2E16EA009BD9E0 /* StarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarView.h; sourceTree = "<group>"; };
+		EB852DD11D2E16EA009BD9E0 /* StarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarView.m; sourceTree = "<group>"; };
+		EB852DD31D2E16EA009BD9E0 /* KYMHButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYMHButton.h; sourceTree = "<group>"; };
+		EB852DD41D2E16EA009BD9E0 /* KYMHButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYMHButton.m; sourceTree = "<group>"; };
+		EB852DD51D2E16EA009BD9E0 /* KYMHImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYMHImageView.h; sourceTree = "<group>"; };
+		EB852DD61D2E16EA009BD9E0 /* KYMHImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYMHImageView.m; sourceTree = "<group>"; };
+		EB852DD71D2E16EA009BD9E0 /* KYMHLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYMHLabel.h; sourceTree = "<group>"; };
+		EB852DD81D2E16EA009BD9E0 /* KYMHLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYMHLabel.m; sourceTree = "<group>"; };
+		EB852DD91D2E16EA009BD9E0 /* KYTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTableView.h; sourceTree = "<group>"; };
+		EB852DDA1D2E16EA009BD9E0 /* KYTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTableView.m; sourceTree = "<group>"; };
+		EB852DDB1D2E16EA009BD9E0 /* UIUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIUtil.h; sourceTree = "<group>"; };
+		EB852DDC1D2E16EA009BD9E0 /* UIUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIUtil.m; sourceTree = "<group>"; };
+		EB852DDD1D2E16EA009BD9E0 /* WebUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebUtil.h; sourceTree = "<group>"; };
+		EB852DDE1D2E16EA009BD9E0 /* WebUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebUtil.m; sourceTree = "<group>"; };
+		EB852DDF1D2E16EA009BD9E0 /* XYAttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYAttributedString.h; sourceTree = "<group>"; };
+		EB852DE01D2E16EA009BD9E0 /* XYAttributedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYAttributedString.m; sourceTree = "<group>"; };
+		EB852DE21D2E16EA009BD9E0 /* EFViewControllerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFViewControllerManager.h; sourceTree = "<group>"; };
+		EB852DE31D2E16EA009BD9E0 /* EFViewControllerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFViewControllerManager.m; sourceTree = "<group>"; };
+		EB852DE51D2E16EA009BD9E0 /* EFForgetPasswordRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFForgetPasswordRequest.h; sourceTree = "<group>"; };
+		EB852DE61D2E16EA009BD9E0 /* EFForgetPasswordRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFForgetPasswordRequest.m; sourceTree = "<group>"; };
+		EB852DE71D2E16EA009BD9E0 /* EFForgetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFForgetPasswordViewController.h; sourceTree = "<group>"; };
+		EB852DE81D2E16EA009BD9E0 /* EFForgetPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFForgetPasswordViewController.m; sourceTree = "<group>"; };
+		EB852DE91D2E16EA009BD9E0 /* EFForgetPasswordViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFForgetPasswordViewModel.h; sourceTree = "<group>"; };
+		EB852DEA1D2E16EA009BD9E0 /* EFForgetPasswordViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFForgetPasswordViewModel.m; sourceTree = "<group>"; };
+		EB852DEC1D2E16EA009BD9E0 /* EFLoginRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFLoginRequest.h; sourceTree = "<group>"; };
+		EB852DED1D2E16EA009BD9E0 /* EFLoginRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFLoginRequest.m; sourceTree = "<group>"; };
+		EB852DEE1D2E16EA009BD9E0 /* EFLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFLoginViewController.h; sourceTree = "<group>"; };
+		EB852DEF1D2E16EA009BD9E0 /* EFLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFLoginViewController.m; sourceTree = "<group>"; };
+		EB852DF01D2E16EA009BD9E0 /* EFLoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFLoginViewModel.h; sourceTree = "<group>"; };
+		EB852DF11D2E16EA009BD9E0 /* EFLoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFLoginViewModel.m; sourceTree = "<group>"; };
+		EB852DF21D2E16EA009BD9E0 /* EFLoginWithThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFLoginWithThirdViewController.h; sourceTree = "<group>"; };
+		EB852DF31D2E16EA009BD9E0 /* EFLoginWithThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFLoginWithThirdViewController.m; sourceTree = "<group>"; };
+		EB852DF41D2E16EA009BD9E0 /* EFThirdPartyLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFThirdPartyLoginView.h; sourceTree = "<group>"; };
+		EB852DF51D2E16EA009BD9E0 /* EFThirdPartyLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFThirdPartyLoginView.m; sourceTree = "<group>"; };
+		EB852DF61D2E16EA009BD9E0 /* EFThirdPartyLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EFThirdPartyLoginView.xib; sourceTree = "<group>"; };
+		EB852DF71D2E16EA009BD9E0 /* EFVerticalButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFVerticalButton.h; sourceTree = "<group>"; };
+		EB852DF81D2E16EA009BD9E0 /* EFVerticalButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFVerticalButton.m; sourceTree = "<group>"; };
+		EB852DF91D2E16EA009BD9E0 /* resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = resource.bundle; sourceTree = "<group>"; };
+		EB852DFA1D2E16EA009BD9E0 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		EB852DFB1D2E16EA009BD9E0 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		EB852DFD1D2E16EA009BD9E0 /* EFMineCenterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMineCenterCell.h; sourceTree = "<group>"; };
+		EB852DFE1D2E16EA009BD9E0 /* EFMineCenterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMineCenterCell.m; sourceTree = "<group>"; };
+		EB852DFF1D2E16EA009BD9E0 /* EFMineCenterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMineCenterVC.h; sourceTree = "<group>"; };
+		EB852E001D2E16EA009BD9E0 /* EFMineCenterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMineCenterVC.m; sourceTree = "<group>"; };
+		EB852E021D2E16EA009BD9E0 /* EFRegisterRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFRegisterRequest.h; sourceTree = "<group>"; };
+		EB852E031D2E16EA009BD9E0 /* EFRegisterRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFRegisterRequest.m; sourceTree = "<group>"; };
+		EB852E041D2E16EA009BD9E0 /* EFRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFRegisterViewController.h; sourceTree = "<group>"; };
+		EB852E051D2E16EA009BD9E0 /* EFRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFRegisterViewController.m; sourceTree = "<group>"; };
+		EB852E061D2E16EA009BD9E0 /* EFRegisterViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFRegisterViewModel.h; sourceTree = "<group>"; };
+		EB852E071D2E16EA009BD9E0 /* EFRegisterViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFRegisterViewModel.m; sourceTree = "<group>"; };
+		EB852E091D2E16EA009BD9E0 /* EFAccountSettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFAccountSettingVC.h; sourceTree = "<group>"; };
+		EB852E0A1D2E16EA009BD9E0 /* EFAccountSettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFAccountSettingVC.m; sourceTree = "<group>"; };
+		EB852E0B1D2E16EA009BD9E0 /* EFEditCommonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFEditCommonCell.h; sourceTree = "<group>"; };
+		EB852E0C1D2E16EA009BD9E0 /* EFEditCommonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFEditCommonCell.m; sourceTree = "<group>"; };
+		EB852E0D1D2E16EA009BD9E0 /* EFEditCommonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EFEditCommonCell.xib; sourceTree = "<group>"; };
+		EB852E0E1D2E16EA009BD9E0 /* EFEditMineProfileVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFEditMineProfileVC.h; sourceTree = "<group>"; };
+		EB852E0F1D2E16EA009BD9E0 /* EFEditMineProfileVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFEditMineProfileVC.m; sourceTree = "<group>"; };
+		EB852E101D2E16EA009BD9E0 /* EFEditNicknameVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFEditNicknameVC.h; sourceTree = "<group>"; };
+		EB852E111D2E16EA009BD9E0 /* EFEditNicknameVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFEditNicknameVC.m; sourceTree = "<group>"; };
+		EB852E121D2E16EA009BD9E0 /* EFMineProfileCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMineProfileCell.h; sourceTree = "<group>"; };
+		EB852E131D2E16EA009BD9E0 /* EFMineProfileCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMineProfileCell.m; sourceTree = "<group>"; };
+		EB852E141D2E16EA009BD9E0 /* EFMineProfileCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EFMineProfileCell.xib; sourceTree = "<group>"; };
+		EB852E151D2E16EA009BD9E0 /* EFSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFSettingCell.h; sourceTree = "<group>"; };
+		EB852E161D2E16EA009BD9E0 /* EFSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFSettingCell.m; sourceTree = "<group>"; };
+		EB852E171D2E16EA009BD9E0 /* EFSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFSettingViewController.h; sourceTree = "<group>"; };
+		EB852E181D2E16EA009BD9E0 /* EFSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFSettingViewController.m; sourceTree = "<group>"; };
+		EB852E191D2E16EA009BD9E0 /* EFUserAvatarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFUserAvatarCell.h; sourceTree = "<group>"; };
+		EB852E1A1D2E16EA009BD9E0 /* EFUserAvatarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFUserAvatarCell.m; sourceTree = "<group>"; };
+		EB852E1B1D2E16EA009BD9E0 /* EFUserAvatarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EFUserAvatarCell.xib; sourceTree = "<group>"; };
+		EB852E201D2E16EA009BD9E0 /* EFAddAddressVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFAddAddressVC.h; sourceTree = "<group>"; };
+		EB852E211D2E16EA009BD9E0 /* EFAddAddressVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFAddAddressVC.m; sourceTree = "<group>"; };
+		EB852E221D2E16EA009BD9E0 /* EFConsigneeAddressVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFConsigneeAddressVC.h; sourceTree = "<group>"; };
+		EB852E231D2E16EA009BD9E0 /* EFConsigneeAddressVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFConsigneeAddressVC.m; sourceTree = "<group>"; };
+		EB852E241D2E16EA009BD9E0 /* EFEditAddressVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFEditAddressVC.h; sourceTree = "<group>"; };
+		EB852E251D2E16EA009BD9E0 /* EFEditAddressVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFEditAddressVC.m; sourceTree = "<group>"; };
+		EB852E261D2E16EA009BD9E0 /* region.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = region.plist; sourceTree = "<group>"; };
+		EB852E271D2E16EA009BD9E0 /* EFAftermarketStatusVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFAftermarketStatusVC.h; sourceTree = "<group>"; };
+		EB852E281D2E16EA009BD9E0 /* EFAftermarketStatusVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFAftermarketStatusVC.m; sourceTree = "<group>"; };
+		EB852E291D2E16EA009BD9E0 /* EFAfterSaleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFAfterSaleVC.h; sourceTree = "<group>"; };
+		EB852E2A1D2E16EA009BD9E0 /* EFAfterSaleVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFAfterSaleVC.m; sourceTree = "<group>"; };
+		EB852E2B1D2E16EA009BD9E0 /* EFAgencyInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFAgencyInfoVC.h; sourceTree = "<group>"; };
+		EB852E2C1D2E16EA009BD9E0 /* EFAgencyInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFAgencyInfoVC.m; sourceTree = "<group>"; };
+		EB852E2D1D2E16EA009BD9E0 /* EFCommentListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFCommentListVC.h; sourceTree = "<group>"; };
+		EB852E2E1D2E16EA009BD9E0 /* EFCommentListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFCommentListVC.m; sourceTree = "<group>"; };
+		EB852E2F1D2E16EA009BD9E0 /* EFGoodsCommentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFGoodsCommentVC.h; sourceTree = "<group>"; };
+		EB852E301D2E16EA009BD9E0 /* EFGoodsCommentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFGoodsCommentVC.m; sourceTree = "<group>"; };
+		EB852E311D2E16EA009BD9E0 /* EFMallDetailsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMallDetailsVC.h; sourceTree = "<group>"; };
+		EB852E321D2E16EA009BD9E0 /* EFMallDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMallDetailsVC.m; sourceTree = "<group>"; };
+		EB852E331D2E16EA009BD9E0 /* EFMallSearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMallSearchVC.h; sourceTree = "<group>"; };
+		EB852E341D2E16EA009BD9E0 /* EFMallSearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMallSearchVC.m; sourceTree = "<group>"; };
+		EB852E351D2E16EA009BD9E0 /* EFMallVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMallVC.h; sourceTree = "<group>"; };
+		EB852E361D2E16EA009BD9E0 /* EFMallVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMallVC.m; sourceTree = "<group>"; };
+		EB852E371D2E16EA009BD9E0 /* EFMyOrderVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMyOrderVC.h; sourceTree = "<group>"; };
+		EB852E381D2E16EA009BD9E0 /* EFMyOrderVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMyOrderVC.m; sourceTree = "<group>"; };
+		EB852E391D2E16EA009BD9E0 /* EFOrderCommentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFOrderCommentVC.h; sourceTree = "<group>"; };
+		EB852E3A1D2E16EA009BD9E0 /* EFOrderCommentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFOrderCommentVC.m; sourceTree = "<group>"; };
+		EB852E3B1D2E16EA009BD9E0 /* EFOrderConfirmTwoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFOrderConfirmTwoVC.h; sourceTree = "<group>"; };
+		EB852E3C1D2E16EA009BD9E0 /* EFOrderConfirmTwoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFOrderConfirmTwoVC.m; sourceTree = "<group>"; };
+		EB852E3D1D2E16EA009BD9E0 /* EFOrderConfirmVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFOrderConfirmVC.h; sourceTree = "<group>"; };
+		EB852E3E1D2E16EA009BD9E0 /* EFOrderConfirmVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFOrderConfirmVC.m; sourceTree = "<group>"; };
+		EB852E3F1D2E16EA009BD9E0 /* EFOrderDetailTwoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFOrderDetailTwoVC.h; sourceTree = "<group>"; };
+		EB852E401D2E16EA009BD9E0 /* EFOrderDetailTwoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFOrderDetailTwoVC.m; sourceTree = "<group>"; };
+		EB852E411D2E16EA009BD9E0 /* EFOrderDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFOrderDetailVC.h; sourceTree = "<group>"; };
+		EB852E421D2E16EA009BD9E0 /* EFOrderDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFOrderDetailVC.m; sourceTree = "<group>"; };
+		EB852E431D2E16EA009BD9E0 /* EFPushCommentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFPushCommentVC.h; sourceTree = "<group>"; };
+		EB852E441D2E16EA009BD9E0 /* EFPushCommentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFPushCommentVC.m; sourceTree = "<group>"; };
+		EB852E451D2E16EA009BD9E0 /* EFSearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFSearchVC.h; sourceTree = "<group>"; };
+		EB852E461D2E16EA009BD9E0 /* EFSearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFSearchVC.m; sourceTree = "<group>"; };
+		EB852E471D2E16EA009BD9E0 /* EFShopCartVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFShopCartVC.h; sourceTree = "<group>"; };
+		EB852E481D2E16EA009BD9E0 /* EFShopCartVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFShopCartVC.m; sourceTree = "<group>"; };
+		EB852E491D2E16EA009BD9E0 /* EFStoreVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFStoreVC.h; sourceTree = "<group>"; };
+		EB852E4A1D2E16EA009BD9E0 /* EFStoreVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFStoreVC.m; sourceTree = "<group>"; };
+		EB852E4C1D2E16EA009BD9E0 /* EFCartModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFCartModel.h; sourceTree = "<group>"; };
+		EB852E4D1D2E16EA009BD9E0 /* EFCartModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFCartModel.m; sourceTree = "<group>"; };
+		EB852E4E1D2E16EA009BD9E0 /* EFGoodModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFGoodModel.h; sourceTree = "<group>"; };
+		EB852E4F1D2E16EA009BD9E0 /* EFGoodModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFGoodModel.m; sourceTree = "<group>"; };
+		EB852E501D2E16EA009BD9E0 /* EFMallListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMallListModel.h; sourceTree = "<group>"; };
+		EB852E511D2E16EA009BD9E0 /* EFMallListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMallListModel.m; sourceTree = "<group>"; };
+		EB852E521D2E16EA009BD9E0 /* EFMallModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMallModel.h; sourceTree = "<group>"; };
+		EB852E531D2E16EA009BD9E0 /* EFMallModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMallModel.m; sourceTree = "<group>"; };
+		EB852E541D2E16EA009BD9E0 /* EFOrderDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFOrderDetailModel.h; sourceTree = "<group>"; };
+		EB852E551D2E16EA009BD9E0 /* EFOrderDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFOrderDetailModel.m; sourceTree = "<group>"; };
+		EB852E561D2E16EA009BD9E0 /* EFOrderListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFOrderListModel.h; sourceTree = "<group>"; };
+		EB852E571D2E16EA009BD9E0 /* EFOrderListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFOrderListModel.m; sourceTree = "<group>"; };
+		EB852E581D2E16EA009BD9E0 /* EFTagModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFTagModel.h; sourceTree = "<group>"; };
+		EB852E591D2E16EA009BD9E0 /* EFTagModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFTagModel.m; sourceTree = "<group>"; };
+		EB852E5A1D2E16EA009BD9E0 /* GoodModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodModel.h; sourceTree = "<group>"; };
+		EB852E5B1D2E16EA009BD9E0 /* GoodModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodModel.m; sourceTree = "<group>"; };
+		EB852E5C1D2E16EA009BD9E0 /* ReturnOfGoodsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReturnOfGoodsModel.h; sourceTree = "<group>"; };
+		EB852E5D1D2E16EA009BD9E0 /* ReturnOfGoodsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReturnOfGoodsModel.m; sourceTree = "<group>"; };
+		EB852E5F1D2E16EA009BD9E0 /* EFMailHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMailHeader.h; sourceTree = "<group>"; };
+		EB852E601D2E16EA009BD9E0 /* EFMallRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMallRequest.h; sourceTree = "<group>"; };
+		EB852E611D2E16EA009BD9E0 /* EFMallRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMallRequest.m; sourceTree = "<group>"; };
+		EB852E621D2E16EA009BD9E0 /* EFShopCartRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFShopCartRequest.h; sourceTree = "<group>"; };
+		EB852E631D2E16EA009BD9E0 /* EFShopCartRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFShopCartRequest.m; sourceTree = "<group>"; };
+		EB852E651D2E16EA009BD9E0 /* EFAddAddressCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFAddAddressCell.h; sourceTree = "<group>"; };
+		EB852E661D2E16EA009BD9E0 /* EFAddAddressCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFAddAddressCell.m; sourceTree = "<group>"; };
+		EB852E671D2E16EA009BD9E0 /* EFAgencyInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFAgencyInfoCell.h; sourceTree = "<group>"; };
+		EB852E681D2E16EA009BD9E0 /* EFAgencyInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFAgencyInfoCell.m; sourceTree = "<group>"; };
+		EB852E691D2E16EA009BD9E0 /* EFAgencyPictureCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFAgencyPictureCell.h; sourceTree = "<group>"; };
+		EB852E6A1D2E16EA009BD9E0 /* EFAgencyPictureCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFAgencyPictureCell.m; sourceTree = "<group>"; };
+		EB852E6B1D2E16EA009BD9E0 /* EFCommentListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFCommentListCell.h; sourceTree = "<group>"; };
+		EB852E6C1D2E16EA009BD9E0 /* EFCommentListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFCommentListCell.m; sourceTree = "<group>"; };
+		EB852E6D1D2E16EA009BD9E0 /* EFGoodsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFGoodsCell.h; sourceTree = "<group>"; };
+		EB852E6E1D2E16EA009BD9E0 /* EFGoodsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFGoodsCell.m; sourceTree = "<group>"; };
+		EB852E6F1D2E16EA009BD9E0 /* EFGoodsCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFGoodsCommentCell.h; sourceTree = "<group>"; };
+		EB852E701D2E16EA009BD9E0 /* EFGoodsCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFGoodsCommentCell.m; sourceTree = "<group>"; };
+		EB852E711D2E16EA009BD9E0 /* EFGoodSpecificationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFGoodSpecificationCell.h; sourceTree = "<group>"; };
+		EB852E721D2E16EA009BD9E0 /* EFGoodSpecificationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFGoodSpecificationCell.m; sourceTree = "<group>"; };
+		EB852E731D2E16EA009BD9E0 /* EFGoodsTwoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFGoodsTwoCell.h; sourceTree = "<group>"; };
+		EB852E741D2E16EA009BD9E0 /* EFGoodsTwoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFGoodsTwoCell.m; sourceTree = "<group>"; };
+		EB852E751D2E16EA009BD9E0 /* EFMallCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMallCell.h; sourceTree = "<group>"; };
+		EB852E761D2E16EA009BD9E0 /* EFMallCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMallCell.m; sourceTree = "<group>"; };
+		EB852E771D2E16EA009BD9E0 /* EFMallDetailsStoreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMallDetailsStoreCell.h; sourceTree = "<group>"; };
+		EB852E781D2E16EA009BD9E0 /* EFMallDetailsStoreCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMallDetailsStoreCell.m; sourceTree = "<group>"; };
+		EB852E791D2E16EA009BD9E0 /* EFMallDetailsTopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMallDetailsTopCell.h; sourceTree = "<group>"; };
+		EB852E7A1D2E16EA009BD9E0 /* EFMallDetailsTopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMallDetailsTopCell.m; sourceTree = "<group>"; };
+		EB852E7B1D2E16EA009BD9E0 /* EFOrderConfirmCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFOrderConfirmCell.h; sourceTree = "<group>"; };
+		EB852E7C1D2E16EA009BD9E0 /* EFOrderConfirmCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFOrderConfirmCell.m; sourceTree = "<group>"; };
+		EB852E7D1D2E16EA009BD9E0 /* EFOrderDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFOrderDetailCell.h; sourceTree = "<group>"; };
+		EB852E7E1D2E16EA009BD9E0 /* EFOrderDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFOrderDetailCell.m; sourceTree = "<group>"; };
+		EB852E7F1D2E16EA009BD9E0 /* EFOrderDetailTwoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFOrderDetailTwoCell.h; sourceTree = "<group>"; };
+		EB852E801D2E16EA009BD9E0 /* EFOrderDetailTwoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFOrderDetailTwoCell.m; sourceTree = "<group>"; };
+		EB852E811D2E16EA009BD9E0 /* EFOrderInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFOrderInfoCell.h; sourceTree = "<group>"; };
+		EB852E821D2E16EA009BD9E0 /* EFOrderInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFOrderInfoCell.m; sourceTree = "<group>"; };
+		EB852E831D2E16EA009BD9E0 /* EFOrderStatusCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFOrderStatusCell.h; sourceTree = "<group>"; };
+		EB852E841D2E16EA009BD9E0 /* EFOrderStatusCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFOrderStatusCell.m; sourceTree = "<group>"; };
+		EB852E851D2E16EA009BD9E0 /* EFPushCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFPushCommentCell.h; sourceTree = "<group>"; };
+		EB852E861D2E16EA009BD9E0 /* EFPushCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFPushCommentCell.m; sourceTree = "<group>"; };
+		EB852E871D2E16EA009BD9E0 /* EFSearchHistroyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFSearchHistroyCell.h; sourceTree = "<group>"; };
+		EB852E881D2E16EA009BD9E0 /* EFSearchHistroyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFSearchHistroyCell.m; sourceTree = "<group>"; };
+		EB852E891D2E16EA009BD9E0 /* EFSelecteSpecificationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFSelecteSpecificationView.h; sourceTree = "<group>"; };
+		EB852E8A1D2E16EA009BD9E0 /* EFSelecteSpecificationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFSelecteSpecificationView.m; sourceTree = "<group>"; };
+		EB852E8B1D2E16EA009BD9E0 /* EFShopCartCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFShopCartCell.h; sourceTree = "<group>"; };
+		EB852E8C1D2E16EA009BD9E0 /* EFShopCartCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFShopCartCell.m; sourceTree = "<group>"; };
+		EB852E8D1D2E16EA009BD9E0 /* EFShopCartHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFShopCartHeadView.h; sourceTree = "<group>"; };
+		EB852E8E1D2E16EA009BD9E0 /* EFShopCartHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFShopCartHeadView.m; sourceTree = "<group>"; };
+		EB852E8F1D2E16EA009BD9E0 /* EFTagButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFTagButton.h; sourceTree = "<group>"; };
+		EB852E901D2E16EA009BD9E0 /* EFTagButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFTagButton.m; sourceTree = "<group>"; };
+		EB852E911D2E16EA009BD9E0 /* EFTagsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFTagsView.h; sourceTree = "<group>"; };
+		EB852E921D2E16EA009BD9E0 /* EFTagsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFTagsView.m; sourceTree = "<group>"; };
+		EB852E941D2E16EA009BD9E0 /* EFMallViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMallViewModel.h; sourceTree = "<group>"; };
+		EB852E951D2E16EA009BD9E0 /* EFMallViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMallViewModel.m; sourceTree = "<group>"; };
+		EB852E961D2E16EA009BD9E0 /* EFShopCartViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFShopCartViewModel.h; sourceTree = "<group>"; };
+		EB852E971D2E16EA009BD9E0 /* EFShopCartViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFShopCartViewModel.m; sourceTree = "<group>"; };
+		EB852E9A1D2E16EA009BD9E0 /* UIButton+LXMImagePosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+LXMImagePosition.h"; sourceTree = "<group>"; };
+		EB852E9B1D2E16EA009BD9E0 /* UIButton+LXMImagePosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+LXMImagePosition.m"; sourceTree = "<group>"; };
+		EB852E9D1D2E16EA009BD9E0 /* STConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STConfig.h; sourceTree = "<group>"; };
+		EB852E9E1D2E16EA009BD9E0 /* STConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STConst.h; sourceTree = "<group>"; };
+		EB852E9F1D2E16EA009BD9E0 /* STConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STConst.m; sourceTree = "<group>"; };
+		EB852EA01D2E16EA009BD9E0 /* STPickerArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPickerArea.h; sourceTree = "<group>"; };
+		EB852EA11D2E16EA009BD9E0 /* STPickerArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPickerArea.m; sourceTree = "<group>"; };
+		EB852EA21D2E16EA009BD9E0 /* STPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPickerView.h; sourceTree = "<group>"; };
+		EB852EA31D2E16EA009BD9E0 /* STPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPickerView.m; sourceTree = "<group>"; };
+		EB852EA41D2E16EA009BD9E0 /* STUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STUI.h; sourceTree = "<group>"; };
+		EB852EA51D2E16EA009BD9E0 /* STUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STUI.m; sourceTree = "<group>"; };
+		EB852EA61D2E16EA009BD9E0 /* UIView+ST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ST.h"; sourceTree = "<group>"; };
+		EB852EA71D2E16EA009BD9E0 /* UIView+ST.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ST.m"; sourceTree = "<group>"; };
+		EB852EAA1D2E16EA009BD9E0 /* YFViewPager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFViewPager.h; sourceTree = "<group>"; };
+		EB852EAB1D2E16EA009BD9E0 /* YFViewPager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFViewPager.m; sourceTree = "<group>"; };
+		EB852EAD1D2E16EA009BD9E0 /* HowToUse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HowToUse.h; sourceTree = "<group>"; };
+		EB852EAE1D2E16EA009BD9E0 /* YJSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJSegmentedControl.h; sourceTree = "<group>"; };
+		EB852EAF1D2E16EA009BD9E0 /* YJSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJSegmentedControl.m; sourceTree = "<group>"; };
+		EB852EB11D2E16EA009BD9E0 /* EFCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFCarousel.h; sourceTree = "<group>"; };
+		EB852EB21D2E16EA009BD9E0 /* EFCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFCarousel.m; sourceTree = "<group>"; };
+		EB852EB31D2E16EA009BD9E0 /* EFCarouselObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFCarouselObject.h; sourceTree = "<group>"; };
+		EB852EB41D2E16EA009BD9E0 /* EFCarouselObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFCarouselObject.m; sourceTree = "<group>"; };
+		EB852EB61D2E16EA009BD9E0 /* DCPaymentAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPaymentAlert.h; sourceTree = "<group>"; };
+		EB852EB71D2E16EA009BD9E0 /* DCPaymentAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCPaymentAlert.m; sourceTree = "<group>"; };
+		EB852EB81D2E16EA009BD9E0 /* DCPaymentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPaymentView.h; sourceTree = "<group>"; };
+		EB852EB91D2E16EA009BD9E0 /* DCPaymentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCPaymentView.m; sourceTree = "<group>"; };
+		EB852EBA1D2E16EA009BD9E0 /* DCPwdTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPwdTextField.h; sourceTree = "<group>"; };
+		EB852EBB1D2E16EA009BD9E0 /* DCPwdTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCPwdTextField.m; sourceTree = "<group>"; };
+		EB852EBC1D2E16EA009BD9E0 /* EFMailNS_Enum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMailNS_Enum.h; sourceTree = "<group>"; };
+		EB852EBE1D2E16EA009BD9E0 /* EFPayAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFPayAlertView.h; sourceTree = "<group>"; };
+		EB852EBF1D2E16EA009BD9E0 /* EFPayAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFPayAlertView.m; sourceTree = "<group>"; };
+		EB852EC01D2E16EA009BD9E0 /* EFSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFSelectView.h; sourceTree = "<group>"; };
+		EB852EC11D2E16EA009BD9E0 /* EFSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFSelectView.m; sourceTree = "<group>"; };
+		EB852EC31D2E16EA009BD9E0 /* back_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_button@2x.png"; sourceTree = "<group>"; };
+		EB852EC41D2E16EA009BD9E0 /* cart_addBtn_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cart_addBtn_highlight@2x.png"; sourceTree = "<group>"; };
+		EB852EC51D2E16EA009BD9E0 /* cart_addBtn_nomal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cart_addBtn_nomal@2x.png"; sourceTree = "<group>"; };
+		EB852EC61D2E16EA009BD9E0 /* cart_cutBtn_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cart_cutBtn_highlight@2x.png"; sourceTree = "<group>"; };
+		EB852EC71D2E16EA009BD9E0 /* cart_cutBtn_nomal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cart_cutBtn_nomal@2x.png"; sourceTree = "<group>"; };
+		EB852EC81D2E16EA009BD9E0 /* cart_default_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cart_default_bg.png; sourceTree = "<group>"; };
+		EB852EC91D2E16EA009BD9E0 /* cart_selected_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cart_selected_btn@2x.png"; sourceTree = "<group>"; };
+		EB852ECA1D2E16EA009BD9E0 /* cart_unSelect_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cart_unSelect_btn@2x.png"; sourceTree = "<group>"; };
+		EB852ECB1D2E16EA009BD9E0 /* ic_pass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_pass@2x.png"; sourceTree = "<group>"; };
+		EB852ECC1D2E16EA009BD9E0 /* ic_pass@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_pass@3x.png"; sourceTree = "<group>"; };
+		EB852ECD1D2E16EA009BD9E0 /* ic_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_select@2x.png"; sourceTree = "<group>"; };
+		EB852ECE1D2E16EA009BD9E0 /* ic_select@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_select@3x.png"; sourceTree = "<group>"; };
+		EB852F911D2E1917009BD9E0 /* RSVAPatientArchiveVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSVAPatientArchiveVC.h; sourceTree = "<group>"; };
+		EB852F921D2E1917009BD9E0 /* RSVAPatientArchiveVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSVAPatientArchiveVC.m; sourceTree = "<group>"; };
+		EB8B52341D2D2A2300C40010 /* RSVAArchivesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSVAArchivesModel.h; sourceTree = "<group>"; };
+		EB8B52351D2D2A2300C40010 /* RSVAArchivesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSVAArchivesModel.m; sourceTree = "<group>"; };
+		EB8B52371D2D2A3700C40010 /* RSVAArchivesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSVAArchivesCell.h; sourceTree = "<group>"; };
+		EB8B52381D2D2A3700C40010 /* RSVAArchivesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSVAArchivesCell.m; sourceTree = "<group>"; };
+		EB9A067C1D260D07001D52C8 /* RiskTypesLeftCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RiskTypesLeftCell.h; sourceTree = "<group>"; };
+		EB9A067D1D260D07001D52C8 /* RiskTypesLeftCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RiskTypesLeftCell.m; sourceTree = "<group>"; };
+		EB9A068E1D26785D001D52C8 /* RiskFactorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RiskFactorModel.h; sourceTree = "<group>"; };
+		EB9A068F1D26785D001D52C8 /* RiskFactorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RiskFactorModel.m; sourceTree = "<group>"; };
+		EBCB95FE1D2BDE0700C9E118 /* RiskTypeDetailLeftCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RiskTypeDetailLeftCell.h; sourceTree = "<group>"; };
+		EBCB95FF1D2BDE0700C9E118 /* RiskTypeDetailLeftCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RiskTypeDetailLeftCell.m; sourceTree = "<group>"; };
+		EBCB96021D2BDF5900C9E118 /* RiskTypeDetailLeftModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RiskTypeDetailLeftModel.h; sourceTree = "<group>"; };
+		EBCB96031D2BDF5900C9E118 /* RiskTypeDetailLeftModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RiskTypeDetailLeftModel.m; sourceTree = "<group>"; };
+		EBF3F6E81D2E70DD008FE59E /* SecondSmallToolCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondSmallToolCell.h; sourceTree = "<group>"; };
+		EBF3F6E91D2E70DD008FE59E /* SecondSmallToolCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondSmallToolCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB33F7AB1D2368C300FA4E12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB852F901D2E1847009BD9E0 /* (null) in Frameworks */,
+				EB33FC561D23A33800FA4E12 /* libxml2.2.tbd in Frameworks */,
+				EB33FC541D23A32F00FA4E12 /* libxml2.tbd in Frameworks */,
+				2A6B22A2355246410B0E1A5F /* libPods-Risk.a in Frameworks */,
+				7A709CD089D61EBC1AB3C1C3 /* libPods-Risk.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		638DDF4235C3A4443461A5E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB33FC551D23A33800FA4E12 /* libxml2.2.tbd */,
+				EB33FC531D23A32F00FA4E12 /* libxml2.tbd */,
+				29DAD738107DB2EAB0F59EAC /* libPods-Risk.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99289D11A7F40BC96D41C60E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E2AF876FC8430237EEAFB42 /* Pods-Risk.debug.xcconfig */,
+				84F6386731BC1D5B55EA67FE /* Pods-Risk.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EB33F7A51D2368C300FA4E12 = {
+			isa = PBXGroup;
+			children = (
+				EB852D481D2E16E9009BD9E0 /* EasyFrame_iOS2.0 */,
+				EB33F7B01D2368C300FA4E12 /* Risk */,
+				EB33F7AF1D2368C300FA4E12 /* Products */,
+				99289D11A7F40BC96D41C60E /* Pods */,
+				638DDF4235C3A4443461A5E5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EB33F7AF1D2368C300FA4E12 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB33F7AE1D2368C300FA4E12 /* Risk.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB33F7B01D2368C300FA4E12 /* Risk */ = {
+			isa = PBXGroup;
+			children = (
+				EB33FEC71D23B89A00FA4E12 /* Home */,
+				EB33FECD1D23B89A00FA4E12 /* RiskKind */,
+				EB33FED31D23B89A00FA4E12 /* VisitArchive */,
+				EB33FEC41D23B89A00FA4E12 /* DataCenter */,
+				EB33FED01D23B89A00FA4E12 /* StatisticsReport */,
+				EB33FECA1D23B89A00FA4E12 /* Mine */,
+				EB33FEBF1D23B23800FA4E12 /* Model */,
+				EB33FEC11D23B23800FA4E12 /* Request */,
+				EB33FEC21D23B23800FA4E12 /* ViewModel */,
+				EB33FEC01D23B23800FA4E12 /* Other */,
+				EB33F7B41D2368C300FA4E12 /* AppDelegate.h */,
+				EB33F7B51D2368C300FA4E12 /* AppDelegate.m */,
+				EB33F7B71D2368C300FA4E12 /* ViewController.h */,
+				EB33F7B81D2368C300FA4E12 /* ViewController.m */,
+				EB33F7BA1D2368C300FA4E12 /* Main.storyboard */,
+				EB33F7BD1D2368C300FA4E12 /* Assets.xcassets */,
+				EB33F7BF1D2368C300FA4E12 /* LaunchScreen.storyboard */,
+				EB33F7C21D2368C300FA4E12 /* Info.plist */,
+				EB33F7B11D2368C300FA4E12 /* Supporting Files */,
+			);
+			path = Risk;
+			sourceTree = "<group>";
+		};
+		EB33F7B11D2368C300FA4E12 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB33FA031D23779A00FA4E12 /* EasyFrame_.plist */,
+				EB33FEB81D23B02000FA4E12 /* EFThemeConfig_.plist */,
+				EB33FEB91D23B02000FA4E12 /* MainLayoutConfig_.plist */,
+				EB33FEBA1D23B02000FA4E12 /* PushConfig.plist */,
+				EB33F7B21D2368C300FA4E12 /* main.m */,
+				EB33F9FB1D2368F400FA4E12 /* PrefixHeader.pch */,
+				EB33F9FC1D23691100FA4E12 /* RiskHeader.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB33FEBF1D23B23800FA4E12 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB8B52341D2D2A2300C40010 /* RSVAArchivesModel.h */,
+				EB8B52351D2D2A2300C40010 /* RSVAArchivesModel.m */,
+				EB33FEF51D250ACA00FA4E12 /* RiskTypeModel.h */,
+				EB33FEF61D250ACA00FA4E12 /* RiskTypeModel.m */,
+				EB33FEF81D25163400FA4E12 /* RiskDetailTypeModel.h */,
+				EB33FEF91D25163400FA4E12 /* RiskDetailTypeModel.m */,
+				EB9A068E1D26785D001D52C8 /* RiskFactorModel.h */,
+				EB9A068F1D26785D001D52C8 /* RiskFactorModel.m */,
+				EB60E04E1D2A0BCB008BFA89 /* RiskDataModel.h */,
+				EB60E04F1D2A0BCB008BFA89 /* RiskDataModel.m */,
+				EBCB96021D2BDF5900C9E118 /* RiskTypeDetailLeftModel.h */,
+				EBCB96031D2BDF5900C9E118 /* RiskTypeDetailLeftModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB33FEC01D23B23800FA4E12 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				EB33FEFB1D2516FF00FA4E12 /* Three */,
+				EB33FEED1D23DCB400FA4E12 /* RSCommon */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		EB33FEC11D23B23800FA4E12 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		EB33FEC21D23B23800FA4E12 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EB33FEC41D23B89A00FA4E12 /* DataCenter */ = {
+			isa = PBXGroup;
+			children = (
+				EB33FEC51D23B89A00FA4E12 /* Controller */,
+				EB33FEC61D23B89A00FA4E12 /* View */,
+			);
+			path = DataCenter;
+			sourceTree = "<group>";
+		};
+		EB33FEC51D23B89A00FA4E12 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB33FEDF1D23B92600FA4E12 /* RSDataCenterVC.h */,
+				EB33FEE01D23B92600FA4E12 /* RSDataCenterVC.m */,
+				27FA32351D2DEB35006FFD0B /* RSMoreDataVC.h */,
+				27FA32361D2DEB35006FFD0B /* RSMoreDataVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EB33FEC61D23B89A00FA4E12 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EBF3F6E81D2E70DD008FE59E /* SecondSmallToolCell.h */,
+				EBF3F6E91D2E70DD008FE59E /* SecondSmallToolCell.m */,
+				279C0F471D2CF73D00D005E3 /* SecondCollectionViewCell.h */,
+				279C0F481D2CF73D00D005E3 /* SecondCollectionViewCell.m */,
+				27FA323C1D2DEF12006FFD0B /* MoreDataCollectionViewCell.h */,
+				27FA323D1D2DEF12006FFD0B /* MoreDataCollectionViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB33FEC71D23B89A00FA4E12 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EB33FEC81D23B89A00FA4E12 /* Controller */,
+				EB33FEC91D23B89A00FA4E12 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EB33FEC81D23B89A00FA4E12 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB33FED61D23B8F200FA4E12 /* RSHomeVC.h */,
+				EB33FED71D23B8F200FA4E12 /* RSHomeVC.m */,
+				EB7922E91D2915F5001DDF72 /* RSDataVC.h */,
+				EB7922EA1D2915F5001DDF72 /* RSDataVC.m */,
+				EB60E0531D2A5EFC008BFA89 /* RSSearchVC.h */,
+				EB60E0541D2A5EFC008BFA89 /* RSSearchVC.m */,
+				EB60E0591D2A6717008BFA89 /* RSRiskDetailVC.h */,
+				EB60E05A1D2A6717008BFA89 /* RSRiskDetailVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EB33FEC91D23B89A00FA4E12 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB60E04A1D2A0595008BFA89 /* RSDataView.h */,
+				EB60E04B1D2A0595008BFA89 /* RSDataView.m */,
+				EB60E0561D2A5F94008BFA89 /* RSSearchHistoryCell.h */,
+				EB60E0571D2A5F94008BFA89 /* RSSearchHistoryCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB33FECA1D23B89A00FA4E12 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				EB33FECB1D23B89A00FA4E12 /* Controller */,
+				EB33FECC1D23B89A00FA4E12 /* View */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		EB33FECB1D23B89A00FA4E12 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB33FEE51D23BA2300FA4E12 /* RSMineVC.h */,
+				EB33FEE61D23BA2300FA4E12 /* RSMineVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EB33FECC1D23B89A00FA4E12 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB33FECD1D23B89A00FA4E12 /* RiskKind */ = {
+			isa = PBXGroup;
+			children = (
+				EB33FECE1D23B89A00FA4E12 /* Controller */,
+				EB33FECF1D23B89A00FA4E12 /* View */,
+			);
+			path = RiskKind;
+			sourceTree = "<group>";
+		};
+		EB33FECE1D23B89A00FA4E12 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB33FED91D23B90500FA4E12 /* RSRiskKindVC.h */,
+				EB33FEDA1D23B90500FA4E12 /* RSRiskKindVC.m */,
+				EB33FEEF1D2509E000FA4E12 /* RiskTypesLeftVC.h */,
+				EB33FEF01D2509E000FA4E12 /* RiskTypesLeftVC.m */,
+				EB33FEF21D250A5400FA4E12 /* RiskTypesRightVC.h */,
+				EB33FEF31D250A5400FA4E12 /* RiskTypesRightVC.m */,
+				EB6A61B61D27BC5A0052EB0C /* RiskTypeDetailVC.h */,
+				EB6A61B71D27BC5A0052EB0C /* RiskTypeDetailVC.m */,
+				EB6FC4D41D2B627B00A446D0 /* RiskTypeFDALeftVC.h */,
+				EB6FC4D51D2B627B00A446D0 /* RiskTypeFDALeftVC.m */,
+				EB6FC4E31D2BB47000A446D0 /* RiskTypeFDALeftTwoVC.h */,
+				EB6FC4E41D2BB47000A446D0 /* RiskTypeFDALeftTwoVC.m */,
+				EB6FC4D71D2B629D00A446D0 /* RiskTypeFDARightVC.h */,
+				EB6FC4D81D2B629D00A446D0 /* RiskTypeFDARightVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EB33FECF1D23B89A00FA4E12 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB9A067C1D260D07001D52C8 /* RiskTypesLeftCell.h */,
+				EB9A067D1D260D07001D52C8 /* RiskTypesLeftCell.m */,
+				EB6FC4DA1D2B637800A446D0 /* RiskTypeFDARightCell.h */,
+				EB6FC4DB1D2B637800A446D0 /* RiskTypeFDARightCell.m */,
+				EBCB95FE1D2BDE0700C9E118 /* RiskTypeDetailLeftCell.h */,
+				EBCB95FF1D2BDE0700C9E118 /* RiskTypeDetailLeftCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB33FED01D23B89A00FA4E12 /* StatisticsReport */ = {
+			isa = PBXGroup;
+			children = (
+				EB33FED11D23B89A00FA4E12 /* Controller */,
+				EB33FED21D23B89A00FA4E12 /* View */,
+			);
+			path = StatisticsReport;
+			sourceTree = "<group>";
+		};
+		EB33FED11D23B89A00FA4E12 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB33FEE21D23BA1500FA4E12 /* RSStatisticsReportVC.h */,
+				EB33FEE31D23BA1500FA4E12 /* RSStatisticsReportVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EB33FED21D23B89A00FA4E12 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB33FED31D23B89A00FA4E12 /* VisitArchive */ = {
+			isa = PBXGroup;
+			children = (
+				EB33FED41D23B89A00FA4E12 /* Controller */,
+				EB33FED51D23B89A00FA4E12 /* View */,
+			);
+			path = VisitArchive;
+			sourceTree = "<group>";
+		};
+		EB33FED41D23B89A00FA4E12 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB33FEDC1D23B91700FA4E12 /* RSVisitArchiveVC.h */,
+				EB33FEDD1D23B91700FA4E12 /* RSVisitArchiveVC.m */,
+				EB852F911D2E1917009BD9E0 /* RSVAPatientArchiveVC.h */,
+				EB852F921D2E1917009BD9E0 /* RSVAPatientArchiveVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EB33FED51D23B89A00FA4E12 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB8B52371D2D2A3700C40010 /* RSVAArchivesCell.h */,
+				EB8B52381D2D2A3700C40010 /* RSVAArchivesCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB33FEED1D23DCB400FA4E12 /* RSCommon */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RSCommon;
+			sourceTree = "<group>";
+		};
+		EB33FEFB1D2516FF00FA4E12 /* Three */ = {
+			isa = PBXGroup;
+			children = (
+				EB33FEFC1D25170000FA4E12 /* MJExtension */,
+			);
+			path = Three;
+			sourceTree = "<group>";
+		};
+		EB33FEFC1D25170000FA4E12 /* MJExtension */ = {
+			isa = PBXGroup;
+			children = (
+				EB33FEFD1D25170000FA4E12 /* MJArgument.h */,
+				EB33FEFE1D25170000FA4E12 /* MJArgument.m */,
+				EB33FEFF1D25170000FA4E12 /* MJExtension.h */,
+				EB33FF001D25170000FA4E12 /* MJIvar.h */,
+				EB33FF011D25170000FA4E12 /* MJIvar.m */,
+				EB33FF021D25170000FA4E12 /* MJMember.h */,
+				EB33FF031D25170000FA4E12 /* MJMember.m */,
+				EB33FF041D25170000FA4E12 /* MJMethod.h */,
+				EB33FF051D25170000FA4E12 /* MJMethod.m */,
+				EB33FF061D25170000FA4E12 /* MJType.h */,
+				EB33FF071D25170000FA4E12 /* MJType.m */,
+				EB33FF081D25170000FA4E12 /* MJTypeEncoding.h */,
+				EB33FF091D25170000FA4E12 /* MJTypeEncoding.m */,
+				EB33FF0A1D25170000FA4E12 /* NSObject+MJCoding.h */,
+				EB33FF0B1D25170000FA4E12 /* NSObject+MJCoding.m */,
+				EB33FF0C1D25170000FA4E12 /* NSObject+MJKeyValue.h */,
+				EB33FF0D1D25170000FA4E12 /* NSObject+MJKeyValue.m */,
+				EB33FF0E1D25170000FA4E12 /* NSObject+MJMember.h */,
+				EB33FF0F1D25170000FA4E12 /* NSObject+MJMember.m */,
+			);
+			path = MJExtension;
+			sourceTree = "<group>";
+		};
+		EB852D481D2E16E9009BD9E0 /* EasyFrame_iOS2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				EB852D491D2E16E9009BD9E0 /* EasyFrame_iOS2.0 */,
+				EB852D4A1D2E16E9009BD9E0 /* EasyFrame_iOS2.0.xcodeproj */,
+				EB852D4D1D2E16E9009BD9E0 /* EasyFrameBase */,
+				EB852DE11D2E16EA009BD9E0 /* EasyFrameComponent */,
+				EB852E1C1D2E16EA009BD9E0 /* EasyFrameShop */,
+			);
+			name = EasyFrame_iOS2.0;
+			path = ../../../EasyFrame_iOS2.0;
+			sourceTree = "<group>";
+		};
+		EB852D491D2E16E9009BD9E0 /* EasyFrame_iOS2.0 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EasyFrame_iOS2.0;
+			sourceTree = "<group>";
+		};
+		EB852D4B1D2E16E9009BD9E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB852F7E1D2E16EA009BD9E0 /* libEasyFrame_iOS2.0.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB852D4D1D2E16E9009BD9E0 /* EasyFrameBase */ = {
+			isa = PBXGroup;
+			children = (
+				EB852D4E1D2E16E9009BD9E0 /* EasyFrame.plist */,
+				EB852D4F1D2E16E9009BD9E0 /* EFAppHeader.h */,
+				EB852D501D2E16E9009BD9E0 /* EFAppManager.h */,
+				EB852D511D2E16E9009BD9E0 /* EFAppManager.m */,
+				EB852D521D2E16E9009BD9E0 /* Frame */,
+				EB852D801D2E16E9009BD9E0 /* Header.h */,
+				EB852D811D2E16E9009BD9E0 /* Libs */,
+				EB852D8A1D2E16E9009BD9E0 /* PrefixHeader.pch */,
+				EB852D8B1D2E16E9009BD9E0 /* readme.txt */,
+				EB852D8C1D2E16E9009BD9E0 /* Tools */,
+			);
+			path = EasyFrameBase;
+			sourceTree = "<group>";
+		};
+		EB852D521D2E16E9009BD9E0 /* Frame */ = {
+			isa = PBXGroup;
+			children = (
+				EB852D531D2E16E9009BD9E0 /* MainLayout */,
+				EB852D6C1D2E16E9009BD9E0 /* MVVM */,
+				EB852D7C1D2E16E9009BD9E0 /* SkinTheme */,
+			);
+			path = Frame;
+			sourceTree = "<group>";
+		};
+		EB852D531D2E16E9009BD9E0 /* MainLayout */ = {
+			isa = PBXGroup;
+			children = (
+				EB852D541D2E16E9009BD9E0 /* BaseNavication */,
+				EB852D571D2E16E9009BD9E0 /* BaseViewController */,
+				EB852D5A1D2E16E9009BD9E0 /* SideAndTabHome */,
+				EB852D5D1D2E16E9009BD9E0 /* SideHome */,
+				EB852D661D2E16E9009BD9E0 /* SingleHome */,
+				EB852D691D2E16E9009BD9E0 /* TabHome */,
+			);
+			path = MainLayout;
+			sourceTree = "<group>";
+		};
+		EB852D541D2E16E9009BD9E0 /* BaseNavication */ = {
+			isa = PBXGroup;
+			children = (
+				EB852D551D2E16E9009BD9E0 /* EFBaseNavigationController.h */,
+				EB852D561D2E16E9009BD9E0 /* EFBaseNavigationController.m */,
+			);
+			path = BaseNavication;
+			sourceTree = "<group>";
+		};
+		EB852D571D2E16E9009BD9E0 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EB852D581D2E16E9009BD9E0 /* EFBaseViewController.h */,
+				EB852D591D2E16E9009BD9E0 /* EFBaseViewController.m */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		EB852D5A1D2E16E9009BD9E0 /* SideAndTabHome */ = {
+			isa = PBXGroup;
+			children = (
+				EB852D5B1D2E16E9009BD9E0 /* EFHomeSideAndTabViewController.h */,
+				EB852D5C1D2E16E9009BD9E0 /* EFHomeSideAndTabViewController.m */,
+			);
+			path = SideAndTabHome;
+			sourceTree = "<group>";
+		};
+		EB852D5D1D2E16E9009BD9E0 /* SideHome */ = {
+			isa = PBXGroup;
+			children = (
+				EB852D5E1D2E16E9009BD9E0 /* EFHomeSideViewController.h */,
+				EB852D5F1D2E16E9009BD9E0 /* EFHomeSideViewController.m */,
+				EB852D601D2E16E9009BD9E0 /* EFSideMenuCell.h */,
+				EB852D611D2E16E9009BD9E0 /* EFSideMenuCell.m */,
+				EB852D621D2E16E9009BD9E0 /* EFSideMenuViewController.h */,
+				EB852D631D2E16E9009BD9E0 /* EFSideMenuViewController.m */,
+				EB852D641D2E16E9009BD9E0 /* HomeViewController.h */,
+				EB852D651D2E16E9009BD9E0 /* HomeViewController.m */,
+			);
+			path = SideHome;
+			sourceTree = "<group>";
+		};
+		EB852D661D2E16E9009BD9E0 /* SingleHome */ = {
+			isa = PBXGroup;
+			children = (
+				EB852D671D2E16E9009BD9E0 /* EFHomeSingleViewController.h */,
+				EB852D681D2E16E9009BD9E0 /* EFHomeSingleViewController.m */,
+			);
+			path = SingleHome;
+			sourceTree = "<group>";
+		};
+		EB852D691D2E16E9009BD9E0 /* TabHome */ = {
+			isa = PBXGroup;
+			children = (
+				EB852D6A1D2E16E9009BD9E0 /* EFHomeTabBarController.h */,
+				EB852D6B1D2E16E9009BD9E0 /* EFHomeTabBarController.m */,
+			);
+			path = TabHome;
+			sourceTree = "<group>";
+		};
+		EB852D6C1D2E16E9009BD9E0 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				EB852D6D1D2E16E9009BD9E0 /* EFBaseViewModel.h */,
+				EB852D6E1D2E16E9009BD9E0 /* EFBaseViewModel.m */,
+				EB852D6F1D2E16E9009BD9E0 /* EFPageRequest.h */,
+				EB852D701D2E16E9009BD9E0 /* EFPageRequest.m */,
+				EB852D711D2E16E9009BD9E0 /* EFPageViewModel.h */,
+				EB852D721D2E16E9009BD9E0 /* EFPageViewModel.m */,
+				EB852D731D2E16E9009BD9E0 /* EFRequest.h */,
+				EB852D741D2E16E9009BD9E0 /* EFRequest.m */,
+				EB852D751D2E16E9009BD9E0 /* EFRequestManager.h */,
+				EB852D761D2E16E9009BD9E0 /* EFRequestManager.m */,
+				EB852D771D2E16E9009BD9E0 /* InputError.h */,
+				EB852D781D2E16E9009BD9E0 /* InputError.m */,
+				EB852D791D2E16E9009BD9E0 /* NetworkModel.h */,
+				EB852D7A1D2E16E9009BD9E0 /* NetworkModel.m */,
+				EB852D7B1D2E16E9009BD9E0 /* readme.txt */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		EB852D7C1D2E16E9009BD9E0 /* SkinTheme */ = {
+			isa = PBXGroup;
+			children = (
+				EB852D7D1D2E16E9009BD9E0 /* EFSkinThemeManager.h */,
+				EB852D7E1D2E16E9009BD9E0 /* EFSkinThemeManager.m */,
+				EB852D7F1D2E16E9009BD9E0 /* readme.txt */,
+			);
+			path = SkinTheme;
+			sourceTree = "<group>";
+		};
+		EB852D811D2E16E9009BD9E0 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				EB852D821D2E16E9009BD9E0 /* TKAlertCommon */,
+				EB852D871D2E16E9009BD9E0 /* YRSideViewController */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		EB852D821D2E16E9009BD9E0 /* TKAlertCommon */ = {
+			isa = PBXGroup;
+			children = (
+				EB852D831D2E16E9009BD9E0 /* TKAlertCenter.h */,
+				EB852D841D2E16E9009BD9E0 /* TKAlertCenter.m */,
+				EB852D851D2E16E9009BD9E0 /* UIView+TKCategory.h */,
+				EB852D861D2E16E9009BD9E0 /* UIView+TKCategory.m */,
+			);
+			path = TKAlertCommon;
+			sourceTree = "<group>";
+		};
+		EB852D871D2E16E9009BD9E0 /* YRSideViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EB852D881D2E16E9009BD9E0 /* YRSideViewController.h */,
+				EB852D891D2E16E9009BD9E0 /* YRSideViewController.m */,
+			);
+			path = YRSideViewController;
+			sourceTree = "<group>";
+		};
+		EB852D8C1D2E16E9009BD9E0 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				EB852D8D1D2E16E9009BD9E0 /* FileTool */,
+				EB852D901D2E16EA009BD9E0 /* ImageTool */,
+				EB852D911D2E16EA009BD9E0 /* LableTool */,
+				EB852D921D2E16EA009BD9E0 /* MapTool */,
+				EB852D931D2E16EA009BD9E0 /* TextTool */,
+				EB852D941D2E16EA009BD9E0 /* UITool */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		EB852D8D1D2E16E9009BD9E0 /* FileTool */ = {
+			isa = PBXGroup;
+			children = (
+				EB852D8E1D2E16E9009BD9E0 /* EFFileManager.h */,
+				EB852D8F1D2E16EA009BD9E0 /* EFFileManager.m */,
+			);
+			path = FileTool;
+			sourceTree = "<group>";
+		};
+		EB852D901D2E16EA009BD9E0 /* ImageTool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ImageTool;
+			sourceTree = "<group>";
+		};
+		EB852D911D2E16EA009BD9E0 /* LableTool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LableTool;
+			sourceTree = "<group>";
+		};
+		EB852D921D2E16EA009BD9E0 /* MapTool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MapTool;
+			sourceTree = "<group>";
+		};
+		EB852D931D2E16EA009BD9E0 /* TextTool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TextTool;
+			sourceTree = "<group>";
+		};
+		EB852D941D2E16EA009BD9E0 /* UITool */ = {
+			isa = PBXGroup;
+			children = (
+				EB852D951D2E16EA009BD9E0 /* BlockUI */,
+				EB852D9A1D2E16EA009BD9E0 /* Category */,
+				EB852DA11D2E16EA009BD9E0 /* CustomView */,
+				EB852DA41D2E16EA009BD9E0 /* EF_AlbumView.h */,
+				EB852DA51D2E16EA009BD9E0 /* EF_AlbumView.m */,
+				EB852DA61D2E16EA009BD9E0 /* EFHpple */,
+				EB852DAD1D2E16EA009BD9E0 /* EFMyAutoAlertView.h */,
+				EB852DAE1D2E16EA009BD9E0 /* EFMyAutoAlertView.m */,
+				EB852DAF1D2E16EA009BD9E0 /* EFPopupViewManager.h */,
+				EB852DB01D2E16EA009BD9E0 /* EFPopupViewManager.m */,
+				EB852DB11D2E16EA009BD9E0 /* EFShareView.h */,
+				EB852DB21D2E16EA009BD9E0 /* EFShareView.m */,
+				EB852DB31D2E16EA009BD9E0 /* HYDActivityIndicatorKit */,
+				EB852DBA1D2E16EA009BD9E0 /* HYDImageCommon */,
+				EB852DC01D2E16EA009BD9E0 /* KYDatePickerView.h */,
+				EB852DC11D2E16EA009BD9E0 /* KYDatePickerView.m */,
+				EB852DC21D2E16EA009BD9E0 /* KYShaker.h */,
+				EB852DC31D2E16EA009BD9E0 /* KYShaker.m */,
+				EB852DC41D2E16EA009BD9E0 /* KYTableViewNoDataCategory.h */,
+				EB852DC51D2E16EA009BD9E0 /* KYTableViewNoDataCategory.m */,
+				EB852DC61D2E16EA009BD9E0 /* Location */,
+				EB852DCD1D2E16EA009BD9E0 /* SDWebImagePlus */,
+				EB852DD01D2E16EA009BD9E0 /* StarView.h */,
+				EB852DD11D2E16EA009BD9E0 /* StarView.m */,
+				EB852DD21D2E16EA009BD9E0 /* UICommon */,
+				EB852DDB1D2E16EA009BD9E0 /* UIUtil.h */,
+				EB852DDC1D2E16EA009BD9E0 /* UIUtil.m */,
+				EB852DDD1D2E16EA009BD9E0 /* WebUtil.h */,
+				EB852DDE1D2E16EA009BD9E0 /* WebUtil.m */,
+				EB852DDF1D2E16EA009BD9E0 /* XYAttributedString.h */,
+				EB852DE01D2E16EA009BD9E0 /* XYAttributedString.m */,
+			);
+			path = UITool;
+			sourceTree = "<group>";
+		};
+		EB852D951D2E16EA009BD9E0 /* BlockUI */ = {
+			isa = PBXGroup;
+			children = (
+				EB852D961D2E16EA009BD9E0 /* BlockAlert.h */,
+				EB852D971D2E16EA009BD9E0 /* BlockAlert.m */,
+				EB852D981D2E16EA009BD9E0 /* BlockButton.h */,
+				EB852D991D2E16EA009BD9E0 /* BlockButton.m */,
+			);
+			path = BlockUI;
+			sourceTree = "<group>";
+		};
+		EB852D9A1D2E16EA009BD9E0 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				EB852D9B1D2E16EA009BD9E0 /* UIButton+TouchAreaInsets.h */,
+				EB852D9C1D2E16EA009BD9E0 /* UIButton+TouchAreaInsets.m */,
+				EB852D9D1D2E16EA009BD9E0 /* UIColor+UIColor_Hex.h */,
+				EB852D9E1D2E16EA009BD9E0 /* UIColor+UIColor_Hex.m */,
+				EB852D9F1D2E16EA009BD9E0 /* UIView+JSMAdd.h */,
+				EB852DA01D2E16EA009BD9E0 /* UIView+JSMAdd.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		EB852DA11D2E16EA009BD9E0 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				EB852DA21D2E16EA009BD9E0 /* EFCTTextField.h */,
+				EB852DA31D2E16EA009BD9E0 /* EFCTTextField.m */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		EB852DA61D2E16EA009BD9E0 /* EFHpple */ = {
+			isa = PBXGroup;
+			children = (
+				EB852DA71D2E16EA009BD9E0 /* EFHpple.h */,
+				EB852DA81D2E16EA009BD9E0 /* EFHpple.m */,
+				EB852DA91D2E16EA009BD9E0 /* EFHppleElement.h */,
+				EB852DAA1D2E16EA009BD9E0 /* EFHppleElement.m */,
+				EB852DAB1D2E16EA009BD9E0 /* EFXPathQuery.h */,
+				EB852DAC1D2E16EA009BD9E0 /* EFXPathQuery.m */,
+			);
+			path = EFHpple;
+			sourceTree = "<group>";
+		};
+		EB852DB31D2E16EA009BD9E0 /* HYDActivityIndicatorKit */ = {
+			isa = PBXGroup;
+			children = (
+				EB852DB41D2E16EA009BD9E0 /* HYDActivityIndicatorView.h */,
+				EB852DB51D2E16EA009BD9E0 /* HYDActivityIndicatorView.m */,
+				EB852DB61D2E16EA009BD9E0 /* HYDActivityMessageView.h */,
+				EB852DB71D2E16EA009BD9E0 /* HYDActivityMessageView.m */,
+				EB852DB81D2E16EA009BD9E0 /* HYDActivityProgressView.h */,
+				EB852DB91D2E16EA009BD9E0 /* HYDActivityProgressView.m */,
+			);
+			path = HYDActivityIndicatorKit;
+			sourceTree = "<group>";
+		};
+		EB852DBA1D2E16EA009BD9E0 /* HYDImageCommon */ = {
+			isa = PBXGroup;
+			children = (
+				EB852DBB1D2E16EA009BD9E0 /* HYDAsyncImageView.h */,
+				EB852DBC1D2E16EA009BD9E0 /* HYDAsyncImageView.m */,
+				EB852DBD1D2E16EA009BD9E0 /* HYDFileManager.h */,
+				EB852DBE1D2E16EA009BD9E0 /* HYDFileManager.m */,
+				EB852DBF1D2E16EA009BD9E0 /* HYDImageCategory.h */,
+			);
+			path = HYDImageCommon;
+			sourceTree = "<group>";
+		};
+		EB852DC61D2E16EA009BD9E0 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				EB852DC71D2E16EA009BD9E0 /* LocationUtil.h */,
+				EB852DC81D2E16EA009BD9E0 /* LocationUtil.m */,
+				EB852DC91D2E16EA009BD9E0 /* mapLocation.h */,
+				EB852DCA1D2E16EA009BD9E0 /* mapLocation.m */,
+				EB852DCB1D2E16EA009BD9E0 /* WGS84TOGCJ02.h */,
+				EB852DCC1D2E16EA009BD9E0 /* WGS84TOGCJ02.m */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		EB852DCD1D2E16EA009BD9E0 /* SDWebImagePlus */ = {
+			isa = PBXGroup;
+			children = (
+				EB852DCE1D2E16EA009BD9E0 /* UIImageView+UIActivityIndicatorForSDWebImage.h */,
+				EB852DCF1D2E16EA009BD9E0 /* UIImageView+UIActivityIndicatorForSDWebImage.m */,
+			);
+			path = SDWebImagePlus;
+			sourceTree = "<group>";
+		};
+		EB852DD21D2E16EA009BD9E0 /* UICommon */ = {
+			isa = PBXGroup;
+			children = (
+				EB852DD31D2E16EA009BD9E0 /* KYMHButton.h */,
+				EB852DD41D2E16EA009BD9E0 /* KYMHButton.m */,
+				EB852DD51D2E16EA009BD9E0 /* KYMHImageView.h */,
+				EB852DD61D2E16EA009BD9E0 /* KYMHImageView.m */,
+				EB852DD71D2E16EA009BD9E0 /* KYMHLabel.h */,
+				EB852DD81D2E16EA009BD9E0 /* KYMHLabel.m */,
+				EB852DD91D2E16EA009BD9E0 /* KYTableView.h */,
+				EB852DDA1D2E16EA009BD9E0 /* KYTableView.m */,
+			);
+			path = UICommon;
+			sourceTree = "<group>";
+		};
+		EB852DE11D2E16EA009BD9E0 /* EasyFrameComponent */ = {
+			isa = PBXGroup;
+			children = (
+				EB852DE21D2E16EA009BD9E0 /* EFViewControllerManager.h */,
+				EB852DE31D2E16EA009BD9E0 /* EFViewControllerManager.m */,
+				EB852DE41D2E16EA009BD9E0 /* ForgetPassword */,
+				EB852DEB1D2E16EA009BD9E0 /* Login */,
+				EB852DFC1D2E16EA009BD9E0 /* MineCenter */,
+				EB852E011D2E16EA009BD9E0 /* Register */,
+				EB852E081D2E16EA009BD9E0 /* Setting */,
+			);
+			path = EasyFrameComponent;
+			sourceTree = "<group>";
+		};
+		EB852DE41D2E16EA009BD9E0 /* ForgetPassword */ = {
+			isa = PBXGroup;
+			children = (
+				EB852DE51D2E16EA009BD9E0 /* EFForgetPasswordRequest.h */,
+				EB852DE61D2E16EA009BD9E0 /* EFForgetPasswordRequest.m */,
+				EB852DE71D2E16EA009BD9E0 /* EFForgetPasswordViewController.h */,
+				EB852DE81D2E16EA009BD9E0 /* EFForgetPasswordViewController.m */,
+				EB852DE91D2E16EA009BD9E0 /* EFForgetPasswordViewModel.h */,
+				EB852DEA1D2E16EA009BD9E0 /* EFForgetPasswordViewModel.m */,
+			);
+			path = ForgetPassword;
+			sourceTree = "<group>";
+		};
+		EB852DEB1D2E16EA009BD9E0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EB852DEC1D2E16EA009BD9E0 /* EFLoginRequest.h */,
+				EB852DED1D2E16EA009BD9E0 /* EFLoginRequest.m */,
+				EB852DEE1D2E16EA009BD9E0 /* EFLoginViewController.h */,
+				EB852DEF1D2E16EA009BD9E0 /* EFLoginViewController.m */,
+				EB852DF01D2E16EA009BD9E0 /* EFLoginViewModel.h */,
+				EB852DF11D2E16EA009BD9E0 /* EFLoginViewModel.m */,
+				EB852DF21D2E16EA009BD9E0 /* EFLoginWithThirdViewController.h */,
+				EB852DF31D2E16EA009BD9E0 /* EFLoginWithThirdViewController.m */,
+				EB852DF41D2E16EA009BD9E0 /* EFThirdPartyLoginView.h */,
+				EB852DF51D2E16EA009BD9E0 /* EFThirdPartyLoginView.m */,
+				EB852DF61D2E16EA009BD9E0 /* EFThirdPartyLoginView.xib */,
+				EB852DF71D2E16EA009BD9E0 /* EFVerticalButton.h */,
+				EB852DF81D2E16EA009BD9E0 /* EFVerticalButton.m */,
+				EB852DF91D2E16EA009BD9E0 /* resource.bundle */,
+				EB852DFA1D2E16EA009BD9E0 /* UserModel.h */,
+				EB852DFB1D2E16EA009BD9E0 /* UserModel.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		EB852DFC1D2E16EA009BD9E0 /* MineCenter */ = {
+			isa = PBXGroup;
+			children = (
+				EB852DFD1D2E16EA009BD9E0 /* EFMineCenterCell.h */,
+				EB852DFE1D2E16EA009BD9E0 /* EFMineCenterCell.m */,
+				EB852DFF1D2E16EA009BD9E0 /* EFMineCenterVC.h */,
+				EB852E001D2E16EA009BD9E0 /* EFMineCenterVC.m */,
+			);
+			path = MineCenter;
+			sourceTree = "<group>";
+		};
+		EB852E011D2E16EA009BD9E0 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				EB852E021D2E16EA009BD9E0 /* EFRegisterRequest.h */,
+				EB852E031D2E16EA009BD9E0 /* EFRegisterRequest.m */,
+				EB852E041D2E16EA009BD9E0 /* EFRegisterViewController.h */,
+				EB852E051D2E16EA009BD9E0 /* EFRegisterViewController.m */,
+				EB852E061D2E16EA009BD9E0 /* EFRegisterViewModel.h */,
+				EB852E071D2E16EA009BD9E0 /* EFRegisterViewModel.m */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		EB852E081D2E16EA009BD9E0 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				EB852E091D2E16EA009BD9E0 /* EFAccountSettingVC.h */,
+				EB852E0A1D2E16EA009BD9E0 /* EFAccountSettingVC.m */,
+				EB852E0B1D2E16EA009BD9E0 /* EFEditCommonCell.h */,
+				EB852E0C1D2E16EA009BD9E0 /* EFEditCommonCell.m */,
+				EB852E0D1D2E16EA009BD9E0 /* EFEditCommonCell.xib */,
+				EB852E0E1D2E16EA009BD9E0 /* EFEditMineProfileVC.h */,
+				EB852E0F1D2E16EA009BD9E0 /* EFEditMineProfileVC.m */,
+				EB852E101D2E16EA009BD9E0 /* EFEditNicknameVC.h */,
+				EB852E111D2E16EA009BD9E0 /* EFEditNicknameVC.m */,
+				EB852E121D2E16EA009BD9E0 /* EFMineProfileCell.h */,
+				EB852E131D2E16EA009BD9E0 /* EFMineProfileCell.m */,
+				EB852E141D2E16EA009BD9E0 /* EFMineProfileCell.xib */,
+				EB852E151D2E16EA009BD9E0 /* EFSettingCell.h */,
+				EB852E161D2E16EA009BD9E0 /* EFSettingCell.m */,
+				EB852E171D2E16EA009BD9E0 /* EFSettingViewController.h */,
+				EB852E181D2E16EA009BD9E0 /* EFSettingViewController.m */,
+				EB852E191D2E16EA009BD9E0 /* EFUserAvatarCell.h */,
+				EB852E1A1D2E16EA009BD9E0 /* EFUserAvatarCell.m */,
+				EB852E1B1D2E16EA009BD9E0 /* EFUserAvatarCell.xib */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		EB852E1C1D2E16EA009BD9E0 /* EasyFrameShop */ = {
+			isa = PBXGroup;
+			children = (
+				EB852E1D1D2E16EA009BD9E0 /* Mall */,
+				EB852E981D2E16EA009BD9E0 /* Other */,
+			);
+			path = EasyFrameShop;
+			sourceTree = "<group>";
+		};
+		EB852E1D1D2E16EA009BD9E0 /* Mall */ = {
+			isa = PBXGroup;
+			children = (
+				EB852E1E1D2E16EA009BD9E0 /* Controller */,
+				EB852E4B1D2E16EA009BD9E0 /* Model */,
+				EB852E5E1D2E16EA009BD9E0 /* Request */,
+				EB852E641D2E16EA009BD9E0 /* View */,
+				EB852E931D2E16EA009BD9E0 /* ViewModel */,
+			);
+			path = Mall;
+			sourceTree = "<group>";
+		};
+		EB852E1E1D2E16EA009BD9E0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB852E1F1D2E16EA009BD9E0 /* Consignee */,
+				EB852E271D2E16EA009BD9E0 /* EFAftermarketStatusVC.h */,
+				EB852E281D2E16EA009BD9E0 /* EFAftermarketStatusVC.m */,
+				EB852E291D2E16EA009BD9E0 /* EFAfterSaleVC.h */,
+				EB852E2A1D2E16EA009BD9E0 /* EFAfterSaleVC.m */,
+				EB852E2B1D2E16EA009BD9E0 /* EFAgencyInfoVC.h */,
+				EB852E2C1D2E16EA009BD9E0 /* EFAgencyInfoVC.m */,
+				EB852E2D1D2E16EA009BD9E0 /* EFCommentListVC.h */,
+				EB852E2E1D2E16EA009BD9E0 /* EFCommentListVC.m */,
+				EB852E2F1D2E16EA009BD9E0 /* EFGoodsCommentVC.h */,
+				EB852E301D2E16EA009BD9E0 /* EFGoodsCommentVC.m */,
+				EB852E311D2E16EA009BD9E0 /* EFMallDetailsVC.h */,
+				EB852E321D2E16EA009BD9E0 /* EFMallDetailsVC.m */,
+				EB852E331D2E16EA009BD9E0 /* EFMallSearchVC.h */,
+				EB852E341D2E16EA009BD9E0 /* EFMallSearchVC.m */,
+				EB852E351D2E16EA009BD9E0 /* EFMallVC.h */,
+				EB852E361D2E16EA009BD9E0 /* EFMallVC.m */,
+				EB852E371D2E16EA009BD9E0 /* EFMyOrderVC.h */,
+				EB852E381D2E16EA009BD9E0 /* EFMyOrderVC.m */,
+				EB852E391D2E16EA009BD9E0 /* EFOrderCommentVC.h */,
+				EB852E3A1D2E16EA009BD9E0 /* EFOrderCommentVC.m */,
+				EB852E3B1D2E16EA009BD9E0 /* EFOrderConfirmTwoVC.h */,
+				EB852E3C1D2E16EA009BD9E0 /* EFOrderConfirmTwoVC.m */,
+				EB852E3D1D2E16EA009BD9E0 /* EFOrderConfirmVC.h */,
+				EB852E3E1D2E16EA009BD9E0 /* EFOrderConfirmVC.m */,
+				EB852E3F1D2E16EA009BD9E0 /* EFOrderDetailTwoVC.h */,
+				EB852E401D2E16EA009BD9E0 /* EFOrderDetailTwoVC.m */,
+				EB852E411D2E16EA009BD9E0 /* EFOrderDetailVC.h */,
+				EB852E421D2E16EA009BD9E0 /* EFOrderDetailVC.m */,
+				EB852E431D2E16EA009BD9E0 /* EFPushCommentVC.h */,
+				EB852E441D2E16EA009BD9E0 /* EFPushCommentVC.m */,
+				EB852E451D2E16EA009BD9E0 /* EFSearchVC.h */,
+				EB852E461D2E16EA009BD9E0 /* EFSearchVC.m */,
+				EB852E471D2E16EA009BD9E0 /* EFShopCartVC.h */,
+				EB852E481D2E16EA009BD9E0 /* EFShopCartVC.m */,
+				EB852E491D2E16EA009BD9E0 /* EFStoreVC.h */,
+				EB852E4A1D2E16EA009BD9E0 /* EFStoreVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EB852E1F1D2E16EA009BD9E0 /* Consignee */ = {
+			isa = PBXGroup;
+			children = (
+				EB852E201D2E16EA009BD9E0 /* EFAddAddressVC.h */,
+				EB852E211D2E16EA009BD9E0 /* EFAddAddressVC.m */,
+				EB852E221D2E16EA009BD9E0 /* EFConsigneeAddressVC.h */,
+				EB852E231D2E16EA009BD9E0 /* EFConsigneeAddressVC.m */,
+				EB852E241D2E16EA009BD9E0 /* EFEditAddressVC.h */,
+				EB852E251D2E16EA009BD9E0 /* EFEditAddressVC.m */,
+				EB852E261D2E16EA009BD9E0 /* region.plist */,
+			);
+			path = Consignee;
+			sourceTree = "<group>";
+		};
+		EB852E4B1D2E16EA009BD9E0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB852E4C1D2E16EA009BD9E0 /* EFCartModel.h */,
+				EB852E4D1D2E16EA009BD9E0 /* EFCartModel.m */,
+				EB852E4E1D2E16EA009BD9E0 /* EFGoodModel.h */,
+				EB852E4F1D2E16EA009BD9E0 /* EFGoodModel.m */,
+				EB852E501D2E16EA009BD9E0 /* EFMallListModel.h */,
+				EB852E511D2E16EA009BD9E0 /* EFMallListModel.m */,
+				EB852E521D2E16EA009BD9E0 /* EFMallModel.h */,
+				EB852E531D2E16EA009BD9E0 /* EFMallModel.m */,
+				EB852E541D2E16EA009BD9E0 /* EFOrderDetailModel.h */,
+				EB852E551D2E16EA009BD9E0 /* EFOrderDetailModel.m */,
+				EB852E561D2E16EA009BD9E0 /* EFOrderListModel.h */,
+				EB852E571D2E16EA009BD9E0 /* EFOrderListModel.m */,
+				EB852E581D2E16EA009BD9E0 /* EFTagModel.h */,
+				EB852E591D2E16EA009BD9E0 /* EFTagModel.m */,
+				EB852E5A1D2E16EA009BD9E0 /* GoodModel.h */,
+				EB852E5B1D2E16EA009BD9E0 /* GoodModel.m */,
+				EB852E5C1D2E16EA009BD9E0 /* ReturnOfGoodsModel.h */,
+				EB852E5D1D2E16EA009BD9E0 /* ReturnOfGoodsModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB852E5E1D2E16EA009BD9E0 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				EB852E5F1D2E16EA009BD9E0 /* EFMailHeader.h */,
+				EB852E601D2E16EA009BD9E0 /* EFMallRequest.h */,
+				EB852E611D2E16EA009BD9E0 /* EFMallRequest.m */,
+				EB852E621D2E16EA009BD9E0 /* EFShopCartRequest.h */,
+				EB852E631D2E16EA009BD9E0 /* EFShopCartRequest.m */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		EB852E641D2E16EA009BD9E0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB852E651D2E16EA009BD9E0 /* EFAddAddressCell.h */,
+				EB852E661D2E16EA009BD9E0 /* EFAddAddressCell.m */,
+				EB852E671D2E16EA009BD9E0 /* EFAgencyInfoCell.h */,
+				EB852E681D2E16EA009BD9E0 /* EFAgencyInfoCell.m */,
+				EB852E691D2E16EA009BD9E0 /* EFAgencyPictureCell.h */,
+				EB852E6A1D2E16EA009BD9E0 /* EFAgencyPictureCell.m */,
+				EB852E6B1D2E16EA009BD9E0 /* EFCommentListCell.h */,
+				EB852E6C1D2E16EA009BD9E0 /* EFCommentListCell.m */,
+				EB852E6D1D2E16EA009BD9E0 /* EFGoodsCell.h */,
+				EB852E6E1D2E16EA009BD9E0 /* EFGoodsCell.m */,
+				EB852E6F1D2E16EA009BD9E0 /* EFGoodsCommentCell.h */,
+				EB852E701D2E16EA009BD9E0 /* EFGoodsCommentCell.m */,
+				EB852E711D2E16EA009BD9E0 /* EFGoodSpecificationCell.h */,
+				EB852E721D2E16EA009BD9E0 /* EFGoodSpecificationCell.m */,
+				EB852E731D2E16EA009BD9E0 /* EFGoodsTwoCell.h */,
+				EB852E741D2E16EA009BD9E0 /* EFGoodsTwoCell.m */,
+				EB852E751D2E16EA009BD9E0 /* EFMallCell.h */,
+				EB852E761D2E16EA009BD9E0 /* EFMallCell.m */,
+				EB852E771D2E16EA009BD9E0 /* EFMallDetailsStoreCell.h */,
+				EB852E781D2E16EA009BD9E0 /* EFMallDetailsStoreCell.m */,
+				EB852E791D2E16EA009BD9E0 /* EFMallDetailsTopCell.h */,
+				EB852E7A1D2E16EA009BD9E0 /* EFMallDetailsTopCell.m */,
+				EB852E7B1D2E16EA009BD9E0 /* EFOrderConfirmCell.h */,
+				EB852E7C1D2E16EA009BD9E0 /* EFOrderConfirmCell.m */,
+				EB852E7D1D2E16EA009BD9E0 /* EFOrderDetailCell.h */,
+				EB852E7E1D2E16EA009BD9E0 /* EFOrderDetailCell.m */,
+				EB852E7F1D2E16EA009BD9E0 /* EFOrderDetailTwoCell.h */,
+				EB852E801D2E16EA009BD9E0 /* EFOrderDetailTwoCell.m */,
+				EB852E811D2E16EA009BD9E0 /* EFOrderInfoCell.h */,
+				EB852E821D2E16EA009BD9E0 /* EFOrderInfoCell.m */,
+				EB852E831D2E16EA009BD9E0 /* EFOrderStatusCell.h */,
+				EB852E841D2E16EA009BD9E0 /* EFOrderStatusCell.m */,
+				EB852E851D2E16EA009BD9E0 /* EFPushCommentCell.h */,
+				EB852E861D2E16EA009BD9E0 /* EFPushCommentCell.m */,
+				EB852E871D2E16EA009BD9E0 /* EFSearchHistroyCell.h */,
+				EB852E881D2E16EA009BD9E0 /* EFSearchHistroyCell.m */,
+				EB852E891D2E16EA009BD9E0 /* EFSelecteSpecificationView.h */,
+				EB852E8A1D2E16EA009BD9E0 /* EFSelecteSpecificationView.m */,
+				EB852E8B1D2E16EA009BD9E0 /* EFShopCartCell.h */,
+				EB852E8C1D2E16EA009BD9E0 /* EFShopCartCell.m */,
+				EB852E8D1D2E16EA009BD9E0 /* EFShopCartHeadView.h */,
+				EB852E8E1D2E16EA009BD9E0 /* EFShopCartHeadView.m */,
+				EB852E8F1D2E16EA009BD9E0 /* EFTagButton.h */,
+				EB852E901D2E16EA009BD9E0 /* EFTagButton.m */,
+				EB852E911D2E16EA009BD9E0 /* EFTagsView.h */,
+				EB852E921D2E16EA009BD9E0 /* EFTagsView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB852E931D2E16EA009BD9E0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EB852E941D2E16EA009BD9E0 /* EFMallViewModel.h */,
+				EB852E951D2E16EA009BD9E0 /* EFMallViewModel.m */,
+				EB852E961D2E16EA009BD9E0 /* EFShopCartViewModel.h */,
+				EB852E971D2E16EA009BD9E0 /* EFShopCartViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EB852E981D2E16EA009BD9E0 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				EB852E991D2E16EA009BD9E0 /* Category */,
+				EB852E9C1D2E16EA009BD9E0 /* cityPicker */,
+				EB852EA81D2E16EA009BD9E0 /* CustomView */,
+				EB852EB01D2E16EA009BD9E0 /* DCPayAlertDemo */,
+				EB852EB11D2E16EA009BD9E0 /* EFCarousel.h */,
+				EB852EB21D2E16EA009BD9E0 /* EFCarousel.m */,
+				EB852EB31D2E16EA009BD9E0 /* EFCarouselObject.h */,
+				EB852EB41D2E16EA009BD9E0 /* EFCarouselObject.m */,
+				EB852EB51D2E16EA009BD9E0 /* EFInputPayPasswordView */,
+				EB852EBC1D2E16EA009BD9E0 /* EFMailNS_Enum.h */,
+				EB852EBD1D2E16EA009BD9E0 /* EFPayView */,
+				EB852EC01D2E16EA009BD9E0 /* EFSelectView.h */,
+				EB852EC11D2E16EA009BD9E0 /* EFSelectView.m */,
+				EB852EC21D2E16EA009BD9E0 /* TestImage */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		EB852E991D2E16EA009BD9E0 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				EB852E9A1D2E16EA009BD9E0 /* UIButton+LXMImagePosition.h */,
+				EB852E9B1D2E16EA009BD9E0 /* UIButton+LXMImagePosition.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		EB852E9C1D2E16EA009BD9E0 /* cityPicker */ = {
+			isa = PBXGroup;
+			children = (
+				EB852E9D1D2E16EA009BD9E0 /* STConfig.h */,
+				EB852E9E1D2E16EA009BD9E0 /* STConst.h */,
+				EB852E9F1D2E16EA009BD9E0 /* STConst.m */,
+				EB852EA01D2E16EA009BD9E0 /* STPickerArea.h */,
+				EB852EA11D2E16EA009BD9E0 /* STPickerArea.m */,
+				EB852EA21D2E16EA009BD9E0 /* STPickerView.h */,
+				EB852EA31D2E16EA009BD9E0 /* STPickerView.m */,
+				EB852EA41D2E16EA009BD9E0 /* STUI.h */,
+				EB852EA51D2E16EA009BD9E0 /* STUI.m */,
+				EB852EA61D2E16EA009BD9E0 /* UIView+ST.h */,
+				EB852EA71D2E16EA009BD9E0 /* UIView+ST.m */,
+			);
+			path = cityPicker;
+			sourceTree = "<group>";
+		};
+		EB852EA81D2E16EA009BD9E0 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				EB852EA91D2E16EA009BD9E0 /* YFViewPager */,
+				EB852EAC1D2E16EA009BD9E0 /* YJSegmentedControl */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		EB852EA91D2E16EA009BD9E0 /* YFViewPager */ = {
+			isa = PBXGroup;
+			children = (
+				EB852EAA1D2E16EA009BD9E0 /* YFViewPager.h */,
+				EB852EAB1D2E16EA009BD9E0 /* YFViewPager.m */,
+			);
+			path = YFViewPager;
+			sourceTree = "<group>";
+		};
+		EB852EAC1D2E16EA009BD9E0 /* YJSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				EB852EAD1D2E16EA009BD9E0 /* HowToUse.h */,
+				EB852EAE1D2E16EA009BD9E0 /* YJSegmentedControl.h */,
+				EB852EAF1D2E16EA009BD9E0 /* YJSegmentedControl.m */,
+			);
+			path = YJSegmentedControl;
+			sourceTree = "<group>";
+		};
+		EB852EB01D2E16EA009BD9E0 /* DCPayAlertDemo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DCPayAlertDemo;
+			sourceTree = "<group>";
+		};
+		EB852EB51D2E16EA009BD9E0 /* EFInputPayPasswordView */ = {
+			isa = PBXGroup;
+			children = (
+				EB852EB61D2E16EA009BD9E0 /* DCPaymentAlert.h */,
+				EB852EB71D2E16EA009BD9E0 /* DCPaymentAlert.m */,
+				EB852EB81D2E16EA009BD9E0 /* DCPaymentView.h */,
+				EB852EB91D2E16EA009BD9E0 /* DCPaymentView.m */,
+				EB852EBA1D2E16EA009BD9E0 /* DCPwdTextField.h */,
+				EB852EBB1D2E16EA009BD9E0 /* DCPwdTextField.m */,
+			);
+			path = EFInputPayPasswordView;
+			sourceTree = "<group>";
+		};
+		EB852EBD1D2E16EA009BD9E0 /* EFPayView */ = {
+			isa = PBXGroup;
+			children = (
+				EB852EBE1D2E16EA009BD9E0 /* EFPayAlertView.h */,
+				EB852EBF1D2E16EA009BD9E0 /* EFPayAlertView.m */,
+			);
+			path = EFPayView;
+			sourceTree = "<group>";
+		};
+		EB852EC21D2E16EA009BD9E0 /* TestImage */ = {
+			isa = PBXGroup;
+			children = (
+				EB852EC31D2E16EA009BD9E0 /* back_button@2x.png */,
+				EB852EC41D2E16EA009BD9E0 /* cart_addBtn_highlight@2x.png */,
+				EB852EC51D2E16EA009BD9E0 /* cart_addBtn_nomal@2x.png */,
+				EB852EC61D2E16EA009BD9E0 /* cart_cutBtn_highlight@2x.png */,
+				EB852EC71D2E16EA009BD9E0 /* cart_cutBtn_nomal@2x.png */,
+				EB852EC81D2E16EA009BD9E0 /* cart_default_bg.png */,
+				EB852EC91D2E16EA009BD9E0 /* cart_selected_btn@2x.png */,
+				EB852ECA1D2E16EA009BD9E0 /* cart_unSelect_btn@2x.png */,
+				EB852ECB1D2E16EA009BD9E0 /* ic_pass@2x.png */,
+				EB852ECC1D2E16EA009BD9E0 /* ic_pass@3x.png */,
+				EB852ECD1D2E16EA009BD9E0 /* ic_select@2x.png */,
+				EB852ECE1D2E16EA009BD9E0 /* ic_select@3x.png */,
+			);
+			path = TestImage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB33F7AD1D2368C300FA4E12 /* Risk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB33F7C51D2368C300FA4E12 /* Build configuration list for PBXNativeTarget "Risk" */;
+			buildPhases = (
+				9F6625D9E7AFBBD4491A0175 /* [CP] Check Pods Manifest.lock */,
+				4B957C477361F899BDD3BC40 /* [CP] Check Pods Manifest.lock */,
+				EB33F7AA1D2368C300FA4E12 /* Sources */,
+				EB33F7AB1D2368C300FA4E12 /* Frameworks */,
+				EB33F7AC1D2368C300FA4E12 /* Resources */,
+				7682355C1B4CAF74B62B31AC /* [CP] Embed Pods Frameworks */,
+				50EB0CB8EB309A2C967BD822 /* [CP] Copy Pods Resources */,
+				B73A476D83756740F654693A /* Embed Pods Frameworks */,
+				2743885B8A5EB171BEB18BD9 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Risk;
+			productName = Risk;
+			productReference = EB33F7AE1D2368C300FA4E12 /* Risk.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB33F7A61D2368C300FA4E12 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = com.risk.kingyon;
+				TargetAttributes = {
+					EB33F7AD1D2368C300FA4E12 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = EB33F7A91D2368C300FA4E12 /* Build configuration list for PBXProject "Risk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB33F7A51D2368C300FA4E12;
+			productRefGroup = EB33F7AF1D2368C300FA4E12 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EB852D4B1D2E16E9009BD9E0 /* Products */;
+					ProjectRef = EB852D4A1D2E16E9009BD9E0 /* EasyFrame_iOS2.0.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				EB33F7AD1D2368C300FA4E12 /* Risk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		EB852F7E1D2E16EA009BD9E0 /* libEasyFrame_iOS2.0.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libEasyFrame_iOS2.0.a;
+			remoteRef = EB852F7D1D2E16EA009BD9E0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB33F7AC1D2368C300FA4E12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB852F7A1D2E16EA009BD9E0 /* ic_select@2x.png in Resources */,
+				EB852F221D2E16EA009BD9E0 /* EFMineProfileCell.xib in Resources */,
+				EB852F721D2E16EA009BD9E0 /* cart_addBtn_nomal@2x.png in Resources */,
+				EB852EE31D2E16EA009BD9E0 /* readme.txt in Resources */,
+				EB33FA041D23779A00FA4E12 /* EasyFrame_.plist in Resources */,
+				EB33F7C11D2368C300FA4E12 /* LaunchScreen.storyboard in Resources */,
+				EB33FEBC1D23B02000FA4E12 /* MainLayoutConfig_.plist in Resources */,
+				EB852F701D2E16EA009BD9E0 /* back_button@2x.png in Resources */,
+				EB852EE71D2E16EA009BD9E0 /* readme.txt in Resources */,
+				EB852F731D2E16EA009BD9E0 /* cart_cutBtn_highlight@2x.png in Resources */,
+				EB33F7BE1D2368C300FA4E12 /* Assets.xcassets in Resources */,
+				EB852F761D2E16EA009BD9E0 /* cart_selected_btn@2x.png in Resources */,
+				EB33FEBB1D23B02000FA4E12 /* EFThemeConfig_.plist in Resources */,
+				EB33F7BC1D2368C300FA4E12 /* Main.storyboard in Resources */,
+				EB852F791D2E16EA009BD9E0 /* ic_pass@3x.png in Resources */,
+				EB852F131D2E16EA009BD9E0 /* EFThirdPartyLoginView.xib in Resources */,
+				EB852F1E1D2E16EA009BD9E0 /* EFEditCommonCell.xib in Resources */,
+				EB852EE11D2E16EA009BD9E0 /* readme.txt in Resources */,
+				EB852F151D2E16EA009BD9E0 /* resource.bundle in Resources */,
+				EB852F741D2E16EA009BD9E0 /* cart_cutBtn_nomal@2x.png in Resources */,
+				EB852F711D2E16EA009BD9E0 /* cart_addBtn_highlight@2x.png in Resources */,
+				EB852F781D2E16EA009BD9E0 /* ic_pass@2x.png in Resources */,
+				EB852ECF1D2E16EA009BD9E0 /* EasyFrame.plist in Resources */,
+				EB852F7B1D2E16EA009BD9E0 /* ic_select@3x.png in Resources */,
+				EB852F751D2E16EA009BD9E0 /* cart_default_bg.png in Resources */,
+				EB852F261D2E16EA009BD9E0 /* EFUserAvatarCell.xib in Resources */,
+				EB33FEBD1D23B02000FA4E12 /* PushConfig.plist in Resources */,
+				EB852F2A1D2E16EA009BD9E0 /* region.plist in Resources */,
+				EB852F771D2E16EA009BD9E0 /* cart_unSelect_btn@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2743885B8A5EB171BEB18BD9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Risk/Pods-Risk-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B957C477361F899BDD3BC40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		50EB0CB8EB309A2C967BD822 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Risk/Pods-Risk-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7682355C1B4CAF74B62B31AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Risk/Pods-Risk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F6625D9E7AFBBD4491A0175 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B73A476D83756740F654693A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB33F7AA1D2368C300FA4E12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB852F271D2E16EA009BD9E0 /* EFAddAddressVC.m in Sources */,
+				EB852F081D2E16EA009BD9E0 /* WebUtil.m in Sources */,
+				EB852F6C1D2E16EA009BD9E0 /* DCPaymentView.m in Sources */,
+				EB852EF41D2E16EA009BD9E0 /* EFPopupViewManager.m in Sources */,
+				EB852ED51D2E16EA009BD9E0 /* EFSideMenuCell.m in Sources */,
+				EB852F0D1D2E16EA009BD9E0 /* EFForgetPasswordViewModel.m in Sources */,
+				EB852F231D2E16EA009BD9E0 /* EFSettingCell.m in Sources */,
+				EB852F201D2E16EA009BD9E0 /* EFEditNicknameVC.m in Sources */,
+				EB852F1B1D2E16EA009BD9E0 /* EFRegisterViewModel.m in Sources */,
+				EB60E05B1D2A6717008BFA89 /* RSRiskDetailVC.m in Sources */,
+				EB33FEF71D250ACA00FA4E12 /* RiskTypeModel.m in Sources */,
+				EB852F541D2E16EA009BD9E0 /* EFOrderDetailCell.m in Sources */,
+				EB852F0A1D2E16EA009BD9E0 /* EFViewControllerManager.m in Sources */,
+				EB852ED71D2E16EA009BD9E0 /* HomeViewController.m in Sources */,
+				EB852F6F1D2E16EA009BD9E0 /* EFSelectView.m in Sources */,
+				EB852F011D2E16EA009BD9E0 /* UIImageView+UIActivityIndicatorForSDWebImage.m in Sources */,
+				EB9A06901D26785D001D52C8 /* RiskFactorModel.m in Sources */,
+				EB852F4A1D2E16EA009BD9E0 /* EFAgencyPictureCell.m in Sources */,
+				EB852F521D2E16EA009BD9E0 /* EFMallDetailsTopCell.m in Sources */,
+				EB852F681D2E16EA009BD9E0 /* YJSegmentedControl.m in Sources */,
+				EB852EF81D2E16EA009BD9E0 /* HYDActivityProgressView.m in Sources */,
+				EB33FF151D25170000FA4E12 /* MJTypeEncoding.m in Sources */,
+				EB60E0581D2A5F94008BFA89 /* RSSearchHistoryCell.m in Sources */,
+				EB33FF141D25170000FA4E12 /* MJType.m in Sources */,
+				27FA32371D2DEB35006FFD0B /* RSMoreDataVC.m in Sources */,
+				EB33FEFA1D25163400FA4E12 /* RiskDetailTypeModel.m in Sources */,
+				EB852EDD1D2E16EA009BD9E0 /* EFRequest.m in Sources */,
+				EB852ED31D2E16EA009BD9E0 /* EFHomeSideAndTabViewController.m in Sources */,
+				EB33FEE11D23B92600FA4E12 /* RSDataCenterVC.m in Sources */,
+				EB852F4D1D2E16EA009BD9E0 /* EFGoodsCommentCell.m in Sources */,
+				EB852F3F1D2E16EA009BD9E0 /* EFMallListModel.m in Sources */,
+				EB852F4F1D2E16EA009BD9E0 /* EFGoodsTwoCell.m in Sources */,
+				EB852EEA1D2E16EA009BD9E0 /* BlockButton.m in Sources */,
+				EB852F041D2E16EA009BD9E0 /* KYMHImageView.m in Sources */,
+				EB852F1C1D2E16EA009BD9E0 /* EFAccountSettingVC.m in Sources */,
+				EB852EE51D2E16EA009BD9E0 /* UIView+TKCategory.m in Sources */,
+				EB852F461D2E16EA009BD9E0 /* EFMallRequest.m in Sources */,
+				EB852EEF1D2E16EA009BD9E0 /* EF_AlbumView.m in Sources */,
+				EB852F111D2E16EA009BD9E0 /* EFLoginWithThirdViewController.m in Sources */,
+				EB852F121D2E16EA009BD9E0 /* EFThirdPartyLoginView.m in Sources */,
+				EB852F091D2E16EA009BD9E0 /* XYAttributedString.m in Sources */,
+				EB852F441D2E16EA009BD9E0 /* GoodModel.m in Sources */,
+				EB852F4C1D2E16EA009BD9E0 /* EFGoodsCell.m in Sources */,
+				EB852F1F1D2E16EA009BD9E0 /* EFEditMineProfileVC.m in Sources */,
+				EB852EF61D2E16EA009BD9E0 /* HYDActivityIndicatorView.m in Sources */,
+				EB852F141D2E16EA009BD9E0 /* EFVerticalButton.m in Sources */,
+				EB852EDA1D2E16EA009BD9E0 /* EFBaseViewModel.m in Sources */,
+				EB852F5E1D2E16EA009BD9E0 /* EFTagsView.m in Sources */,
+				EB852EF11D2E16EA009BD9E0 /* EFHppleElement.m in Sources */,
+				EB852F291D2E16EA009BD9E0 /* EFEditAddressVC.m in Sources */,
+				EB852F501D2E16EA009BD9E0 /* EFMallCell.m in Sources */,
+				EB33FF181D25170000FA4E12 /* NSObject+MJMember.m in Sources */,
+				EB852F6E1D2E16EA009BD9E0 /* EFPayAlertView.m in Sources */,
+				EB852F641D2E16EA009BD9E0 /* STPickerView.m in Sources */,
+				EB852F241D2E16EA009BD9E0 /* EFSettingViewController.m in Sources */,
+				EBF3F6EA1D2E70DD008FE59E /* SecondSmallToolCell.m in Sources */,
+				EB33FF161D25170000FA4E12 /* NSObject+MJCoding.m in Sources */,
+				EB852F431D2E16EA009BD9E0 /* EFTagModel.m in Sources */,
+				EB852F931D2E1917009BD9E0 /* RSVAPatientArchiveVC.m in Sources */,
+				EB60E04C1D2A0595008BFA89 /* RSDataView.m in Sources */,
+				EB852F5F1D2E16EA009BD9E0 /* EFMallViewModel.m in Sources */,
+				EB852EF21D2E16EA009BD9E0 /* EFXPathQuery.m in Sources */,
+				EB852EFD1D2E16EA009BD9E0 /* KYTableViewNoDataCategory.m in Sources */,
+				EB852F361D2E16EA009BD9E0 /* EFOrderConfirmVC.m in Sources */,
+				EB852F281D2E16EA009BD9E0 /* EFConsigneeAddressVC.m in Sources */,
+				EB852ED01D2E16EA009BD9E0 /* EFAppManager.m in Sources */,
+				EB852F1A1D2E16EA009BD9E0 /* EFRegisterViewController.m in Sources */,
+				27FA323E1D2DEF12006FFD0B /* MoreDataCollectionViewCell.m in Sources */,
+				EB852F5A1D2E16EA009BD9E0 /* EFSelecteSpecificationView.m in Sources */,
+				EB852EDF1D2E16EA009BD9E0 /* InputError.m in Sources */,
+				EB33FEE41D23BA1500FA4E12 /* RSStatisticsReportVC.m in Sources */,
+				EB6FC4DC1D2B637800A446D0 /* RiskTypeFDARightCell.m in Sources */,
+				EB8B52361D2D2A2300C40010 /* RSVAArchivesModel.m in Sources */,
+				EB852EFE1D2E16EA009BD9E0 /* LocationUtil.m in Sources */,
+				EB852F171D2E16EA009BD9E0 /* EFMineCenterCell.m in Sources */,
+				EB33FF111D25170000FA4E12 /* MJIvar.m in Sources */,
+				EB852ED61D2E16EA009BD9E0 /* EFSideMenuViewController.m in Sources */,
+				EB852F251D2E16EA009BD9E0 /* EFUserAvatarCell.m in Sources */,
+				EB852ED41D2E16EA009BD9E0 /* EFHomeSideViewController.m in Sources */,
+				EB852F411D2E16EA009BD9E0 /* EFOrderDetailModel.m in Sources */,
+				EB60E0501D2A0BCB008BFA89 /* RiskDataModel.m in Sources */,
+				EB852F2B1D2E16EA009BD9E0 /* EFAftermarketStatusVC.m in Sources */,
+				EB852F511D2E16EA009BD9E0 /* EFMallDetailsStoreCell.m in Sources */,
+				EB33F7B91D2368C300FA4E12 /* ViewController.m in Sources */,
+				EB852F211D2E16EA009BD9E0 /* EFMineProfileCell.m in Sources */,
+				EB60E0551D2A5EFC008BFA89 /* RSSearchVC.m in Sources */,
+				EB852F5D1D2E16EA009BD9E0 /* EFTagButton.m in Sources */,
+				EB852F001D2E16EA009BD9E0 /* WGS84TOGCJ02.m in Sources */,
+				EB852F2E1D2E16EA009BD9E0 /* EFCommentListVC.m in Sources */,
+				EB852EF31D2E16EA009BD9E0 /* EFMyAutoAlertView.m in Sources */,
+				EB852EFF1D2E16EA009BD9E0 /* mapLocation.m in Sources */,
+				EB852F311D2E16EA009BD9E0 /* EFMallSearchVC.m in Sources */,
+				EB852F191D2E16EA009BD9E0 /* EFRegisterRequest.m in Sources */,
+				EB852EED1D2E16EA009BD9E0 /* UIView+JSMAdd.m in Sources */,
+				EB852F551D2E16EA009BD9E0 /* EFOrderDetailTwoCell.m in Sources */,
+				EB9A067E1D260D07001D52C8 /* RiskTypesLeftCell.m in Sources */,
+				EB852F601D2E16EA009BD9E0 /* EFShopCartViewModel.m in Sources */,
+				EB852F051D2E16EA009BD9E0 /* KYMHLabel.m in Sources */,
+				EB852ED91D2E16EA009BD9E0 /* EFHomeTabBarController.m in Sources */,
+				EB33FEF41D250A5400FA4E12 /* RiskTypesRightVC.m in Sources */,
+				EB33FF131D25170000FA4E12 /* MJMethod.m in Sources */,
+				EB852F2F1D2E16EA009BD9E0 /* EFGoodsCommentVC.m in Sources */,
+				EB852F4B1D2E16EA009BD9E0 /* EFCommentListCell.m in Sources */,
+				EB33FF171D25170000FA4E12 /* NSObject+MJKeyValue.m in Sources */,
+				EB852F3E1D2E16EA009BD9E0 /* EFGoodModel.m in Sources */,
+				EB852F571D2E16EA009BD9E0 /* EFOrderStatusCell.m in Sources */,
+				EB852EDE1D2E16EA009BD9E0 /* EFRequestManager.m in Sources */,
+				EB852EE01D2E16EA009BD9E0 /* NetworkModel.m in Sources */,
+				EB852F561D2E16EA009BD9E0 /* EFOrderInfoCell.m in Sources */,
+				EBCB96001D2BDE0700C9E118 /* RiskTypeDetailLeftCell.m in Sources */,
+				EB852EFC1D2E16EA009BD9E0 /* KYShaker.m in Sources */,
+				EB852ED21D2E16EA009BD9E0 /* EFBaseViewController.m in Sources */,
+				EB852F2D1D2E16EA009BD9E0 /* EFAgencyInfoVC.m in Sources */,
+				EB852EE41D2E16EA009BD9E0 /* TKAlertCenter.m in Sources */,
+				EB852F101D2E16EA009BD9E0 /* EFLoginViewModel.m in Sources */,
+				EB33FEE71D23BA2300FA4E12 /* RSMineVC.m in Sources */,
+				EB852F421D2E16EA009BD9E0 /* EFOrderListModel.m in Sources */,
+				EB6A61B81D27BC5A0052EB0C /* RiskTypeDetailVC.m in Sources */,
+				EB852EE91D2E16EA009BD9E0 /* BlockAlert.m in Sources */,
+				EB852EDC1D2E16EA009BD9E0 /* EFPageViewModel.m in Sources */,
+				EB852F531D2E16EA009BD9E0 /* EFOrderConfirmCell.m in Sources */,
+				EB852F0B1D2E16EA009BD9E0 /* EFForgetPasswordRequest.m in Sources */,
+				EB852F451D2E16EA009BD9E0 /* ReturnOfGoodsModel.m in Sources */,
+				EB852EE21D2E16EA009BD9E0 /* EFSkinThemeManager.m in Sources */,
+				EB852F631D2E16EA009BD9E0 /* STPickerArea.m in Sources */,
+				EB852EF71D2E16EA009BD9E0 /* HYDActivityMessageView.m in Sources */,
+				EB852F3B1D2E16EA009BD9E0 /* EFShopCartVC.m in Sources */,
+				EB852F661D2E16EA009BD9E0 /* UIView+ST.m in Sources */,
+				EB7922EB1D2915F5001DDF72 /* RSDataVC.m in Sources */,
+				EB852F3A1D2E16EA009BD9E0 /* EFSearchVC.m in Sources */,
+				EB852F371D2E16EA009BD9E0 /* EFOrderDetailTwoVC.m in Sources */,
+				EB852F341D2E16EA009BD9E0 /* EFOrderCommentVC.m in Sources */,
+				EB33FF101D25170000FA4E12 /* MJArgument.m in Sources */,
+				EB852F2C1D2E16EA009BD9E0 /* EFAfterSaleVC.m in Sources */,
+				EB852F481D2E16EA009BD9E0 /* EFAddAddressCell.m in Sources */,
+				EB852F061D2E16EA009BD9E0 /* KYTableView.m in Sources */,
+				EB33F7B61D2368C300FA4E12 /* AppDelegate.m in Sources */,
+				EBCB96041D2BDF5900C9E118 /* RiskTypeDetailLeftModel.m in Sources */,
+				EB852EE81D2E16EA009BD9E0 /* EFFileManager.m in Sources */,
+				EB33FED81D23B8F200FA4E12 /* RSHomeVC.m in Sources */,
+				EB852F5C1D2E16EA009BD9E0 /* EFShopCartHeadView.m in Sources */,
+				EB852F351D2E16EA009BD9E0 /* EFOrderConfirmTwoVC.m in Sources */,
+				EB852F301D2E16EA009BD9E0 /* EFMallDetailsVC.m in Sources */,
+				EB852F391D2E16EA009BD9E0 /* EFPushCommentVC.m in Sources */,
+				EB852EDB1D2E16EA009BD9E0 /* EFPageRequest.m in Sources */,
+				EB852F021D2E16EA009BD9E0 /* StarView.m in Sources */,
+				279C0F491D2CF73D00D005E3 /* SecondCollectionViewCell.m in Sources */,
+				EB6FC4D61D2B627B00A446D0 /* RiskTypeFDALeftVC.m in Sources */,
+				EB852F031D2E16EA009BD9E0 /* KYMHButton.m in Sources */,
+				EB852F6D1D2E16EA009BD9E0 /* DCPwdTextField.m in Sources */,
+				EB852F6B1D2E16EA009BD9E0 /* DCPaymentAlert.m in Sources */,
+				EB852F181D2E16EA009BD9E0 /* EFMineCenterVC.m in Sources */,
+				EB852F471D2E16EA009BD9E0 /* EFShopCartRequest.m in Sources */,
+				EB852F071D2E16EA009BD9E0 /* UIUtil.m in Sources */,
+				EB6FC4D91D2B629D00A446D0 /* RiskTypeFDARightVC.m in Sources */,
+				EB852F691D2E16EA009BD9E0 /* EFCarousel.m in Sources */,
+				EB852F581D2E16EA009BD9E0 /* EFPushCommentCell.m in Sources */,
+				EB33FF121D25170000FA4E12 /* MJMember.m in Sources */,
+				EB852ED11D2E16EA009BD9E0 /* EFBaseNavigationController.m in Sources */,
+				EB33FEDB1D23B90500FA4E12 /* RSRiskKindVC.m in Sources */,
+				EB852F6A1D2E16EA009BD9E0 /* EFCarouselObject.m in Sources */,
+				EB852F611D2E16EA009BD9E0 /* UIButton+LXMImagePosition.m in Sources */,
+				EB852F321D2E16EA009BD9E0 /* EFMallVC.m in Sources */,
+				EB852F621D2E16EA009BD9E0 /* STConst.m in Sources */,
+				EB852EE61D2E16EA009BD9E0 /* YRSideViewController.m in Sources */,
+				EB8B52391D2D2A3700C40010 /* RSVAArchivesCell.m in Sources */,
+				EB852F0C1D2E16EA009BD9E0 /* EFForgetPasswordViewController.m in Sources */,
+				EB852F3D1D2E16EA009BD9E0 /* EFCartModel.m in Sources */,
+				EB852F4E1D2E16EA009BD9E0 /* EFGoodSpecificationCell.m in Sources */,
+				EB852F0E1D2E16EA009BD9E0 /* EFLoginRequest.m in Sources */,
+				EB852F3C1D2E16EA009BD9E0 /* EFStoreVC.m in Sources */,
+				EB852ED81D2E16EA009BD9E0 /* EFHomeSingleViewController.m in Sources */,
+				EB852EFA1D2E16EA009BD9E0 /* HYDFileManager.m in Sources */,
+				EB852EF01D2E16EA009BD9E0 /* EFHpple.m in Sources */,
+				EB852F331D2E16EA009BD9E0 /* EFMyOrderVC.m in Sources */,
+				EB852F651D2E16EA009BD9E0 /* STUI.m in Sources */,
+				EB852F591D2E16EA009BD9E0 /* EFSearchHistroyCell.m in Sources */,
+				EB33FEF11D2509E000FA4E12 /* RiskTypesLeftVC.m in Sources */,
+				EB33F7B31D2368C300FA4E12 /* main.m in Sources */,
+				EB852F161D2E16EA009BD9E0 /* UserModel.m in Sources */,
+				EB852F381D2E16EA009BD9E0 /* EFOrderDetailVC.m in Sources */,
+				EB852EEE1D2E16EA009BD9E0 /* EFCTTextField.m in Sources */,
+				EB33FEDE1D23B91700FA4E12 /* RSVisitArchiveVC.m in Sources */,
+				EB852F491D2E16EA009BD9E0 /* EFAgencyInfoCell.m in Sources */,
+				EB852EFB1D2E16EA009BD9E0 /* KYDatePickerView.m in Sources */,
+				EB852EF91D2E16EA009BD9E0 /* HYDAsyncImageView.m in Sources */,
+				EB852EEC1D2E16EA009BD9E0 /* UIColor+UIColor_Hex.m in Sources */,
+				EB6FC4E51D2BB47000A446D0 /* RiskTypeFDALeftTwoVC.m in Sources */,
+				EB852F0F1D2E16EA009BD9E0 /* EFLoginViewController.m in Sources */,
+				EB852F1D1D2E16EA009BD9E0 /* EFEditCommonCell.m in Sources */,
+				EB852EEB1D2E16EA009BD9E0 /* UIButton+TouchAreaInsets.m in Sources */,
+				EB852F401D2E16EA009BD9E0 /* EFMallModel.m in Sources */,
+				EB852F671D2E16EA009BD9E0 /* YFViewPager.m in Sources */,
+				EB852F5B1D2E16EA009BD9E0 /* EFShopCartCell.m in Sources */,
+				EB852EF51D2E16EA009BD9E0 /* EFShareView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EB33F7BA1D2368C300FA4E12 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB33F7BB1D2368C300FA4E12 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB33F7BF1D2368C300FA4E12 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB33F7C01D2368C300FA4E12 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB33F7C31D2368C300FA4E12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		EB33F7C41D2368C300FA4E12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB33F7C61D2368C300FA4E12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E2AF876FC8430237EEAFB42 /* Pods-Risk.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Risk/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/FDFullscreenPopGesture\"",
+					"\"${PODS_ROOT}/Headers/Public/IQKeyboardManager\"",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/Reachability\"",
+					"\"${PODS_ROOT}/Headers/Public/SDAutoLayout\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/SFHFKeychainUtils\"",
+					"\"${PODS_ROOT}/Headers/Public/SVProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/UIScrollView+PullBig\"",
+					"\"${PODS_ROOT}/Headers/Public/YYModel\"",
+					"${SDKROOT}/usr/include/libxml2",
+					"\"$(SRCROOT)/../EasyFrame_iOS2.0\"",
+				);
+				INFOPLIST_FILE = Risk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Release-iphoneos/AFNetworking",
+					"$(PROJECT_DIR)/build/Release-iphoneos",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ylgwhyh.Risk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		EB33F7C71D2368C300FA4E12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84F6386731BC1D5B55EA67FE /* Pods-Risk.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Risk/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/FDFullscreenPopGesture\"",
+					"\"${PODS_ROOT}/Headers/Public/IQKeyboardManager\"",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/Reachability\"",
+					"\"${PODS_ROOT}/Headers/Public/SDAutoLayout\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/SFHFKeychainUtils\"",
+					"\"${PODS_ROOT}/Headers/Public/SVProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/UIScrollView+PullBig\"",
+					"\"${PODS_ROOT}/Headers/Public/YYModel\"",
+					"${SDKROOT}/usr/include/libxml2",
+					"\"$(SRCROOT)/../EasyFrame_iOS2.0\"",
+				);
+				INFOPLIST_FILE = Risk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Release-iphoneos/AFNetworking",
+					"$(PROJECT_DIR)/build/Release-iphoneos",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ylgwhyh.Risk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB33F7A91D2368C300FA4E12 /* Build configuration list for PBXProject "Risk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB33F7C31D2368C300FA4E12 /* Debug */,
+				EB33F7C41D2368C300FA4E12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB33F7C51D2368C300FA4E12 /* Build configuration list for PBXNativeTarget "Risk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB33F7C61D2368C300FA4E12 /* Debug */,
+				EB33F7C71D2368C300FA4E12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB33F7A61D2368C300FA4E12 /* Project object */;
+}

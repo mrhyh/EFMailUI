@@ -1,0 +1,64 @@
+//
+//  RSDataVC.m
+//  Risk
+//
+//  Created by ylgwhyh on 16/7/3.
+//  Copyright © 2016年 com.risk.kingyon. All rights reserved.
+//
+
+#import "RSDataVC.h"
+#import "NJKWebViewProgress.h"
+#import "NJKWebViewProgressView.h"
+
+@interface RSDataVC ( ) <UIWebViewDelegate, NJKWebViewProgressDelegate>
+
+@property ( nonatomic, strong) UIWebView *webView;
+
+@end
+
+@implementation RSDataVC {
+    NJKWebViewProgressView *_progressView;
+    NJKWebViewProgress *_progressProxy;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.navigationController.navigationBar addSubview:_progressView];
+}
+
+- (void)viewDidLoad {
+    
+    [self initUI];
+}
+
+- (void) initUI {
+    _webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64)];
+    _webView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:_webView];
+    
+    _progressProxy = [[NJKWebViewProgress alloc] init];
+    _webView.delegate = _progressProxy;
+    _progressProxy.webViewProxyDelegate = self;
+    _progressProxy.progressDelegate = self;
+    
+    CGFloat progressBarHeight = 2.f;
+    CGRect navigationBarBounds = self.navigationController.navigationBar.bounds;
+    CGRect barFrame = CGRectMake(0, navigationBarBounds.size.height - progressBarHeight, navigationBarBounds.size.width, progressBarHeight);
+    _progressView = [[NJKWebViewProgressView alloc] initWithFrame:barFrame];
+    _progressView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
+    
+    
+    [_webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://119.6.254.65:8081/images/material/201606231717051044.pdf"]]];
+}
+
+
+
+#pragma mark - NJKWebViewProgressDelegate
+-(void)webViewProgress:(NJKWebViewProgress *)webViewProgress updateProgress:(float)progress
+{
+    [_progressView setProgress:progress animated:YES];
+    self.title = [_webView stringByEvaluatingJavaScriptFromString:@"document.title"];
+}
+
+@end

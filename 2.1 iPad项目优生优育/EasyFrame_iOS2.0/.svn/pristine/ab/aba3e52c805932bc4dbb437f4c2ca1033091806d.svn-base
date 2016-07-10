@@ -1,0 +1,270 @@
+//
+//  EFShopCartCell.m
+//  EF_MallDemo
+//
+//  Created by ylgwhyh on 16/6/15.
+//  Copyright © 2016年 MH. All rights reserved.
+//
+
+#import "EFShopCartCell.h"
+//#import "LZConfigFile.h"
+#import "EFCartModel.h"
+#import "UIButton+TouchAreaInsets.h"
+
+@interface EFShopCartCell ( )
+{
+    LZNumberChangedBlock numberAddBlock;
+    LZNumberChangedBlock numberCutBlock;
+    LZCellSelectedBlock cellSelectedBlock;
+}
+
+@property (nonatomic, strong) UIImageView *goodImageView;
+@property (nonatomic, strong) KYMHLabel *nameLabel;
+@property (nonatomic, strong) KYMHLabel *priceLabel; //一种商品的总金额
+@property (nonatomic, strong) KYMHLabel *numLabel; //商品数量
+
+//选中按钮
+@property (nonatomic,retain) KYMHButton *selectBtn;
+//显示照片
+@property (nonatomic,retain) UIImageView *lzImageView;
+@property (nonatomic, strong ) UITextField *textField;
+
+@end
+
+@implementation EFShopCartCell {
+    CGFloat nameFontSize;
+    CGFloat priceFontSize;
+    CGFloat sumLabelFontSize;
+    CGFloat spaceToLeft;
+    CGFloat selectButtonH;
+    CGFloat cellH;
+}
+
+-(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (self) {
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
+        [self setupMainView];
+    }
+    return self;
+}
+
+
+#pragma mark - public method
+- (void)EFReloadDataWithModel:(EFCartModel*)model {
+    
+    self.lzImageView.image = model.image;
+    self.nameLabel.text = model.nameStr;
+    self.priceLabel.text = model.price;
+    self.textField.text = [NSString stringWithFormat:@"%ld",(long)model.number];
+    self.selectBtn.selected = model.select;
+}
+
+- (void)EFNumberAddWithBlock:(LZNumberChangedBlock)block {
+    numberAddBlock = block;
+}
+
+- (void)EFNumberCutWithBlock:(LZNumberChangedBlock)block {
+    numberCutBlock = block;
+}
+
+- (void)EFCellSelectedWithBlock:(LZCellSelectedBlock)block {
+    cellSelectedBlock = block;
+}
+#pragma mark - 重写setter方法
+- (void)setLzNumber:(NSInteger)lzNumber {
+    _lzNumber = lzNumber;
+    
+    self.textField.text = [NSString stringWithFormat:@"%ld",(long)lzNumber];
+}
+
+- (void)setLzSelected:(BOOL)lzSelected {
+    _lzSelected = lzSelected;
+    self.selectBtn.selected = lzSelected;
+}
+
+#pragma mark - 按钮点击方法
+- (void)selectBtnClick:(UIButton*)button {
+    button.selected = !button.selected;
+    
+    if (cellSelectedBlock) {
+        cellSelectedBlock(button.selected);
+    }
+}
+
+- (void)addBtnClick:(UIButton*)button {
+    
+    NSInteger count = [self.textField.text integerValue];
+    count++;
+    
+    if (numberAddBlock) {
+        numberAddBlock(count);
+    }
+}
+
+- (void)cutBtnClick:(UIButton*)button {
+    NSInteger count = [self.textField.text integerValue];
+    count--;
+    if(count <= 0){
+        return ;
+    }
+    
+    if (numberCutBlock) {
+        numberCutBlock(count);
+    }
+}
+
+#pragma mark - 布局主视图
+-(void)setupMainView {
+
+    spaceToLeft = 10;
+    selectButtonH = 20;
+    nameFontSize = 13;
+    priceFontSize = 14;
+    sumLabelFontSize = 16;
+    cellH = 101;
+    
+    //初始化控件
+    _goodImageView = [KYMHImageView new];
+    _goodImageView.contentMode = UIViewContentModeScaleAspectFill;
+    _goodImageView.clipsToBounds = YES;
+    [_goodImageView sd_setImageWithURL:[NSURL URLWithString:@"https://gss0.baidu.com/80M_cCml_AoJksuboYuT_XF5eBk7hKzk-cq/bos_1464854088.34_341405_24886.jpg@w_225"]];
+    
+    
+    //选中按钮
+    _selectBtn = [KYMHButton new];
+    [_selectBtn setTouchAreaInsets:UIEdgeInsetsMake(20, 20, 20, 0)];
+    [_selectBtn setImage:Img(@"ic_pass") forState:UIControlStateNormal];
+    [_selectBtn setImage:Img(@"ic_select") forState:UIControlStateSelected];
+    [_selectBtn addTarget:self action:@selector(selectBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    
+
+    _nameLabel = [KYMHLabel new];
+    _nameLabel.textColor = EF_TextColor_TextColorPrimary;
+    _nameLabel.textAlignment = NSTextAlignmentLeft;
+    _nameLabel.text = @"Lebond 电动牙刷三合一";
+    _nameLabel.font = Font(nameFontSize);
+    
+    //数量加按钮
+    UIButton *addBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [addBtn setImage:[UIImage imageNamed:@"btn_increase"] forState:UIControlStateNormal];
+    [addBtn addTarget:self action:@selector(addBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    
+    _textField = [UITextField new];
+    _textField.textAlignment = NSTextAlignmentCenter;
+    _textField.text = @"1";
+    _textField.font = Font(15);
+    _textField.backgroundColor = RGBColor(225, 230, 233);
+    
+    //数量减按钮
+    UIButton *cutBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [cutBtn setImage:[UIImage imageNamed:@"btn_decrease"] forState:UIControlStateNormal];
+    [cutBtn addTarget:self action:@selector(cutBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+
+    
+    _priceLabel = [KYMHLabel new];
+    _priceLabel.textColor = EF_TextColor_TextColorPrimary;
+    _priceLabel.textAlignment = NSTextAlignmentRight;
+    _priceLabel.font = Font(priceFontSize);
+    _priceLabel.text = @"￥599";
+    
+    
+    _numLabel = [KYMHLabel new];
+    _numLabel.textColor = EF_TextColor_TextColorSecondary;
+    _numLabel.textAlignment = NSTextAlignmentRight;
+    _numLabel.font = Font(nameFontSize);
+    _numLabel.text = @"x1";
+    
+    _lineView = [UIView new];
+    _lineView.backgroundColor = RGBColor(246, 246, 246);
+    
+    _bottomLineView = [UIView new];
+    _bottomLineView.backgroundColor = RGBColor(239, 244, 248);
+    _bottomLineView.hidden = YES;  //默认隐藏
+    //布局
+    NSArray *views = @[addBtn, cutBtn, _textField,_goodImageView, _nameLabel, _priceLabel, _numLabel, _lineView, _selectBtn, _bottomLineView];
+    [self.contentView sd_addSubviews:views];
+    UIView *contentView = self.contentView;
+    
+    _goodImageView.sd_layout
+    .leftSpaceToView (contentView, 2*spaceToLeft+selectButtonH)
+    .topSpaceToView (contentView, spaceToLeft)
+    .widthIs(75)
+    .heightIs(75);
+    
+    _selectBtn.sd_layout
+    .leftSpaceToView(contentView, spaceToLeft)
+    .centerYEqualToView(_goodImageView)
+    .widthIs(selectButtonH)
+    .heightIs(selectButtonH);
+    
+    _nameLabel.sd_layout
+    .leftSpaceToView (_goodImageView, spaceToLeft)
+    .topEqualToView(_goodImageView)
+    .heightIs(20);
+    [_nameLabel setSingleLineAutoResizeWithMaxWidth:SCREEN_WIDTH/2];
+    
+    CGFloat addButtonH = 25;
+    
+    cutBtn.sd_layout
+    .leftSpaceToView (_goodImageView, spaceToLeft)
+    .topSpaceToView (_nameLabel, 25)
+    .widthIs(addButtonH)
+    .heightIs(addButtonH);
+    cutBtn.layer.cornerRadius = addButtonH/2;
+    
+    _textField.sd_layout
+    .centerYEqualToView(cutBtn)
+    .leftSpaceToView (cutBtn, 5)
+    .heightIs(addButtonH)
+    .widthIs (70);
+    _textField.layer.cornerRadius = 10;
+    
+    addBtn.sd_layout
+    .leftSpaceToView (_textField, 5)
+    .centerYEqualToView(cutBtn)
+    .widthIs(addButtonH)
+    .heightIs(addButtonH);
+    addBtn.layer.cornerRadius = addButtonH/2;
+    
+    _priceLabel.sd_layout
+    .rightSpaceToView(contentView, spaceToLeft)
+    .topEqualToView(_nameLabel)
+    .heightIs(20);
+    [_priceLabel setSingleLineAutoResizeWithMaxWidth:70];
+    
+    
+    _numLabel.sd_layout
+    .rightSpaceToView(contentView, spaceToLeft)
+    .topSpaceToView(_priceLabel, 8)
+    .heightIs(20);
+    [_numLabel setSingleLineAutoResizeWithMaxWidth:70];
+    
+    _lineView.sd_layout
+    .topSpaceToView(_goodImageView, 10)
+    .leftSpaceToView(contentView, spaceToLeft)
+    .widthIs(SCREEN_WIDTH-2*spaceToLeft)
+    .heightIs(2);
+
+    CGFloat bottomLineViewH = 9;
+    if(_bottomLineView.hidden == YES){
+        bottomLineViewH = 0;
+    }
+    _bottomLineView.sd_layout
+    .topSpaceToView(_goodImageView, 10)
+    .widthIs(SCREEN_WIDTH)
+    .heightIs(9);
+}
+
+
+- (void)awakeFromNib {
+    // Initialization code
+}
+
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+    [super setSelected:selected animated:animated];
+
+    // Configure the view for the selected state
+}
+
+@end

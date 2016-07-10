@@ -1,0 +1,29 @@
+//
+//  EFMallModel.h
+//  EF_MallDemo
+//
+//  Created by HqLee on 16/6/17.
+//  Copyright © 2016年 MH. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+/** 收货地址model*/
+@interface EFMallConsigneeModel : NSObject
+/**是否默认*/
+@property (nonatomic, assign) BOOL isDefault;
+/**收货人*/
+@property (nonatomic, copy) NSString *consignee;
+/**地区名称*/
+@property (nonatomic, copy) NSString *areaName;
+/**地址*/
+@property (nonatomic, copy) NSString *address;
+/** 电话*/
+@property (nonatomic, copy) NSString *phone;
+/** 邮编 */
+@property (nonatomic, copy) NSString *zipCode;
+/** 收货地址对应的Id*/
+@property (nonatomic, copy) NSString *objectId;
+/** 收货人所在地区ID*/
+@property (nonatomic, copy) NSString *regionId;
+@end

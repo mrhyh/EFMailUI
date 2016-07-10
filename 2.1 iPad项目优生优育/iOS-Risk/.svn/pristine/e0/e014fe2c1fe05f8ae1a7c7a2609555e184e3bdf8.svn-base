@@ -1,0 +1,87 @@
+//
+//  RiskTypesDetailVC.m
+//  Risk
+//
+//  Created by ylgwhyh on 16/6/30.
+//  Copyright © 2016年 com.risk.kingyon. All rights reserved.
+//
+
+#import "RiskTypesRightVC.h"
+#import "RiskDetailTypeModel.h"
+#import "MJExtension.h"
+#import "RiskTypeModel.h"
+
+@interface RiskTypesRightVC ( )
+
+@property (nonatomic, strong) NSArray *riskArray;
+
+@end
+
+@implementation RiskTypesRightVC
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+}
+
+- (void)splitViewController:(UISplitViewController *)svc willShowViewController:(UIViewController *)aViewController invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem
+{
+    self.navigationItem.leftBarButtonItem = nil;
+}
+
+
+- (void)splitViewController:(UISplitViewController *)svc willHideViewController:(UIViewController *)aViewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)pc
+{
+    barButtonItem.title = @"菜系";
+    self.navigationItem.leftBarButtonItem = barButtonItem;
+}
+
+
+- (void) setTypeModel:(RiskTypeModel *)typeModel {
+
+    _typeModel = typeModel;
+    NSString *filename = [NSString stringWithFormat:@"type_%@_foods.plist", typeModel.idstr];
+    self.riskArray = [RiskDetailTypeModel objectArrayWithFilename:filename];
+    self.title = typeModel.name;
+    if (self.isViewLoaded) {
+        [self.tableView scrollToRowAtIndexPath:IndexZero atScrollPosition:UITableViewScrollPositionTop animated:YES];
+        [self.tableView reloadData];
+    }
+    
+}
+
+
+#pragma mark - Table view data source
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.riskArray.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *ID = @"RiskTypesRightVC_Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
+    }
+    
+    RiskDetailTypeModel *type = self.riskArray[indexPath.row];
+    cell.textLabel.text = type.name;
+    
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 100;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    RiskDetailTypeModel *model = self.riskArray[indexPath.row];
+
+
+}
+
+
+@end

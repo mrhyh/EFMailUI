@@ -1,0 +1,221 @@
+//
+//  EFShopCartRequest.m
+//  EF_MallDemo
+//
+//  Created by ylgwhyh on 16/6/20.
+//  Copyright © 2016年 MH. All rights reserved.
+//
+
+#import "EFShopCartRequest.h"
+
+@implementation EFShopCartRequest
+
+@end
+
+@implementation EFClearItemsRequest
+
+- (void)startCallBack:(RequestCallBackBlock)_callBack {
+    self.urlPath = @"/rest/xx/cart/clearItems";
+//    self.params = @{
+//                    @"categoryId":@(self.categoryId)
+//                    };
+    NSString * token = MailTestToken;
+    if ([UserModel ShareUserModel].token) {
+        token = [UserModel ShareUserModel].token;
+    }
+    self.httpHeaderFields = @{@"Version":@"1.0",@"token":token};
+    [super startCallBack:_callBack];
+}
+
+@end
+
+
+@implementation EFGetShopCartItemsRequest
+
+- (void)startCallBack:(RequestCallBackBlock)_callBack {
+    self.urlPath = @"/rest/xx/cart/items";
+    self.params = @{
+                                        @"page":@(self.page),
+                                        @"size":@(self.size)
+                    };
+    NSString * token = MailTestToken;
+    if ([UserModel ShareUserModel].token) {
+        token = [UserModel ShareUserModel].token;
+    }
+    self.httpHeaderFields = @{@"Version":@"1.0",@"token":token};
+    [super startCallBack:_callBack];
+}
+
+@end
+
+@implementation EFRemoveItemsRequest
+
+- (void)startCallBack:(RequestCallBackBlock)_callBack {
+    self.urlPath = @"/rest/xx/cart/removeItems";
+    self.params = @{
+                    @"productIds":@(self.productIds)
+                    };
+    NSString * token = MailTestToken;
+    if ([UserModel ShareUserModel].token) {
+        token = [UserModel ShareUserModel].token;
+    }
+    self.httpHeaderFields = @{@"Version":@"1.0",@"token":token};
+    [super startCallBack:_callBack];
+}
+
+@end
+
+@implementation EFUpdateItemQuantityRequest
+
+- (void)startCallBack:(RequestCallBackBlock)_callBack {
+    self.urlPath = @"/rest/xx/cart/updateItemQuantity";
+    self.params = @{
+                    @"productId":@(self.productId),
+                    @"quantity":@(self.quantity)
+                    };
+    NSString * token = MailTestToken;
+    if ([UserModel ShareUserModel].token) {
+        token = [UserModel ShareUserModel].token;
+    }
+    self.httpHeaderFields = @{@"Version":@"1.0",@"token":token};
+    [super startCallBack:_callBack];
+}
+
+@end
+
+/*****************商城-订单管理服务rest接口****************************/
+
+@implementation CreateOrder
+
+- (void)startCallBack:(RequestCallBackBlock)_callBack {
+    self.urlPath = @"/rest/xx/order/create";
+    self.params = @{
+                    @"consigneeRegionId": self.consigneeRegionId,
+                    @"isInvoice":@(self.isInvoice),
+                    @"shippingMethodId":@(self.shippingMethodId),
+                    @"consigneeName":self.consigneeName,
+                    @"consigneeMobile":self.consigneeMobile,
+                    @"consigneeAddress":self.consigneeAddress,
+                    @"consigneeZipCode":self.consigneeZipCode,
+                    @"invoiceTitle":self.invoiceTitle,
+                    @"orderProductId":@(self.orderProductId),
+                    @"orderProductCount":@(self.orderProductCount),
+                    @"notes":self.notes,
+                    };
+    NSString * token = MailTestToken;
+    if ([UserModel ShareUserModel].token) {
+        token = [UserModel ShareUserModel].token;
+    }
+    self.httpHeaderFields = @{@"Version":@"1.0",@"token":token};
+    [super startCallBack:_callBack];
+}
+
+@end
+
+@implementation MyOrderList
+
+- (void)startCallBack:(RequestCallBackBlock)_callBack {
+    self.urlPath = @"/rest/xx/order/my";
+    self.params = @{
+                        @"page":@(self.page),
+                        @"size":@(self.size),
+                        @"status":self.status
+                        };
+    NSString * token = MailTestToken;
+    if ([UserModel ShareUserModel].token) {
+        token = [UserModel ShareUserModel].token;
+    }
+    self.httpHeaderFields = @{@"Version":@"1.0",@"token":token};
+    [super startCallBack:_callBack];
+}
+
+@end
+
+
+@implementation CancelOrder
+
+- (void)startCallBack:(RequestCallBackBlock)_callBack {
+    self.urlPath = [NSString stringWithFormat:@"/rest/xx/order/%ld/cancel",(long)self.orderId];
+    
+    self.params = @{
+                    @"caulse":self.caulse
+                    };
+    NSString * token = MailTestToken;
+    if ([UserModel ShareUserModel].token) {
+        token = [UserModel ShareUserModel].token;
+    }
+    self.httpHeaderFields = @{@"Version":@"1.0",@"token":token};
+    [super startCallBack:_callBack];
+}
+
+@end
+
+@implementation ConfirmOrder
+
+- (void)startCallBack:(RequestCallBackBlock)_callBack {
+    self.urlPath = @"/rest/xx/order/{id}/confirm";
+    self.params = @{
+                    @"orderId":@(self.orderId)
+                    };
+    NSString * token = MailTestToken;
+    if ([UserModel ShareUserModel].token) {
+        token = [UserModel ShareUserModel].token;
+    }
+    self.httpHeaderFields = @{@"Version":@"1.0",@"token":token};
+    [super startCallBack:_callBack];
+}
+
+@end
+
+
+@implementation DeleteOrder
+
+- (void)startCallBack:(RequestCallBackBlock)_callBack {
+    self.urlPath = @"/rest/xx/order/{id}/delete";
+    self.params = @{
+                    @"orderId":@(self.orderId)
+                    };
+    NSString * token = MailTestToken;
+    if ([UserModel ShareUserModel].token) {
+        token = [UserModel ShareUserModel].token;
+    }
+    self.httpHeaderFields = @{@"Version":@"1.0",@"token":token};
+    [super startCallBack:_callBack];
+}
+
+@end
+
+@implementation FinishOrder
+
+- (void)startCallBack:(RequestCallBackBlock)_callBack {
+    self.urlPath = @"/rest/xx/order/{id}/finish";
+    self.urlPath = [NSString stringWithFormat:@"/rest/xx/order/%ld/finish",(long)self.orderId];
+//    self.params = @{
+//                    @"orderId":@(self.orderId)
+//                    };
+    NSString * token = MailTestToken;
+    if ([UserModel ShareUserModel].token) {
+        token = [UserModel ShareUserModel].token;
+    }
+    self.httpHeaderFields = @{@"Version":@"1.0",@"token":token};
+    [super startCallBack:_callBack];
+}
+
+@end
+
+@implementation PayOrder
+
+- (void)startCallBack:(RequestCallBackBlock)_callBack {
+    self.urlPath = @"/rest/xx/order/{id}/pay";
+    self.urlPath = [NSString stringWithFormat:@"/rest/xx/order/%ld/pay",(long)self.orderId];
+    //self.urlPath = [NSString stringWithFormat:@"/rest/xx/product/%@/evaluates",self.productId];
+    //self.params = @{@"id":@(self.orderId)};
+    NSString * token = MailTestToken;
+    if ([UserModel ShareUserModel].token) {
+        token = [UserModel ShareUserModel].token;
+    }
+    self.httpHeaderFields = @{@"Version":@"1.0",@"token":token};
+    [super startCallBack:_callBack];
+}
+
+@end

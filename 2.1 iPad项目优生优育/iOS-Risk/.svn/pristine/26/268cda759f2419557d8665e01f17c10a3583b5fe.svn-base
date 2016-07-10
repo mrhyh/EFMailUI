@@ -1,0 +1,88 @@
+//
+//  RSRiskKindVC.m
+//  Risk
+//
+//  Created by ylgwhyh on 16/6/29.
+//  Copyright © 2016年 com.risk.kingyon. All rights reserved.
+//
+
+#import "RSRiskKindVC.h"
+#import "RiskTypesLeftVC.h"
+#import "RiskTypesRightVC.h"
+
+@interface RSRiskKindVC() <RiskTypesLeftVCDelegate, UISplitViewControllerDelegate>
+
+@property (nonatomic, strong)  UISplitViewController  *splitViewController;
+
+@end
+
+@implementation RSRiskKindVC
+
+- (void) viewDidLoad {
+    [super viewDidLoad];
+    
+    [self initUI];
+    [self initNavigateView];
+    
+}
+
+- (void) initUI {
+    
+    _splitViewController = [[UISplitViewController alloc] init];
+    _splitViewController.delegate = self;
+    RiskTypesLeftVC *leftVC = [[RiskTypesLeftVC alloc] init];
+    RiskTypesRightVC *rightVC = [[RiskTypesRightVC alloc] init];
+    
+    _splitViewController.viewControllers = [NSArray arrayWithObjects:leftVC, rightVC, nil];
+    _splitViewController.view.frame = CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64);
+    [self.view addSubview:_splitViewController.view];
+
+}
+
+
+
+- (void)initNavigateView{
+    
+    UIView *leftNavigationBGView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 130, 34)];
+    
+    UISwitch *switchButton = [[UISwitch alloc] initWithFrame:CGRectMake(0, 0, 90, 34)];
+    switchButton.layer.cornerRadius = 18;
+    [switchButton setOn:NO];
+    if(switchButton.on == NO) {
+        switchButton.backgroundColor = [UIColor whiteColor];
+    }
+    [switchButton addTarget:self action:@selector(switchAction:) forControlEvents:UIControlEventValueChanged];
+    [leftNavigationBGView addSubview:switchButton];
+    
+    KYMHLabel *staticLabel = [[KYMHLabel alloc] initWithTitle:@"FDA" BaseSize:CGRectMake(CGRectGetMaxX(switchButton.frame) + 5, 0, 50, 34) LabelColor:nil LabelFont:normalFontSize LabelTitleColor:[UIColor whiteColor] TextAlignment:NSTextAlignmentLeft];
+    [staticLabel FontWeight:20];
+    [leftNavigationBGView addSubview:staticLabel];
+    
+    UIBarButtonItem *barBtnItem = [[UIBarButtonItem alloc] initWithCustomView:leftNavigationBGView];
+    self.navigationItem.leftBarButtonItem = barBtnItem;
+}
+
+
+- (void)switchAction:(id)sender{
+    
+    UISwitch *switchButton = (UISwitch*)sender;
+    BOOL isButtonOn = [switchButton isOn];
+    
+    if (isButtonOn) {
+            NSLog(@"是");
+         }else {
+            NSLog(@"否");
+        }
+}
+
+
+- (void)riskTypesVC:(RiskTypesLeftVC *)RiskTypesVC didSelectedRiskType:(RiskTypeModel *)type {
+    
+    UINavigationController *riskNav = [self.childViewControllers lastObject];
+    RiskTypesRightVC *riskVC = [riskNav.childViewControllers firstObject];
+    riskVC.typeModel = type;
+    
+    [riskNav popToRootViewControllerAnimated:YES];
+}
+
+@end

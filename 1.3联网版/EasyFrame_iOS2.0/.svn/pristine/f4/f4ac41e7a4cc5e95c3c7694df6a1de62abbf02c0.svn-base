@@ -1,0 +1,47 @@
+//
+//  EFForgetPasswordViewModel.m
+//  demo
+//
+//  Created by HqLee on 16/5/25.
+//  Copyright © 2016年 KingYon LLC. All rights reserved.
+//
+
+#import "EFForgetPasswordViewModel.h"
+#import "EFForgetPasswordRequest.h"
+
+@implementation EFForgetPasswordViewModel
+- (void)changePasswordWithPhoneNumber:(NSString *)phoneNumber codeNumber:(NSString *)codeNumber newPassWord:(NSString *)passWord{
+    EFForgetPasswordRequest *request = [EFForgetPasswordRequest requestWithPOST];
+    request.phoneNumber = phoneNumber;
+    request.codeNumber = codeNumber;
+    request.password = passWord;
+    [self startCallBack:^(CallBackStatus callBackStatus,NetworkModel * result) {
+        [self delRequestWithTag:PasswordCallBackActionResetPassword];
+        if (callBackStatus == CallBackStatusRequestFailure) {
+            [UIUtil alert:@"服务器出错"];
+            return ;
+        }else if (callBackStatus == CallBackStatusRequestError){
+            [self.viewController callBackAction:PasswordCallBackActionResetPassword Result:result];
+        }else if (callBackStatus == CallBackStatusSuccess){
+            [self.viewController callBackAction:PasswordCallBackActionResetPassword Result:result];
+        }
+    } Request:request WithTag:PasswordCallBackActionResetPassword];
+}
+
+
+- (void)PasswordCodeWithMobile : (NSString *)_mobile{
+    PasswordCode * code = [PasswordCode requestWithGET];
+    code.mobile = _mobile;
+    [self startCallBack:^(CallBackStatus callBackStatus,NetworkModel * result) {
+        [self delRequestWithTag:PasswordCallBackActionPasswordCode];
+        if (callBackStatus == CallBackStatusRequestFailure) {
+            [UIUtil alert:@"服务器出错"];
+            return ;
+        }else if (callBackStatus == CallBackStatusRequestError){
+            [self.viewController callBackAction:PasswordCallBackActionPasswordCode Result:result];
+        }else if (callBackStatus == CallBackStatusSuccess){
+            [self.viewController callBackAction:PasswordCallBackActionPasswordCode Result:result];
+        }
+    } Request:code WithTag:PasswordCallBackActionPasswordCode];
+}
+@end

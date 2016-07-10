@@ -1,0 +1,48 @@
+//
+//  EFShopCartRequest.h
+//  EF_MallDemo
+//
+//  Created by ylgwhyh on 16/6/20.
+//  Copyright © 2016年 MH. All rights reserved.
+//
+
+#import "EFRequest.h"
+
+/**
+ * 商城-购物车信息管理rest接口
+ */
+@interface EFShopCartRequest : EFRequest
+
+@end
+
+
+/**
+ *  清空我的购物车
+ */
+@interface EFClearItemsRequest : EFRequest
+
+@end
+
+/**
+ *  返回购物车购物项
+ */
+@interface EFGetShopCartItemsRequest : EFRequest
+@property (nonatomic, assign) int page;
+@property (nonatomic, assign) int size;
+@end
+
+/**
+ *  从我的购物车当中删除购物项
+ */
+@interface EFRemoveItemsRequest : EFRequest
+@property (nonatomic, assign) int productIds;
+@end
+
+/**
+ *  修改购物项目数量
+ */
+@interface EFUpdateItemQuantityRequest : EFRequest
+@property (nonatomic, assign) int productId;
+@property (nonatomic, assign) int quantity;
+@end
+

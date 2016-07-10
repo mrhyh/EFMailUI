@@ -1,0 +1,2400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		279C0E921D2CAD1700D005E3 /* EasyFrame.plist in Resources */ = {isa = PBXBuildFile; fileRef = 279C0D141D2CAD1700D005E3 /* EasyFrame.plist */; };
+		279C0E931D2CAD1700D005E3 /* EFAppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D171D2CAD1700D005E3 /* EFAppManager.m */; };
+		279C0E941D2CAD1700D005E3 /* EFBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D1C1D2CAD1700D005E3 /* EFBaseNavigationController.m */; };
+		279C0E951D2CAD1700D005E3 /* EFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D1F1D2CAD1700D005E3 /* EFBaseViewController.m */; };
+		279C0E961D2CAD1700D005E3 /* EFHomeSideAndTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D221D2CAD1700D005E3 /* EFHomeSideAndTabViewController.m */; };
+		279C0E971D2CAD1700D005E3 /* EFHomeSideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D251D2CAD1700D005E3 /* EFHomeSideViewController.m */; };
+		279C0E981D2CAD1700D005E3 /* EFSideMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D271D2CAD1700D005E3 /* EFSideMenuCell.m */; };
+		279C0E991D2CAD1700D005E3 /* EFSideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D291D2CAD1700D005E3 /* EFSideMenuViewController.m */; };
+		279C0E9A1D2CAD1700D005E3 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D2B1D2CAD1700D005E3 /* HomeViewController.m */; };
+		279C0E9B1D2CAD1700D005E3 /* EFHomeSingleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D2E1D2CAD1700D005E3 /* EFHomeSingleViewController.m */; };
+		279C0E9C1D2CAD1700D005E3 /* EFHomeTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D311D2CAD1700D005E3 /* EFHomeTabBarController.m */; };
+		279C0E9D1D2CAD1700D005E3 /* EFBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D341D2CAD1700D005E3 /* EFBaseViewModel.m */; };
+		279C0E9E1D2CAD1700D005E3 /* EFPageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D361D2CAD1700D005E3 /* EFPageRequest.m */; };
+		279C0E9F1D2CAD1700D005E3 /* EFPageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D381D2CAD1700D005E3 /* EFPageViewModel.m */; };
+		279C0EA01D2CAD1700D005E3 /* EFRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D3A1D2CAD1700D005E3 /* EFRequest.m */; };
+		279C0EA11D2CAD1700D005E3 /* EFRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D3C1D2CAD1700D005E3 /* EFRequestManager.m */; };
+		279C0EA21D2CAD1700D005E3 /* InputError.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D3E1D2CAD1700D005E3 /* InputError.m */; };
+		279C0EA31D2CAD1700D005E3 /* NetworkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D401D2CAD1700D005E3 /* NetworkModel.m */; };
+		279C0EA41D2CAD1700D005E3 /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 279C0D411D2CAD1700D005E3 /* readme.txt */; };
+		279C0EA51D2CAD1700D005E3 /* EFSkinThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D441D2CAD1700D005E3 /* EFSkinThemeManager.m */; };
+		279C0EA61D2CAD1700D005E3 /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 279C0D451D2CAD1700D005E3 /* readme.txt */; };
+		279C0EA71D2CAD1700D005E3 /* TKAlertCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D4A1D2CAD1700D005E3 /* TKAlertCenter.m */; };
+		279C0EA81D2CAD1700D005E3 /* UIView+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D4C1D2CAD1700D005E3 /* UIView+TKCategory.m */; };
+		279C0EA91D2CAD1700D005E3 /* YRSideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D4F1D2CAD1700D005E3 /* YRSideViewController.m */; };
+		279C0EAA1D2CAD1700D005E3 /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 279C0D511D2CAD1700D005E3 /* readme.txt */; };
+		279C0EAB1D2CAD1700D005E3 /* EFFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D551D2CAD1700D005E3 /* EFFileManager.m */; };
+		279C0EAC1D2CAD1700D005E3 /* BlockAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D5D1D2CAD1700D005E3 /* BlockAlert.m */; };
+		279C0EAD1D2CAD1700D005E3 /* BlockButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D5F1D2CAD1700D005E3 /* BlockButton.m */; };
+		279C0EAE1D2CAD1700D005E3 /* UIButton+TouchAreaInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D621D2CAD1700D005E3 /* UIButton+TouchAreaInsets.m */; };
+		279C0EAF1D2CAD1700D005E3 /* UIColor+UIColor_Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D641D2CAD1700D005E3 /* UIColor+UIColor_Hex.m */; };
+		279C0EB01D2CAD1700D005E3 /* UIView+JSMAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D661D2CAD1700D005E3 /* UIView+JSMAdd.m */; };
+		279C0EB11D2CAD1700D005E3 /* EF_AlbumView.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D681D2CAD1700D005E3 /* EF_AlbumView.m */; };
+		279C0EB21D2CAD1700D005E3 /* EFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D6B1D2CAD1700D005E3 /* EFHpple.m */; };
+		279C0EB31D2CAD1700D005E3 /* EFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D6D1D2CAD1700D005E3 /* EFHppleElement.m */; };
+		279C0EB41D2CAD1700D005E3 /* EFXPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D6F1D2CAD1700D005E3 /* EFXPathQuery.m */; };
+		279C0EB51D2CAD1700D005E3 /* EFMyAutoAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D711D2CAD1700D005E3 /* EFMyAutoAlertView.m */; };
+		279C0EB61D2CAD1700D005E3 /* EFPopupViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D731D2CAD1700D005E3 /* EFPopupViewManager.m */; };
+		279C0EB71D2CAD1700D005E3 /* EFShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D751D2CAD1700D005E3 /* EFShareView.m */; };
+		279C0EB81D2CAD1700D005E3 /* HYDActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D781D2CAD1700D005E3 /* HYDActivityIndicatorView.m */; };
+		279C0EB91D2CAD1700D005E3 /* HYDActivityMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D7A1D2CAD1700D005E3 /* HYDActivityMessageView.m */; };
+		279C0EBA1D2CAD1700D005E3 /* HYDActivityProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D7C1D2CAD1700D005E3 /* HYDActivityProgressView.m */; };
+		279C0EBB1D2CAD1700D005E3 /* HYDAsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D7F1D2CAD1700D005E3 /* HYDAsyncImageView.m */; };
+		279C0EBC1D2CAD1700D005E3 /* HYDFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D811D2CAD1700D005E3 /* HYDFileManager.m */; };
+		279C0EBD1D2CAD1700D005E3 /* KYDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D841D2CAD1700D005E3 /* KYDatePickerView.m */; };
+		279C0EBE1D2CAD1700D005E3 /* KYShaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D861D2CAD1700D005E3 /* KYShaker.m */; };
+		279C0EBF1D2CAD1700D005E3 /* KYTableViewNoDataCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D881D2CAD1700D005E3 /* KYTableViewNoDataCategory.m */; };
+		279C0EC01D2CAD1700D005E3 /* LocationUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D8B1D2CAD1700D005E3 /* LocationUtil.m */; };
+		279C0EC11D2CAD1700D005E3 /* mapLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D8D1D2CAD1700D005E3 /* mapLocation.m */; };
+		279C0EC21D2CAD1700D005E3 /* WGS84TOGCJ02.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D8F1D2CAD1700D005E3 /* WGS84TOGCJ02.m */; };
+		279C0EC31D2CAD1700D005E3 /* UIImageView+UIActivityIndicatorForSDWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D921D2CAD1700D005E3 /* UIImageView+UIActivityIndicatorForSDWebImage.m */; };
+		279C0EC41D2CAD1700D005E3 /* StarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D941D2CAD1700D005E3 /* StarView.m */; };
+		279C0EC51D2CAD1700D005E3 /* KYMHButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D971D2CAD1700D005E3 /* KYMHButton.m */; };
+		279C0EC61D2CAD1700D005E3 /* KYMHImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D991D2CAD1700D005E3 /* KYMHImageView.m */; };
+		279C0EC71D2CAD1700D005E3 /* KYMHLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D9B1D2CAD1700D005E3 /* KYMHLabel.m */; };
+		279C0EC81D2CAD1700D005E3 /* KYTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D9D1D2CAD1700D005E3 /* KYTableView.m */; };
+		279C0EC91D2CAD1700D005E3 /* UIUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0D9F1D2CAD1700D005E3 /* UIUtil.m */; };
+		279C0ECA1D2CAD1700D005E3 /* WebUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0DA11D2CAD1700D005E3 /* WebUtil.m */; };
+		279C0ECB1D2CAD1700D005E3 /* XYAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0DA31D2CAD1700D005E3 /* XYAttributedString.m */; };
+		279C0ECC1D2CAD1700D005E3 /* EFViewControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0DA61D2CAD1700D005E3 /* EFViewControllerManager.m */; };
+		279C0ECD1D2CAD1700D005E3 /* EFForgetPasswordRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0DA91D2CAD1700D005E3 /* EFForgetPasswordRequest.m */; };
+		279C0ECE1D2CAD1700D005E3 /* EFForgetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0DAB1D2CAD1700D005E3 /* EFForgetPasswordViewController.m */; };
+		279C0ECF1D2CAD1700D005E3 /* EFForgetPasswordViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0DAD1D2CAD1700D005E3 /* EFForgetPasswordViewModel.m */; };
+		279C0ED01D2CAD1700D005E3 /* EFLoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0DB01D2CAD1700D005E3 /* EFLoginRequest.m */; };
+		279C0ED11D2CAD1700D005E3 /* EFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0DB21D2CAD1700D005E3 /* EFLoginViewController.m */; };
+		279C0ED21D2CAD1700D005E3 /* EFLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0DB41D2CAD1700D005E3 /* EFLoginViewModel.m */; };
+		279C0ED31D2CAD1700D005E3 /* EFLoginWithThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0DB61D2CAD1700D005E3 /* EFLoginWithThirdViewController.m */; };
+		279C0ED41D2CAD1700D005E3 /* EFThirdPartyLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0DB81D2CAD1700D005E3 /* EFThirdPartyLoginView.m */; };
+		279C0ED51D2CAD1700D005E3 /* EFThirdPartyLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 279C0DB91D2CAD1700D005E3 /* EFThirdPartyLoginView.xib */; };
+		279C0ED61D2CAD1700D005E3 /* EFVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0DBB1D2CAD1700D005E3 /* EFVerticalButton.m */; };
+		279C0ED71D2CAD1700D005E3 /* resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 279C0DBC1D2CAD1700D005E3 /* resource.bundle */; };
+		279C0ED81D2CAD1700D005E3 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0DBE1D2CAD1700D005E3 /* UserModel.m */; };
+		279C0ED91D2CAD1700D005E3 /* EFMineCenterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0DC11D2CAD1700D005E3 /* EFMineCenterCell.m */; };
+		279C0EDA1D2CAD1700D005E3 /* EFMineCenterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0DC31D2CAD1700D005E3 /* EFMineCenterVC.m */; };
+		279C0EDB1D2CAD1700D005E3 /* EFRegisterRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0DC61D2CAD1700D005E3 /* EFRegisterRequest.m */; };
+		279C0EDC1D2CAD1700D005E3 /* EFRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0DC81D2CAD1700D005E3 /* EFRegisterViewController.m */; };
+		279C0EDD1D2CAD1700D005E3 /* EFRegisterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0DCA1D2CAD1700D005E3 /* EFRegisterViewModel.m */; };
+		279C0EDE1D2CAD1700D005E3 /* EFAccountSettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0DCD1D2CAD1700D005E3 /* EFAccountSettingVC.m */; };
+		279C0EDF1D2CAD1700D005E3 /* EFEditCommonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0DCF1D2CAD1700D005E3 /* EFEditCommonCell.m */; };
+		279C0EE01D2CAD1700D005E3 /* EFEditCommonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 279C0DD01D2CAD1700D005E3 /* EFEditCommonCell.xib */; };
+		279C0EE11D2CAD1700D005E3 /* EFEditMineProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0DD21D2CAD1700D005E3 /* EFEditMineProfileVC.m */; };
+		279C0EE21D2CAD1700D005E3 /* EFEditNicknameVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0DD41D2CAD1700D005E3 /* EFEditNicknameVC.m */; };
+		279C0EE31D2CAD1700D005E3 /* EFMineProfileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0DD61D2CAD1700D005E3 /* EFMineProfileCell.m */; };
+		279C0EE41D2CAD1700D005E3 /* EFMineProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 279C0DD71D2CAD1700D005E3 /* EFMineProfileCell.xib */; };
+		279C0EE51D2CAD1700D005E3 /* EFSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0DD91D2CAD1700D005E3 /* EFSettingCell.m */; };
+		279C0EE61D2CAD1700D005E3 /* EFSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0DDB1D2CAD1700D005E3 /* EFSettingViewController.m */; };
+		279C0EE71D2CAD1700D005E3 /* EFUserAvatarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0DDD1D2CAD1700D005E3 /* EFUserAvatarCell.m */; };
+		279C0EE81D2CAD1700D005E3 /* EFUserAvatarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 279C0DDE1D2CAD1700D005E3 /* EFUserAvatarCell.xib */; };
+		279C0EE91D2CAD1700D005E3 /* EFAddAddressVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0DE41D2CAD1700D005E3 /* EFAddAddressVC.m */; };
+		279C0EEA1D2CAD1700D005E3 /* EFConsigneeAddressVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0DE61D2CAD1700D005E3 /* EFConsigneeAddressVC.m */; };
+		279C0EEB1D2CAD1700D005E3 /* EFEditAddressVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0DE81D2CAD1700D005E3 /* EFEditAddressVC.m */; };
+		279C0EEC1D2CAD1700D005E3 /* region.plist in Resources */ = {isa = PBXBuildFile; fileRef = 279C0DE91D2CAD1700D005E3 /* region.plist */; };
+		279C0EED1D2CAD1700D005E3 /* EFAftermarketStatusVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0DEB1D2CAD1700D005E3 /* EFAftermarketStatusVC.m */; };
+		279C0EEE1D2CAD1700D005E3 /* EFAfterSaleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0DED1D2CAD1700D005E3 /* EFAfterSaleVC.m */; };
+		279C0EEF1D2CAD1700D005E3 /* EFAgencyInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0DEF1D2CAD1700D005E3 /* EFAgencyInfoVC.m */; };
+		279C0EF01D2CAD1700D005E3 /* EFCommentListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0DF11D2CAD1700D005E3 /* EFCommentListVC.m */; };
+		279C0EF11D2CAD1700D005E3 /* EFGoodsCommentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0DF31D2CAD1700D005E3 /* EFGoodsCommentVC.m */; };
+		279C0EF21D2CAD1700D005E3 /* EFMallDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0DF51D2CAD1700D005E3 /* EFMallDetailsVC.m */; };
+		279C0EF31D2CAD1700D005E3 /* EFMallSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0DF71D2CAD1700D005E3 /* EFMallSearchVC.m */; };
+		279C0EF41D2CAD1700D005E3 /* EFMallVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0DF91D2CAD1700D005E3 /* EFMallVC.m */; };
+		279C0EF51D2CAD1700D005E3 /* EFMyOrderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0DFB1D2CAD1700D005E3 /* EFMyOrderVC.m */; };
+		279C0EF61D2CAD1700D005E3 /* EFOrderCommentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0DFD1D2CAD1700D005E3 /* EFOrderCommentVC.m */; };
+		279C0EF71D2CAD1700D005E3 /* EFOrderConfirmTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0DFF1D2CAD1700D005E3 /* EFOrderConfirmTwoVC.m */; };
+		279C0EF81D2CAD1700D005E3 /* EFOrderConfirmVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E011D2CAD1700D005E3 /* EFOrderConfirmVC.m */; };
+		279C0EF91D2CAD1700D005E3 /* EFOrderDetailTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E031D2CAD1700D005E3 /* EFOrderDetailTwoVC.m */; };
+		279C0EFA1D2CAD1700D005E3 /* EFOrderDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E051D2CAD1700D005E3 /* EFOrderDetailVC.m */; };
+		279C0EFB1D2CAD1700D005E3 /* EFPushCommentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E071D2CAD1700D005E3 /* EFPushCommentVC.m */; };
+		279C0EFC1D2CAD1700D005E3 /* EFSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E091D2CAD1700D005E3 /* EFSearchVC.m */; };
+		279C0EFD1D2CAD1700D005E3 /* EFShopCartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E0B1D2CAD1700D005E3 /* EFShopCartVC.m */; };
+		279C0EFE1D2CAD1700D005E3 /* EFStoreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E0D1D2CAD1700D005E3 /* EFStoreVC.m */; };
+		279C0EFF1D2CAD1700D005E3 /* EFCartModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E101D2CAD1700D005E3 /* EFCartModel.m */; };
+		279C0F001D2CAD1700D005E3 /* EFGoodModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E121D2CAD1700D005E3 /* EFGoodModel.m */; };
+		279C0F011D2CAD1700D005E3 /* EFMallListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E141D2CAD1700D005E3 /* EFMallListModel.m */; };
+		279C0F021D2CAD1700D005E3 /* EFMallModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E161D2CAD1700D005E3 /* EFMallModel.m */; };
+		279C0F031D2CAD1700D005E3 /* EFOrderDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E181D2CAD1700D005E3 /* EFOrderDetailModel.m */; };
+		279C0F041D2CAD1700D005E3 /* EFOrderListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E1A1D2CAD1700D005E3 /* EFOrderListModel.m */; };
+		279C0F051D2CAD1700D005E3 /* EFTagModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E1C1D2CAD1700D005E3 /* EFTagModel.m */; };
+		279C0F061D2CAD1700D005E3 /* GoodModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E1E1D2CAD1700D005E3 /* GoodModel.m */; };
+		279C0F071D2CAD1700D005E3 /* ReturnOfGoodsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E201D2CAD1700D005E3 /* ReturnOfGoodsModel.m */; };
+		279C0F081D2CAD1700D005E3 /* EFMallRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E241D2CAD1700D005E3 /* EFMallRequest.m */; };
+		279C0F091D2CAD1700D005E3 /* EFShopCartRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E261D2CAD1700D005E3 /* EFShopCartRequest.m */; };
+		279C0F0A1D2CAD1700D005E3 /* EFAddAddressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E291D2CAD1700D005E3 /* EFAddAddressCell.m */; };
+		279C0F0B1D2CAD1700D005E3 /* EFAgencyInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E2B1D2CAD1700D005E3 /* EFAgencyInfoCell.m */; };
+		279C0F0C1D2CAD1700D005E3 /* EFAgencyPictureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E2D1D2CAD1700D005E3 /* EFAgencyPictureCell.m */; };
+		279C0F0D1D2CAD1700D005E3 /* EFCommentListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E2F1D2CAD1700D005E3 /* EFCommentListCell.m */; };
+		279C0F0E1D2CAD1700D005E3 /* EFGoodsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E311D2CAD1700D005E3 /* EFGoodsCell.m */; };
+		279C0F0F1D2CAD1700D005E3 /* EFGoodsCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E331D2CAD1700D005E3 /* EFGoodsCommentCell.m */; };
+		279C0F101D2CAD1700D005E3 /* EFGoodSpecificationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E351D2CAD1700D005E3 /* EFGoodSpecificationCell.m */; };
+		279C0F111D2CAD1700D005E3 /* EFGoodsTwoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E371D2CAD1700D005E3 /* EFGoodsTwoCell.m */; };
+		279C0F121D2CAD1700D005E3 /* EFMallCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E391D2CAD1700D005E3 /* EFMallCell.m */; };
+		279C0F131D2CAD1700D005E3 /* EFMallDetailsStoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E3B1D2CAD1700D005E3 /* EFMallDetailsStoreCell.m */; };
+		279C0F141D2CAD1700D005E3 /* EFMallDetailsTopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E3D1D2CAD1700D005E3 /* EFMallDetailsTopCell.m */; };
+		279C0F151D2CAD1700D005E3 /* EFOrderConfirmCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E3F1D2CAD1700D005E3 /* EFOrderConfirmCell.m */; };
+		279C0F161D2CAD1700D005E3 /* EFOrderDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E411D2CAD1700D005E3 /* EFOrderDetailCell.m */; };
+		279C0F171D2CAD1700D005E3 /* EFOrderDetailTwoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E431D2CAD1700D005E3 /* EFOrderDetailTwoCell.m */; };
+		279C0F181D2CAD1700D005E3 /* EFOrderInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E451D2CAD1700D005E3 /* EFOrderInfoCell.m */; };
+		279C0F191D2CAD1700D005E3 /* EFOrderStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E471D2CAD1700D005E3 /* EFOrderStatusCell.m */; };
+		279C0F1A1D2CAD1700D005E3 /* EFPushCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E491D2CAD1700D005E3 /* EFPushCommentCell.m */; };
+		279C0F1B1D2CAD1700D005E3 /* EFSearchHistroyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E4B1D2CAD1700D005E3 /* EFSearchHistroyCell.m */; };
+		279C0F1C1D2CAD1700D005E3 /* EFSelecteSpecificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E4D1D2CAD1700D005E3 /* EFSelecteSpecificationView.m */; };
+		279C0F1D1D2CAD1700D005E3 /* EFShopCartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E4F1D2CAD1700D005E3 /* EFShopCartCell.m */; };
+		279C0F1E1D2CAD1700D005E3 /* EFShopCartHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E511D2CAD1700D005E3 /* EFShopCartHeadView.m */; };
+		279C0F1F1D2CAD1700D005E3 /* EFTagButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E531D2CAD1700D005E3 /* EFTagButton.m */; };
+		279C0F201D2CAD1700D005E3 /* EFTagsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E551D2CAD1700D005E3 /* EFTagsView.m */; };
+		279C0F211D2CAD1700D005E3 /* EFMallViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E581D2CAD1700D005E3 /* EFMallViewModel.m */; };
+		279C0F221D2CAD1700D005E3 /* EFShopCartViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E5A1D2CAD1700D005E3 /* EFShopCartViewModel.m */; };
+		279C0F231D2CAD1700D005E3 /* UIButton+LXMImagePosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E5E1D2CAD1700D005E3 /* UIButton+LXMImagePosition.m */; };
+		279C0F241D2CAD1700D005E3 /* STConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E621D2CAD1700D005E3 /* STConst.m */; };
+		279C0F251D2CAD1700D005E3 /* STPickerArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E641D2CAD1700D005E3 /* STPickerArea.m */; };
+		279C0F261D2CAD1700D005E3 /* STPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E661D2CAD1700D005E3 /* STPickerView.m */; };
+		279C0F271D2CAD1700D005E3 /* STUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E681D2CAD1700D005E3 /* STUI.m */; };
+		279C0F281D2CAD1700D005E3 /* UIView+ST.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E6A1D2CAD1700D005E3 /* UIView+ST.m */; };
+		279C0F291D2CAD1700D005E3 /* YFViewPager.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E6E1D2CAD1700D005E3 /* YFViewPager.m */; };
+		279C0F2A1D2CAD1700D005E3 /* YJSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E721D2CAD1700D005E3 /* YJSegmentedControl.m */; };
+		279C0F2B1D2CAD1700D005E3 /* EFCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E751D2CAD1700D005E3 /* EFCarousel.m */; };
+		279C0F2C1D2CAD1700D005E3 /* EFCarouselObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E771D2CAD1700D005E3 /* EFCarouselObject.m */; };
+		279C0F2D1D2CAD1700D005E3 /* DCPaymentAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E7A1D2CAD1700D005E3 /* DCPaymentAlert.m */; };
+		279C0F2E1D2CAD1700D005E3 /* DCPaymentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E7C1D2CAD1700D005E3 /* DCPaymentView.m */; };
+		279C0F2F1D2CAD1700D005E3 /* DCPwdTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E7E1D2CAD1700D005E3 /* DCPwdTextField.m */; };
+		279C0F301D2CAD1700D005E3 /* EFPayAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E821D2CAD1700D005E3 /* EFPayAlertView.m */; };
+		279C0F311D2CAD1700D005E3 /* EFSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0E841D2CAD1700D005E3 /* EFSelectView.m */; };
+		279C0F321D2CAD1700D005E3 /* back_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 279C0E861D2CAD1700D005E3 /* back_button@2x.png */; };
+		279C0F331D2CAD1700D005E3 /* cart_addBtn_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 279C0E871D2CAD1700D005E3 /* cart_addBtn_highlight@2x.png */; };
+		279C0F341D2CAD1700D005E3 /* cart_addBtn_nomal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 279C0E881D2CAD1700D005E3 /* cart_addBtn_nomal@2x.png */; };
+		279C0F351D2CAD1700D005E3 /* cart_cutBtn_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 279C0E891D2CAD1700D005E3 /* cart_cutBtn_highlight@2x.png */; };
+		279C0F361D2CAD1700D005E3 /* cart_cutBtn_nomal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 279C0E8A1D2CAD1700D005E3 /* cart_cutBtn_nomal@2x.png */; };
+		279C0F371D2CAD1700D005E3 /* cart_default_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 279C0E8B1D2CAD1700D005E3 /* cart_default_bg.png */; };
+		279C0F381D2CAD1700D005E3 /* cart_selected_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 279C0E8C1D2CAD1700D005E3 /* cart_selected_btn@2x.png */; };
+		279C0F391D2CAD1700D005E3 /* cart_unSelect_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 279C0E8D1D2CAD1700D005E3 /* cart_unSelect_btn@2x.png */; };
+		279C0F3A1D2CAD1700D005E3 /* ic_pass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 279C0E8E1D2CAD1700D005E3 /* ic_pass@2x.png */; };
+		279C0F3B1D2CAD1700D005E3 /* ic_pass@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 279C0E8F1D2CAD1700D005E3 /* ic_pass@3x.png */; };
+		279C0F3C1D2CAD1700D005E3 /* ic_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 279C0E901D2CAD1700D005E3 /* ic_select@2x.png */; };
+		279C0F3D1D2CAD1700D005E3 /* ic_select@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 279C0E911D2CAD1700D005E3 /* ic_select@3x.png */; };
+		279C0F491D2CF73D00D005E3 /* SecondCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C0F481D2CF73D00D005E3 /* SecondCollectionViewCell.m */; };
+		53A8282D0137EE9F80D813BE /* libPods-Risk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29DAD738107DB2EAB0F59EAC /* libPods-Risk.a */; };
+		EB33F7B31D2368C300FA4E12 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33F7B21D2368C300FA4E12 /* main.m */; };
+		EB33F7B61D2368C300FA4E12 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33F7B51D2368C300FA4E12 /* AppDelegate.m */; };
+		EB33F7B91D2368C300FA4E12 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33F7B81D2368C300FA4E12 /* ViewController.m */; };
+		EB33F7BC1D2368C300FA4E12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB33F7BA1D2368C300FA4E12 /* Main.storyboard */; };
+		EB33F7BE1D2368C300FA4E12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB33F7BD1D2368C300FA4E12 /* Assets.xcassets */; };
+		EB33F7C11D2368C300FA4E12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB33F7BF1D2368C300FA4E12 /* LaunchScreen.storyboard */; };
+		EB33FA041D23779A00FA4E12 /* EasyFrame_.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB33FA031D23779A00FA4E12 /* EasyFrame_.plist */; };
+		EB33FC541D23A32F00FA4E12 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EB33FC531D23A32F00FA4E12 /* libxml2.tbd */; };
+		EB33FC561D23A33800FA4E12 /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EB33FC551D23A33800FA4E12 /* libxml2.2.tbd */; };
+		EB33FEBB1D23B02000FA4E12 /* EFThemeConfig_.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB33FEB81D23B02000FA4E12 /* EFThemeConfig_.plist */; };
+		EB33FEBC1D23B02000FA4E12 /* MainLayoutConfig_.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB33FEB91D23B02000FA4E12 /* MainLayoutConfig_.plist */; };
+		EB33FEBD1D23B02000FA4E12 /* PushConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB33FEBA1D23B02000FA4E12 /* PushConfig.plist */; };
+		EB33FED81D23B8F200FA4E12 /* RSHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33FED71D23B8F200FA4E12 /* RSHomeVC.m */; };
+		EB33FEDB1D23B90500FA4E12 /* RSRiskKindVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33FEDA1D23B90500FA4E12 /* RSRiskKindVC.m */; };
+		EB33FEDE1D23B91700FA4E12 /* RSVisitArchiveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33FEDD1D23B91700FA4E12 /* RSVisitArchiveVC.m */; };
+		EB33FEE11D23B92600FA4E12 /* RSDataCenterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33FEE01D23B92600FA4E12 /* RSDataCenterVC.m */; };
+		EB33FEE41D23BA1500FA4E12 /* RSStatisticsReportVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33FEE31D23BA1500FA4E12 /* RSStatisticsReportVC.m */; };
+		EB33FEE71D23BA2300FA4E12 /* RSMineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33FEE61D23BA2300FA4E12 /* RSMineVC.m */; };
+		EB33FEF11D2509E000FA4E12 /* RiskTypesLeftVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33FEF01D2509E000FA4E12 /* RiskTypesLeftVC.m */; };
+		EB33FEF41D250A5400FA4E12 /* RiskTypesRightVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33FEF31D250A5400FA4E12 /* RiskTypesRightVC.m */; };
+		EB33FEF71D250ACA00FA4E12 /* RiskTypeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33FEF61D250ACA00FA4E12 /* RiskTypeModel.m */; };
+		EB33FEFA1D25163400FA4E12 /* RiskDetailTypeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33FEF91D25163400FA4E12 /* RiskDetailTypeModel.m */; };
+		EB33FF101D25170000FA4E12 /* MJArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33FEFE1D25170000FA4E12 /* MJArgument.m */; };
+		EB33FF111D25170000FA4E12 /* MJIvar.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33FF011D25170000FA4E12 /* MJIvar.m */; };
+		EB33FF121D25170000FA4E12 /* MJMember.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33FF031D25170000FA4E12 /* MJMember.m */; };
+		EB33FF131D25170000FA4E12 /* MJMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33FF051D25170000FA4E12 /* MJMethod.m */; };
+		EB33FF141D25170000FA4E12 /* MJType.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33FF071D25170000FA4E12 /* MJType.m */; };
+		EB33FF151D25170000FA4E12 /* MJTypeEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33FF091D25170000FA4E12 /* MJTypeEncoding.m */; };
+		EB33FF161D25170000FA4E12 /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33FF0B1D25170000FA4E12 /* NSObject+MJCoding.m */; };
+		EB33FF171D25170000FA4E12 /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33FF0D1D25170000FA4E12 /* NSObject+MJKeyValue.m */; };
+		EB33FF181D25170000FA4E12 /* NSObject+MJMember.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33FF0F1D25170000FA4E12 /* NSObject+MJMember.m */; };
+		EB60E04C1D2A0595008BFA89 /* RSDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB60E04B1D2A0595008BFA89 /* RSDataView.m */; };
+		EB60E0501D2A0BCB008BFA89 /* RiskDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB60E04F1D2A0BCB008BFA89 /* RiskDataModel.m */; };
+		EB60E0551D2A5EFC008BFA89 /* RSSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB60E0541D2A5EFC008BFA89 /* RSSearchVC.m */; };
+		EB60E0581D2A5F94008BFA89 /* RSSearchHistoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB60E0571D2A5F94008BFA89 /* RSSearchHistoryCell.m */; };
+		EB60E05B1D2A6717008BFA89 /* RSRiskDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB60E05A1D2A6717008BFA89 /* RSRiskDetailVC.m */; };
+		EB6A61B81D27BC5A0052EB0C /* RiskTypeDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6A61B71D27BC5A0052EB0C /* RiskTypeDetailVC.m */; };
+		EB6FC4D61D2B627B00A446D0 /* RiskTypeFDALeftVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6FC4D51D2B627B00A446D0 /* RiskTypeFDALeftVC.m */; };
+		EB6FC4D91D2B629D00A446D0 /* RiskTypeFDARightVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6FC4D81D2B629D00A446D0 /* RiskTypeFDARightVC.m */; };
+		EB6FC4DC1D2B637800A446D0 /* RiskTypeFDARightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6FC4DB1D2B637800A446D0 /* RiskTypeFDARightCell.m */; };
+		EB6FC4E51D2BB47000A446D0 /* RiskTypeFDALeftTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6FC4E41D2BB47000A446D0 /* RiskTypeFDALeftTwoVC.m */; };
+		EB7922EB1D2915F5001DDF72 /* RSDataVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7922EA1D2915F5001DDF72 /* RSDataVC.m */; };
+		EB9A067E1D260D07001D52C8 /* RiskTypesLeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9A067D1D260D07001D52C8 /* RiskTypesLeftCell.m */; };
+		EB9A06901D26785D001D52C8 /* RiskFactorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9A068F1D26785D001D52C8 /* RiskFactorModel.m */; };
+		EBCB96001D2BDE0700C9E118 /* RiskTypeDetailLeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCB95FF1D2BDE0700C9E118 /* RiskTypeDetailLeftCell.m */; };
+		EBCB96041D2BDF5900C9E118 /* RiskTypeDetailLeftModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCB96031D2BDF5900C9E118 /* RiskTypeDetailLeftModel.m */; };
+		F4139875A6333375796C99F1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA736550ABCBC0A381B5812 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		279C0F3F1D2CAD1700D005E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 279C0D101D2CAD1700D005E3 /* EasyFrame_iOS2.0.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EC3135671CF296B5000B8944;
+			remoteInfo = EasyFrame_iOS2.0;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		279C0D101D2CAD1700D005E3 /* EasyFrame_iOS2.0.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = EasyFrame_iOS2.0.xcodeproj; sourceTree = "<group>"; };
+		279C0D141D2CAD1700D005E3 /* EasyFrame.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EasyFrame.plist; sourceTree = "<group>"; };
+		279C0D151D2CAD1700D005E3 /* EFAppHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFAppHeader.h; sourceTree = "<group>"; };
+		279C0D161D2CAD1700D005E3 /* EFAppManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFAppManager.h; sourceTree = "<group>"; };
+		279C0D171D2CAD1700D005E3 /* EFAppManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFAppManager.m; sourceTree = "<group>"; };
+		279C0D1B1D2CAD1700D005E3 /* EFBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFBaseNavigationController.h; sourceTree = "<group>"; };
+		279C0D1C1D2CAD1700D005E3 /* EFBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFBaseNavigationController.m; sourceTree = "<group>"; };
+		279C0D1E1D2CAD1700D005E3 /* EFBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFBaseViewController.h; sourceTree = "<group>"; };
+		279C0D1F1D2CAD1700D005E3 /* EFBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFBaseViewController.m; sourceTree = "<group>"; };
+		279C0D211D2CAD1700D005E3 /* EFHomeSideAndTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFHomeSideAndTabViewController.h; sourceTree = "<group>"; };
+		279C0D221D2CAD1700D005E3 /* EFHomeSideAndTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFHomeSideAndTabViewController.m; sourceTree = "<group>"; };
+		279C0D241D2CAD1700D005E3 /* EFHomeSideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFHomeSideViewController.h; sourceTree = "<group>"; };
+		279C0D251D2CAD1700D005E3 /* EFHomeSideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFHomeSideViewController.m; sourceTree = "<group>"; };
+		279C0D261D2CAD1700D005E3 /* EFSideMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFSideMenuCell.h; sourceTree = "<group>"; };
+		279C0D271D2CAD1700D005E3 /* EFSideMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFSideMenuCell.m; sourceTree = "<group>"; };
+		279C0D281D2CAD1700D005E3 /* EFSideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFSideMenuViewController.h; sourceTree = "<group>"; };
+		279C0D291D2CAD1700D005E3 /* EFSideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFSideMenuViewController.m; sourceTree = "<group>"; };
+		279C0D2A1D2CAD1700D005E3 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		279C0D2B1D2CAD1700D005E3 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		279C0D2D1D2CAD1700D005E3 /* EFHomeSingleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFHomeSingleViewController.h; sourceTree = "<group>"; };
+		279C0D2E1D2CAD1700D005E3 /* EFHomeSingleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFHomeSingleViewController.m; sourceTree = "<group>"; };
+		279C0D301D2CAD1700D005E3 /* EFHomeTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFHomeTabBarController.h; sourceTree = "<group>"; };
+		279C0D311D2CAD1700D005E3 /* EFHomeTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFHomeTabBarController.m; sourceTree = "<group>"; };
+		279C0D331D2CAD1700D005E3 /* EFBaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFBaseViewModel.h; sourceTree = "<group>"; };
+		279C0D341D2CAD1700D005E3 /* EFBaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFBaseViewModel.m; sourceTree = "<group>"; };
+		279C0D351D2CAD1700D005E3 /* EFPageRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFPageRequest.h; sourceTree = "<group>"; };
+		279C0D361D2CAD1700D005E3 /* EFPageRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFPageRequest.m; sourceTree = "<group>"; };
+		279C0D371D2CAD1700D005E3 /* EFPageViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFPageViewModel.h; sourceTree = "<group>"; };
+		279C0D381D2CAD1700D005E3 /* EFPageViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFPageViewModel.m; sourceTree = "<group>"; };
+		279C0D391D2CAD1700D005E3 /* EFRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFRequest.h; sourceTree = "<group>"; };
+		279C0D3A1D2CAD1700D005E3 /* EFRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFRequest.m; sourceTree = "<group>"; };
+		279C0D3B1D2CAD1700D005E3 /* EFRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFRequestManager.h; sourceTree = "<group>"; };
+		279C0D3C1D2CAD1700D005E3 /* EFRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFRequestManager.m; sourceTree = "<group>"; };
+		279C0D3D1D2CAD1700D005E3 /* InputError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputError.h; sourceTree = "<group>"; };
+		279C0D3E1D2CAD1700D005E3 /* InputError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputError.m; sourceTree = "<group>"; };
+		279C0D3F1D2CAD1700D005E3 /* NetworkModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkModel.h; sourceTree = "<group>"; };
+		279C0D401D2CAD1700D005E3 /* NetworkModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkModel.m; sourceTree = "<group>"; };
+		279C0D411D2CAD1700D005E3 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		279C0D431D2CAD1700D005E3 /* EFSkinThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFSkinThemeManager.h; sourceTree = "<group>"; };
+		279C0D441D2CAD1700D005E3 /* EFSkinThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFSkinThemeManager.m; sourceTree = "<group>"; };
+		279C0D451D2CAD1700D005E3 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		279C0D461D2CAD1700D005E3 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		279C0D491D2CAD1700D005E3 /* TKAlertCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKAlertCenter.h; sourceTree = "<group>"; };
+		279C0D4A1D2CAD1700D005E3 /* TKAlertCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKAlertCenter.m; sourceTree = "<group>"; };
+		279C0D4B1D2CAD1700D005E3 /* UIView+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TKCategory.h"; sourceTree = "<group>"; };
+		279C0D4C1D2CAD1700D005E3 /* UIView+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TKCategory.m"; sourceTree = "<group>"; };
+		279C0D4E1D2CAD1700D005E3 /* YRSideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRSideViewController.h; sourceTree = "<group>"; };
+		279C0D4F1D2CAD1700D005E3 /* YRSideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRSideViewController.m; sourceTree = "<group>"; };
+		279C0D501D2CAD1700D005E3 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		279C0D511D2CAD1700D005E3 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		279C0D541D2CAD1700D005E3 /* EFFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFFileManager.h; sourceTree = "<group>"; };
+		279C0D551D2CAD1700D005E3 /* EFFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFFileManager.m; sourceTree = "<group>"; };
+		279C0D5C1D2CAD1700D005E3 /* BlockAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockAlert.h; sourceTree = "<group>"; };
+		279C0D5D1D2CAD1700D005E3 /* BlockAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockAlert.m; sourceTree = "<group>"; };
+		279C0D5E1D2CAD1700D005E3 /* BlockButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockButton.h; sourceTree = "<group>"; };
+		279C0D5F1D2CAD1700D005E3 /* BlockButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockButton.m; sourceTree = "<group>"; };
+		279C0D611D2CAD1700D005E3 /* UIButton+TouchAreaInsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+TouchAreaInsets.h"; sourceTree = "<group>"; };
+		279C0D621D2CAD1700D005E3 /* UIButton+TouchAreaInsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+TouchAreaInsets.m"; sourceTree = "<group>"; };
+		279C0D631D2CAD1700D005E3 /* UIColor+UIColor_Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+UIColor_Hex.h"; sourceTree = "<group>"; };
+		279C0D641D2CAD1700D005E3 /* UIColor+UIColor_Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+UIColor_Hex.m"; sourceTree = "<group>"; };
+		279C0D651D2CAD1700D005E3 /* UIView+JSMAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JSMAdd.h"; sourceTree = "<group>"; };
+		279C0D661D2CAD1700D005E3 /* UIView+JSMAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JSMAdd.m"; sourceTree = "<group>"; };
+		279C0D671D2CAD1700D005E3 /* EF_AlbumView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EF_AlbumView.h; sourceTree = "<group>"; };
+		279C0D681D2CAD1700D005E3 /* EF_AlbumView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EF_AlbumView.m; sourceTree = "<group>"; };
+		279C0D6A1D2CAD1700D005E3 /* EFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFHpple.h; sourceTree = "<group>"; };
+		279C0D6B1D2CAD1700D005E3 /* EFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFHpple.m; sourceTree = "<group>"; };
+		279C0D6C1D2CAD1700D005E3 /* EFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFHppleElement.h; sourceTree = "<group>"; };
+		279C0D6D1D2CAD1700D005E3 /* EFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFHppleElement.m; sourceTree = "<group>"; };
+		279C0D6E1D2CAD1700D005E3 /* EFXPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFXPathQuery.h; sourceTree = "<group>"; };
+		279C0D6F1D2CAD1700D005E3 /* EFXPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFXPathQuery.m; sourceTree = "<group>"; };
+		279C0D701D2CAD1700D005E3 /* EFMyAutoAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMyAutoAlertView.h; sourceTree = "<group>"; };
+		279C0D711D2CAD1700D005E3 /* EFMyAutoAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMyAutoAlertView.m; sourceTree = "<group>"; };
+		279C0D721D2CAD1700D005E3 /* EFPopupViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFPopupViewManager.h; sourceTree = "<group>"; };
+		279C0D731D2CAD1700D005E3 /* EFPopupViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFPopupViewManager.m; sourceTree = "<group>"; };
+		279C0D741D2CAD1700D005E3 /* EFShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFShareView.h; sourceTree = "<group>"; };
+		279C0D751D2CAD1700D005E3 /* EFShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFShareView.m; sourceTree = "<group>"; };
+		279C0D771D2CAD1700D005E3 /* HYDActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYDActivityIndicatorView.h; sourceTree = "<group>"; };
+		279C0D781D2CAD1700D005E3 /* HYDActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYDActivityIndicatorView.m; sourceTree = "<group>"; };
+		279C0D791D2CAD1700D005E3 /* HYDActivityMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYDActivityMessageView.h; sourceTree = "<group>"; };
+		279C0D7A1D2CAD1700D005E3 /* HYDActivityMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYDActivityMessageView.m; sourceTree = "<group>"; };
+		279C0D7B1D2CAD1700D005E3 /* HYDActivityProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYDActivityProgressView.h; sourceTree = "<group>"; };
+		279C0D7C1D2CAD1700D005E3 /* HYDActivityProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYDActivityProgressView.m; sourceTree = "<group>"; };
+		279C0D7E1D2CAD1700D005E3 /* HYDAsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYDAsyncImageView.h; sourceTree = "<group>"; };
+		279C0D7F1D2CAD1700D005E3 /* HYDAsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYDAsyncImageView.m; sourceTree = "<group>"; };
+		279C0D801D2CAD1700D005E3 /* HYDFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYDFileManager.h; sourceTree = "<group>"; };
+		279C0D811D2CAD1700D005E3 /* HYDFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYDFileManager.m; sourceTree = "<group>"; };
+		279C0D821D2CAD1700D005E3 /* HYDImageCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYDImageCategory.h; sourceTree = "<group>"; };
+		279C0D831D2CAD1700D005E3 /* KYDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYDatePickerView.h; sourceTree = "<group>"; };
+		279C0D841D2CAD1700D005E3 /* KYDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYDatePickerView.m; sourceTree = "<group>"; };
+		279C0D851D2CAD1700D005E3 /* KYShaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYShaker.h; sourceTree = "<group>"; };
+		279C0D861D2CAD1700D005E3 /* KYShaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYShaker.m; sourceTree = "<group>"; };
+		279C0D871D2CAD1700D005E3 /* KYTableViewNoDataCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTableViewNoDataCategory.h; sourceTree = "<group>"; };
+		279C0D881D2CAD1700D005E3 /* KYTableViewNoDataCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTableViewNoDataCategory.m; sourceTree = "<group>"; };
+		279C0D8A1D2CAD1700D005E3 /* LocationUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationUtil.h; sourceTree = "<group>"; };
+		279C0D8B1D2CAD1700D005E3 /* LocationUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationUtil.m; sourceTree = "<group>"; };
+		279C0D8C1D2CAD1700D005E3 /* mapLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mapLocation.h; sourceTree = "<group>"; };
+		279C0D8D1D2CAD1700D005E3 /* mapLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mapLocation.m; sourceTree = "<group>"; };
+		279C0D8E1D2CAD1700D005E3 /* WGS84TOGCJ02.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGS84TOGCJ02.h; sourceTree = "<group>"; };
+		279C0D8F1D2CAD1700D005E3 /* WGS84TOGCJ02.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGS84TOGCJ02.m; sourceTree = "<group>"; };
+		279C0D911D2CAD1700D005E3 /* UIImageView+UIActivityIndicatorForSDWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+UIActivityIndicatorForSDWebImage.h"; sourceTree = "<group>"; };
+		279C0D921D2CAD1700D005E3 /* UIImageView+UIActivityIndicatorForSDWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+UIActivityIndicatorForSDWebImage.m"; sourceTree = "<group>"; };
+		279C0D931D2CAD1700D005E3 /* StarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarView.h; sourceTree = "<group>"; };
+		279C0D941D2CAD1700D005E3 /* StarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarView.m; sourceTree = "<group>"; };
+		279C0D961D2CAD1700D005E3 /* KYMHButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYMHButton.h; sourceTree = "<group>"; };
+		279C0D971D2CAD1700D005E3 /* KYMHButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYMHButton.m; sourceTree = "<group>"; };
+		279C0D981D2CAD1700D005E3 /* KYMHImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYMHImageView.h; sourceTree = "<group>"; };
+		279C0D991D2CAD1700D005E3 /* KYMHImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYMHImageView.m; sourceTree = "<group>"; };
+		279C0D9A1D2CAD1700D005E3 /* KYMHLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYMHLabel.h; sourceTree = "<group>"; };
+		279C0D9B1D2CAD1700D005E3 /* KYMHLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYMHLabel.m; sourceTree = "<group>"; };
+		279C0D9C1D2CAD1700D005E3 /* KYTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTableView.h; sourceTree = "<group>"; };
+		279C0D9D1D2CAD1700D005E3 /* KYTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTableView.m; sourceTree = "<group>"; };
+		279C0D9E1D2CAD1700D005E3 /* UIUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIUtil.h; sourceTree = "<group>"; };
+		279C0D9F1D2CAD1700D005E3 /* UIUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIUtil.m; sourceTree = "<group>"; };
+		279C0DA01D2CAD1700D005E3 /* WebUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebUtil.h; sourceTree = "<group>"; };
+		279C0DA11D2CAD1700D005E3 /* WebUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebUtil.m; sourceTree = "<group>"; };
+		279C0DA21D2CAD1700D005E3 /* XYAttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYAttributedString.h; sourceTree = "<group>"; };
+		279C0DA31D2CAD1700D005E3 /* XYAttributedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYAttributedString.m; sourceTree = "<group>"; };
+		279C0DA51D2CAD1700D005E3 /* EFViewControllerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFViewControllerManager.h; sourceTree = "<group>"; };
+		279C0DA61D2CAD1700D005E3 /* EFViewControllerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFViewControllerManager.m; sourceTree = "<group>"; };
+		279C0DA81D2CAD1700D005E3 /* EFForgetPasswordRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFForgetPasswordRequest.h; sourceTree = "<group>"; };
+		279C0DA91D2CAD1700D005E3 /* EFForgetPasswordRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFForgetPasswordRequest.m; sourceTree = "<group>"; };
+		279C0DAA1D2CAD1700D005E3 /* EFForgetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFForgetPasswordViewController.h; sourceTree = "<group>"; };
+		279C0DAB1D2CAD1700D005E3 /* EFForgetPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFForgetPasswordViewController.m; sourceTree = "<group>"; };
+		279C0DAC1D2CAD1700D005E3 /* EFForgetPasswordViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFForgetPasswordViewModel.h; sourceTree = "<group>"; };
+		279C0DAD1D2CAD1700D005E3 /* EFForgetPasswordViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFForgetPasswordViewModel.m; sourceTree = "<group>"; };
+		279C0DAF1D2CAD1700D005E3 /* EFLoginRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFLoginRequest.h; sourceTree = "<group>"; };
+		279C0DB01D2CAD1700D005E3 /* EFLoginRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFLoginRequest.m; sourceTree = "<group>"; };
+		279C0DB11D2CAD1700D005E3 /* EFLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFLoginViewController.h; sourceTree = "<group>"; };
+		279C0DB21D2CAD1700D005E3 /* EFLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFLoginViewController.m; sourceTree = "<group>"; };
+		279C0DB31D2CAD1700D005E3 /* EFLoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFLoginViewModel.h; sourceTree = "<group>"; };
+		279C0DB41D2CAD1700D005E3 /* EFLoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFLoginViewModel.m; sourceTree = "<group>"; };
+		279C0DB51D2CAD1700D005E3 /* EFLoginWithThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFLoginWithThirdViewController.h; sourceTree = "<group>"; };
+		279C0DB61D2CAD1700D005E3 /* EFLoginWithThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFLoginWithThirdViewController.m; sourceTree = "<group>"; };
+		279C0DB71D2CAD1700D005E3 /* EFThirdPartyLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFThirdPartyLoginView.h; sourceTree = "<group>"; };
+		279C0DB81D2CAD1700D005E3 /* EFThirdPartyLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFThirdPartyLoginView.m; sourceTree = "<group>"; };
+		279C0DB91D2CAD1700D005E3 /* EFThirdPartyLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EFThirdPartyLoginView.xib; sourceTree = "<group>"; };
+		279C0DBA1D2CAD1700D005E3 /* EFVerticalButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFVerticalButton.h; sourceTree = "<group>"; };
+		279C0DBB1D2CAD1700D005E3 /* EFVerticalButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFVerticalButton.m; sourceTree = "<group>"; };
+		279C0DBC1D2CAD1700D005E3 /* resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = resource.bundle; sourceTree = "<group>"; };
+		279C0DBD1D2CAD1700D005E3 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		279C0DBE1D2CAD1700D005E3 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		279C0DC01D2CAD1700D005E3 /* EFMineCenterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMineCenterCell.h; sourceTree = "<group>"; };
+		279C0DC11D2CAD1700D005E3 /* EFMineCenterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMineCenterCell.m; sourceTree = "<group>"; };
+		279C0DC21D2CAD1700D005E3 /* EFMineCenterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMineCenterVC.h; sourceTree = "<group>"; };
+		279C0DC31D2CAD1700D005E3 /* EFMineCenterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMineCenterVC.m; sourceTree = "<group>"; };
+		279C0DC51D2CAD1700D005E3 /* EFRegisterRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFRegisterRequest.h; sourceTree = "<group>"; };
+		279C0DC61D2CAD1700D005E3 /* EFRegisterRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFRegisterRequest.m; sourceTree = "<group>"; };
+		279C0DC71D2CAD1700D005E3 /* EFRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFRegisterViewController.h; sourceTree = "<group>"; };
+		279C0DC81D2CAD1700D005E3 /* EFRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFRegisterViewController.m; sourceTree = "<group>"; };
+		279C0DC91D2CAD1700D005E3 /* EFRegisterViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFRegisterViewModel.h; sourceTree = "<group>"; };
+		279C0DCA1D2CAD1700D005E3 /* EFRegisterViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFRegisterViewModel.m; sourceTree = "<group>"; };
+		279C0DCC1D2CAD1700D005E3 /* EFAccountSettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFAccountSettingVC.h; sourceTree = "<group>"; };
+		279C0DCD1D2CAD1700D005E3 /* EFAccountSettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFAccountSettingVC.m; sourceTree = "<group>"; };
+		279C0DCE1D2CAD1700D005E3 /* EFEditCommonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFEditCommonCell.h; sourceTree = "<group>"; };
+		279C0DCF1D2CAD1700D005E3 /* EFEditCommonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFEditCommonCell.m; sourceTree = "<group>"; };
+		279C0DD01D2CAD1700D005E3 /* EFEditCommonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EFEditCommonCell.xib; sourceTree = "<group>"; };
+		279C0DD11D2CAD1700D005E3 /* EFEditMineProfileVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFEditMineProfileVC.h; sourceTree = "<group>"; };
+		279C0DD21D2CAD1700D005E3 /* EFEditMineProfileVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFEditMineProfileVC.m; sourceTree = "<group>"; };
+		279C0DD31D2CAD1700D005E3 /* EFEditNicknameVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFEditNicknameVC.h; sourceTree = "<group>"; };
+		279C0DD41D2CAD1700D005E3 /* EFEditNicknameVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFEditNicknameVC.m; sourceTree = "<group>"; };
+		279C0DD51D2CAD1700D005E3 /* EFMineProfileCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMineProfileCell.h; sourceTree = "<group>"; };
+		279C0DD61D2CAD1700D005E3 /* EFMineProfileCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMineProfileCell.m; sourceTree = "<group>"; };
+		279C0DD71D2CAD1700D005E3 /* EFMineProfileCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EFMineProfileCell.xib; sourceTree = "<group>"; };
+		279C0DD81D2CAD1700D005E3 /* EFSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFSettingCell.h; sourceTree = "<group>"; };
+		279C0DD91D2CAD1700D005E3 /* EFSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFSettingCell.m; sourceTree = "<group>"; };
+		279C0DDA1D2CAD1700D005E3 /* EFSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFSettingViewController.h; sourceTree = "<group>"; };
+		279C0DDB1D2CAD1700D005E3 /* EFSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFSettingViewController.m; sourceTree = "<group>"; };
+		279C0DDC1D2CAD1700D005E3 /* EFUserAvatarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFUserAvatarCell.h; sourceTree = "<group>"; };
+		279C0DDD1D2CAD1700D005E3 /* EFUserAvatarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFUserAvatarCell.m; sourceTree = "<group>"; };
+		279C0DDE1D2CAD1700D005E3 /* EFUserAvatarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EFUserAvatarCell.xib; sourceTree = "<group>"; };
+		279C0DE31D2CAD1700D005E3 /* EFAddAddressVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFAddAddressVC.h; sourceTree = "<group>"; };
+		279C0DE41D2CAD1700D005E3 /* EFAddAddressVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFAddAddressVC.m; sourceTree = "<group>"; };
+		279C0DE51D2CAD1700D005E3 /* EFConsigneeAddressVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFConsigneeAddressVC.h; sourceTree = "<group>"; };
+		279C0DE61D2CAD1700D005E3 /* EFConsigneeAddressVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFConsigneeAddressVC.m; sourceTree = "<group>"; };
+		279C0DE71D2CAD1700D005E3 /* EFEditAddressVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFEditAddressVC.h; sourceTree = "<group>"; };
+		279C0DE81D2CAD1700D005E3 /* EFEditAddressVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFEditAddressVC.m; sourceTree = "<group>"; };
+		279C0DE91D2CAD1700D005E3 /* region.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = region.plist; sourceTree = "<group>"; };
+		279C0DEA1D2CAD1700D005E3 /* EFAftermarketStatusVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFAftermarketStatusVC.h; sourceTree = "<group>"; };
+		279C0DEB1D2CAD1700D005E3 /* EFAftermarketStatusVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFAftermarketStatusVC.m; sourceTree = "<group>"; };
+		279C0DEC1D2CAD1700D005E3 /* EFAfterSaleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFAfterSaleVC.h; sourceTree = "<group>"; };
+		279C0DED1D2CAD1700D005E3 /* EFAfterSaleVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFAfterSaleVC.m; sourceTree = "<group>"; };
+		279C0DEE1D2CAD1700D005E3 /* EFAgencyInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFAgencyInfoVC.h; sourceTree = "<group>"; };
+		279C0DEF1D2CAD1700D005E3 /* EFAgencyInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFAgencyInfoVC.m; sourceTree = "<group>"; };
+		279C0DF01D2CAD1700D005E3 /* EFCommentListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFCommentListVC.h; sourceTree = "<group>"; };
+		279C0DF11D2CAD1700D005E3 /* EFCommentListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFCommentListVC.m; sourceTree = "<group>"; };
+		279C0DF21D2CAD1700D005E3 /* EFGoodsCommentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFGoodsCommentVC.h; sourceTree = "<group>"; };
+		279C0DF31D2CAD1700D005E3 /* EFGoodsCommentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFGoodsCommentVC.m; sourceTree = "<group>"; };
+		279C0DF41D2CAD1700D005E3 /* EFMallDetailsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMallDetailsVC.h; sourceTree = "<group>"; };
+		279C0DF51D2CAD1700D005E3 /* EFMallDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMallDetailsVC.m; sourceTree = "<group>"; };
+		279C0DF61D2CAD1700D005E3 /* EFMallSearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMallSearchVC.h; sourceTree = "<group>"; };
+		279C0DF71D2CAD1700D005E3 /* EFMallSearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMallSearchVC.m; sourceTree = "<group>"; };
+		279C0DF81D2CAD1700D005E3 /* EFMallVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMallVC.h; sourceTree = "<group>"; };
+		279C0DF91D2CAD1700D005E3 /* EFMallVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMallVC.m; sourceTree = "<group>"; };
+		279C0DFA1D2CAD1700D005E3 /* EFMyOrderVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMyOrderVC.h; sourceTree = "<group>"; };
+		279C0DFB1D2CAD1700D005E3 /* EFMyOrderVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMyOrderVC.m; sourceTree = "<group>"; };
+		279C0DFC1D2CAD1700D005E3 /* EFOrderCommentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFOrderCommentVC.h; sourceTree = "<group>"; };
+		279C0DFD1D2CAD1700D005E3 /* EFOrderCommentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFOrderCommentVC.m; sourceTree = "<group>"; };
+		279C0DFE1D2CAD1700D005E3 /* EFOrderConfirmTwoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFOrderConfirmTwoVC.h; sourceTree = "<group>"; };
+		279C0DFF1D2CAD1700D005E3 /* EFOrderConfirmTwoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFOrderConfirmTwoVC.m; sourceTree = "<group>"; };
+		279C0E001D2CAD1700D005E3 /* EFOrderConfirmVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFOrderConfirmVC.h; sourceTree = "<group>"; };
+		279C0E011D2CAD1700D005E3 /* EFOrderConfirmVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFOrderConfirmVC.m; sourceTree = "<group>"; };
+		279C0E021D2CAD1700D005E3 /* EFOrderDetailTwoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFOrderDetailTwoVC.h; sourceTree = "<group>"; };
+		279C0E031D2CAD1700D005E3 /* EFOrderDetailTwoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFOrderDetailTwoVC.m; sourceTree = "<group>"; };
+		279C0E041D2CAD1700D005E3 /* EFOrderDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFOrderDetailVC.h; sourceTree = "<group>"; };
+		279C0E051D2CAD1700D005E3 /* EFOrderDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFOrderDetailVC.m; sourceTree = "<group>"; };
+		279C0E061D2CAD1700D005E3 /* EFPushCommentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFPushCommentVC.h; sourceTree = "<group>"; };
+		279C0E071D2CAD1700D005E3 /* EFPushCommentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFPushCommentVC.m; sourceTree = "<group>"; };
+		279C0E081D2CAD1700D005E3 /* EFSearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFSearchVC.h; sourceTree = "<group>"; };
+		279C0E091D2CAD1700D005E3 /* EFSearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFSearchVC.m; sourceTree = "<group>"; };
+		279C0E0A1D2CAD1700D005E3 /* EFShopCartVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFShopCartVC.h; sourceTree = "<group>"; };
+		279C0E0B1D2CAD1700D005E3 /* EFShopCartVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFShopCartVC.m; sourceTree = "<group>"; };
+		279C0E0C1D2CAD1700D005E3 /* EFStoreVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFStoreVC.h; sourceTree = "<group>"; };
+		279C0E0D1D2CAD1700D005E3 /* EFStoreVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFStoreVC.m; sourceTree = "<group>"; };
+		279C0E0F1D2CAD1700D005E3 /* EFCartModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFCartModel.h; sourceTree = "<group>"; };
+		279C0E101D2CAD1700D005E3 /* EFCartModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFCartModel.m; sourceTree = "<group>"; };
+		279C0E111D2CAD1700D005E3 /* EFGoodModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFGoodModel.h; sourceTree = "<group>"; };
+		279C0E121D2CAD1700D005E3 /* EFGoodModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFGoodModel.m; sourceTree = "<group>"; };
+		279C0E131D2CAD1700D005E3 /* EFMallListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMallListModel.h; sourceTree = "<group>"; };
+		279C0E141D2CAD1700D005E3 /* EFMallListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMallListModel.m; sourceTree = "<group>"; };
+		279C0E151D2CAD1700D005E3 /* EFMallModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMallModel.h; sourceTree = "<group>"; };
+		279C0E161D2CAD1700D005E3 /* EFMallModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMallModel.m; sourceTree = "<group>"; };
+		279C0E171D2CAD1700D005E3 /* EFOrderDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFOrderDetailModel.h; sourceTree = "<group>"; };
+		279C0E181D2CAD1700D005E3 /* EFOrderDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFOrderDetailModel.m; sourceTree = "<group>"; };
+		279C0E191D2CAD1700D005E3 /* EFOrderListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFOrderListModel.h; sourceTree = "<group>"; };
+		279C0E1A1D2CAD1700D005E3 /* EFOrderListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFOrderListModel.m; sourceTree = "<group>"; };
+		279C0E1B1D2CAD1700D005E3 /* EFTagModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFTagModel.h; sourceTree = "<group>"; };
+		279C0E1C1D2CAD1700D005E3 /* EFTagModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFTagModel.m; sourceTree = "<group>"; };
+		279C0E1D1D2CAD1700D005E3 /* GoodModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodModel.h; sourceTree = "<group>"; };
+		279C0E1E1D2CAD1700D005E3 /* GoodModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodModel.m; sourceTree = "<group>"; };
+		279C0E1F1D2CAD1700D005E3 /* ReturnOfGoodsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReturnOfGoodsModel.h; sourceTree = "<group>"; };
+		279C0E201D2CAD1700D005E3 /* ReturnOfGoodsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReturnOfGoodsModel.m; sourceTree = "<group>"; };
+		279C0E221D2CAD1700D005E3 /* EFMailHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMailHeader.h; sourceTree = "<group>"; };
+		279C0E231D2CAD1700D005E3 /* EFMallRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMallRequest.h; sourceTree = "<group>"; };
+		279C0E241D2CAD1700D005E3 /* EFMallRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMallRequest.m; sourceTree = "<group>"; };
+		279C0E251D2CAD1700D005E3 /* EFShopCartRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFShopCartRequest.h; sourceTree = "<group>"; };
+		279C0E261D2CAD1700D005E3 /* EFShopCartRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFShopCartRequest.m; sourceTree = "<group>"; };
+		279C0E281D2CAD1700D005E3 /* EFAddAddressCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFAddAddressCell.h; sourceTree = "<group>"; };
+		279C0E291D2CAD1700D005E3 /* EFAddAddressCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFAddAddressCell.m; sourceTree = "<group>"; };
+		279C0E2A1D2CAD1700D005E3 /* EFAgencyInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFAgencyInfoCell.h; sourceTree = "<group>"; };
+		279C0E2B1D2CAD1700D005E3 /* EFAgencyInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFAgencyInfoCell.m; sourceTree = "<group>"; };
+		279C0E2C1D2CAD1700D005E3 /* EFAgencyPictureCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFAgencyPictureCell.h; sourceTree = "<group>"; };
+		279C0E2D1D2CAD1700D005E3 /* EFAgencyPictureCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFAgencyPictureCell.m; sourceTree = "<group>"; };
+		279C0E2E1D2CAD1700D005E3 /* EFCommentListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFCommentListCell.h; sourceTree = "<group>"; };
+		279C0E2F1D2CAD1700D005E3 /* EFCommentListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFCommentListCell.m; sourceTree = "<group>"; };
+		279C0E301D2CAD1700D005E3 /* EFGoodsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFGoodsCell.h; sourceTree = "<group>"; };
+		279C0E311D2CAD1700D005E3 /* EFGoodsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFGoodsCell.m; sourceTree = "<group>"; };
+		279C0E321D2CAD1700D005E3 /* EFGoodsCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFGoodsCommentCell.h; sourceTree = "<group>"; };
+		279C0E331D2CAD1700D005E3 /* EFGoodsCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFGoodsCommentCell.m; sourceTree = "<group>"; };
+		279C0E341D2CAD1700D005E3 /* EFGoodSpecificationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFGoodSpecificationCell.h; sourceTree = "<group>"; };
+		279C0E351D2CAD1700D005E3 /* EFGoodSpecificationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFGoodSpecificationCell.m; sourceTree = "<group>"; };
+		279C0E361D2CAD1700D005E3 /* EFGoodsTwoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFGoodsTwoCell.h; sourceTree = "<group>"; };
+		279C0E371D2CAD1700D005E3 /* EFGoodsTwoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFGoodsTwoCell.m; sourceTree = "<group>"; };
+		279C0E381D2CAD1700D005E3 /* EFMallCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMallCell.h; sourceTree = "<group>"; };
+		279C0E391D2CAD1700D005E3 /* EFMallCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMallCell.m; sourceTree = "<group>"; };
+		279C0E3A1D2CAD1700D005E3 /* EFMallDetailsStoreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMallDetailsStoreCell.h; sourceTree = "<group>"; };
+		279C0E3B1D2CAD1700D005E3 /* EFMallDetailsStoreCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMallDetailsStoreCell.m; sourceTree = "<group>"; };
+		279C0E3C1D2CAD1700D005E3 /* EFMallDetailsTopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMallDetailsTopCell.h; sourceTree = "<group>"; };
+		279C0E3D1D2CAD1700D005E3 /* EFMallDetailsTopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMallDetailsTopCell.m; sourceTree = "<group>"; };
+		279C0E3E1D2CAD1700D005E3 /* EFOrderConfirmCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFOrderConfirmCell.h; sourceTree = "<group>"; };
+		279C0E3F1D2CAD1700D005E3 /* EFOrderConfirmCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFOrderConfirmCell.m; sourceTree = "<group>"; };
+		279C0E401D2CAD1700D005E3 /* EFOrderDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFOrderDetailCell.h; sourceTree = "<group>"; };
+		279C0E411D2CAD1700D005E3 /* EFOrderDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFOrderDetailCell.m; sourceTree = "<group>"; };
+		279C0E421D2CAD1700D005E3 /* EFOrderDetailTwoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFOrderDetailTwoCell.h; sourceTree = "<group>"; };
+		279C0E431D2CAD1700D005E3 /* EFOrderDetailTwoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFOrderDetailTwoCell.m; sourceTree = "<group>"; };
+		279C0E441D2CAD1700D005E3 /* EFOrderInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFOrderInfoCell.h; sourceTree = "<group>"; };
+		279C0E451D2CAD1700D005E3 /* EFOrderInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFOrderInfoCell.m; sourceTree = "<group>"; };
+		279C0E461D2CAD1700D005E3 /* EFOrderStatusCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFOrderStatusCell.h; sourceTree = "<group>"; };
+		279C0E471D2CAD1700D005E3 /* EFOrderStatusCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFOrderStatusCell.m; sourceTree = "<group>"; };
+		279C0E481D2CAD1700D005E3 /* EFPushCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFPushCommentCell.h; sourceTree = "<group>"; };
+		279C0E491D2CAD1700D005E3 /* EFPushCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFPushCommentCell.m; sourceTree = "<group>"; };
+		279C0E4A1D2CAD1700D005E3 /* EFSearchHistroyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFSearchHistroyCell.h; sourceTree = "<group>"; };
+		279C0E4B1D2CAD1700D005E3 /* EFSearchHistroyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFSearchHistroyCell.m; sourceTree = "<group>"; };
+		279C0E4C1D2CAD1700D005E3 /* EFSelecteSpecificationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFSelecteSpecificationView.h; sourceTree = "<group>"; };
+		279C0E4D1D2CAD1700D005E3 /* EFSelecteSpecificationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFSelecteSpecificationView.m; sourceTree = "<group>"; };
+		279C0E4E1D2CAD1700D005E3 /* EFShopCartCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFShopCartCell.h; sourceTree = "<group>"; };
+		279C0E4F1D2CAD1700D005E3 /* EFShopCartCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFShopCartCell.m; sourceTree = "<group>"; };
+		279C0E501D2CAD1700D005E3 /* EFShopCartHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFShopCartHeadView.h; sourceTree = "<group>"; };
+		279C0E511D2CAD1700D005E3 /* EFShopCartHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFShopCartHeadView.m; sourceTree = "<group>"; };
+		279C0E521D2CAD1700D005E3 /* EFTagButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFTagButton.h; sourceTree = "<group>"; };
+		279C0E531D2CAD1700D005E3 /* EFTagButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFTagButton.m; sourceTree = "<group>"; };
+		279C0E541D2CAD1700D005E3 /* EFTagsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFTagsView.h; sourceTree = "<group>"; };
+		279C0E551D2CAD1700D005E3 /* EFTagsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFTagsView.m; sourceTree = "<group>"; };
+		279C0E571D2CAD1700D005E3 /* EFMallViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMallViewModel.h; sourceTree = "<group>"; };
+		279C0E581D2CAD1700D005E3 /* EFMallViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMallViewModel.m; sourceTree = "<group>"; };
+		279C0E591D2CAD1700D005E3 /* EFShopCartViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFShopCartViewModel.h; sourceTree = "<group>"; };
+		279C0E5A1D2CAD1700D005E3 /* EFShopCartViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFShopCartViewModel.m; sourceTree = "<group>"; };
+		279C0E5D1D2CAD1700D005E3 /* UIButton+LXMImagePosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+LXMImagePosition.h"; sourceTree = "<group>"; };
+		279C0E5E1D2CAD1700D005E3 /* UIButton+LXMImagePosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+LXMImagePosition.m"; sourceTree = "<group>"; };
+		279C0E601D2CAD1700D005E3 /* STConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STConfig.h; sourceTree = "<group>"; };
+		279C0E611D2CAD1700D005E3 /* STConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STConst.h; sourceTree = "<group>"; };
+		279C0E621D2CAD1700D005E3 /* STConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STConst.m; sourceTree = "<group>"; };
+		279C0E631D2CAD1700D005E3 /* STPickerArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPickerArea.h; sourceTree = "<group>"; };
+		279C0E641D2CAD1700D005E3 /* STPickerArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPickerArea.m; sourceTree = "<group>"; };
+		279C0E651D2CAD1700D005E3 /* STPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPickerView.h; sourceTree = "<group>"; };
+		279C0E661D2CAD1700D005E3 /* STPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPickerView.m; sourceTree = "<group>"; };
+		279C0E671D2CAD1700D005E3 /* STUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STUI.h; sourceTree = "<group>"; };
+		279C0E681D2CAD1700D005E3 /* STUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STUI.m; sourceTree = "<group>"; };
+		279C0E691D2CAD1700D005E3 /* UIView+ST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ST.h"; sourceTree = "<group>"; };
+		279C0E6A1D2CAD1700D005E3 /* UIView+ST.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ST.m"; sourceTree = "<group>"; };
+		279C0E6D1D2CAD1700D005E3 /* YFViewPager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFViewPager.h; sourceTree = "<group>"; };
+		279C0E6E1D2CAD1700D005E3 /* YFViewPager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFViewPager.m; sourceTree = "<group>"; };
+		279C0E701D2CAD1700D005E3 /* HowToUse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HowToUse.h; sourceTree = "<group>"; };
+		279C0E711D2CAD1700D005E3 /* YJSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJSegmentedControl.h; sourceTree = "<group>"; };
+		279C0E721D2CAD1700D005E3 /* YJSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJSegmentedControl.m; sourceTree = "<group>"; };
+		279C0E741D2CAD1700D005E3 /* EFCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFCarousel.h; sourceTree = "<group>"; };
+		279C0E751D2CAD1700D005E3 /* EFCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFCarousel.m; sourceTree = "<group>"; };
+		279C0E761D2CAD1700D005E3 /* EFCarouselObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFCarouselObject.h; sourceTree = "<group>"; };
+		279C0E771D2CAD1700D005E3 /* EFCarouselObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFCarouselObject.m; sourceTree = "<group>"; };
+		279C0E791D2CAD1700D005E3 /* DCPaymentAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPaymentAlert.h; sourceTree = "<group>"; };
+		279C0E7A1D2CAD1700D005E3 /* DCPaymentAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCPaymentAlert.m; sourceTree = "<group>"; };
+		279C0E7B1D2CAD1700D005E3 /* DCPaymentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPaymentView.h; sourceTree = "<group>"; };
+		279C0E7C1D2CAD1700D005E3 /* DCPaymentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCPaymentView.m; sourceTree = "<group>"; };
+		279C0E7D1D2CAD1700D005E3 /* DCPwdTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPwdTextField.h; sourceTree = "<group>"; };
+		279C0E7E1D2CAD1700D005E3 /* DCPwdTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCPwdTextField.m; sourceTree = "<group>"; };
+		279C0E7F1D2CAD1700D005E3 /* EFMailNS_Enum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMailNS_Enum.h; sourceTree = "<group>"; };
+		279C0E811D2CAD1700D005E3 /* EFPayAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFPayAlertView.h; sourceTree = "<group>"; };
+		279C0E821D2CAD1700D005E3 /* EFPayAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFPayAlertView.m; sourceTree = "<group>"; };
+		279C0E831D2CAD1700D005E3 /* EFSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFSelectView.h; sourceTree = "<group>"; };
+		279C0E841D2CAD1700D005E3 /* EFSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFSelectView.m; sourceTree = "<group>"; };
+		279C0E861D2CAD1700D005E3 /* back_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_button@2x.png"; sourceTree = "<group>"; };
+		279C0E871D2CAD1700D005E3 /* cart_addBtn_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cart_addBtn_highlight@2x.png"; sourceTree = "<group>"; };
+		279C0E881D2CAD1700D005E3 /* cart_addBtn_nomal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cart_addBtn_nomal@2x.png"; sourceTree = "<group>"; };
+		279C0E891D2CAD1700D005E3 /* cart_cutBtn_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cart_cutBtn_highlight@2x.png"; sourceTree = "<group>"; };
+		279C0E8A1D2CAD1700D005E3 /* cart_cutBtn_nomal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cart_cutBtn_nomal@2x.png"; sourceTree = "<group>"; };
+		279C0E8B1D2CAD1700D005E3 /* cart_default_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cart_default_bg.png; sourceTree = "<group>"; };
+		279C0E8C1D2CAD1700D005E3 /* cart_selected_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cart_selected_btn@2x.png"; sourceTree = "<group>"; };
+		279C0E8D1D2CAD1700D005E3 /* cart_unSelect_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cart_unSelect_btn@2x.png"; sourceTree = "<group>"; };
+		279C0E8E1D2CAD1700D005E3 /* ic_pass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_pass@2x.png"; sourceTree = "<group>"; };
+		279C0E8F1D2CAD1700D005E3 /* ic_pass@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_pass@3x.png"; sourceTree = "<group>"; };
+		279C0E901D2CAD1700D005E3 /* ic_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_select@2x.png"; sourceTree = "<group>"; };
+		279C0E911D2CAD1700D005E3 /* ic_select@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_select@3x.png"; sourceTree = "<group>"; };
+		279C0F471D2CF73D00D005E3 /* SecondCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondCollectionViewCell.h; sourceTree = "<group>"; };
+		279C0F481D2CF73D00D005E3 /* SecondCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondCollectionViewCell.m; sourceTree = "<group>"; };
+		29DAD738107DB2EAB0F59EAC /* libPods-Risk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Risk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F6386731BC1D5B55EA67FE /* Pods-Risk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Risk.release.xcconfig"; path = "Pods/Target Support Files/Pods-Risk/Pods-Risk.release.xcconfig"; sourceTree = "<group>"; };
+		9E2AF876FC8430237EEAFB42 /* Pods-Risk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Risk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Risk/Pods-Risk.debug.xcconfig"; sourceTree = "<group>"; };
+		CFA736550ABCBC0A381B5812 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB33F7AE1D2368C300FA4E12 /* Risk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Risk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB33F7B21D2368C300FA4E12 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EB33F7B41D2368C300FA4E12 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EB33F7B51D2368C300FA4E12 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EB33F7B71D2368C300FA4E12 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EB33F7B81D2368C300FA4E12 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EB33F7BB1D2368C300FA4E12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB33F7BD1D2368C300FA4E12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB33F7C01D2368C300FA4E12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB33F7C21D2368C300FA4E12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB33F9FB1D2368F400FA4E12 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		EB33F9FC1D23691100FA4E12 /* RiskHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RiskHeader.h; sourceTree = "<group>"; };
+		EB33FA031D23779A00FA4E12 /* EasyFrame_.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EasyFrame_.plist; sourceTree = "<group>"; };
+		EB33FC531D23A32F00FA4E12 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		EB33FC551D23A33800FA4E12 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
+		EB33FEB81D23B02000FA4E12 /* EFThemeConfig_.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EFThemeConfig_.plist; sourceTree = "<group>"; };
+		EB33FEB91D23B02000FA4E12 /* MainLayoutConfig_.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MainLayoutConfig_.plist; sourceTree = "<group>"; };
+		EB33FEBA1D23B02000FA4E12 /* PushConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PushConfig.plist; sourceTree = "<group>"; };
+		EB33FED61D23B8F200FA4E12 /* RSHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSHomeVC.h; sourceTree = "<group>"; };
+		EB33FED71D23B8F200FA4E12 /* RSHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSHomeVC.m; sourceTree = "<group>"; };
+		EB33FED91D23B90500FA4E12 /* RSRiskKindVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSRiskKindVC.h; sourceTree = "<group>"; };
+		EB33FEDA1D23B90500FA4E12 /* RSRiskKindVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSRiskKindVC.m; sourceTree = "<group>"; };
+		EB33FEDC1D23B91700FA4E12 /* RSVisitArchiveVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSVisitArchiveVC.h; sourceTree = "<group>"; };
+		EB33FEDD1D23B91700FA4E12 /* RSVisitArchiveVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSVisitArchiveVC.m; sourceTree = "<group>"; };
+		EB33FEDF1D23B92600FA4E12 /* RSDataCenterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSDataCenterVC.h; sourceTree = "<group>"; };
+		EB33FEE01D23B92600FA4E12 /* RSDataCenterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSDataCenterVC.m; sourceTree = "<group>"; };
+		EB33FEE21D23BA1500FA4E12 /* RSStatisticsReportVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSStatisticsReportVC.h; sourceTree = "<group>"; };
+		EB33FEE31D23BA1500FA4E12 /* RSStatisticsReportVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSStatisticsReportVC.m; sourceTree = "<group>"; };
+		EB33FEE51D23BA2300FA4E12 /* RSMineVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSMineVC.h; sourceTree = "<group>"; };
+		EB33FEE61D23BA2300FA4E12 /* RSMineVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSMineVC.m; sourceTree = "<group>"; };
+		EB33FEEF1D2509E000FA4E12 /* RiskTypesLeftVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RiskTypesLeftVC.h; sourceTree = "<group>"; };
+		EB33FEF01D2509E000FA4E12 /* RiskTypesLeftVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RiskTypesLeftVC.m; sourceTree = "<group>"; };
+		EB33FEF21D250A5400FA4E12 /* RiskTypesRightVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RiskTypesRightVC.h; sourceTree = "<group>"; };
+		EB33FEF31D250A5400FA4E12 /* RiskTypesRightVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RiskTypesRightVC.m; sourceTree = "<group>"; };
+		EB33FEF51D250ACA00FA4E12 /* RiskTypeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RiskTypeModel.h; sourceTree = "<group>"; };
+		EB33FEF61D250ACA00FA4E12 /* RiskTypeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RiskTypeModel.m; sourceTree = "<group>"; };
+		EB33FEF81D25163400FA4E12 /* RiskDetailTypeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RiskDetailTypeModel.h; sourceTree = "<group>"; };
+		EB33FEF91D25163400FA4E12 /* RiskDetailTypeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RiskDetailTypeModel.m; sourceTree = "<group>"; };
+		EB33FEFD1D25170000FA4E12 /* MJArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJArgument.h; sourceTree = "<group>"; };
+		EB33FEFE1D25170000FA4E12 /* MJArgument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJArgument.m; sourceTree = "<group>"; };
+		EB33FEFF1D25170000FA4E12 /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
+		EB33FF001D25170000FA4E12 /* MJIvar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJIvar.h; sourceTree = "<group>"; };
+		EB33FF011D25170000FA4E12 /* MJIvar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJIvar.m; sourceTree = "<group>"; };
+		EB33FF021D25170000FA4E12 /* MJMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJMember.h; sourceTree = "<group>"; };
+		EB33FF031D25170000FA4E12 /* MJMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJMember.m; sourceTree = "<group>"; };
+		EB33FF041D25170000FA4E12 /* MJMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJMethod.h; sourceTree = "<group>"; };
+		EB33FF051D25170000FA4E12 /* MJMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJMethod.m; sourceTree = "<group>"; };
+		EB33FF061D25170000FA4E12 /* MJType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJType.h; sourceTree = "<group>"; };
+		EB33FF071D25170000FA4E12 /* MJType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJType.m; sourceTree = "<group>"; };
+		EB33FF081D25170000FA4E12 /* MJTypeEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJTypeEncoding.h; sourceTree = "<group>"; };
+		EB33FF091D25170000FA4E12 /* MJTypeEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJTypeEncoding.m; sourceTree = "<group>"; };
+		EB33FF0A1D25170000FA4E12 /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
+		EB33FF0B1D25170000FA4E12 /* NSObject+MJCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJCoding.m"; sourceTree = "<group>"; };
+		EB33FF0C1D25170000FA4E12 /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
+		EB33FF0D1D25170000FA4E12 /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
+		EB33FF0E1D25170000FA4E12 /* NSObject+MJMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJMember.h"; sourceTree = "<group>"; };
+		EB33FF0F1D25170000FA4E12 /* NSObject+MJMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJMember.m"; sourceTree = "<group>"; };
+		EB60E04A1D2A0595008BFA89 /* RSDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSDataView.h; sourceTree = "<group>"; };
+		EB60E04B1D2A0595008BFA89 /* RSDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSDataView.m; sourceTree = "<group>"; };
+		EB60E04E1D2A0BCB008BFA89 /* RiskDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RiskDataModel.h; sourceTree = "<group>"; };
+		EB60E04F1D2A0BCB008BFA89 /* RiskDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RiskDataModel.m; sourceTree = "<group>"; };
+		EB60E0531D2A5EFC008BFA89 /* RSSearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSearchVC.h; sourceTree = "<group>"; };
+		EB60E0541D2A5EFC008BFA89 /* RSSearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSearchVC.m; sourceTree = "<group>"; };
+		EB60E0561D2A5F94008BFA89 /* RSSearchHistoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSearchHistoryCell.h; sourceTree = "<group>"; };
+		EB60E0571D2A5F94008BFA89 /* RSSearchHistoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSearchHistoryCell.m; sourceTree = "<group>"; };
+		EB60E0591D2A6717008BFA89 /* RSRiskDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSRiskDetailVC.h; sourceTree = "<group>"; };
+		EB60E05A1D2A6717008BFA89 /* RSRiskDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSRiskDetailVC.m; sourceTree = "<group>"; };
+		EB6A61B61D27BC5A0052EB0C /* RiskTypeDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RiskTypeDetailVC.h; sourceTree = "<group>"; };
+		EB6A61B71D27BC5A0052EB0C /* RiskTypeDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RiskTypeDetailVC.m; sourceTree = "<group>"; };
+		EB6FC4D41D2B627B00A446D0 /* RiskTypeFDALeftVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RiskTypeFDALeftVC.h; sourceTree = "<group>"; };
+		EB6FC4D51D2B627B00A446D0 /* RiskTypeFDALeftVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RiskTypeFDALeftVC.m; sourceTree = "<group>"; };
+		EB6FC4D71D2B629D00A446D0 /* RiskTypeFDARightVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RiskTypeFDARightVC.h; sourceTree = "<group>"; };
+		EB6FC4D81D2B629D00A446D0 /* RiskTypeFDARightVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RiskTypeFDARightVC.m; sourceTree = "<group>"; };
+		EB6FC4DA1D2B637800A446D0 /* RiskTypeFDARightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RiskTypeFDARightCell.h; sourceTree = "<group>"; };
+		EB6FC4DB1D2B637800A446D0 /* RiskTypeFDARightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RiskTypeFDARightCell.m; sourceTree = "<group>"; };
+		EB6FC4E31D2BB47000A446D0 /* RiskTypeFDALeftTwoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RiskTypeFDALeftTwoVC.h; sourceTree = "<group>"; };
+		EB6FC4E41D2BB47000A446D0 /* RiskTypeFDALeftTwoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RiskTypeFDALeftTwoVC.m; sourceTree = "<group>"; };
+		EB7922E91D2915F5001DDF72 /* RSDataVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSDataVC.h; sourceTree = "<group>"; };
+		EB7922EA1D2915F5001DDF72 /* RSDataVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSDataVC.m; sourceTree = "<group>"; };
+		EB9A067C1D260D07001D52C8 /* RiskTypesLeftCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RiskTypesLeftCell.h; sourceTree = "<group>"; };
+		EB9A067D1D260D07001D52C8 /* RiskTypesLeftCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RiskTypesLeftCell.m; sourceTree = "<group>"; };
+		EB9A068E1D26785D001D52C8 /* RiskFactorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RiskFactorModel.h; sourceTree = "<group>"; };
+		EB9A068F1D26785D001D52C8 /* RiskFactorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RiskFactorModel.m; sourceTree = "<group>"; };
+		EBCB95FE1D2BDE0700C9E118 /* RiskTypeDetailLeftCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RiskTypeDetailLeftCell.h; sourceTree = "<group>"; };
+		EBCB95FF1D2BDE0700C9E118 /* RiskTypeDetailLeftCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RiskTypeDetailLeftCell.m; sourceTree = "<group>"; };
+		EBCB96021D2BDF5900C9E118 /* RiskTypeDetailLeftModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RiskTypeDetailLeftModel.h; sourceTree = "<group>"; };
+		EBCB96031D2BDF5900C9E118 /* RiskTypeDetailLeftModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RiskTypeDetailLeftModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB33F7AB1D2368C300FA4E12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB33FC561D23A33800FA4E12 /* libxml2.2.tbd in Frameworks */,
+				EB33FC541D23A32F00FA4E12 /* libxml2.tbd in Frameworks */,
+				53A8282D0137EE9F80D813BE /* libPods-Risk.a in Frameworks */,
+				F4139875A6333375796C99F1 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		279C0D0E1D2CAD1700D005E3 /* EasyFrame_iOS2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				279C0D0F1D2CAD1700D005E3 /* EasyFrame_iOS2.0 */,
+				279C0D101D2CAD1700D005E3 /* EasyFrame_iOS2.0.xcodeproj */,
+				279C0D131D2CAD1700D005E3 /* EasyFrameBase */,
+				279C0DA41D2CAD1700D005E3 /* EasyFrameComponent */,
+				279C0DDF1D2CAD1700D005E3 /* EasyFrameShop */,
+			);
+			name = EasyFrame_iOS2.0;
+			path = "../workspace/EF2.0--new/EasyFrame_iOS2.0";
+			sourceTree = "<group>";
+		};
+		279C0D0F1D2CAD1700D005E3 /* EasyFrame_iOS2.0 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EasyFrame_iOS2.0;
+			sourceTree = "<group>";
+		};
+		279C0D111D2CAD1700D005E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				279C0F401D2CAD1700D005E3 /* libEasyFrame_iOS2.0.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		279C0D131D2CAD1700D005E3 /* EasyFrameBase */ = {
+			isa = PBXGroup;
+			children = (
+				279C0D141D2CAD1700D005E3 /* EasyFrame.plist */,
+				279C0D151D2CAD1700D005E3 /* EFAppHeader.h */,
+				279C0D161D2CAD1700D005E3 /* EFAppManager.h */,
+				279C0D171D2CAD1700D005E3 /* EFAppManager.m */,
+				279C0D181D2CAD1700D005E3 /* Frame */,
+				279C0D461D2CAD1700D005E3 /* Header.h */,
+				279C0D471D2CAD1700D005E3 /* Libs */,
+				279C0D501D2CAD1700D005E3 /* PrefixHeader.pch */,
+				279C0D511D2CAD1700D005E3 /* readme.txt */,
+				279C0D521D2CAD1700D005E3 /* Tools */,
+			);
+			path = EasyFrameBase;
+			sourceTree = "<group>";
+		};
+		279C0D181D2CAD1700D005E3 /* Frame */ = {
+			isa = PBXGroup;
+			children = (
+				279C0D191D2CAD1700D005E3 /* MainLayout */,
+				279C0D321D2CAD1700D005E3 /* MVVM */,
+				279C0D421D2CAD1700D005E3 /* SkinTheme */,
+			);
+			path = Frame;
+			sourceTree = "<group>";
+		};
+		279C0D191D2CAD1700D005E3 /* MainLayout */ = {
+			isa = PBXGroup;
+			children = (
+				279C0D1A1D2CAD1700D005E3 /* BaseNavication */,
+				279C0D1D1D2CAD1700D005E3 /* BaseViewController */,
+				279C0D201D2CAD1700D005E3 /* SideAndTabHome */,
+				279C0D231D2CAD1700D005E3 /* SideHome */,
+				279C0D2C1D2CAD1700D005E3 /* SingleHome */,
+				279C0D2F1D2CAD1700D005E3 /* TabHome */,
+			);
+			path = MainLayout;
+			sourceTree = "<group>";
+		};
+		279C0D1A1D2CAD1700D005E3 /* BaseNavication */ = {
+			isa = PBXGroup;
+			children = (
+				279C0D1B1D2CAD1700D005E3 /* EFBaseNavigationController.h */,
+				279C0D1C1D2CAD1700D005E3 /* EFBaseNavigationController.m */,
+			);
+			path = BaseNavication;
+			sourceTree = "<group>";
+		};
+		279C0D1D1D2CAD1700D005E3 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				279C0D1E1D2CAD1700D005E3 /* EFBaseViewController.h */,
+				279C0D1F1D2CAD1700D005E3 /* EFBaseViewController.m */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		279C0D201D2CAD1700D005E3 /* SideAndTabHome */ = {
+			isa = PBXGroup;
+			children = (
+				279C0D211D2CAD1700D005E3 /* EFHomeSideAndTabViewController.h */,
+				279C0D221D2CAD1700D005E3 /* EFHomeSideAndTabViewController.m */,
+			);
+			path = SideAndTabHome;
+			sourceTree = "<group>";
+		};
+		279C0D231D2CAD1700D005E3 /* SideHome */ = {
+			isa = PBXGroup;
+			children = (
+				279C0D241D2CAD1700D005E3 /* EFHomeSideViewController.h */,
+				279C0D251D2CAD1700D005E3 /* EFHomeSideViewController.m */,
+				279C0D261D2CAD1700D005E3 /* EFSideMenuCell.h */,
+				279C0D271D2CAD1700D005E3 /* EFSideMenuCell.m */,
+				279C0D281D2CAD1700D005E3 /* EFSideMenuViewController.h */,
+				279C0D291D2CAD1700D005E3 /* EFSideMenuViewController.m */,
+				279C0D2A1D2CAD1700D005E3 /* HomeViewController.h */,
+				279C0D2B1D2CAD1700D005E3 /* HomeViewController.m */,
+			);
+			path = SideHome;
+			sourceTree = "<group>";
+		};
+		279C0D2C1D2CAD1700D005E3 /* SingleHome */ = {
+			isa = PBXGroup;
+			children = (
+				279C0D2D1D2CAD1700D005E3 /* EFHomeSingleViewController.h */,
+				279C0D2E1D2CAD1700D005E3 /* EFHomeSingleViewController.m */,
+			);
+			path = SingleHome;
+			sourceTree = "<group>";
+		};
+		279C0D2F1D2CAD1700D005E3 /* TabHome */ = {
+			isa = PBXGroup;
+			children = (
+				279C0D301D2CAD1700D005E3 /* EFHomeTabBarController.h */,
+				279C0D311D2CAD1700D005E3 /* EFHomeTabBarController.m */,
+			);
+			path = TabHome;
+			sourceTree = "<group>";
+		};
+		279C0D321D2CAD1700D005E3 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				279C0D331D2CAD1700D005E3 /* EFBaseViewModel.h */,
+				279C0D341D2CAD1700D005E3 /* EFBaseViewModel.m */,
+				279C0D351D2CAD1700D005E3 /* EFPageRequest.h */,
+				279C0D361D2CAD1700D005E3 /* EFPageRequest.m */,
+				279C0D371D2CAD1700D005E3 /* EFPageViewModel.h */,
+				279C0D381D2CAD1700D005E3 /* EFPageViewModel.m */,
+				279C0D391D2CAD1700D005E3 /* EFRequest.h */,
+				279C0D3A1D2CAD1700D005E3 /* EFRequest.m */,
+				279C0D3B1D2CAD1700D005E3 /* EFRequestManager.h */,
+				279C0D3C1D2CAD1700D005E3 /* EFRequestManager.m */,
+				279C0D3D1D2CAD1700D005E3 /* InputError.h */,
+				279C0D3E1D2CAD1700D005E3 /* InputError.m */,
+				279C0D3F1D2CAD1700D005E3 /* NetworkModel.h */,
+				279C0D401D2CAD1700D005E3 /* NetworkModel.m */,
+				279C0D411D2CAD1700D005E3 /* readme.txt */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		279C0D421D2CAD1700D005E3 /* SkinTheme */ = {
+			isa = PBXGroup;
+			children = (
+				279C0D431D2CAD1700D005E3 /* EFSkinThemeManager.h */,
+				279C0D441D2CAD1700D005E3 /* EFSkinThemeManager.m */,
+				279C0D451D2CAD1700D005E3 /* readme.txt */,
+			);
+			path = SkinTheme;
+			sourceTree = "<group>";
+		};
+		279C0D471D2CAD1700D005E3 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				279C0D481D2CAD1700D005E3 /* TKAlertCommon */,
+				279C0D4D1D2CAD1700D005E3 /* YRSideViewController */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		279C0D481D2CAD1700D005E3 /* TKAlertCommon */ = {
+			isa = PBXGroup;
+			children = (
+				279C0D491D2CAD1700D005E3 /* TKAlertCenter.h */,
+				279C0D4A1D2CAD1700D005E3 /* TKAlertCenter.m */,
+				279C0D4B1D2CAD1700D005E3 /* UIView+TKCategory.h */,
+				279C0D4C1D2CAD1700D005E3 /* UIView+TKCategory.m */,
+			);
+			path = TKAlertCommon;
+			sourceTree = "<group>";
+		};
+		279C0D4D1D2CAD1700D005E3 /* YRSideViewController */ = {
+			isa = PBXGroup;
+			children = (
+				279C0D4E1D2CAD1700D005E3 /* YRSideViewController.h */,
+				279C0D4F1D2CAD1700D005E3 /* YRSideViewController.m */,
+			);
+			path = YRSideViewController;
+			sourceTree = "<group>";
+		};
+		279C0D521D2CAD1700D005E3 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				279C0D531D2CAD1700D005E3 /* FileTool */,
+				279C0D561D2CAD1700D005E3 /* ImageTool */,
+				279C0D571D2CAD1700D005E3 /* LableTool */,
+				279C0D581D2CAD1700D005E3 /* MapTool */,
+				279C0D591D2CAD1700D005E3 /* TextTool */,
+				279C0D5A1D2CAD1700D005E3 /* UITool */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		279C0D531D2CAD1700D005E3 /* FileTool */ = {
+			isa = PBXGroup;
+			children = (
+				279C0D541D2CAD1700D005E3 /* EFFileManager.h */,
+				279C0D551D2CAD1700D005E3 /* EFFileManager.m */,
+			);
+			path = FileTool;
+			sourceTree = "<group>";
+		};
+		279C0D561D2CAD1700D005E3 /* ImageTool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ImageTool;
+			sourceTree = "<group>";
+		};
+		279C0D571D2CAD1700D005E3 /* LableTool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LableTool;
+			sourceTree = "<group>";
+		};
+		279C0D581D2CAD1700D005E3 /* MapTool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MapTool;
+			sourceTree = "<group>";
+		};
+		279C0D591D2CAD1700D005E3 /* TextTool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TextTool;
+			sourceTree = "<group>";
+		};
+		279C0D5A1D2CAD1700D005E3 /* UITool */ = {
+			isa = PBXGroup;
+			children = (
+				279C0D5B1D2CAD1700D005E3 /* BlockUI */,
+				279C0D601D2CAD1700D005E3 /* Category */,
+				279C0D671D2CAD1700D005E3 /* EF_AlbumView.h */,
+				279C0D681D2CAD1700D005E3 /* EF_AlbumView.m */,
+				279C0D691D2CAD1700D005E3 /* EFHpple */,
+				279C0D701D2CAD1700D005E3 /* EFMyAutoAlertView.h */,
+				279C0D711D2CAD1700D005E3 /* EFMyAutoAlertView.m */,
+				279C0D721D2CAD1700D005E3 /* EFPopupViewManager.h */,
+				279C0D731D2CAD1700D005E3 /* EFPopupViewManager.m */,
+				279C0D741D2CAD1700D005E3 /* EFShareView.h */,
+				279C0D751D2CAD1700D005E3 /* EFShareView.m */,
+				279C0D761D2CAD1700D005E3 /* HYDActivityIndicatorKit */,
+				279C0D7D1D2CAD1700D005E3 /* HYDImageCommon */,
+				279C0D831D2CAD1700D005E3 /* KYDatePickerView.h */,
+				279C0D841D2CAD1700D005E3 /* KYDatePickerView.m */,
+				279C0D851D2CAD1700D005E3 /* KYShaker.h */,
+				279C0D861D2CAD1700D005E3 /* KYShaker.m */,
+				279C0D871D2CAD1700D005E3 /* KYTableViewNoDataCategory.h */,
+				279C0D881D2CAD1700D005E3 /* KYTableViewNoDataCategory.m */,
+				279C0D891D2CAD1700D005E3 /* Location */,
+				279C0D901D2CAD1700D005E3 /* SDWebImagePlus */,
+				279C0D931D2CAD1700D005E3 /* StarView.h */,
+				279C0D941D2CAD1700D005E3 /* StarView.m */,
+				279C0D951D2CAD1700D005E3 /* UICommon */,
+				279C0D9E1D2CAD1700D005E3 /* UIUtil.h */,
+				279C0D9F1D2CAD1700D005E3 /* UIUtil.m */,
+				279C0DA01D2CAD1700D005E3 /* WebUtil.h */,
+				279C0DA11D2CAD1700D005E3 /* WebUtil.m */,
+				279C0DA21D2CAD1700D005E3 /* XYAttributedString.h */,
+				279C0DA31D2CAD1700D005E3 /* XYAttributedString.m */,
+			);
+			path = UITool;
+			sourceTree = "<group>";
+		};
+		279C0D5B1D2CAD1700D005E3 /* BlockUI */ = {
+			isa = PBXGroup;
+			children = (
+				279C0D5C1D2CAD1700D005E3 /* BlockAlert.h */,
+				279C0D5D1D2CAD1700D005E3 /* BlockAlert.m */,
+				279C0D5E1D2CAD1700D005E3 /* BlockButton.h */,
+				279C0D5F1D2CAD1700D005E3 /* BlockButton.m */,
+			);
+			path = BlockUI;
+			sourceTree = "<group>";
+		};
+		279C0D601D2CAD1700D005E3 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				279C0D611D2CAD1700D005E3 /* UIButton+TouchAreaInsets.h */,
+				279C0D621D2CAD1700D005E3 /* UIButton+TouchAreaInsets.m */,
+				279C0D631D2CAD1700D005E3 /* UIColor+UIColor_Hex.h */,
+				279C0D641D2CAD1700D005E3 /* UIColor+UIColor_Hex.m */,
+				279C0D651D2CAD1700D005E3 /* UIView+JSMAdd.h */,
+				279C0D661D2CAD1700D005E3 /* UIView+JSMAdd.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		279C0D691D2CAD1700D005E3 /* EFHpple */ = {
+			isa = PBXGroup;
+			children = (
+				279C0D6A1D2CAD1700D005E3 /* EFHpple.h */,
+				279C0D6B1D2CAD1700D005E3 /* EFHpple.m */,
+				279C0D6C1D2CAD1700D005E3 /* EFHppleElement.h */,
+				279C0D6D1D2CAD1700D005E3 /* EFHppleElement.m */,
+				279C0D6E1D2CAD1700D005E3 /* EFXPathQuery.h */,
+				279C0D6F1D2CAD1700D005E3 /* EFXPathQuery.m */,
+			);
+			path = EFHpple;
+			sourceTree = "<group>";
+		};
+		279C0D761D2CAD1700D005E3 /* HYDActivityIndicatorKit */ = {
+			isa = PBXGroup;
+			children = (
+				279C0D771D2CAD1700D005E3 /* HYDActivityIndicatorView.h */,
+				279C0D781D2CAD1700D005E3 /* HYDActivityIndicatorView.m */,
+				279C0D791D2CAD1700D005E3 /* HYDActivityMessageView.h */,
+				279C0D7A1D2CAD1700D005E3 /* HYDActivityMessageView.m */,
+				279C0D7B1D2CAD1700D005E3 /* HYDActivityProgressView.h */,
+				279C0D7C1D2CAD1700D005E3 /* HYDActivityProgressView.m */,
+			);
+			path = HYDActivityIndicatorKit;
+			sourceTree = "<group>";
+		};
+		279C0D7D1D2CAD1700D005E3 /* HYDImageCommon */ = {
+			isa = PBXGroup;
+			children = (
+				279C0D7E1D2CAD1700D005E3 /* HYDAsyncImageView.h */,
+				279C0D7F1D2CAD1700D005E3 /* HYDAsyncImageView.m */,
+				279C0D801D2CAD1700D005E3 /* HYDFileManager.h */,
+				279C0D811D2CAD1700D005E3 /* HYDFileManager.m */,
+				279C0D821D2CAD1700D005E3 /* HYDImageCategory.h */,
+			);
+			path = HYDImageCommon;
+			sourceTree = "<group>";
+		};
+		279C0D891D2CAD1700D005E3 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				279C0D8A1D2CAD1700D005E3 /* LocationUtil.h */,
+				279C0D8B1D2CAD1700D005E3 /* LocationUtil.m */,
+				279C0D8C1D2CAD1700D005E3 /* mapLocation.h */,
+				279C0D8D1D2CAD1700D005E3 /* mapLocation.m */,
+				279C0D8E1D2CAD1700D005E3 /* WGS84TOGCJ02.h */,
+				279C0D8F1D2CAD1700D005E3 /* WGS84TOGCJ02.m */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		279C0D901D2CAD1700D005E3 /* SDWebImagePlus */ = {
+			isa = PBXGroup;
+			children = (
+				279C0D911D2CAD1700D005E3 /* UIImageView+UIActivityIndicatorForSDWebImage.h */,
+				279C0D921D2CAD1700D005E3 /* UIImageView+UIActivityIndicatorForSDWebImage.m */,
+			);
+			path = SDWebImagePlus;
+			sourceTree = "<group>";
+		};
+		279C0D951D2CAD1700D005E3 /* UICommon */ = {
+			isa = PBXGroup;
+			children = (
+				279C0D961D2CAD1700D005E3 /* KYMHButton.h */,
+				279C0D971D2CAD1700D005E3 /* KYMHButton.m */,
+				279C0D981D2CAD1700D005E3 /* KYMHImageView.h */,
+				279C0D991D2CAD1700D005E3 /* KYMHImageView.m */,
+				279C0D9A1D2CAD1700D005E3 /* KYMHLabel.h */,
+				279C0D9B1D2CAD1700D005E3 /* KYMHLabel.m */,
+				279C0D9C1D2CAD1700D005E3 /* KYTableView.h */,
+				279C0D9D1D2CAD1700D005E3 /* KYTableView.m */,
+			);
+			path = UICommon;
+			sourceTree = "<group>";
+		};
+		279C0DA41D2CAD1700D005E3 /* EasyFrameComponent */ = {
+			isa = PBXGroup;
+			children = (
+				279C0DA51D2CAD1700D005E3 /* EFViewControllerManager.h */,
+				279C0DA61D2CAD1700D005E3 /* EFViewControllerManager.m */,
+				279C0DA71D2CAD1700D005E3 /* ForgetPassword */,
+				279C0DAE1D2CAD1700D005E3 /* Login */,
+				279C0DBF1D2CAD1700D005E3 /* MineCenter */,
+				279C0DC41D2CAD1700D005E3 /* Register */,
+				279C0DCB1D2CAD1700D005E3 /* Setting */,
+			);
+			path = EasyFrameComponent;
+			sourceTree = "<group>";
+		};
+		279C0DA71D2CAD1700D005E3 /* ForgetPassword */ = {
+			isa = PBXGroup;
+			children = (
+				279C0DA81D2CAD1700D005E3 /* EFForgetPasswordRequest.h */,
+				279C0DA91D2CAD1700D005E3 /* EFForgetPasswordRequest.m */,
+				279C0DAA1D2CAD1700D005E3 /* EFForgetPasswordViewController.h */,
+				279C0DAB1D2CAD1700D005E3 /* EFForgetPasswordViewController.m */,
+				279C0DAC1D2CAD1700D005E3 /* EFForgetPasswordViewModel.h */,
+				279C0DAD1D2CAD1700D005E3 /* EFForgetPasswordViewModel.m */,
+			);
+			path = ForgetPassword;
+			sourceTree = "<group>";
+		};
+		279C0DAE1D2CAD1700D005E3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				279C0DAF1D2CAD1700D005E3 /* EFLoginRequest.h */,
+				279C0DB01D2CAD1700D005E3 /* EFLoginRequest.m */,
+				279C0DB11D2CAD1700D005E3 /* EFLoginViewController.h */,
+				279C0DB21D2CAD1700D005E3 /* EFLoginViewController.m */,
+				279C0DB31D2CAD1700D005E3 /* EFLoginViewModel.h */,
+				279C0DB41D2CAD1700D005E3 /* EFLoginViewModel.m */,
+				279C0DB51D2CAD1700D005E3 /* EFLoginWithThirdViewController.h */,
+				279C0DB61D2CAD1700D005E3 /* EFLoginWithThirdViewController.m */,
+				279C0DB71D2CAD1700D005E3 /* EFThirdPartyLoginView.h */,
+				279C0DB81D2CAD1700D005E3 /* EFThirdPartyLoginView.m */,
+				279C0DB91D2CAD1700D005E3 /* EFThirdPartyLoginView.xib */,
+				279C0DBA1D2CAD1700D005E3 /* EFVerticalButton.h */,
+				279C0DBB1D2CAD1700D005E3 /* EFVerticalButton.m */,
+				279C0DBC1D2CAD1700D005E3 /* resource.bundle */,
+				279C0DBD1D2CAD1700D005E3 /* UserModel.h */,
+				279C0DBE1D2CAD1700D005E3 /* UserModel.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		279C0DBF1D2CAD1700D005E3 /* MineCenter */ = {
+			isa = PBXGroup;
+			children = (
+				279C0DC01D2CAD1700D005E3 /* EFMineCenterCell.h */,
+				279C0DC11D2CAD1700D005E3 /* EFMineCenterCell.m */,
+				279C0DC21D2CAD1700D005E3 /* EFMineCenterVC.h */,
+				279C0DC31D2CAD1700D005E3 /* EFMineCenterVC.m */,
+			);
+			path = MineCenter;
+			sourceTree = "<group>";
+		};
+		279C0DC41D2CAD1700D005E3 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				279C0DC51D2CAD1700D005E3 /* EFRegisterRequest.h */,
+				279C0DC61D2CAD1700D005E3 /* EFRegisterRequest.m */,
+				279C0DC71D2CAD1700D005E3 /* EFRegisterViewController.h */,
+				279C0DC81D2CAD1700D005E3 /* EFRegisterViewController.m */,
+				279C0DC91D2CAD1700D005E3 /* EFRegisterViewModel.h */,
+				279C0DCA1D2CAD1700D005E3 /* EFRegisterViewModel.m */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		279C0DCB1D2CAD1700D005E3 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				279C0DCC1D2CAD1700D005E3 /* EFAccountSettingVC.h */,
+				279C0DCD1D2CAD1700D005E3 /* EFAccountSettingVC.m */,
+				279C0DCE1D2CAD1700D005E3 /* EFEditCommonCell.h */,
+				279C0DCF1D2CAD1700D005E3 /* EFEditCommonCell.m */,
+				279C0DD01D2CAD1700D005E3 /* EFEditCommonCell.xib */,
+				279C0DD11D2CAD1700D005E3 /* EFEditMineProfileVC.h */,
+				279C0DD21D2CAD1700D005E3 /* EFEditMineProfileVC.m */,
+				279C0DD31D2CAD1700D005E3 /* EFEditNicknameVC.h */,
+				279C0DD41D2CAD1700D005E3 /* EFEditNicknameVC.m */,
+				279C0DD51D2CAD1700D005E3 /* EFMineProfileCell.h */,
+				279C0DD61D2CAD1700D005E3 /* EFMineProfileCell.m */,
+				279C0DD71D2CAD1700D005E3 /* EFMineProfileCell.xib */,
+				279C0DD81D2CAD1700D005E3 /* EFSettingCell.h */,
+				279C0DD91D2CAD1700D005E3 /* EFSettingCell.m */,
+				279C0DDA1D2CAD1700D005E3 /* EFSettingViewController.h */,
+				279C0DDB1D2CAD1700D005E3 /* EFSettingViewController.m */,
+				279C0DDC1D2CAD1700D005E3 /* EFUserAvatarCell.h */,
+				279C0DDD1D2CAD1700D005E3 /* EFUserAvatarCell.m */,
+				279C0DDE1D2CAD1700D005E3 /* EFUserAvatarCell.xib */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		279C0DDF1D2CAD1700D005E3 /* EasyFrameShop */ = {
+			isa = PBXGroup;
+			children = (
+				279C0DE01D2CAD1700D005E3 /* Mall */,
+				279C0E5B1D2CAD1700D005E3 /* Other */,
+			);
+			path = EasyFrameShop;
+			sourceTree = "<group>";
+		};
+		279C0DE01D2CAD1700D005E3 /* Mall */ = {
+			isa = PBXGroup;
+			children = (
+				279C0DE11D2CAD1700D005E3 /* Controller */,
+				279C0E0E1D2CAD1700D005E3 /* Model */,
+				279C0E211D2CAD1700D005E3 /* Request */,
+				279C0E271D2CAD1700D005E3 /* View */,
+				279C0E561D2CAD1700D005E3 /* ViewModel */,
+			);
+			path = Mall;
+			sourceTree = "<group>";
+		};
+		279C0DE11D2CAD1700D005E3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				279C0DE21D2CAD1700D005E3 /* Consignee */,
+				279C0DEA1D2CAD1700D005E3 /* EFAftermarketStatusVC.h */,
+				279C0DEB1D2CAD1700D005E3 /* EFAftermarketStatusVC.m */,
+				279C0DEC1D2CAD1700D005E3 /* EFAfterSaleVC.h */,
+				279C0DED1D2CAD1700D005E3 /* EFAfterSaleVC.m */,
+				279C0DEE1D2CAD1700D005E3 /* EFAgencyInfoVC.h */,
+				279C0DEF1D2CAD1700D005E3 /* EFAgencyInfoVC.m */,
+				279C0DF01D2CAD1700D005E3 /* EFCommentListVC.h */,
+				279C0DF11D2CAD1700D005E3 /* EFCommentListVC.m */,
+				279C0DF21D2CAD1700D005E3 /* EFGoodsCommentVC.h */,
+				279C0DF31D2CAD1700D005E3 /* EFGoodsCommentVC.m */,
+				279C0DF41D2CAD1700D005E3 /* EFMallDetailsVC.h */,
+				279C0DF51D2CAD1700D005E3 /* EFMallDetailsVC.m */,
+				279C0DF61D2CAD1700D005E3 /* EFMallSearchVC.h */,
+				279C0DF71D2CAD1700D005E3 /* EFMallSearchVC.m */,
+				279C0DF81D2CAD1700D005E3 /* EFMallVC.h */,
+				279C0DF91D2CAD1700D005E3 /* EFMallVC.m */,
+				279C0DFA1D2CAD1700D005E3 /* EFMyOrderVC.h */,
+				279C0DFB1D2CAD1700D005E3 /* EFMyOrderVC.m */,
+				279C0DFC1D2CAD1700D005E3 /* EFOrderCommentVC.h */,
+				279C0DFD1D2CAD1700D005E3 /* EFOrderCommentVC.m */,
+				279C0DFE1D2CAD1700D005E3 /* EFOrderConfirmTwoVC.h */,
+				279C0DFF1D2CAD1700D005E3 /* EFOrderConfirmTwoVC.m */,
+				279C0E001D2CAD1700D005E3 /* EFOrderConfirmVC.h */,
+				279C0E011D2CAD1700D005E3 /* EFOrderConfirmVC.m */,
+				279C0E021D2CAD1700D005E3 /* EFOrderDetailTwoVC.h */,
+				279C0E031D2CAD1700D005E3 /* EFOrderDetailTwoVC.m */,
+				279C0E041D2CAD1700D005E3 /* EFOrderDetailVC.h */,
+				279C0E051D2CAD1700D005E3 /* EFOrderDetailVC.m */,
+				279C0E061D2CAD1700D005E3 /* EFPushCommentVC.h */,
+				279C0E071D2CAD1700D005E3 /* EFPushCommentVC.m */,
+				279C0E081D2CAD1700D005E3 /* EFSearchVC.h */,
+				279C0E091D2CAD1700D005E3 /* EFSearchVC.m */,
+				279C0E0A1D2CAD1700D005E3 /* EFShopCartVC.h */,
+				279C0E0B1D2CAD1700D005E3 /* EFShopCartVC.m */,
+				279C0E0C1D2CAD1700D005E3 /* EFStoreVC.h */,
+				279C0E0D1D2CAD1700D005E3 /* EFStoreVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		279C0DE21D2CAD1700D005E3 /* Consignee */ = {
+			isa = PBXGroup;
+			children = (
+				279C0DE31D2CAD1700D005E3 /* EFAddAddressVC.h */,
+				279C0DE41D2CAD1700D005E3 /* EFAddAddressVC.m */,
+				279C0DE51D2CAD1700D005E3 /* EFConsigneeAddressVC.h */,
+				279C0DE61D2CAD1700D005E3 /* EFConsigneeAddressVC.m */,
+				279C0DE71D2CAD1700D005E3 /* EFEditAddressVC.h */,
+				279C0DE81D2CAD1700D005E3 /* EFEditAddressVC.m */,
+				279C0DE91D2CAD1700D005E3 /* region.plist */,
+			);
+			path = Consignee;
+			sourceTree = "<group>";
+		};
+		279C0E0E1D2CAD1700D005E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				279C0E0F1D2CAD1700D005E3 /* EFCartModel.h */,
+				279C0E101D2CAD1700D005E3 /* EFCartModel.m */,
+				279C0E111D2CAD1700D005E3 /* EFGoodModel.h */,
+				279C0E121D2CAD1700D005E3 /* EFGoodModel.m */,
+				279C0E131D2CAD1700D005E3 /* EFMallListModel.h */,
+				279C0E141D2CAD1700D005E3 /* EFMallListModel.m */,
+				279C0E151D2CAD1700D005E3 /* EFMallModel.h */,
+				279C0E161D2CAD1700D005E3 /* EFMallModel.m */,
+				279C0E171D2CAD1700D005E3 /* EFOrderDetailModel.h */,
+				279C0E181D2CAD1700D005E3 /* EFOrderDetailModel.m */,
+				279C0E191D2CAD1700D005E3 /* EFOrderListModel.h */,
+				279C0E1A1D2CAD1700D005E3 /* EFOrderListModel.m */,
+				279C0E1B1D2CAD1700D005E3 /* EFTagModel.h */,
+				279C0E1C1D2CAD1700D005E3 /* EFTagModel.m */,
+				279C0E1D1D2CAD1700D005E3 /* GoodModel.h */,
+				279C0E1E1D2CAD1700D005E3 /* GoodModel.m */,
+				279C0E1F1D2CAD1700D005E3 /* ReturnOfGoodsModel.h */,
+				279C0E201D2CAD1700D005E3 /* ReturnOfGoodsModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		279C0E211D2CAD1700D005E3 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				279C0E221D2CAD1700D005E3 /* EFMailHeader.h */,
+				279C0E231D2CAD1700D005E3 /* EFMallRequest.h */,
+				279C0E241D2CAD1700D005E3 /* EFMallRequest.m */,
+				279C0E251D2CAD1700D005E3 /* EFShopCartRequest.h */,
+				279C0E261D2CAD1700D005E3 /* EFShopCartRequest.m */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		279C0E271D2CAD1700D005E3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				279C0E281D2CAD1700D005E3 /* EFAddAddressCell.h */,
+				279C0E291D2CAD1700D005E3 /* EFAddAddressCell.m */,
+				279C0E2A1D2CAD1700D005E3 /* EFAgencyInfoCell.h */,
+				279C0E2B1D2CAD1700D005E3 /* EFAgencyInfoCell.m */,
+				279C0E2C1D2CAD1700D005E3 /* EFAgencyPictureCell.h */,
+				279C0E2D1D2CAD1700D005E3 /* EFAgencyPictureCell.m */,
+				279C0E2E1D2CAD1700D005E3 /* EFCommentListCell.h */,
+				279C0E2F1D2CAD1700D005E3 /* EFCommentListCell.m */,
+				279C0E301D2CAD1700D005E3 /* EFGoodsCell.h */,
+				279C0E311D2CAD1700D005E3 /* EFGoodsCell.m */,
+				279C0E321D2CAD1700D005E3 /* EFGoodsCommentCell.h */,
+				279C0E331D2CAD1700D005E3 /* EFGoodsCommentCell.m */,
+				279C0E341D2CAD1700D005E3 /* EFGoodSpecificationCell.h */,
+				279C0E351D2CAD1700D005E3 /* EFGoodSpecificationCell.m */,
+				279C0E361D2CAD1700D005E3 /* EFGoodsTwoCell.h */,
+				279C0E371D2CAD1700D005E3 /* EFGoodsTwoCell.m */,
+				279C0E381D2CAD1700D005E3 /* EFMallCell.h */,
+				279C0E391D2CAD1700D005E3 /* EFMallCell.m */,
+				279C0E3A1D2CAD1700D005E3 /* EFMallDetailsStoreCell.h */,
+				279C0E3B1D2CAD1700D005E3 /* EFMallDetailsStoreCell.m */,
+				279C0E3C1D2CAD1700D005E3 /* EFMallDetailsTopCell.h */,
+				279C0E3D1D2CAD1700D005E3 /* EFMallDetailsTopCell.m */,
+				279C0E3E1D2CAD1700D005E3 /* EFOrderConfirmCell.h */,
+				279C0E3F1D2CAD1700D005E3 /* EFOrderConfirmCell.m */,
+				279C0E401D2CAD1700D005E3 /* EFOrderDetailCell.h */,
+				279C0E411D2CAD1700D005E3 /* EFOrderDetailCell.m */,
+				279C0E421D2CAD1700D005E3 /* EFOrderDetailTwoCell.h */,
+				279C0E431D2CAD1700D005E3 /* EFOrderDetailTwoCell.m */,
+				279C0E441D2CAD1700D005E3 /* EFOrderInfoCell.h */,
+				279C0E451D2CAD1700D005E3 /* EFOrderInfoCell.m */,
+				279C0E461D2CAD1700D005E3 /* EFOrderStatusCell.h */,
+				279C0E471D2CAD1700D005E3 /* EFOrderStatusCell.m */,
+				279C0E481D2CAD1700D005E3 /* EFPushCommentCell.h */,
+				279C0E491D2CAD1700D005E3 /* EFPushCommentCell.m */,
+				279C0E4A1D2CAD1700D005E3 /* EFSearchHistroyCell.h */,
+				279C0E4B1D2CAD1700D005E3 /* EFSearchHistroyCell.m */,
+				279C0E4C1D2CAD1700D005E3 /* EFSelecteSpecificationView.h */,
+				279C0E4D1D2CAD1700D005E3 /* EFSelecteSpecificationView.m */,
+				279C0E4E1D2CAD1700D005E3 /* EFShopCartCell.h */,
+				279C0E4F1D2CAD1700D005E3 /* EFShopCartCell.m */,
+				279C0E501D2CAD1700D005E3 /* EFShopCartHeadView.h */,
+				279C0E511D2CAD1700D005E3 /* EFShopCartHeadView.m */,
+				279C0E521D2CAD1700D005E3 /* EFTagButton.h */,
+				279C0E531D2CAD1700D005E3 /* EFTagButton.m */,
+				279C0E541D2CAD1700D005E3 /* EFTagsView.h */,
+				279C0E551D2CAD1700D005E3 /* EFTagsView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		279C0E561D2CAD1700D005E3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				279C0E571D2CAD1700D005E3 /* EFMallViewModel.h */,
+				279C0E581D2CAD1700D005E3 /* EFMallViewModel.m */,
+				279C0E591D2CAD1700D005E3 /* EFShopCartViewModel.h */,
+				279C0E5A1D2CAD1700D005E3 /* EFShopCartViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		279C0E5B1D2CAD1700D005E3 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				279C0E5C1D2CAD1700D005E3 /* Category */,
+				279C0E5F1D2CAD1700D005E3 /* cityPicker */,
+				279C0E6B1D2CAD1700D005E3 /* CustomView */,
+				279C0E731D2CAD1700D005E3 /* DCPayAlertDemo */,
+				279C0E741D2CAD1700D005E3 /* EFCarousel.h */,
+				279C0E751D2CAD1700D005E3 /* EFCarousel.m */,
+				279C0E761D2CAD1700D005E3 /* EFCarouselObject.h */,
+				279C0E771D2CAD1700D005E3 /* EFCarouselObject.m */,
+				279C0E781D2CAD1700D005E3 /* EFInputPayPasswordView */,
+				279C0E7F1D2CAD1700D005E3 /* EFMailNS_Enum.h */,
+				279C0E801D2CAD1700D005E3 /* EFPayView */,
+				279C0E831D2CAD1700D005E3 /* EFSelectView.h */,
+				279C0E841D2CAD1700D005E3 /* EFSelectView.m */,
+				279C0E851D2CAD1700D005E3 /* TestImage */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		279C0E5C1D2CAD1700D005E3 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				279C0E5D1D2CAD1700D005E3 /* UIButton+LXMImagePosition.h */,
+				279C0E5E1D2CAD1700D005E3 /* UIButton+LXMImagePosition.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		279C0E5F1D2CAD1700D005E3 /* cityPicker */ = {
+			isa = PBXGroup;
+			children = (
+				279C0E601D2CAD1700D005E3 /* STConfig.h */,
+				279C0E611D2CAD1700D005E3 /* STConst.h */,
+				279C0E621D2CAD1700D005E3 /* STConst.m */,
+				279C0E631D2CAD1700D005E3 /* STPickerArea.h */,
+				279C0E641D2CAD1700D005E3 /* STPickerArea.m */,
+				279C0E651D2CAD1700D005E3 /* STPickerView.h */,
+				279C0E661D2CAD1700D005E3 /* STPickerView.m */,
+				279C0E671D2CAD1700D005E3 /* STUI.h */,
+				279C0E681D2CAD1700D005E3 /* STUI.m */,
+				279C0E691D2CAD1700D005E3 /* UIView+ST.h */,
+				279C0E6A1D2CAD1700D005E3 /* UIView+ST.m */,
+			);
+			path = cityPicker;
+			sourceTree = "<group>";
+		};
+		279C0E6B1D2CAD1700D005E3 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				279C0E6C1D2CAD1700D005E3 /* YFViewPager */,
+				279C0E6F1D2CAD1700D005E3 /* YJSegmentedControl */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		279C0E6C1D2CAD1700D005E3 /* YFViewPager */ = {
+			isa = PBXGroup;
+			children = (
+				279C0E6D1D2CAD1700D005E3 /* YFViewPager.h */,
+				279C0E6E1D2CAD1700D005E3 /* YFViewPager.m */,
+			);
+			path = YFViewPager;
+			sourceTree = "<group>";
+		};
+		279C0E6F1D2CAD1700D005E3 /* YJSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				279C0E701D2CAD1700D005E3 /* HowToUse.h */,
+				279C0E711D2CAD1700D005E3 /* YJSegmentedControl.h */,
+				279C0E721D2CAD1700D005E3 /* YJSegmentedControl.m */,
+			);
+			path = YJSegmentedControl;
+			sourceTree = "<group>";
+		};
+		279C0E731D2CAD1700D005E3 /* DCPayAlertDemo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DCPayAlertDemo;
+			sourceTree = "<group>";
+		};
+		279C0E781D2CAD1700D005E3 /* EFInputPayPasswordView */ = {
+			isa = PBXGroup;
+			children = (
+				279C0E791D2CAD1700D005E3 /* DCPaymentAlert.h */,
+				279C0E7A1D2CAD1700D005E3 /* DCPaymentAlert.m */,
+				279C0E7B1D2CAD1700D005E3 /* DCPaymentView.h */,
+				279C0E7C1D2CAD1700D005E3 /* DCPaymentView.m */,
+				279C0E7D1D2CAD1700D005E3 /* DCPwdTextField.h */,
+				279C0E7E1D2CAD1700D005E3 /* DCPwdTextField.m */,
+			);
+			path = EFInputPayPasswordView;
+			sourceTree = "<group>";
+		};
+		279C0E801D2CAD1700D005E3 /* EFPayView */ = {
+			isa = PBXGroup;
+			children = (
+				279C0E811D2CAD1700D005E3 /* EFPayAlertView.h */,
+				279C0E821D2CAD1700D005E3 /* EFPayAlertView.m */,
+			);
+			path = EFPayView;
+			sourceTree = "<group>";
+		};
+		279C0E851D2CAD1700D005E3 /* TestImage */ = {
+			isa = PBXGroup;
+			children = (
+				279C0E861D2CAD1700D005E3 /* back_button@2x.png */,
+				279C0E871D2CAD1700D005E3 /* cart_addBtn_highlight@2x.png */,
+				279C0E881D2CAD1700D005E3 /* cart_addBtn_nomal@2x.png */,
+				279C0E891D2CAD1700D005E3 /* cart_cutBtn_highlight@2x.png */,
+				279C0E8A1D2CAD1700D005E3 /* cart_cutBtn_nomal@2x.png */,
+				279C0E8B1D2CAD1700D005E3 /* cart_default_bg.png */,
+				279C0E8C1D2CAD1700D005E3 /* cart_selected_btn@2x.png */,
+				279C0E8D1D2CAD1700D005E3 /* cart_unSelect_btn@2x.png */,
+				279C0E8E1D2CAD1700D005E3 /* ic_pass@2x.png */,
+				279C0E8F1D2CAD1700D005E3 /* ic_pass@3x.png */,
+				279C0E901D2CAD1700D005E3 /* ic_select@2x.png */,
+				279C0E911D2CAD1700D005E3 /* ic_select@3x.png */,
+			);
+			path = TestImage;
+			sourceTree = "<group>";
+		};
+		638DDF4235C3A4443461A5E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB33FC551D23A33800FA4E12 /* libxml2.2.tbd */,
+				EB33FC531D23A32F00FA4E12 /* libxml2.tbd */,
+				29DAD738107DB2EAB0F59EAC /* libPods-Risk.a */,
+				CFA736550ABCBC0A381B5812 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99289D11A7F40BC96D41C60E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E2AF876FC8430237EEAFB42 /* Pods-Risk.debug.xcconfig */,
+				84F6386731BC1D5B55EA67FE /* Pods-Risk.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EB33F7A51D2368C300FA4E12 = {
+			isa = PBXGroup;
+			children = (
+				279C0D0E1D2CAD1700D005E3 /* EasyFrame_iOS2.0 */,
+				EB33F7B01D2368C300FA4E12 /* Risk */,
+				EB33F7AF1D2368C300FA4E12 /* Products */,
+				99289D11A7F40BC96D41C60E /* Pods */,
+				638DDF4235C3A4443461A5E5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EB33F7AF1D2368C300FA4E12 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB33F7AE1D2368C300FA4E12 /* Risk.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB33F7B01D2368C300FA4E12 /* Risk */ = {
+			isa = PBXGroup;
+			children = (
+				EB33FEC71D23B89A00FA4E12 /* Home */,
+				EB33FECD1D23B89A00FA4E12 /* RiskKind */,
+				EB33FED31D23B89A00FA4E12 /* VisitArchive */,
+				EB33FEC41D23B89A00FA4E12 /* DataCenter */,
+				EB33FED01D23B89A00FA4E12 /* StatisticsReport */,
+				EB33FECA1D23B89A00FA4E12 /* Mine */,
+				EB33FEBF1D23B23800FA4E12 /* Model */,
+				EB33FEC11D23B23800FA4E12 /* Request */,
+				EB33FEC21D23B23800FA4E12 /* ViewModel */,
+				EB33FEC01D23B23800FA4E12 /* Other */,
+				EB33F7B41D2368C300FA4E12 /* AppDelegate.h */,
+				EB33F7B51D2368C300FA4E12 /* AppDelegate.m */,
+				EB33F7B71D2368C300FA4E12 /* ViewController.h */,
+				EB33F7B81D2368C300FA4E12 /* ViewController.m */,
+				EB33F7BA1D2368C300FA4E12 /* Main.storyboard */,
+				EB33F7BD1D2368C300FA4E12 /* Assets.xcassets */,
+				EB33F7BF1D2368C300FA4E12 /* LaunchScreen.storyboard */,
+				EB33F7C21D2368C300FA4E12 /* Info.plist */,
+				EB33F7B11D2368C300FA4E12 /* Supporting Files */,
+			);
+			path = Risk;
+			sourceTree = "<group>";
+		};
+		EB33F7B11D2368C300FA4E12 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB33FA031D23779A00FA4E12 /* EasyFrame_.plist */,
+				EB33FEB81D23B02000FA4E12 /* EFThemeConfig_.plist */,
+				EB33FEB91D23B02000FA4E12 /* MainLayoutConfig_.plist */,
+				EB33FEBA1D23B02000FA4E12 /* PushConfig.plist */,
+				EB33F7B21D2368C300FA4E12 /* main.m */,
+				EB33F9FB1D2368F400FA4E12 /* PrefixHeader.pch */,
+				EB33F9FC1D23691100FA4E12 /* RiskHeader.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB33FEBF1D23B23800FA4E12 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB33FEF51D250ACA00FA4E12 /* RiskTypeModel.h */,
+				EB33FEF61D250ACA00FA4E12 /* RiskTypeModel.m */,
+				EB33FEF81D25163400FA4E12 /* RiskDetailTypeModel.h */,
+				EB33FEF91D25163400FA4E12 /* RiskDetailTypeModel.m */,
+				EB9A068E1D26785D001D52C8 /* RiskFactorModel.h */,
+				EB9A068F1D26785D001D52C8 /* RiskFactorModel.m */,
+				EB60E04E1D2A0BCB008BFA89 /* RiskDataModel.h */,
+				EB60E04F1D2A0BCB008BFA89 /* RiskDataModel.m */,
+				EBCB96021D2BDF5900C9E118 /* RiskTypeDetailLeftModel.h */,
+				EBCB96031D2BDF5900C9E118 /* RiskTypeDetailLeftModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB33FEC01D23B23800FA4E12 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				EB33FEFB1D2516FF00FA4E12 /* Three */,
+				EB33FEED1D23DCB400FA4E12 /* RSCommon */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		EB33FEC11D23B23800FA4E12 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		EB33FEC21D23B23800FA4E12 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EB33FEC41D23B89A00FA4E12 /* DataCenter */ = {
+			isa = PBXGroup;
+			children = (
+				EB33FEC51D23B89A00FA4E12 /* Controller */,
+				EB33FEC61D23B89A00FA4E12 /* View */,
+			);
+			path = DataCenter;
+			sourceTree = "<group>";
+		};
+		EB33FEC51D23B89A00FA4E12 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB33FEDF1D23B92600FA4E12 /* RSDataCenterVC.h */,
+				EB33FEE01D23B92600FA4E12 /* RSDataCenterVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EB33FEC61D23B89A00FA4E12 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				279C0F471D2CF73D00D005E3 /* SecondCollectionViewCell.h */,
+				279C0F481D2CF73D00D005E3 /* SecondCollectionViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB33FEC71D23B89A00FA4E12 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EB33FEC81D23B89A00FA4E12 /* Controller */,
+				EB33FEC91D23B89A00FA4E12 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EB33FEC81D23B89A00FA4E12 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB33FED61D23B8F200FA4E12 /* RSHomeVC.h */,
+				EB33FED71D23B8F200FA4E12 /* RSHomeVC.m */,
+				EB7922E91D2915F5001DDF72 /* RSDataVC.h */,
+				EB7922EA1D2915F5001DDF72 /* RSDataVC.m */,
+				EB60E0531D2A5EFC008BFA89 /* RSSearchVC.h */,
+				EB60E0541D2A5EFC008BFA89 /* RSSearchVC.m */,
+				EB60E0591D2A6717008BFA89 /* RSRiskDetailVC.h */,
+				EB60E05A1D2A6717008BFA89 /* RSRiskDetailVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EB33FEC91D23B89A00FA4E12 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB60E04A1D2A0595008BFA89 /* RSDataView.h */,
+				EB60E04B1D2A0595008BFA89 /* RSDataView.m */,
+				EB60E0561D2A5F94008BFA89 /* RSSearchHistoryCell.h */,
+				EB60E0571D2A5F94008BFA89 /* RSSearchHistoryCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB33FECA1D23B89A00FA4E12 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				EB33FECB1D23B89A00FA4E12 /* Controller */,
+				EB33FECC1D23B89A00FA4E12 /* View */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		EB33FECB1D23B89A00FA4E12 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB33FEE51D23BA2300FA4E12 /* RSMineVC.h */,
+				EB33FEE61D23BA2300FA4E12 /* RSMineVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EB33FECC1D23B89A00FA4E12 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB33FECD1D23B89A00FA4E12 /* RiskKind */ = {
+			isa = PBXGroup;
+			children = (
+				EB33FECE1D23B89A00FA4E12 /* Controller */,
+				EB33FECF1D23B89A00FA4E12 /* View */,
+			);
+			path = RiskKind;
+			sourceTree = "<group>";
+		};
+		EB33FECE1D23B89A00FA4E12 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB33FED91D23B90500FA4E12 /* RSRiskKindVC.h */,
+				EB33FEDA1D23B90500FA4E12 /* RSRiskKindVC.m */,
+				EB33FEEF1D2509E000FA4E12 /* RiskTypesLeftVC.h */,
+				EB33FEF01D2509E000FA4E12 /* RiskTypesLeftVC.m */,
+				EB33FEF21D250A5400FA4E12 /* RiskTypesRightVC.h */,
+				EB33FEF31D250A5400FA4E12 /* RiskTypesRightVC.m */,
+				EB6A61B61D27BC5A0052EB0C /* RiskTypeDetailVC.h */,
+				EB6A61B71D27BC5A0052EB0C /* RiskTypeDetailVC.m */,
+				EB6FC4D41D2B627B00A446D0 /* RiskTypeFDALeftVC.h */,
+				EB6FC4D51D2B627B00A446D0 /* RiskTypeFDALeftVC.m */,
+				EB6FC4E31D2BB47000A446D0 /* RiskTypeFDALeftTwoVC.h */,
+				EB6FC4E41D2BB47000A446D0 /* RiskTypeFDALeftTwoVC.m */,
+				EB6FC4D71D2B629D00A446D0 /* RiskTypeFDARightVC.h */,
+				EB6FC4D81D2B629D00A446D0 /* RiskTypeFDARightVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EB33FECF1D23B89A00FA4E12 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB9A067C1D260D07001D52C8 /* RiskTypesLeftCell.h */,
+				EB9A067D1D260D07001D52C8 /* RiskTypesLeftCell.m */,
+				EB6FC4DA1D2B637800A446D0 /* RiskTypeFDARightCell.h */,
+				EB6FC4DB1D2B637800A446D0 /* RiskTypeFDARightCell.m */,
+				EBCB95FE1D2BDE0700C9E118 /* RiskTypeDetailLeftCell.h */,
+				EBCB95FF1D2BDE0700C9E118 /* RiskTypeDetailLeftCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB33FED01D23B89A00FA4E12 /* StatisticsReport */ = {
+			isa = PBXGroup;
+			children = (
+				EB33FED11D23B89A00FA4E12 /* Controller */,
+				EB33FED21D23B89A00FA4E12 /* View */,
+			);
+			path = StatisticsReport;
+			sourceTree = "<group>";
+		};
+		EB33FED11D23B89A00FA4E12 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB33FEE21D23BA1500FA4E12 /* RSStatisticsReportVC.h */,
+				EB33FEE31D23BA1500FA4E12 /* RSStatisticsReportVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EB33FED21D23B89A00FA4E12 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB33FED31D23B89A00FA4E12 /* VisitArchive */ = {
+			isa = PBXGroup;
+			children = (
+				EB33FED41D23B89A00FA4E12 /* Controller */,
+				EB33FED51D23B89A00FA4E12 /* View */,
+			);
+			path = VisitArchive;
+			sourceTree = "<group>";
+		};
+		EB33FED41D23B89A00FA4E12 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB33FEDC1D23B91700FA4E12 /* RSVisitArchiveVC.h */,
+				EB33FEDD1D23B91700FA4E12 /* RSVisitArchiveVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EB33FED51D23B89A00FA4E12 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB33FEED1D23DCB400FA4E12 /* RSCommon */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RSCommon;
+			sourceTree = "<group>";
+		};
+		EB33FEFB1D2516FF00FA4E12 /* Three */ = {
+			isa = PBXGroup;
+			children = (
+				EB33FEFC1D25170000FA4E12 /* MJExtension */,
+			);
+			path = Three;
+			sourceTree = "<group>";
+		};
+		EB33FEFC1D25170000FA4E12 /* MJExtension */ = {
+			isa = PBXGroup;
+			children = (
+				EB33FEFD1D25170000FA4E12 /* MJArgument.h */,
+				EB33FEFE1D25170000FA4E12 /* MJArgument.m */,
+				EB33FEFF1D25170000FA4E12 /* MJExtension.h */,
+				EB33FF001D25170000FA4E12 /* MJIvar.h */,
+				EB33FF011D25170000FA4E12 /* MJIvar.m */,
+				EB33FF021D25170000FA4E12 /* MJMember.h */,
+				EB33FF031D25170000FA4E12 /* MJMember.m */,
+				EB33FF041D25170000FA4E12 /* MJMethod.h */,
+				EB33FF051D25170000FA4E12 /* MJMethod.m */,
+				EB33FF061D25170000FA4E12 /* MJType.h */,
+				EB33FF071D25170000FA4E12 /* MJType.m */,
+				EB33FF081D25170000FA4E12 /* MJTypeEncoding.h */,
+				EB33FF091D25170000FA4E12 /* MJTypeEncoding.m */,
+				EB33FF0A1D25170000FA4E12 /* NSObject+MJCoding.h */,
+				EB33FF0B1D25170000FA4E12 /* NSObject+MJCoding.m */,
+				EB33FF0C1D25170000FA4E12 /* NSObject+MJKeyValue.h */,
+				EB33FF0D1D25170000FA4E12 /* NSObject+MJKeyValue.m */,
+				EB33FF0E1D25170000FA4E12 /* NSObject+MJMember.h */,
+				EB33FF0F1D25170000FA4E12 /* NSObject+MJMember.m */,
+			);
+			path = MJExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB33F7AD1D2368C300FA4E12 /* Risk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB33F7C51D2368C300FA4E12 /* Build configuration list for PBXNativeTarget "Risk" */;
+			buildPhases = (
+				9F6625D9E7AFBBD4491A0175 /* Check Pods Manifest.lock */,
+				4B957C477361F899BDD3BC40 /* [CP] Check Pods Manifest.lock */,
+				EB33F7AA1D2368C300FA4E12 /* Sources */,
+				EB33F7AB1D2368C300FA4E12 /* Frameworks */,
+				EB33F7AC1D2368C300FA4E12 /* Resources */,
+				7682355C1B4CAF74B62B31AC /* [CP] Embed Pods Frameworks */,
+				50EB0CB8EB309A2C967BD822 /* [CP] Copy Pods Resources */,
+				B73A476D83756740F654693A /* Embed Pods Frameworks */,
+				2743885B8A5EB171BEB18BD9 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Risk;
+			productName = Risk;
+			productReference = EB33F7AE1D2368C300FA4E12 /* Risk.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB33F7A61D2368C300FA4E12 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = com.risk.kingyon;
+				TargetAttributes = {
+					EB33F7AD1D2368C300FA4E12 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = EB33F7A91D2368C300FA4E12 /* Build configuration list for PBXProject "Risk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB33F7A51D2368C300FA4E12;
+			productRefGroup = EB33F7AF1D2368C300FA4E12 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 279C0D111D2CAD1700D005E3 /* Products */;
+					ProjectRef = 279C0D101D2CAD1700D005E3 /* EasyFrame_iOS2.0.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				EB33F7AD1D2368C300FA4E12 /* Risk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		279C0F401D2CAD1700D005E3 /* libEasyFrame_iOS2.0.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libEasyFrame_iOS2.0.a;
+			remoteRef = 279C0F3F1D2CAD1700D005E3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB33F7AC1D2368C300FA4E12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				279C0F3C1D2CAD1700D005E3 /* ic_select@2x.png in Resources */,
+				279C0EE41D2CAD1700D005E3 /* EFMineProfileCell.xib in Resources */,
+				279C0F341D2CAD1700D005E3 /* cart_addBtn_nomal@2x.png in Resources */,
+				279C0EA61D2CAD1700D005E3 /* readme.txt in Resources */,
+				EB33FA041D23779A00FA4E12 /* EasyFrame_.plist in Resources */,
+				EB33F7C11D2368C300FA4E12 /* LaunchScreen.storyboard in Resources */,
+				EB33FEBC1D23B02000FA4E12 /* MainLayoutConfig_.plist in Resources */,
+				279C0F321D2CAD1700D005E3 /* back_button@2x.png in Resources */,
+				279C0EAA1D2CAD1700D005E3 /* readme.txt in Resources */,
+				279C0F351D2CAD1700D005E3 /* cart_cutBtn_highlight@2x.png in Resources */,
+				EB33F7BE1D2368C300FA4E12 /* Assets.xcassets in Resources */,
+				279C0F381D2CAD1700D005E3 /* cart_selected_btn@2x.png in Resources */,
+				EB33FEBB1D23B02000FA4E12 /* EFThemeConfig_.plist in Resources */,
+				EB33F7BC1D2368C300FA4E12 /* Main.storyboard in Resources */,
+				279C0F3B1D2CAD1700D005E3 /* ic_pass@3x.png in Resources */,
+				279C0ED51D2CAD1700D005E3 /* EFThirdPartyLoginView.xib in Resources */,
+				279C0EE01D2CAD1700D005E3 /* EFEditCommonCell.xib in Resources */,
+				279C0EA41D2CAD1700D005E3 /* readme.txt in Resources */,
+				279C0ED71D2CAD1700D005E3 /* resource.bundle in Resources */,
+				279C0F361D2CAD1700D005E3 /* cart_cutBtn_nomal@2x.png in Resources */,
+				279C0F331D2CAD1700D005E3 /* cart_addBtn_highlight@2x.png in Resources */,
+				279C0F3A1D2CAD1700D005E3 /* ic_pass@2x.png in Resources */,
+				279C0E921D2CAD1700D005E3 /* EasyFrame.plist in Resources */,
+				279C0F3D1D2CAD1700D005E3 /* ic_select@3x.png in Resources */,
+				279C0F371D2CAD1700D005E3 /* cart_default_bg.png in Resources */,
+				279C0EE81D2CAD1700D005E3 /* EFUserAvatarCell.xib in Resources */,
+				EB33FEBD1D23B02000FA4E12 /* PushConfig.plist in Resources */,
+				279C0EEC1D2CAD1700D005E3 /* region.plist in Resources */,
+				279C0F391D2CAD1700D005E3 /* cart_unSelect_btn@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2743885B8A5EB171BEB18BD9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B957C477361F899BDD3BC40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		50EB0CB8EB309A2C967BD822 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Risk/Pods-Risk-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7682355C1B4CAF74B62B31AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Risk/Pods-Risk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F6625D9E7AFBBD4491A0175 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B73A476D83756740F654693A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB33F7AA1D2368C300FA4E12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB60E05B1D2A6717008BFA89 /* RSRiskDetailVC.m in Sources */,
+				279C0EFC1D2CAD1700D005E3 /* EFSearchVC.m in Sources */,
+				279C0EB01D2CAD1700D005E3 /* UIView+JSMAdd.m in Sources */,
+				EB33FEF71D250ACA00FA4E12 /* RiskTypeModel.m in Sources */,
+				279C0EA81D2CAD1700D005E3 /* UIView+TKCategory.m in Sources */,
+				279C0EB21D2CAD1700D005E3 /* EFHpple.m in Sources */,
+				279C0F111D2CAD1700D005E3 /* EFGoodsTwoCell.m in Sources */,
+				279C0E931D2CAD1700D005E3 /* EFAppManager.m in Sources */,
+				EB9A06901D26785D001D52C8 /* RiskFactorModel.m in Sources */,
+				279C0ED21D2CAD1700D005E3 /* EFLoginViewModel.m in Sources */,
+				EB33FF151D25170000FA4E12 /* MJTypeEncoding.m in Sources */,
+				279C0F141D2CAD1700D005E3 /* EFMallDetailsTopCell.m in Sources */,
+				279C0EC51D2CAD1700D005E3 /* KYMHButton.m in Sources */,
+				EB60E0581D2A5F94008BFA89 /* RSSearchHistoryCell.m in Sources */,
+				279C0EA01D2CAD1700D005E3 /* EFRequest.m in Sources */,
+				279C0ED61D2CAD1700D005E3 /* EFVerticalButton.m in Sources */,
+				279C0EDF1D2CAD1700D005E3 /* EFEditCommonCell.m in Sources */,
+				279C0E951D2CAD1700D005E3 /* EFBaseViewController.m in Sources */,
+				279C0EBD1D2CAD1700D005E3 /* KYDatePickerView.m in Sources */,
+				279C0EEF1D2CAD1700D005E3 /* EFAgencyInfoVC.m in Sources */,
+				279C0EEB1D2CAD1700D005E3 /* EFEditAddressVC.m in Sources */,
+				EB33FF141D25170000FA4E12 /* MJType.m in Sources */,
+				279C0F1B1D2CAD1700D005E3 /* EFSearchHistroyCell.m in Sources */,
+				279C0EDC1D2CAD1700D005E3 /* EFRegisterViewController.m in Sources */,
+				279C0EE91D2CAD1700D005E3 /* EFAddAddressVC.m in Sources */,
+				279C0ECF1D2CAD1700D005E3 /* EFForgetPasswordViewModel.m in Sources */,
+				279C0F0E1D2CAD1700D005E3 /* EFGoodsCell.m in Sources */,
+				279C0F1D1D2CAD1700D005E3 /* EFShopCartCell.m in Sources */,
+				279C0F251D2CAD1700D005E3 /* STPickerArea.m in Sources */,
+				279C0EDA1D2CAD1700D005E3 /* EFMineCenterVC.m in Sources */,
+				EB33FEFA1D25163400FA4E12 /* RiskDetailTypeModel.m in Sources */,
+				279C0EC41D2CAD1700D005E3 /* StarView.m in Sources */,
+				279C0ED11D2CAD1700D005E3 /* EFLoginViewController.m in Sources */,
+				279C0F0A1D2CAD1700D005E3 /* EFAddAddressCell.m in Sources */,
+				279C0EAF1D2CAD1700D005E3 /* UIColor+UIColor_Hex.m in Sources */,
+				279C0ED41D2CAD1700D005E3 /* EFThirdPartyLoginView.m in Sources */,
+				EB33FEE11D23B92600FA4E12 /* RSDataCenterVC.m in Sources */,
+				279C0EC31D2CAD1700D005E3 /* UIImageView+UIActivityIndicatorForSDWebImage.m in Sources */,
+				279C0F151D2CAD1700D005E3 /* EFOrderConfirmCell.m in Sources */,
+				279C0F0C1D2CAD1700D005E3 /* EFAgencyPictureCell.m in Sources */,
+				279C0EB41D2CAD1700D005E3 /* EFXPathQuery.m in Sources */,
+				279C0F261D2CAD1700D005E3 /* STPickerView.m in Sources */,
+				279C0EBB1D2CAD1700D005E3 /* HYDAsyncImageView.m in Sources */,
+				279C0EF61D2CAD1700D005E3 /* EFOrderCommentVC.m in Sources */,
+				279C0F161D2CAD1700D005E3 /* EFOrderDetailCell.m in Sources */,
+				279C0F2D1D2CAD1700D005E3 /* DCPaymentAlert.m in Sources */,
+				279C0EB31D2CAD1700D005E3 /* EFHppleElement.m in Sources */,
+				279C0E9C1D2CAD1700D005E3 /* EFHomeTabBarController.m in Sources */,
+				279C0F0F1D2CAD1700D005E3 /* EFGoodsCommentCell.m in Sources */,
+				EB33FF181D25170000FA4E12 /* NSObject+MJMember.m in Sources */,
+				EB33FF161D25170000FA4E12 /* NSObject+MJCoding.m in Sources */,
+				EB60E04C1D2A0595008BFA89 /* RSDataView.m in Sources */,
+				279C0EBE1D2CAD1700D005E3 /* KYShaker.m in Sources */,
+				279C0F1F1D2CAD1700D005E3 /* EFTagButton.m in Sources */,
+				EB33FEE41D23BA1500FA4E12 /* RSStatisticsReportVC.m in Sources */,
+				EB6FC4DC1D2B637800A446D0 /* RiskTypeFDARightCell.m in Sources */,
+				279C0E981D2CAD1700D005E3 /* EFSideMenuCell.m in Sources */,
+				EB33FF111D25170000FA4E12 /* MJIvar.m in Sources */,
+				279C0F2C1D2CAD1700D005E3 /* EFCarouselObject.m in Sources */,
+				279C0EC81D2CAD1700D005E3 /* KYTableView.m in Sources */,
+				279C0EB51D2CAD1700D005E3 /* EFMyAutoAlertView.m in Sources */,
+				279C0F2A1D2CAD1700D005E3 /* YJSegmentedControl.m in Sources */,
+				EB60E0501D2A0BCB008BFA89 /* RiskDataModel.m in Sources */,
+				279C0EF01D2CAD1700D005E3 /* EFCommentListVC.m in Sources */,
+				279C0EE61D2CAD1700D005E3 /* EFSettingViewController.m in Sources */,
+				279C0ECD1D2CAD1700D005E3 /* EFForgetPasswordRequest.m in Sources */,
+				EB33F7B91D2368C300FA4E12 /* ViewController.m in Sources */,
+				279C0EAC1D2CAD1700D005E3 /* BlockAlert.m in Sources */,
+				279C0F191D2CAD1700D005E3 /* EFOrderStatusCell.m in Sources */,
+				279C0EC01D2CAD1700D005E3 /* LocationUtil.m in Sources */,
+				EB60E0551D2A5EFC008BFA89 /* RSSearchVC.m in Sources */,
+				EB9A067E1D260D07001D52C8 /* RiskTypesLeftCell.m in Sources */,
+				279C0E991D2CAD1700D005E3 /* EFSideMenuViewController.m in Sources */,
+				279C0EB71D2CAD1700D005E3 /* EFShareView.m in Sources */,
+				279C0ECE1D2CAD1700D005E3 /* EFForgetPasswordViewController.m in Sources */,
+				279C0EDD1D2CAD1700D005E3 /* EFRegisterViewModel.m in Sources */,
+				279C0F1A1D2CAD1700D005E3 /* EFPushCommentCell.m in Sources */,
+				279C0E9B1D2CAD1700D005E3 /* EFHomeSingleViewController.m in Sources */,
+				EB33FEF41D250A5400FA4E12 /* RiskTypesRightVC.m in Sources */,
+				279C0EB61D2CAD1700D005E3 /* EFPopupViewManager.m in Sources */,
+				279C0EA21D2CAD1700D005E3 /* InputError.m in Sources */,
+				279C0F121D2CAD1700D005E3 /* EFMallCell.m in Sources */,
+				279C0EFF1D2CAD1700D005E3 /* EFCartModel.m in Sources */,
+				279C0E9E1D2CAD1700D005E3 /* EFPageRequest.m in Sources */,
+				279C0E9A1D2CAD1700D005E3 /* HomeViewController.m in Sources */,
+				279C0EEA1D2CAD1700D005E3 /* EFConsigneeAddressVC.m in Sources */,
+				279C0F1C1D2CAD1700D005E3 /* EFSelecteSpecificationView.m in Sources */,
+				279C0F201D2CAD1700D005E3 /* EFTagsView.m in Sources */,
+				279C0EC91D2CAD1700D005E3 /* UIUtil.m in Sources */,
+				279C0EDE1D2CAD1700D005E3 /* EFAccountSettingVC.m in Sources */,
+				279C0EC11D2CAD1700D005E3 /* mapLocation.m in Sources */,
+				279C0EF91D2CAD1700D005E3 /* EFOrderDetailTwoVC.m in Sources */,
+				279C0F071D2CAD1700D005E3 /* ReturnOfGoodsModel.m in Sources */,
+				279C0ED81D2CAD1700D005E3 /* UserModel.m in Sources */,
+				279C0EF81D2CAD1700D005E3 /* EFOrderConfirmVC.m in Sources */,
+				279C0F271D2CAD1700D005E3 /* STUI.m in Sources */,
+				279C0F0B1D2CAD1700D005E3 /* EFAgencyInfoCell.m in Sources */,
+				279C0EDB1D2CAD1700D005E3 /* EFRegisterRequest.m in Sources */,
+				EB33FF131D25170000FA4E12 /* MJMethod.m in Sources */,
+				EB33FF171D25170000FA4E12 /* NSObject+MJKeyValue.m in Sources */,
+				EBCB96001D2BDE0700C9E118 /* RiskTypeDetailLeftCell.m in Sources */,
+				EB33FEE71D23BA2300FA4E12 /* RSMineVC.m in Sources */,
+				279C0E9D1D2CAD1700D005E3 /* EFBaseViewModel.m in Sources */,
+				279C0ED91D2CAD1700D005E3 /* EFMineCenterCell.m in Sources */,
+				279C0F061D2CAD1700D005E3 /* GoodModel.m in Sources */,
+				279C0ECA1D2CAD1700D005E3 /* WebUtil.m in Sources */,
+				EB6A61B81D27BC5A0052EB0C /* RiskTypeDetailVC.m in Sources */,
+				279C0EA91D2CAD1700D005E3 /* YRSideViewController.m in Sources */,
+				279C0EBA1D2CAD1700D005E3 /* HYDActivityProgressView.m in Sources */,
+				EB7922EB1D2915F5001DDF72 /* RSDataVC.m in Sources */,
+				279C0F281D2CAD1700D005E3 /* UIView+ST.m in Sources */,
+				279C0EB81D2CAD1700D005E3 /* HYDActivityIndicatorView.m in Sources */,
+				EB33FF101D25170000FA4E12 /* MJArgument.m in Sources */,
+				279C0EF11D2CAD1700D005E3 /* EFGoodsCommentVC.m in Sources */,
+				279C0EFE1D2CAD1700D005E3 /* EFStoreVC.m in Sources */,
+				279C0F241D2CAD1700D005E3 /* STConst.m in Sources */,
+				279C0EA11D2CAD1700D005E3 /* EFRequestManager.m in Sources */,
+				279C0F2B1D2CAD1700D005E3 /* EFCarousel.m in Sources */,
+				279C0F051D2CAD1700D005E3 /* EFTagModel.m in Sources */,
+				EB33F7B61D2368C300FA4E12 /* AppDelegate.m in Sources */,
+				279C0E971D2CAD1700D005E3 /* EFHomeSideViewController.m in Sources */,
+				279C0F031D2CAD1700D005E3 /* EFOrderDetailModel.m in Sources */,
+				279C0EAB1D2CAD1700D005E3 /* EFFileManager.m in Sources */,
+				279C0EF41D2CAD1700D005E3 /* EFMallVC.m in Sources */,
+				EBCB96041D2BDF5900C9E118 /* RiskTypeDetailLeftModel.m in Sources */,
+				EB33FED81D23B8F200FA4E12 /* RSHomeVC.m in Sources */,
+				279C0F1E1D2CAD1700D005E3 /* EFShopCartHeadView.m in Sources */,
+				279C0F101D2CAD1700D005E3 /* EFGoodSpecificationCell.m in Sources */,
+				279C0F491D2CF73D00D005E3 /* SecondCollectionViewCell.m in Sources */,
+				279C0EE11D2CAD1700D005E3 /* EFEditMineProfileVC.m in Sources */,
+				279C0F301D2CAD1700D005E3 /* EFPayAlertView.m in Sources */,
+				279C0EC21D2CAD1700D005E3 /* WGS84TOGCJ02.m in Sources */,
+				279C0F2E1D2CAD1700D005E3 /* DCPaymentView.m in Sources */,
+				279C0F081D2CAD1700D005E3 /* EFMallRequest.m in Sources */,
+				279C0EC61D2CAD1700D005E3 /* KYMHImageView.m in Sources */,
+				EB6FC4D61D2B627B00A446D0 /* RiskTypeFDALeftVC.m in Sources */,
+				279C0E941D2CAD1700D005E3 /* EFBaseNavigationController.m in Sources */,
+				279C0F011D2CAD1700D005E3 /* EFMallListModel.m in Sources */,
+				279C0E961D2CAD1700D005E3 /* EFHomeSideAndTabViewController.m in Sources */,
+				279C0EAD1D2CAD1700D005E3 /* BlockButton.m in Sources */,
+				279C0EB91D2CAD1700D005E3 /* HYDActivityMessageView.m in Sources */,
+				279C0EED1D2CAD1700D005E3 /* EFAftermarketStatusVC.m in Sources */,
+				279C0EAE1D2CAD1700D005E3 /* UIButton+TouchAreaInsets.m in Sources */,
+				279C0F221D2CAD1700D005E3 /* EFShopCartViewModel.m in Sources */,
+				279C0ED31D2CAD1700D005E3 /* EFLoginWithThirdViewController.m in Sources */,
+				279C0EF21D2CAD1700D005E3 /* EFMallDetailsVC.m in Sources */,
+				EB6FC4D91D2B629D00A446D0 /* RiskTypeFDARightVC.m in Sources */,
+				279C0F211D2CAD1700D005E3 /* EFMallViewModel.m in Sources */,
+				EB33FF121D25170000FA4E12 /* MJMember.m in Sources */,
+				279C0EF31D2CAD1700D005E3 /* EFMallSearchVC.m in Sources */,
+				279C0EFB1D2CAD1700D005E3 /* EFPushCommentVC.m in Sources */,
+				EB33FEDB1D23B90500FA4E12 /* RSRiskKindVC.m in Sources */,
+				279C0F231D2CAD1700D005E3 /* UIButton+LXMImagePosition.m in Sources */,
+				279C0F001D2CAD1700D005E3 /* EFGoodModel.m in Sources */,
+				279C0F291D2CAD1700D005E3 /* YFViewPager.m in Sources */,
+				EB33FEF11D2509E000FA4E12 /* RiskTypesLeftVC.m in Sources */,
+				279C0EEE1D2CAD1700D005E3 /* EFAfterSaleVC.m in Sources */,
+				279C0EF71D2CAD1700D005E3 /* EFOrderConfirmTwoVC.m in Sources */,
+				279C0F171D2CAD1700D005E3 /* EFOrderDetailTwoCell.m in Sources */,
+				279C0EB11D2CAD1700D005E3 /* EF_AlbumView.m in Sources */,
+				279C0EE21D2CAD1700D005E3 /* EFEditNicknameVC.m in Sources */,
+				279C0E9F1D2CAD1700D005E3 /* EFPageViewModel.m in Sources */,
+				279C0EE31D2CAD1700D005E3 /* EFMineProfileCell.m in Sources */,
+				279C0F091D2CAD1700D005E3 /* EFShopCartRequest.m in Sources */,
+				279C0EBF1D2CAD1700D005E3 /* KYTableViewNoDataCategory.m in Sources */,
+				279C0EF51D2CAD1700D005E3 /* EFMyOrderVC.m in Sources */,
+				279C0F131D2CAD1700D005E3 /* EFMallDetailsStoreCell.m in Sources */,
+				279C0EE71D2CAD1700D005E3 /* EFUserAvatarCell.m in Sources */,
+				279C0F0D1D2CAD1700D005E3 /* EFCommentListCell.m in Sources */,
+				279C0EA71D2CAD1700D005E3 /* TKAlertCenter.m in Sources */,
+				279C0F021D2CAD1700D005E3 /* EFMallModel.m in Sources */,
+				279C0EA31D2CAD1700D005E3 /* NetworkModel.m in Sources */,
+				279C0EBC1D2CAD1700D005E3 /* HYDFileManager.m in Sources */,
+				279C0F311D2CAD1700D005E3 /* EFSelectView.m in Sources */,
+				279C0ED01D2CAD1700D005E3 /* EFLoginRequest.m in Sources */,
+				279C0ECC1D2CAD1700D005E3 /* EFViewControllerManager.m in Sources */,
+				279C0EA51D2CAD1700D005E3 /* EFSkinThemeManager.m in Sources */,
+				EB33F7B31D2368C300FA4E12 /* main.m in Sources */,
+				279C0EFD1D2CAD1700D005E3 /* EFShopCartVC.m in Sources */,
+				279C0ECB1D2CAD1700D005E3 /* XYAttributedString.m in Sources */,
+				279C0EFA1D2CAD1700D005E3 /* EFOrderDetailVC.m in Sources */,
+				EB33FEDE1D23B91700FA4E12 /* RSVisitArchiveVC.m in Sources */,
+				279C0F2F1D2CAD1700D005E3 /* DCPwdTextField.m in Sources */,
+				279C0EE51D2CAD1700D005E3 /* EFSettingCell.m in Sources */,
+				279C0EC71D2CAD1700D005E3 /* KYMHLabel.m in Sources */,
+				EB6FC4E51D2BB47000A446D0 /* RiskTypeFDALeftTwoVC.m in Sources */,
+				279C0F041D2CAD1700D005E3 /* EFOrderListModel.m in Sources */,
+				279C0F181D2CAD1700D005E3 /* EFOrderInfoCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EB33F7BA1D2368C300FA4E12 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB33F7BB1D2368C300FA4E12 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB33F7BF1D2368C300FA4E12 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB33F7C01D2368C300FA4E12 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB33F7C31D2368C300FA4E12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		EB33F7C41D2368C300FA4E12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB33F7C61D2368C300FA4E12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E2AF876FC8430237EEAFB42 /* Pods-Risk.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Risk/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/FDFullscreenPopGesture\"",
+					"\"${PODS_ROOT}/Headers/Public/IQKeyboardManager\"",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/Reachability\"",
+					"\"${PODS_ROOT}/Headers/Public/SDAutoLayout\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/SFHFKeychainUtils\"",
+					"\"${PODS_ROOT}/Headers/Public/SVProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/UIScrollView+PullBig\"",
+					"\"${PODS_ROOT}/Headers/Public/YYModel\"",
+					"${SDKROOT}/usr/include/libxml2",
+					"\"$(SRCROOT)/../EasyFrame_iOS2.0\"",
+				);
+				INFOPLIST_FILE = Risk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ylgwhyh.Risk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		EB33F7C71D2368C300FA4E12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84F6386731BC1D5B55EA67FE /* Pods-Risk.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Risk/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/FDFullscreenPopGesture\"",
+					"\"${PODS_ROOT}/Headers/Public/IQKeyboardManager\"",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/Reachability\"",
+					"\"${PODS_ROOT}/Headers/Public/SDAutoLayout\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/SFHFKeychainUtils\"",
+					"\"${PODS_ROOT}/Headers/Public/SVProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/UIScrollView+PullBig\"",
+					"\"${PODS_ROOT}/Headers/Public/YYModel\"",
+					"${SDKROOT}/usr/include/libxml2",
+					"\"$(SRCROOT)/../EasyFrame_iOS2.0\"",
+				);
+				INFOPLIST_FILE = Risk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ylgwhyh.Risk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB33F7A91D2368C300FA4E12 /* Build configuration list for PBXProject "Risk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB33F7C31D2368C300FA4E12 /* Debug */,
+				EB33F7C41D2368C300FA4E12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB33F7C51D2368C300FA4E12 /* Build configuration list for PBXNativeTarget "Risk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB33F7C61D2368C300FA4E12 /* Debug */,
+				EB33F7C71D2368C300FA4E12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB33F7A61D2368C300FA4E12 /* Project object */;
+}

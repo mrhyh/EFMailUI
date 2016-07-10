@@ -1,0 +1,102 @@
+//
+//  KYTableViewNoDataCategory.m
+//  QuickFlip
+//
+//  Created by Jack on 5/7/15.
+//  Copyright (c) 2015 KingYon LLC. All rights reserved.
+//
+
+#import "KYTableViewNoDataCategory.h"
+#import "MJRefresh.h"
+
+
+#define KYTableViewNoDataKey 1843
+@implementation UITableView (KYTableViewNoDataCategory)
+
+- (void)addNoDataView{
+    UIView *view = [self viewWithTag:KYTableViewNoDataKey];
+    if (view) {
+        [view removeFromSuperview];
+    }
+    
+    
+    UIImage * nodtaImg = Img(@"no_data_1");
+    
+    UIView *noResultView = [[UIView alloc] initWithFrame:self.bounds];
+    [self addSubview:noResultView];
+    UIImageView  *backgroundImage = [[UIImageView alloc] initWithFrame:CGRectMake((self.bounds.size.width-nodtaImg.size.width)/2, 90*SCREEN_W_RATE,nodtaImg.size.width,nodtaImg.size.height)];
+    backgroundImage.image = Img(@"no_data_1");
+    [noResultView addSubview:backgroundImage];
+    
+    
+    UILabel *messageLB = [[UILabel alloc] initWithFrame:CGRectMake(0, backgroundImage.frame.origin.y + backgroundImage.frame.size.height + 10, self.bounds.size.width, 20*SCREEN_H_RATE)];
+    messageLB.text = @"没有数据,刷新试试";
+    messageLB.textAlignment = NSTextAlignmentCenter;
+    messageLB.font = Font(14);
+    messageLB.textColor = BCWhiteColor(160, 1);
+    [noResultView addSubview:messageLB];
+    noResultView.userInteractionEnabled = NO;
+    noResultView.tag = KYTableViewNoDataKey;
+    
+    self.footer.hidden = YES;
+    
+}
+
+- (void)addNoDataViewStr:(NSString *)_str{
+    UIView *view = [self viewWithTag:KYTableViewNoDataKey];
+    if (view) {
+        [view removeFromSuperview];
+    }
+    CGFloat height;
+    if ([_str isEqualToString:@"召唤"]) {
+        height = SCREEN_HEIGHT/2-70*SCREEN_H_RATE;
+        _str = @"We can't find any information.";
+    }else if ([_str isEqualToString:@"消息墙"]){
+        _str = @"We can't find any information.";
+        height = SCREEN_HEIGHT/2-20*SCREEN_H_RATE;
+    }else if ([_str isEqualToString:@"小纸条"]){
+        _str = @"We can't find any information.";
+        height = SCREEN_HEIGHT/2-70*SCREEN_H_RATE;
+    }else if ([_str isEqualToString:@"好友"]){
+        _str = @"You don't have any friends.";
+        height = SCREEN_HEIGHT/2-20*SCREEN_H_RATE;
+    }else if ([_str isEqualToString:@"标签"]){
+        _str = @"We can't find any information.";
+        height = SCREEN_HEIGHT/2-20*SCREEN_H_RATE;
+    }
+    
+    UIImage * nodtaImg = Img(@"no_data_1");
+    
+    UIView *noResultView = [[UIView alloc] initWithFrame:self.bounds];
+    [self addSubview:noResultView];
+    UIImageView  *backgroundImage = [[UIImageView alloc] initWithFrame:CGRectMake((self.bounds.size.width-nodtaImg.size.width)/2, 90*SCREEN_W_RATE,nodtaImg.size.width,nodtaImg.size.height)];
+    backgroundImage.image = Img(@"no_data_1");
+    [noResultView addSubview:backgroundImage];
+    
+
+    UILabel *messageLB = [[UILabel alloc] initWithFrame:CGRectMake(0, height, self.bounds.size.width,40*SCREEN_H_RATE)];
+    messageLB.text = [NSString stringWithFormat:@"%@",_str];
+    messageLB.textAlignment = NSTextAlignmentCenter;
+    messageLB.font = Font(16);
+    messageLB.numberOfLines = 2;
+    messageLB.lineBreakMode = NSLineBreakByCharWrapping;
+    messageLB.textColor = BCWhiteColor(160, 1);
+    
+    
+    [noResultView addSubview:messageLB];
+    noResultView.userInteractionEnabled = NO;
+    noResultView.tag = KYTableViewNoDataKey;
+    
+    self.footer.hidden = YES;
+}
+
+
+- (void)removeNoDataView{
+    
+    UIView *view = [self viewWithTag:KYTableViewNoDataKey];
+    if (view) {
+        [view removeFromSuperview];
+    }
+}
+
+@end

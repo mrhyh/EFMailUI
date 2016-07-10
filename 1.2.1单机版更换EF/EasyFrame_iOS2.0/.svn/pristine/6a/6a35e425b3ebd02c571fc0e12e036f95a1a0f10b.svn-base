@@ -1,0 +1,95 @@
+//
+//  EFMallModel.h
+//  EF_MallDemo
+//
+//  Created by HqLee on 16/6/17.
+//  Copyright © 2016年 MH. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+/** 收货地址model */
+@class Image,Shop;
+@interface EFMallConsigneeModel : NSObject
+/**是否默认*/
+@property (nonatomic, assign) BOOL isDefault;
+/**收货人*/
+@property (nonatomic, copy) NSString *consignee;
+/**地区名称*/
+@property (nonatomic, copy) NSString *areaName;
+/**地址*/
+@property (nonatomic, copy) NSString *address;
+/** 电话*/
+@property (nonatomic, copy) NSString *phone;
+/** 邮编 */
+@property (nonatomic, copy) NSString *zipCode;
+/** 收货地址对应的Id*/
+@property (nonatomic, copy) NSString *objectId;
+/** 收货人所在地区ID*/
+@property (nonatomic, copy) NSString *regionId;
+@end
+
+/** 商品列表model */
+@interface EFMallGoodListModel : NSObject
+/** 销量 */
+@property (nonatomic, assign) NSInteger sales;
+/** 店铺 */
+@property (nonatomic, strong) Shop *shop;
+/** 售价  */
+@property (nonatomic, assign) NSInteger price;
+/** 评价分数  */
+@property (nonatomic, assign) NSInteger evaluateScore;
+/** 商品图片  */
+@property (nonatomic, strong) Image *image;
+/** 市场价  */
+@property (nonatomic, assign) NSInteger marketPrice;
+/** 商品ID */
+@property (nonatomic, assign) NSInteger objectId;
+/** 名称 */
+@property (nonatomic, copy) NSString *name;
+/** 标签 */
+@property (nonatomic, strong) NSArray<NSString *> *tags;
+
+
+@end@interface Image : NSObject
+/** 图片地址 */
+@property (nonatomic, copy) NSString *url;
+/** 图片ID */
+@property (nonatomic, assign) NSInteger objectId;
+
+@end
+
+@interface Shop : NSObject
+/** 商铺电话  */
+@property (nonatomic, copy) NSString *contact;
+/** 店铺ID */
+@property (nonatomic, assign) NSInteger objectId;
+/** 商铺名称 */
+@property (nonatomic, copy) NSString *name;
+/** 商铺地址  */
+@property (nonatomic, copy) NSString *address;
+
+@end
+
+/** 在线电子商城商品信息请求参数Model */
+@interface StoreRequestParamsModel : NSObject
+/** 栏目ID */
+@property (nonatomic, assign) NSInteger categoryId;
+/** 售完与否 */
+@property (nonatomic, assign) BOOL soldOut;
+/** 商品关键字 */
+@property (nonatomic, copy) NSString *keyword;
+/** 地区id */
+@property (nonatomic, copy) NSString *regionId;
+/** 商品属性序号 */
+@property (nonatomic, copy) NSString *attubuteIndexes;
+/** 商品属性值 */
+@property (nonatomic, copy) NSString *attubuteValues;
+/** 商品品牌 */
+@property (nonatomic, copy) NSString *brandId;
+/** 商品列表排序方式 */
+@property (nonatomic, copy) NSString *sort;
+/** 起始页数 */
+@property (nonatomic, assign) NSInteger page;
+/** 每页返回的数据 */
+@property (nonatomic, assign) NSInteger size;
+@end

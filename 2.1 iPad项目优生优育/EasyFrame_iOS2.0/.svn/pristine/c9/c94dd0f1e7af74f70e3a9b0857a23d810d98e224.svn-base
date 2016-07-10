@@ -1,0 +1,76 @@
+//
+//  EFMallVC.m
+//  EF_MallDemo
+//
+//  Created by MH on 16/6/13.
+//  Copyright © 2016年 MH. All rights reserved.
+//
+
+#import "EFMallVC.h"
+
+@interface EFMallVC ()
+@property (nonatomic,strong)KYMHButton * orderBT;
+@property (nonatomic,strong)KYMHButton * shoppingCartBT;
+@end
+
+@implementation EFMallVC
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.navigationController.navigationBar.barTintColor = EF_MainColor;
+    //设置title颜色
+    UIColor * color = EF_TextColor_TextColorNavigation;
+    self.navigationController.navigationBar.tintColor = color;
+    if (CurrentSystemVersion > 8.2) {
+        [self.navigationController.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:17 weight:UIFontWeightMedium],NSForegroundColorAttributeName:color}];
+    }else{
+        [self.navigationController.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:17],NSForegroundColorAttributeName:color}];
+    }
+    self.title = @"商城";
+
+    _orderBT = [KYMHButton new];
+    _orderBT.titleLabel.font = [UIFont systemFontOfSize:13];
+    _orderBT.backgroundColor = EF_MainColor;
+    [_orderBT setTitle:@"我的订单" forState:0];
+    [_orderBT setTitleColor:[UIColor whiteColor] forState:0];
+    [_orderBT RectSize:30 SideWidth:0 SideColor:nil];
+    [_orderBT addTarget:self action:@selector(orderButtonClicked) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:_orderBT];
+    
+    _shoppingCartBT = [KYMHButton new];
+    _shoppingCartBT.titleLabel.font = [UIFont systemFontOfSize:13];
+    [_shoppingCartBT setTitleColor:[UIColor whiteColor] forState:0];
+    _shoppingCartBT.backgroundColor = EF_MainColor;
+    [_shoppingCartBT setTitle:@"购物车" forState:0];
+    [_shoppingCartBT RectSize:30 SideWidth:0 SideColor:nil];
+    [_shoppingCartBT addTarget:self action:@selector(shoppingCartButtonClicked) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:_shoppingCartBT];
+    
+    _orderBT.sd_layout.rightSpaceToView(self.view,10).bottomSpaceToView(self.view,10).widthIs(60).heightIs(60);
+    _shoppingCartBT.sd_layout.rightSpaceToView(self.view,10).bottomSpaceToView(_orderBT,10).widthIs(60).heightIs(60);
+}
+
+- (void)orderButtonClicked{
+    
+}
+
+- (void)shoppingCartButtonClicked{
+    
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
+@end

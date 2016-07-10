@@ -1,0 +1,52 @@
+//
+//  GoodsCommentVC.m
+//  hujinrong
+//
+//  Created by HqLee on 16/5/17.
+//  Copyright © 2016年 MH. All rights reserved.
+//
+
+#import "EFGoodsCommentVC.h"
+#import "EFGoodsCommentCell.h"
+
+@interface EFGoodsCommentVC ()<UITableViewDelegate,UITableViewDataSource>
+
+@end
+
+@implementation EFGoodsCommentVC
+
+static NSString *const cellID = @"goods";
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    [self setupNavi];
+    [self layoutViewController];
+}
+
+- (void)setupNavi{
+    self.title = @"评价详情";
+}
+
+- (void)layoutViewController{
+    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+    tableView.delegate = self;
+    tableView.dataSource = self;
+    [tableView registerNib:[UINib nibWithNibName:@"EFGoodsCommentCell" bundle:nil] forCellReuseIdentifier:cellID];
+    [self.view addSubview:tableView];
+    tableView.sd_layout.spaceToSuperView(UIEdgeInsetsZero);
+}
+#pragma mark ---<UITableViewDelegate,UITableViewDataSource>
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 10;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    EFGoodsCommentCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 74;
+}
+@end

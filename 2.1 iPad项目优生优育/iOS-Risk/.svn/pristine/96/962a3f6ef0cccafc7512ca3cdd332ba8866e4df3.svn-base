@@ -1,0 +1,119 @@
+//
+//  MedicineTypesVC.m
+//  Risk
+//
+//  Created by ylgwhyh on 16/6/30.
+//  Copyright © 2016年 com.risk.kingyon. All rights reserved.
+//
+
+#import "RiskTypesLeftVC.h"
+#import "RiskTypeModel.h"
+
+@interface RiskTypesLeftVC () <UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, strong) NSMutableArray *riskTypesArray;
+@property (nonatomic, strong) NSArray *sectionTitleArray;
+
+@end
+
+@implementation RiskTypesLeftVC {
+}
+
+- (void) viewDidLoad {
+    [super viewDidLoad];
+    
+    [self initData];
+    [self initUI];
+}
+
+
+- (void) initUI {
+    
+    self.tableView.tableHeaderView.backgroundColor = RGBColor(213, 213, 220);
+
+    [self.tableView selectRowAtIndexPath:IndexZero animated:YES scrollPosition:UITableViewScrollPositionTop];
+    [self tableView:self.tableView didSelectRowAtIndexPath:IndexZero];
+    
+}
+
+- (void) initData {
+    
+    if(_riskTypesArray == nil ) {
+        _riskTypesArray = [NSMutableArray array];
+    }
+    
+    NSArray *oneArray = @[@"西药", @"中药"];
+    NSArray *twoArray = @[@"化学因素", @"物理因素",@"生物因素", @"膳食与营养",@"职业、习惯与行为", @"家用化学品",@"其他"];
+    NSArray *threeArray = @[@"染色体", @"基因", @"遗传病"];
+    NSArray *fourArray = @[@"软指标"];
+    NSArray *fiveArray = @[@"正常值"];
+    
+    NSArray *arrays = @[oneArray, twoArray, threeArray, fourArray, fiveArray];
+    
+    [_riskTypesArray addObjectsFromArray:arrays];
+    _sectionTitleArray = @[@"药物", @"其他环境因素", @"遗传因素", @"产前超声", @"正常值"];
+    
+}
+
+
+#pragma mark - Table view data source
+
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    
+    return _riskTypesArray.count;
+}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+
+    return [_riskTypesArray[section] count];
+}
+
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *ID = @"Risk_Type";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
+    }
+    
+    NSArray *array = _riskTypesArray[indexPath.section];
+    cell.textLabel.text = array[indexPath.row];
+    //cell.textLabel.text = @"测试";
+    return cell;
+}
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if ([self.delegate respondsToSelector:@selector(riskTypesVC:didSelectedRiskType:)]) {
+        
+        NSArray *array = _riskTypesArray[indexPath.section];
+        RiskTypeModel *model = [[RiskTypeModel alloc] init];
+        model.name = array[indexPath.row];
+        [self.delegate riskTypesVC:self didSelectedRiskType:model];
+    }
+}
+
+#pragma mark - Table view  delegate
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    
+    return _sectionTitleArray[section];
+}
+
+
+- (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section
+{
+    // Text Color
+    UITableViewHeaderFooterView *header = (UITableViewHeaderFooterView *)view;
+    header.textLabel.textColor = RGBColor(46, 83, 111);
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 44;
+}
+@end

@@ -1,0 +1,90 @@
+//
+//  CitySelectView.m
+//  pdb
+//
+//  Created by mini珍 on 15/12/9.
+//  Copyright © 2015年 MH. All rights reserved.
+//
+
+#import "EFSelectView.h"
+
+@interface EFSelectView ()<UITableViewDataSource,UITableViewDelegate>
+{
+    UITableView * m_table;
+    NSMutableArray * m_arr;
+    int m_objectId;
+}
+@end
+
+@implementation EFSelectView
+
+
+- (instancetype)initWithFrame:(CGRect)frame ObjectId:(int)objectId Array:(NSMutableArray*)array andSelectBlock:(EFSelectViewBlock)block{
+    self = [super initWithFrame:frame];
+    if (self) {
+        
+        callBack = block;
+        m_arr = [NSMutableArray array];
+        m_objectId = objectId;
+        
+        UIColor * color = EF_MainColor;
+        self.layer.cornerRadius = 5;
+        self.layer.masksToBounds = YES;
+        self.layer.borderColor = color.CGColor;
+        self.layer.borderWidth = 1;
+        
+        
+        NSArray * arr1 = @[@"分类1",@"分类2",@"分类3"];
+        NSArray * arr2 = @[@"位置1",@"位置2",@"位置3"];
+        NSArray * arr3 = @[@"排序1",@"排序2",@"排序3"];
+        NSArray * arr4 = @[@"分享",@"收藏",@"问诊"];
+        if (m_objectId == 0) {
+            m_arr = arr1.mutableCopy;
+        }else if (m_objectId == 1){
+             m_arr = arr2.mutableCopy;
+        }else if (m_objectId == 2){
+            m_arr = arr3.mutableCopy;
+        }else if (m_objectId == 3){
+            m_arr = arr4.mutableCopy;
+        }
+        
+        m_table = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
+        m_table.delegate = self;
+        m_table.dataSource = self;
+        [self addSubview:m_table];
+        [m_table setSeparatorStyle:0];
+        [m_table reloadData];
+        
+    }
+    return self;
+}
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return m_arr.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell * cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@""];
+    NSString * title = m_arr[indexPath.row];
+    cell.textLabel.text = title;
+    cell.textLabel.font = [UIFont systemFontOfSize:13];
+    cell.textLabel.textColor = EF_TextColor_TextColorPrimary;
+    
+    
+    
+    [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 30*SCREEN_H_RATE;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+     NSString * title = m_arr[indexPath.row];
+    callBack(title);
+}
+
+
+@end

@@ -1,0 +1,35 @@
+//
+//  LoginModel.m
+//  demo
+//
+//  Created by MH on 16/5/25.
+//  Copyright © 2016年 KingYon LLC. All rights reserved.
+//
+
+#import "LoginModel.h"
+
+@implementation LoginModel
+
+@end
+@implementation Content
+
+@end
+
+
+@implementation Inputerror
+
++ (NSDictionary *)objectClassInArray{
+    return @{@"fieldErrors" : [Fielderrors class], @"objectErrors" : [Objecterrors class]};
+}
+
+@end
+
+
+@implementation Fielderrors
+
+@end
+
+
+@implementation Objecterrors
+
+@end

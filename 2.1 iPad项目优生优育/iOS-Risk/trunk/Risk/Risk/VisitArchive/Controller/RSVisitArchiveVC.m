@@ -1,0 +1,409 @@
+//
+//  RSVisitArchiveVC.m
+//  Risk
+//
+//  Created by ylgwhyh on 16/6/29.
+//  Copyright © 2016年 com.risk.kingyon. All rights reserved.
+//
+
+#import "RSVisitArchiveVC.h"
+#import "RSVAArchivesModel.h"
+#import "RSVAArchivesCell.h"
+#import "EFCTTextField.h"
+#import "RSVAPatientArchiveVC.h"
+
+
+@interface RSVisitArchiveVC ( ) <UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, strong) UIView *firstView;
+@property (nonatomic, strong) EFCTTextField *keywordTextField;
+@property (nonatomic, strong) EFCTTextField *riskFactorTextField;
+
+@property (nonatomic, strong) KYMHButton *searchButton;
+@property (nonatomic, strong) KYMHButton *nBuildButton;
+@property (nonatomic, strong) UIView *lineView;
+
+@property (nonatomic, strong) KYMHButton *oldSelectYearButton;
+@property (nonatomic, strong) KYMHButton *oldSelectMonthButton;
+@property (nonatomic, strong) NSMutableArray *dataSource;
+
+@property (nonatomic, strong) KYTableView *tableView;
+@end
+
+
+@implementation RSVisitArchiveVC {
+    
+    CGFloat commonFontSize;
+    CGFloat spaceToLeft;
+    CGFloat buttonH;
+    UIColor *textFieldBGColor;
+}
+
+static NSString * const RSVAArchivesCell_One_ID = @"RSVAArchivesCell_One_ID";
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    [self initData];
+    [self initUI];
+    
+}
+
+- (void) initData {
+    commonFontSize = RSVisitArchiveCommonFontSize;
+    spaceToLeft = 20;
+    buttonH = RSVisitArchiveButtonH;
+    textFieldBGColor = RSVisitArchiveTextFieldBGColor;
+    
+    _dataSource = [[NSMutableArray alloc] init];
+    
+    _oldSelectYearButton = [KYMHButton new];
+    _oldSelectMonthButton = [KYMHButton new];
+    
+    for (int i=0; i<3; i++ ) {
+        RSVAArchivesModel *model = [[RSVAArchivesModel alloc] init];
+        model.numberInteger = i;
+        model.nameString = @"张三娃";
+        model.medicalRecordNumString = @"12345678901";
+        
+        model.phoneNumString = @"18515588909";
+        model.mensesDataString = @"2016.07.05";
+        model.estimateTimeString = @"2016.07.05";
+        
+        model.pregnantTimesString = @"3";
+        model.babyNumberString = @"3";
+        model.exposureFactorString = @"多粘菌素B(2016.07-2016.07.07)、多粘菌素B(2016.07-2016.07.07)、多粘菌素B(2016.07-2016.07.07)";
+        
+        if(i==0) {
+            model.numberInteger = 0;
+            model.nameString = @"姓名";
+            model.medicalRecordNumString = @"病历号";
+            
+            model.phoneNumString = @"电话";
+            model.mensesDataString = @"月经末期";
+            model.estimateTimeString = @"预产期";
+            
+            model.pregnantTimesString = @"孕次";
+            model.babyNumberString = @"产次";
+            model.exposureFactorString = @"暴露因素名称";
+        }
+        
+        [_dataSource addObject:model];
+    }
+    
+}
+
+- (void) initUI {
+    
+    [self initOneView];
+    [self initTwoView];
+    [self initThreeView];
+}
+
+- (void ) initTwoView {
+    
+    //初始化年Button
+    KYMHLabel *staticExposureTimeLabel = [KYMHLabel new];
+    staticExposureTimeLabel.font = Font(smallFontSize);
+    staticExposureTimeLabel.textColor = EF_TextColor_TextColorPrimary;
+    staticExposureTimeLabel.textAlignment = NSTextAlignmentLeft;
+    staticExposureTimeLabel.text = @"暴露时间: ";
+    [_firstView addSubview:staticExposureTimeLabel];
+    
+    staticExposureTimeLabel.sd_layout
+    .topSpaceToView(_lineView, 10)
+    .leftSpaceToView(_firstView, spaceToLeft)
+    .widthIs(80)
+    .heightIs(28);
+    
+    CGFloat yellowButtonStartX = 90;
+    CGFloat yellowButtonStartY = 69;
+    CGFloat yellowButtonH = 28;
+    CGFloat yellowButtonW = 74;
+    CGFloat buttonToButtonSpace = (SCREEN_WIDTH-yellowButtonStartX-spaceToLeft-yellowButtonW*11)/10;
+    UIColor *yellowButtonTitleNormalColor = EF_TextColor_TextColorPrimary;
+    
+    NSInteger yellowInteger = 2016;
+    for (int i=0; i<11; i++) {
+        
+        KYMHButton *yearButton = [[KYMHButton alloc] initWithFrame:CGRectMake(
+                                                                              yellowButtonStartX+i* (yellowButtonW+buttonToButtonSpace),
+                                                                              yellowButtonStartY,
+                                                                              yellowButtonW,
+                                                                              yellowButtonH)];
+        [yearButton setTitle:[NSString stringWithFormat:@"%ld", (long)yellowInteger] forState:UIControlStateNormal];
+        yearButton.adjustsImageWhenHighlighted = NO;
+        yearButton.titleLabel.font = Font(smallFontSize);
+        [yearButton setBackgroundImage:[UIImage imageWithColor:RSVisitArchiveButtonColor] forState:UIControlStateSelected];
+        [yearButton setBackgroundImage:[UIImage imageWithColor:[UIColor whiteColor]] forState:UIControlStateNormal];
+        yearButton.layer.cornerRadius = 15;
+        yearButton.layer.masksToBounds = 15;
+        [yearButton addTarget:self action:@selector(yearButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+        [yearButton setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
+        [yearButton setTitleColor:yellowButtonTitleNormalColor forState:UIControlStateNormal];
+        [_firstView addSubview:yearButton];
+        
+        if(i==0 ) {
+            _oldSelectYearButton = yearButton;  //默认选中第一个按钮
+        }
+        
+        if(i==10 ) {
+            [yearButton setTitle:@"全部" forState:UIControlStateNormal];
+        }
+        yellowInteger--;
+    }
+    _oldSelectYearButton.selected = YES;
+    
+    
+    
+    CGFloat monthButtonStartY = yellowButtonStartY+yellowButtonH+5;
+    CGFloat monthButtonW = 67;
+    CGFloat monthButtonTomonthButtonSpace = (SCREEN_WIDTH-yellowButtonStartX-spaceToLeft-monthButtonW*12)/11;
+    
+    //初始化月Button
+    for (int i=0; i<12; i++) {
+        
+        KYMHButton *monthButton = [[KYMHButton alloc] initWithFrame:CGRectMake(
+                                                                               yellowButtonStartX+i* (monthButtonW+monthButtonTomonthButtonSpace),
+                                                                               monthButtonStartY,
+                                                                               monthButtonW,
+                                                                               yellowButtonH)];
+        [monthButton setTitle:[NSString stringWithFormat:@"%ld月", (long)i+1] forState:UIControlStateNormal];
+        monthButton.adjustsImageWhenHighlighted = NO;
+        monthButton.titleLabel.font = Font(smallFontSize);
+        [monthButton setBackgroundImage:[UIImage imageWithColor:RSVisitArchiveButtonColor] forState:UIControlStateSelected];
+        [monthButton setBackgroundImage:[UIImage imageWithColor:[UIColor whiteColor]] forState:UIControlStateNormal];
+        monthButton.layer.cornerRadius = 15;
+        monthButton.layer.masksToBounds = 15;
+        [monthButton addTarget:self action:@selector(monthButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+        [monthButton setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
+        [monthButton setTitleColor:yellowButtonTitleNormalColor forState:UIControlStateNormal];
+        [_firstView addSubview:monthButton];
+        
+        if(i==0 ) {
+            _oldSelectMonthButton = monthButton;  //默认选中第一个按钮
+        }
+    }
+    _oldSelectMonthButton.selected = YES;
+}
+
+- (void ) initOneView {
+    
+    _firstView = [[UIView alloc] initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, 140)];
+    _firstView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:_firstView];
+    
+    KYMHLabel *staticKeywordLabel = [KYMHLabel new];
+    staticKeywordLabel.font = Font(smallFontSize);
+    staticKeywordLabel.textColor = EF_TextColor_TextColorPrimary;
+    staticKeywordLabel.textAlignment = NSTextAlignmentLeft;
+    staticKeywordLabel.text = @"关 键 字: ";
+    
+    UIColor *textFieldBorder = EF_TextColor_TextColorDisable;
+    _keywordTextField = [EFCTTextField new];
+    _keywordTextField.placeholder = @" 姓名、电话";
+    _keywordTextField.textAlignment = NSTextAlignmentLeft;
+    _keywordTextField.font = Font(smallFontSize+1);
+    _keywordTextField.layer.cornerRadius = 5;
+    _keywordTextField.layer.borderColor = textFieldBorder.CGColor;
+    _keywordTextField.backgroundColor = textFieldBGColor;
+    
+    KYMHLabel *staticRiskFactorTextField = [KYMHLabel new];
+    staticRiskFactorTextField.font = Font(smallFontSize);
+    staticRiskFactorTextField.textColor = EF_TextColor_TextColorPrimary;
+    staticRiskFactorTextField.textAlignment = NSTextAlignmentLeft;
+    staticRiskFactorTextField.text = @"风险因素: ";
+    
+    _riskFactorTextField = [EFCTTextField new];
+    _riskFactorTextField.placeholder = @" 通用名、英文名、其他名、拼音码";
+    _riskFactorTextField.textAlignment = NSTextAlignmentLeft;
+    _riskFactorTextField.backgroundColor = textFieldBGColor;
+    _riskFactorTextField.layer.cornerRadius = 5;
+    _riskFactorTextField.font = Font(smallFontSize+1);
+    _riskFactorTextField.layer.borderColor = textFieldBorder.CGColor;
+    _riskFactorTextField.backgroundColor = textFieldBGColor;
+    
+    _searchButton = [KYMHButton new];
+    [_searchButton setTitle:@"搜  索" forState:UIControlStateNormal];
+    [_searchButton setBackgroundImage:[UIImage imageWithColor:RSVisitArchiveButtonColor] forState:UIControlStateNormal];
+    _searchButton.titleLabel.font = Font(smallFontSize);
+    _searchButton.layer.cornerRadius = 5;
+    _searchButton.layer.masksToBounds = 5;
+    [_searchButton addTarget:self action:@selector(searchButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+    
+    _nBuildButton = [KYMHButton new];
+    [_nBuildButton setTitle:@"+新  建" forState:UIControlStateNormal];
+    _nBuildButton.titleLabel.font = Font(smallFontSize);
+    [_nBuildButton setBackgroundImage:[UIImage imageWithColor:RSVisitArchiveButtonColor] forState:UIControlStateNormal];
+    _nBuildButton.layer.cornerRadius = 5;
+    _nBuildButton.layer.masksToBounds = 5;
+    [_nBuildButton addTarget:self action:@selector(nBuildButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+    
+    _lineView = [UIView new];
+    _lineView.backgroundColor = EF_TextColor_TextColorSecondary;
+    
+    NSArray *views = @[staticKeywordLabel, _keywordTextField, staticRiskFactorTextField, _riskFactorTextField, _searchButton, _nBuildButton, _lineView];
+    
+    [_firstView sd_addSubviews:views];
+    UIView *contentView = _firstView;
+    
+    staticKeywordLabel.sd_layout
+    .topSpaceToView(contentView, spaceToLeft)
+    .leftSpaceToView(contentView, spaceToLeft)
+    .widthIs(80)
+    .heightIs(buttonH);
+    
+    _keywordTextField.sd_layout
+    .topSpaceToView(contentView, spaceToLeft)
+    .leftSpaceToView(staticKeywordLabel, spaceToLeft)
+    .widthIs(220)
+    .heightIs(buttonH);
+    
+    staticRiskFactorTextField.sd_layout
+    .topEqualToView(_keywordTextField)
+    .leftSpaceToView(_keywordTextField, spaceToLeft)
+    .widthIs(80)
+    .heightIs(buttonH);
+    
+    
+    _nBuildButton.sd_layout
+    .topSpaceToView(contentView, spaceToLeft)
+    .rightSpaceToView(contentView, spaceToLeft)
+    .widthIs(74)
+    .heightIs(buttonH);
+    
+    _searchButton.sd_layout
+    .topSpaceToView(contentView, spaceToLeft)
+    .rightSpaceToView(_nBuildButton, spaceToLeft)
+    .widthIs(74)
+    .heightIs(buttonH);
+    
+    _riskFactorTextField.sd_layout
+    .topEqualToView(_keywordTextField)
+    .leftSpaceToView(staticRiskFactorTextField, spaceToLeft)
+    .rightSpaceToView(_searchButton, 2*spaceToLeft)
+    .heightIs(buttonH);
+    
+    _lineView.sd_layout
+    .topSpaceToView(staticKeywordLabel, 10)
+    .leftSpaceToView (contentView, spaceToLeft)
+    .rightSpaceToView (contentView, spaceToLeft)
+    .heightIs(0.5);
+}
+
+- (void ) initThreeView {
+    
+    WS(weakSelf)
+    
+    _tableView = [[KYTableView alloc]initWithFrame:CGRectMake(0 , CGRectGetMaxY(_firstView.frame), SCREEN_WIDTH, SCREEN_HEIGHT-64-49) andUpBlock:^{
+
+         [weakSelf.tableView endLoading];
+        
+    } andDownBlock:^{
+        
+        [weakSelf.tableView endLoading];
+
+    }];
+    
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
+    _tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    [_tableView registerClass:[RSVAArchivesCell class] forCellReuseIdentifier:RSVAArchivesCell_One_ID];
+    [self.view addSubview:_tableView];
+    
+    [_tableView reloadData];
+
+
+
+}
+
+#pragma mark - TableView data source
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+ 
+    RSVAArchivesModel *model = _dataSource[indexPath.row];
+    RSVAArchivesCell *cell = [tableView dequeueReusableCellWithIdentifier:RSVAArchivesCell_One_ID];
+    cell.model = model;
+    
+    if(indexPath.row == 0) {
+        
+        cell.backgroundColor = RGBColor(248, 249, 248);
+        cell.topLineView.hidden = NO;
+    }
+    
+    return cell;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    return _dataSource.count;
+}
+
+
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    id model = _dataSource[indexPath.row];
+
+    return [tableView cellHeightForIndexPath:indexPath model:model keyPath:@"model" cellClass:[RSVAArchivesCell class] contentViewWidth:[self cellContentViewWith]];
+}
+
+- (CGFloat)cellContentViewWith
+{
+    CGFloat width = [UIScreen mainScreen].bounds.size.width;
+    
+    // 适配ios7
+    if ([UIApplication sharedApplication].statusBarOrientation != UIInterfaceOrientationPortrait && [[UIDevice currentDevice].systemVersion floatValue] < 8) {
+        width = [UIScreen mainScreen].bounds.size.height;
+    }
+    
+    return width;
+}
+
+
+
+
+
+
+#pragma mark Button Action 
+
+- (void ) searchButtonAction:(KYMHButton *)button {
+    NSLog(@"searchButtonAction");
+}
+
+- (void ) nBuildButtonAction:(KYMHButton *)button {
+    NSLog(@"nBuildButtonAction");
+    
+    RSVAPatientArchiveVC *next = [[RSVAPatientArchiveVC alloc] init];
+    next.hidesBottomBarWhenPushed = NO;
+    [self.navigationController pushViewController:next animated:YES];
+}
+
+- (void ) yearButtonAction:(KYMHButton *)button {
+    
+    NSLog(@"yearButtonAction");
+    button.selected = !button.selected;
+    
+    //将原来选中的Button去掉选择
+    _oldSelectYearButton.selected = NO;
+    //记录当前选中的Button
+    _oldSelectYearButton = button;
+}
+
+- (void ) monthButtonAction:(KYMHButton *)button {
+    
+    NSLog(@"monthButtonAction");
+    button.selected = !button.selected;
+    
+    //将原来选中的Button去掉选择
+    _oldSelectMonthButton.selected = NO;
+    //记录当前选中的Button
+    _oldSelectMonthButton = button;
+}
+
+@end

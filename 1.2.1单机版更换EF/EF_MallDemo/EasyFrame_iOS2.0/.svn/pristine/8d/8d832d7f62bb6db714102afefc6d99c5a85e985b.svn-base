@@ -1,0 +1,55 @@
+//
+//  EFLoginViewModel.h
+//  demo
+//
+//  Created by HqLee on 16/5/25.
+//  Copyright © 2016年 KingYon LLC. All rights reserved.
+//
+
+#import "EFBaseViewModel.h"
+typedef NS_ENUM(EFViewControllerCallBackAction,LoginViewModelCallBackAction){
+    LoginCallBackActionLogin = 1<<0,
+    LoginCallBackActionGetMyProfile = 1<<2,
+    LoginCallBackActionUserLogout = 1<<3,
+    LoginCallBackActionSaveMyProfile = 1<<4,
+    LoginCallBackActionUpload = 1<<5,
+};
+@interface EFLoginViewModel : EFBaseViewModel
+/**
+ *  通过手机号注册
+ *
+ *  @param phoneNumber 手机号
+ *  @param password    密码
+ */
+- (void)loginWithPhoneNumber:(NSString *)phoneNumber password:(NSString *)password;
+
+/**
+ *  获取个人信息
+ *
+ *  @param _token token
+ */
+- (void)GetMyProfile:(NSString *)_token;
+
+/**
+ *  上传图片
+ *
+ *  @param _file 图片
+ */
+- (void)Upload:(NSArray *)_file;
+
+/**
+ *  修改个人信息
+ *
+ *  @param _Name      昵称
+ *  @param _sex       性别
+ *  @param _birthDate 生日
+ *  @param _sign      签名
+ *  @param _headKey   图片key
+ */
+- (void)SaveMyProfileWithName : (NSString *)_Name Sex:(NSString *)_sex BirthDate:(NSString *)_birthDate Sign:(NSString *)_sign HeadKey:(NSString *)_headKey;
+
+/**
+ *  退出登录
+ */
+- (void)UserLogout;
+@end

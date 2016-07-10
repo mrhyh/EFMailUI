@@ -1,0 +1,34 @@
+//
+//  EFShopCartModel.h
+//  EF_MallDemo
+//
+//  Created by ylgwhyh on 16/6/20.
+//  Copyright © 2016年 MH. All rights reserved.
+//
+
+#import "EFBaseViewModel.h"
+
+
+typedef NS_ENUM(EFViewControllerCallBackAction, EFMailShopCart) {
+    /****************商城-购物车信息管理******************/
+    EFMailShopCart_ClearItems = 1<<0, //清空我的购物车
+    EFMailShopCart_Items = 1<<1, //返回购物车购物项
+    EFMailShopCart_RemoveItems = 1 << 2 , //从我的购物车当中删除购物项
+    EFMailShopCart_UpdateItemQuantity = 1 << 3, //修改购物项目数量
+};
+
+@interface EFShopCartModel : EFBaseViewModel
+
+/****************商城-购物车信息管理******************/
+
+/*清空我的购物车*/
+- (void)EFClearItems;
+
+/*返回购物车购物项*/
+- (void)EFGetShopCartItems:(int)_page Size:(int) _size;
+
+/*从我的购物车当中删除购物项*/
+- (void)EFRemoveItemsWithProductIds:(int)_productIds;
+/* 修改购物项目数量*/
+- (void)UpdateItemQuantityWithProductId:(int)_productIds Quantity:(int)_quantity;
+@end

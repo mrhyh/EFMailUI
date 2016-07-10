@@ -1,0 +1,59 @@
+//
+//  EFMallRequest.m
+//  EF_MallDemo
+//
+//  Created by HqLee on 16/6/15.
+//  Copyright © 2016年 MH. All rights reserved.
+//
+
+#import "EFMallRequest.h"
+
+@implementation EFMallGetAddressListRequest
+- (void)startCallBack:(RequestCallBackBlock)callBack{
+    self.urlPath = @"/rest/xx/receiver/my";
+    NSString * token = @"TOKEN 6/15a4a0ab-e88c-4dbd-a8db-0fc0b6cc03d4";
+    self.httpHeaderFields = @{@"version":@"1.0",@"token":token};
+    [super startCallBack:callBack];
+}
+@end
+
+@implementation EFMallAddAddressRequest
+- (void)startCallBack:(RequestCallBackBlock)callBack{
+    self.urlPath = @"/rest/xx/receiver/my/add";
+    self.params = @{@"isDefault":@(self.consigneeModel.isDefault),
+                    @"consignee":self.consigneeModel.consignee,
+                    @"regionId":self.consigneeModel.regionId,
+                    @"address":self.consigneeModel.address,
+                    @"zipCode":self.consigneeModel.zipCode,
+                    @"phone":self.consigneeModel.phone};
+    NSString * token = @"TOKEN 6/15a4a0ab-e88c-4dbd-a8db-0fc0b6cc03d4";
+    self.httpHeaderFields = @{@"version":@"1.0",@"token":token};
+    [super startCallBack:callBack];
+}
+
+@end
+
+@implementation EFMallSaveAddressRequest
+- (void)startCallBack:(RequestCallBackBlock)callBack{
+    self.urlPath = @"/rest/xx/receiver/my/save";
+    self.params = @{@"isDefault":@(self.consigneeModel.isDefault),
+                    @"consignee":self.consigneeModel.consignee,
+                    @"regionId":self.consigneeModel.regionId,
+                    @"address":self.consigneeModel.address,
+                    @"zipCode":self.consigneeModel.zipCode,
+                    @"phone":self.consigneeModel.phone};
+    NSString * token = @"TOKEN 6/15a4a0ab-e88c-4dbd-a8db-0fc0b6cc03d4";
+    self.httpHeaderFields = @{@"version":@"1.0",@"token":token};
+    [super startCallBack:callBack];
+}
+@end
+
+@implementation EFMallDelAddressRequest
+- (void)startCallBack:(RequestCallBackBlock)callBack{
+    self.urlPath = @"/rest/xx/receiver/my/dadad/delete";
+    self.params = @{@"id":self.objectId};
+    NSString * token = @"TOKEN 6/15a4a0ab-e88c-4dbd-a8db-0fc0b6cc03d4";
+    self.httpHeaderFields = @{@"version":@"1.0",@"token":token};
+    [super startCallBack:callBack];
+}
+@end

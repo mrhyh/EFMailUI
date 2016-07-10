@@ -1,0 +1,153 @@
+//
+//  EFShopCartVC.m
+//  EF_MallDemo
+//
+//  Created by ylgwhyh on 16/6/15.
+//  Copyright © 2016年 MH. All rights reserved.
+//
+
+#import "EFShopCartVC.h"
+#import "EFShopCartCell.h"
+#import "EFGoodModel.h"
+#import "EFShopCartHeadView.h"
+
+@interface EFShopCartVC () <UITableViewDataSource, UITableViewDelegate>
+
+@property (nonatomic, strong) NSMutableArray *dataSource;
+@property (nonatomic, strong) KYTableView *tableView;
+@property (nonatomic, strong) UIColor *mainBGColor;
+
+
+@property (nonatomic, strong) NSArray *nameArray;
+@property (nonatomic, strong) NSArray *orderinfoLeftArray;
+@property (nonatomic, strong) NSArray *orderinfoRightArray;
+
+@end
+
+@implementation EFShopCartVC {
+    CGFloat segmentH;
+    CGFloat spaceToLeft;
+    CGFloat sectionViewH;
+    CGFloat sectionImageH;
+    CGFloat sectionFontSize;
+}
+
+static NSString * const EFShopCartVC_EFShopCartCell = @"EFShopCartVC_EFShopCartCell";
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.title = @"购物车";
+    _mainBGColor = EF_MainColor;
+    
+    [self initDataSource];
+    [self createUITableView];
+    
+    // Do any additional setup after loading the view.
+}
+
+
+- (void) initDataSource {
+    segmentH = 40;
+    spaceToLeft = 10;
+    sectionViewH = 30;
+    sectionImageH = 17;
+    sectionFontSize = 13;
+    
+    _dataSource = [NSMutableArray array];
+    NSMutableArray *tempArray = [NSMutableArray array];
+    for (int i=0; i<3; i++) {
+        EFGoodModel *goodModel = [EFGoodModel new];
+        goodModel.imageString = @"http://static.adzerk.net/Advertisers/9e442287f4324f77b4b3d8f8b4a7be58.png";
+        goodModel.goodNameString = @"Lebond 电动牙刷三合一";
+        goodModel.goodPriceInt  = 599;
+        goodModel.goodNumInt = 1;
+        goodModel.goodSumInt = 928;
+        [tempArray addObject:goodModel];
+    }
+    
+    for (int j=0; j<5; j++){
+        [_dataSource addObject:tempArray];
+    }
+    
+}
+
+- (KYTableView *)createUITableView{
+    
+    WS(weakSelf)
+    if (!_tableView) {
+        _tableView = [[KYTableView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64) andUpBlock:^{
+            [weakSelf.tableView endLoading];
+        } andDownBlock:^{
+            [weakSelf.tableView endLoading];
+        }];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        [_tableView registerClass:[EFShopCartCell class] forCellReuseIdentifier:EFShopCartVC_EFShopCartCell];
+        [self.view addSubview:_tableView];
+        
+    }
+    return _tableView;
+}
+
+#pragma mark - Table view data source
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSMutableArray *sectionArray = _dataSource[indexPath.row];
+    
+    EFShopCartCell *cell = [tableView dequeueReusableCellWithIdentifier:EFShopCartVC_EFShopCartCell];
+    EFGoodModel *goodModel = _dataSource[indexPath.row];
+    //cell.goodModel = goodModel;
+    return cell;
+
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    NSMutableArray *sectionArray = _dataSource[section];
+    return sectionArray.count;
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return _dataSource.count;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSMutableArray *sectionArray = _dataSource[indexPath.row];
+    if(indexPath.row+1 != sectionArray.count) {  //最后一个行+9
+        return 102+9;
+    }
+    
+    return 102;
+}
+
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    
+    EFShopCartHeadView *headView  =  [[EFShopCartHeadView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, sectionViewH) andSelectBlock:^(NSString *objectId) {
+        
+    }];
+    
+    return headView;
+}
+
+-(CGFloat )tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    
+    return sectionViewH;
+}
+
+
+
+- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+
+
+@end

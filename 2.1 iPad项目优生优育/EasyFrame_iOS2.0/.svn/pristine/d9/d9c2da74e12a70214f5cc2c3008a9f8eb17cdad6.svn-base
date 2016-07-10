@@ -1,0 +1,46 @@
+//
+//  EFMallModel.m
+//  EF_MallDemo
+//
+//  Created by HqLee on 16/6/17.
+//  Copyright © 2016年 MH. All rights reserved.
+//
+
+#import "EFMallModel.h"
+//收货地址模型
+@implementation EFMallConsigneeModel
+
++ (NSDictionary *)objectClassInArray{
+    return @{@"specifications" : [Specifications class]};
+}
+@end
+//商品列表模型
+@implementation EFMallGoodListModel
+@end
+//商品详情列表
+@implementation GoodDetailModel
+@end
+
+@implementation Image
+@end
+@implementation Shop
+@end
+@implementation Brand
+@end
+@implementation Logo
+@end
+
+@implementation Specifications
+
++ (NSDictionary *)objectClassInArray{
+    return @{@"values" : [Values class]};
+}
+
+@end
+
+@implementation Values
+@end
+
+//商品列表请求参数模型
+@implementation StoreRequestParamsModel
+@end

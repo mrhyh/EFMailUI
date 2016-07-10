@@ -1,0 +1,1912 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		573857EACE5CECB6373F6827 /* libPods-EF_MallDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F237CF2B66CBF41FDE699AF /* libPods-EF_MallDemo.a */; };
+		EB24413B1D184670001E4D27 /* EasyFrame.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB2440041D184670001E4D27 /* EasyFrame.plist */; };
+		EB24413C1D184670001E4D27 /* EFAppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440071D184670001E4D27 /* EFAppManager.m */; };
+		EB24413D1D184670001E4D27 /* EFBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB24400C1D184670001E4D27 /* EFBaseNavigationController.m */; };
+		EB24413E1D184670001E4D27 /* EFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB24400F1D184670001E4D27 /* EFBaseViewController.m */; };
+		EB24413F1D184670001E4D27 /* EFHomeSideAndTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440121D184670001E4D27 /* EFHomeSideAndTabViewController.m */; };
+		EB2441401D184670001E4D27 /* EFHomeSideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440151D184670001E4D27 /* EFHomeSideViewController.m */; };
+		EB2441411D184670001E4D27 /* EFSideMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440171D184670001E4D27 /* EFSideMenuCell.m */; };
+		EB2441421D184670001E4D27 /* EFSideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440191D184670001E4D27 /* EFSideMenuViewController.m */; };
+		EB2441431D184670001E4D27 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB24401B1D184670001E4D27 /* HomeViewController.m */; };
+		EB2441441D184670001E4D27 /* EFHomeSingleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB24401E1D184670001E4D27 /* EFHomeSingleViewController.m */; };
+		EB2441451D184670001E4D27 /* EFHomeTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440211D184670001E4D27 /* EFHomeTabBarController.m */; };
+		EB2441461D184670001E4D27 /* EFBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440241D184670001E4D27 /* EFBaseViewModel.m */; };
+		EB2441471D184670001E4D27 /* EFPageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440261D184670001E4D27 /* EFPageRequest.m */; };
+		EB2441481D184670001E4D27 /* EFPageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440281D184670001E4D27 /* EFPageViewModel.m */; };
+		EB2441491D184670001E4D27 /* EFRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EB24402A1D184670001E4D27 /* EFRequest.m */; };
+		EB24414A1D184670001E4D27 /* EFRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB24402C1D184670001E4D27 /* EFRequestManager.m */; };
+		EB24414B1D184670001E4D27 /* InputError.m in Sources */ = {isa = PBXBuildFile; fileRef = EB24402E1D184670001E4D27 /* InputError.m */; };
+		EB24414C1D184670001E4D27 /* NetworkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440301D184670001E4D27 /* NetworkModel.m */; };
+		EB24414D1D184670001E4D27 /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = EB2440311D184670001E4D27 /* readme.txt */; };
+		EB24414E1D184670001E4D27 /* EFSkinThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440341D184670001E4D27 /* EFSkinThemeManager.m */; };
+		EB24414F1D184670001E4D27 /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = EB2440351D184670001E4D27 /* readme.txt */; };
+		EB2441501D184670001E4D27 /* TKAlertCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = EB24403A1D184670001E4D27 /* TKAlertCenter.m */; };
+		EB2441511D184670001E4D27 /* UIView+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = EB24403C1D184670001E4D27 /* UIView+TKCategory.m */; };
+		EB2441521D184670001E4D27 /* YRSideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB24403F1D184670001E4D27 /* YRSideViewController.m */; };
+		EB2441531D184670001E4D27 /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = EB2440411D184670001E4D27 /* readme.txt */; };
+		EB2441541D184670001E4D27 /* EFFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440451D184670001E4D27 /* EFFileManager.m */; };
+		EB2441551D184670001E4D27 /* BlockAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = EB24404D1D184670001E4D27 /* BlockAlert.m */; };
+		EB2441561D184670001E4D27 /* BlockButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EB24404F1D184670001E4D27 /* BlockButton.m */; };
+		EB2441571D184670001E4D27 /* UIButton+TouchAreaInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440521D184670001E4D27 /* UIButton+TouchAreaInsets.m */; };
+		EB2441581D184670001E4D27 /* KYTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440551D184670001E4D27 /* KYTableView.m */; };
+		EB2441591D184670001E4D27 /* EF_AlbumView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440571D184670001E4D27 /* EF_AlbumView.m */; };
+		EB24415A1D184670001E4D27 /* EFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = EB24405A1D184670001E4D27 /* EFHpple.m */; };
+		EB24415B1D184670001E4D27 /* EFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = EB24405C1D184670001E4D27 /* EFHppleElement.m */; };
+		EB24415C1D184670001E4D27 /* EFXPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = EB24405E1D184670001E4D27 /* EFXPathQuery.m */; };
+		EB24415D1D184670001E4D27 /* EFMyAutoAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440601D184670001E4D27 /* EFMyAutoAlertView.m */; };
+		EB24415E1D184670001E4D27 /* EFPopupViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440621D184670001E4D27 /* EFPopupViewManager.m */; };
+		EB24415F1D184670001E4D27 /* EFShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440641D184670001E4D27 /* EFShareView.m */; };
+		EB2441601D184670001E4D27 /* HYDActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440671D184670001E4D27 /* HYDActivityIndicatorView.m */; };
+		EB2441611D184670001E4D27 /* HYDActivityMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440691D184670001E4D27 /* HYDActivityMessageView.m */; };
+		EB2441621D184670001E4D27 /* HYDActivityProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB24406B1D184670001E4D27 /* HYDActivityProgressView.m */; };
+		EB2441631D184670001E4D27 /* HYDAsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB24406E1D184670001E4D27 /* HYDAsyncImageView.m */; };
+		EB2441641D184670001E4D27 /* HYDFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440701D184670001E4D27 /* HYDFileManager.m */; };
+		EB2441651D184670001E4D27 /* KYDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440731D184670001E4D27 /* KYDatePickerView.m */; };
+		EB2441661D184670001E4D27 /* KYMHButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440751D184670001E4D27 /* KYMHButton.m */; };
+		EB2441671D184670001E4D27 /* KYMHImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440771D184670001E4D27 /* KYMHImageView.m */; };
+		EB2441681D184670001E4D27 /* KYMHLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440791D184670001E4D27 /* KYMHLabel.m */; };
+		EB2441691D184670001E4D27 /* KYShaker.m in Sources */ = {isa = PBXBuildFile; fileRef = EB24407B1D184670001E4D27 /* KYShaker.m */; };
+		EB24416A1D184670001E4D27 /* KYTableViewNoDataCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = EB24407D1D184670001E4D27 /* KYTableViewNoDataCategory.m */; };
+		EB24416B1D184670001E4D27 /* LocationUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440801D184670001E4D27 /* LocationUtil.m */; };
+		EB24416C1D184670001E4D27 /* mapLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440821D184670001E4D27 /* mapLocation.m */; };
+		EB24416D1D184670001E4D27 /* WGS84TOGCJ02.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440841D184670001E4D27 /* WGS84TOGCJ02.m */; };
+		EB24416E1D184670001E4D27 /* UIImageView+UIActivityIndicatorForSDWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440871D184670001E4D27 /* UIImageView+UIActivityIndicatorForSDWebImage.m */; };
+		EB24416F1D184670001E4D27 /* StarView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440891D184670001E4D27 /* StarView.m */; };
+		EB2441701D184670001E4D27 /* UIColor+UIColor_Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = EB24408B1D184670001E4D27 /* UIColor+UIColor_Hex.m */; };
+		EB2441711D184670001E4D27 /* UIUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EB24408D1D184670001E4D27 /* UIUtil.m */; };
+		EB2441721D184670001E4D27 /* UIView+JSMAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = EB24408F1D184670001E4D27 /* UIView+JSMAdd.m */; };
+		EB2441731D184670001E4D27 /* WebUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440911D184670001E4D27 /* WebUtil.m */; };
+		EB2441741D184670001E4D27 /* XYAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440931D184670001E4D27 /* XYAttributedString.m */; };
+		EB2441751D184670001E4D27 /* EFViewControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440961D184670001E4D27 /* EFViewControllerManager.m */; };
+		EB2441761D184670001E4D27 /* EFForgetPasswordRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440991D184670001E4D27 /* EFForgetPasswordRequest.m */; };
+		EB2441771D184670001E4D27 /* EFForgetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB24409B1D184670001E4D27 /* EFForgetPasswordViewController.m */; };
+		EB2441781D184670001E4D27 /* EFForgetPasswordViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB24409D1D184670001E4D27 /* EFForgetPasswordViewModel.m */; };
+		EB2441791D184670001E4D27 /* EFLoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440A01D184670001E4D27 /* EFLoginRequest.m */; };
+		EB24417A1D184670001E4D27 /* EFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440A21D184670001E4D27 /* EFLoginViewController.m */; };
+		EB24417B1D184670001E4D27 /* EFLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440A41D184670001E4D27 /* EFLoginViewModel.m */; };
+		EB24417C1D184670001E4D27 /* EFLoginWithThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440A61D184670001E4D27 /* EFLoginWithThirdViewController.m */; };
+		EB24417D1D184670001E4D27 /* EFThirdPartyLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440A81D184670001E4D27 /* EFThirdPartyLoginView.m */; };
+		EB24417E1D184670001E4D27 /* EFThirdPartyLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB2440A91D184670001E4D27 /* EFThirdPartyLoginView.xib */; };
+		EB24417F1D184670001E4D27 /* EFVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440AB1D184670001E4D27 /* EFVerticalButton.m */; };
+		EB2441801D184670001E4D27 /* resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EB2440AC1D184670001E4D27 /* resource.bundle */; };
+		EB2441811D184670001E4D27 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440AE1D184670001E4D27 /* UserModel.m */; };
+		EB2441821D184670001E4D27 /* EFMineCenterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440B11D184670001E4D27 /* EFMineCenterCell.m */; };
+		EB2441831D184670001E4D27 /* EFMineCenterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440B31D184670001E4D27 /* EFMineCenterVC.m */; };
+		EB2441841D184670001E4D27 /* EFRegisterRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440B61D184670001E4D27 /* EFRegisterRequest.m */; };
+		EB2441851D184670001E4D27 /* EFRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440B81D184670001E4D27 /* EFRegisterViewController.m */; };
+		EB2441861D184670001E4D27 /* EFRegisterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440BA1D184670001E4D27 /* EFRegisterViewModel.m */; };
+		EB2441871D184670001E4D27 /* EFAccountSettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440BD1D184670001E4D27 /* EFAccountSettingVC.m */; };
+		EB2441881D184670001E4D27 /* EFEditCommonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440BF1D184670001E4D27 /* EFEditCommonCell.m */; };
+		EB2441891D184670001E4D27 /* EFEditCommonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB2440C01D184670001E4D27 /* EFEditCommonCell.xib */; };
+		EB24418A1D184670001E4D27 /* EFEditMineProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440C21D184670001E4D27 /* EFEditMineProfileVC.m */; };
+		EB24418B1D184670001E4D27 /* EFEditNicknameVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440C41D184670001E4D27 /* EFEditNicknameVC.m */; };
+		EB24418C1D184670001E4D27 /* EFMineProfileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440C61D184670001E4D27 /* EFMineProfileCell.m */; };
+		EB24418D1D184670001E4D27 /* EFMineProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB2440C71D184670001E4D27 /* EFMineProfileCell.xib */; };
+		EB24418E1D184670001E4D27 /* EFSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440C91D184670001E4D27 /* EFSettingCell.m */; };
+		EB24418F1D184670001E4D27 /* EFSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440CB1D184670001E4D27 /* EFSettingViewController.m */; };
+		EB2441901D184670001E4D27 /* EFUserAvatarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440CD1D184670001E4D27 /* EFUserAvatarCell.m */; };
+		EB2441911D184670001E4D27 /* EFUserAvatarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB2440CE1D184670001E4D27 /* EFUserAvatarCell.xib */; };
+		EB2441921D184670001E4D27 /* EFAgencyInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440D31D184670001E4D27 /* EFAgencyInfoVC.m */; };
+		EB2441931D184670001E4D27 /* EFGoodsCommentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440D51D184670001E4D27 /* EFGoodsCommentVC.m */; };
+		EB2441941D184670001E4D27 /* EFMallDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440D71D184670001E4D27 /* EFMallDetailsVC.m */; };
+		EB2441951D184670001E4D27 /* EFMallVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440D91D184670001E4D27 /* EFMallVC.m */; };
+		EB2441961D184670001E4D27 /* EFMyOrderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440DB1D184670001E4D27 /* EFMyOrderVC.m */; };
+		EB2441971D184670001E4D27 /* EFOrderConfirmVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440DD1D184670001E4D27 /* EFOrderConfirmVC.m */; };
+		EB2441981D184670001E4D27 /* EFOrderDetailTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440DF1D184670001E4D27 /* EFOrderDetailTwoVC.m */; };
+		EB2441991D184670001E4D27 /* EFOrderDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440E11D184670001E4D27 /* EFOrderDetailVC.m */; };
+		EB24419A1D184670001E4D27 /* EFSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440E31D184670001E4D27 /* EFSearchVC.m */; };
+		EB24419B1D184670001E4D27 /* EFShopCartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440E51D184670001E4D27 /* EFShopCartVC.m */; };
+		EB24419C1D184670001E4D27 /* EFStoreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440E71D184670001E4D27 /* EFStoreVC.m */; };
+		EB24419D1D184670001E4D27 /* EFCartModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440EA1D184670001E4D27 /* EFCartModel.m */; };
+		EB24419E1D184670001E4D27 /* EFGoodModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440EC1D184670001E4D27 /* EFGoodModel.m */; };
+		EB24419F1D184670001E4D27 /* EFMallListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440EE1D184670001E4D27 /* EFMallListModel.m */; };
+		EB2441A01D184670001E4D27 /* GoodModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440F01D184670001E4D27 /* GoodModel.m */; };
+		EB2441A11D184670001E4D27 /* EFMallRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440F31D184670001E4D27 /* EFMallRequest.m */; };
+		EB2441A21D184670001E4D27 /* EFAgencyInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440F61D184670001E4D27 /* EFAgencyInfoCell.m */; };
+		EB2441A31D184670001E4D27 /* EFAgencyPictureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440F81D184670001E4D27 /* EFAgencyPictureCell.m */; };
+		EB2441A41D184670001E4D27 /* EFGoodsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440FA1D184670001E4D27 /* EFGoodsCell.m */; };
+		EB2441A51D184670001E4D27 /* EFGoodsCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440FC1D184670001E4D27 /* EFGoodsCommentCell.m */; };
+		EB2441A61D184670001E4D27 /* EFGoodsTwoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2440FE1D184670001E4D27 /* EFGoodsTwoCell.m */; };
+		EB2441A71D184670001E4D27 /* EFMallCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2441001D184670001E4D27 /* EFMallCell.m */; };
+		EB2441A81D184670001E4D27 /* EFMallDetailsStoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2441021D184670001E4D27 /* EFMallDetailsStoreCell.m */; };
+		EB2441A91D184670001E4D27 /* EFMallDetailsTopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2441041D184670001E4D27 /* EFMallDetailsTopCell.m */; };
+		EB2441AA1D184670001E4D27 /* EFOrderDetailTwoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2441061D184670001E4D27 /* EFOrderDetailTwoCell.m */; };
+		EB2441AB1D184670001E4D27 /* EFOrderInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2441081D184670001E4D27 /* EFOrderInfoCell.m */; };
+		EB2441AC1D184670001E4D27 /* EFOrderStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB24410A1D184670001E4D27 /* EFOrderStatusCell.m */; };
+		EB2441AD1D184670001E4D27 /* EFSearchHistroyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB24410C1D184670001E4D27 /* EFSearchHistroyCell.m */; };
+		EB2441AE1D184670001E4D27 /* EFShopCartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB24410E1D184670001E4D27 /* EFShopCartCell.m */; };
+		EB2441AF1D184670001E4D27 /* EFShopCartHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2441101D184670001E4D27 /* EFShopCartHeadView.m */; };
+		EB2441B01D184670001E4D27 /* EFMallViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2441131D184670001E4D27 /* EFMallViewModel.m */; };
+		EB2441B11D184670001E4D27 /* UIButton+LXMImagePosition.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2441171D184670001E4D27 /* UIButton+LXMImagePosition.m */; };
+		EB2441B21D184670001E4D27 /* YJSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = EB24411C1D184670001E4D27 /* YJSegmentedControl.m */; };
+		EB2441B31D184670001E4D27 /* EFCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB24411F1D184670001E4D27 /* EFCarousel.m */; };
+		EB2441B41D184670001E4D27 /* EFCarouselObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2441211D184670001E4D27 /* EFCarouselObject.m */; };
+		EB2441B51D184670001E4D27 /* DCPaymentAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2441241D184670001E4D27 /* DCPaymentAlert.m */; };
+		EB2441B61D184670001E4D27 /* DCPaymentView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2441261D184670001E4D27 /* DCPaymentView.m */; };
+		EB2441B71D184670001E4D27 /* DCPwdTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2441281D184670001E4D27 /* DCPwdTextField.m */; };
+		EB2441B81D184670001E4D27 /* EFPayAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB24412B1D184670001E4D27 /* EFPayAlertView.m */; };
+		EB2441B91D184670001E4D27 /* EFSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB24412D1D184670001E4D27 /* EFSelectView.m */; };
+		EB2441BA1D184670001E4D27 /* back_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB24412F1D184670001E4D27 /* back_button@2x.png */; };
+		EB2441BB1D184670001E4D27 /* cart_addBtn_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB2441301D184670001E4D27 /* cart_addBtn_highlight@2x.png */; };
+		EB2441BC1D184670001E4D27 /* cart_addBtn_nomal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB2441311D184670001E4D27 /* cart_addBtn_nomal@2x.png */; };
+		EB2441BD1D184670001E4D27 /* cart_cutBtn_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB2441321D184670001E4D27 /* cart_cutBtn_highlight@2x.png */; };
+		EB2441BE1D184670001E4D27 /* cart_cutBtn_nomal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB2441331D184670001E4D27 /* cart_cutBtn_nomal@2x.png */; };
+		EB2441BF1D184670001E4D27 /* cart_default_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = EB2441341D184670001E4D27 /* cart_default_bg.png */; };
+		EB2441C01D184670001E4D27 /* cart_selected_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB2441351D184670001E4D27 /* cart_selected_btn@2x.png */; };
+		EB2441C11D184670001E4D27 /* cart_unSelect_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB2441361D184670001E4D27 /* cart_unSelect_btn@2x.png */; };
+		EB2441C21D184670001E4D27 /* ic_pass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB2441371D184670001E4D27 /* ic_pass@2x.png */; };
+		EB2441C31D184670001E4D27 /* ic_pass@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB2441381D184670001E4D27 /* ic_pass@3x.png */; };
+		EB2441C41D184670001E4D27 /* ic_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB2441391D184670001E4D27 /* ic_select@2x.png */; };
+		EB2441C51D184670001E4D27 /* ic_select@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB24413A1D184670001E4D27 /* ic_select@3x.png */; };
+		EB9219C51D0EF11F00F2AA65 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9219C41D0EF11E00F2AA65 /* UIKit.framework */; };
+		EC6B7EA41D0FB9580056140F /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6B7EA31D0FB9580056140F /* libxml2.2.tbd */; };
+		EC6CB5EE1D0E436E00529B0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6CB5ED1D0E436E00529B0B /* main.m */; };
+		EC6CB5F11D0E436E00529B0B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6CB5F01D0E436E00529B0B /* AppDelegate.m */; };
+		EC6CB5F41D0E436E00529B0B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6CB5F31D0E436E00529B0B /* ViewController.m */; };
+		EC6CB5F71D0E436E00529B0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6CB5F51D0E436E00529B0B /* Main.storyboard */; };
+		EC6CB5F91D0E436E00529B0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC6CB5F81D0E436E00529B0B /* Assets.xcassets */; };
+		EC6CB5FC1D0E436E00529B0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6CB5FA1D0E436E00529B0B /* LaunchScreen.storyboard */; };
+		EC6CB6071D0E436E00529B0B /* EF_MallDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6CB6061D0E436E00529B0B /* EF_MallDemoTests.m */; };
+		EC6CB6121D0E436E00529B0B /* EF_MallDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6CB6111D0E436E00529B0B /* EF_MallDemoUITests.m */; };
+		EC6CB6211D0E43D300529B0B /* EasyFrame_.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC6CB6201D0E43D300529B0B /* EasyFrame_.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB2441C71D184670001E4D27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB2440001D18466F001E4D27 /* EasyFrame_iOS2.0.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EC3135671CF296B5000B8944;
+			remoteInfo = EasyFrame_iOS2.0;
+		};
+		EC6CB6031D0E436E00529B0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC6CB5E11D0E436E00529B0B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC6CB5E81D0E436E00529B0B;
+			remoteInfo = EF_MallDemo;
+		};
+		EC6CB60E1D0E436E00529B0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC6CB5E11D0E436E00529B0B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC6CB5E81D0E436E00529B0B;
+			remoteInfo = EF_MallDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		104EC8CCEF17BCF95B720D00 /* Pods-EF_MallDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EF_MallDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EF_MallDemo/Pods-EF_MallDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		629978147C50CD55CF71C09E /* Pods-EF_MallDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EF_MallDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-EF_MallDemo/Pods-EF_MallDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8F237CF2B66CBF41FDE699AF /* libPods-EF_MallDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EF_MallDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB2440001D18466F001E4D27 /* EasyFrame_iOS2.0.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = EasyFrame_iOS2.0.xcodeproj; sourceTree = "<group>"; };
+		EB2440041D184670001E4D27 /* EasyFrame.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EasyFrame.plist; sourceTree = "<group>"; };
+		EB2440051D184670001E4D27 /* EFAppHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFAppHeader.h; sourceTree = "<group>"; };
+		EB2440061D184670001E4D27 /* EFAppManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFAppManager.h; sourceTree = "<group>"; };
+		EB2440071D184670001E4D27 /* EFAppManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFAppManager.m; sourceTree = "<group>"; };
+		EB24400B1D184670001E4D27 /* EFBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFBaseNavigationController.h; sourceTree = "<group>"; };
+		EB24400C1D184670001E4D27 /* EFBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFBaseNavigationController.m; sourceTree = "<group>"; };
+		EB24400E1D184670001E4D27 /* EFBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFBaseViewController.h; sourceTree = "<group>"; };
+		EB24400F1D184670001E4D27 /* EFBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFBaseViewController.m; sourceTree = "<group>"; };
+		EB2440111D184670001E4D27 /* EFHomeSideAndTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFHomeSideAndTabViewController.h; sourceTree = "<group>"; };
+		EB2440121D184670001E4D27 /* EFHomeSideAndTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFHomeSideAndTabViewController.m; sourceTree = "<group>"; };
+		EB2440141D184670001E4D27 /* EFHomeSideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFHomeSideViewController.h; sourceTree = "<group>"; };
+		EB2440151D184670001E4D27 /* EFHomeSideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFHomeSideViewController.m; sourceTree = "<group>"; };
+		EB2440161D184670001E4D27 /* EFSideMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFSideMenuCell.h; sourceTree = "<group>"; };
+		EB2440171D184670001E4D27 /* EFSideMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFSideMenuCell.m; sourceTree = "<group>"; };
+		EB2440181D184670001E4D27 /* EFSideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFSideMenuViewController.h; sourceTree = "<group>"; };
+		EB2440191D184670001E4D27 /* EFSideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFSideMenuViewController.m; sourceTree = "<group>"; };
+		EB24401A1D184670001E4D27 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		EB24401B1D184670001E4D27 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		EB24401D1D184670001E4D27 /* EFHomeSingleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFHomeSingleViewController.h; sourceTree = "<group>"; };
+		EB24401E1D184670001E4D27 /* EFHomeSingleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFHomeSingleViewController.m; sourceTree = "<group>"; };
+		EB2440201D184670001E4D27 /* EFHomeTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFHomeTabBarController.h; sourceTree = "<group>"; };
+		EB2440211D184670001E4D27 /* EFHomeTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFHomeTabBarController.m; sourceTree = "<group>"; };
+		EB2440231D184670001E4D27 /* EFBaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFBaseViewModel.h; sourceTree = "<group>"; };
+		EB2440241D184670001E4D27 /* EFBaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFBaseViewModel.m; sourceTree = "<group>"; };
+		EB2440251D184670001E4D27 /* EFPageRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFPageRequest.h; sourceTree = "<group>"; };
+		EB2440261D184670001E4D27 /* EFPageRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFPageRequest.m; sourceTree = "<group>"; };
+		EB2440271D184670001E4D27 /* EFPageViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFPageViewModel.h; sourceTree = "<group>"; };
+		EB2440281D184670001E4D27 /* EFPageViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFPageViewModel.m; sourceTree = "<group>"; };
+		EB2440291D184670001E4D27 /* EFRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFRequest.h; sourceTree = "<group>"; };
+		EB24402A1D184670001E4D27 /* EFRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFRequest.m; sourceTree = "<group>"; };
+		EB24402B1D184670001E4D27 /* EFRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFRequestManager.h; sourceTree = "<group>"; };
+		EB24402C1D184670001E4D27 /* EFRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFRequestManager.m; sourceTree = "<group>"; };
+		EB24402D1D184670001E4D27 /* InputError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputError.h; sourceTree = "<group>"; };
+		EB24402E1D184670001E4D27 /* InputError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputError.m; sourceTree = "<group>"; };
+		EB24402F1D184670001E4D27 /* NetworkModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkModel.h; sourceTree = "<group>"; };
+		EB2440301D184670001E4D27 /* NetworkModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkModel.m; sourceTree = "<group>"; };
+		EB2440311D184670001E4D27 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		EB2440331D184670001E4D27 /* EFSkinThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFSkinThemeManager.h; sourceTree = "<group>"; };
+		EB2440341D184670001E4D27 /* EFSkinThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFSkinThemeManager.m; sourceTree = "<group>"; };
+		EB2440351D184670001E4D27 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		EB2440361D184670001E4D27 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		EB2440391D184670001E4D27 /* TKAlertCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKAlertCenter.h; sourceTree = "<group>"; };
+		EB24403A1D184670001E4D27 /* TKAlertCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKAlertCenter.m; sourceTree = "<group>"; };
+		EB24403B1D184670001E4D27 /* UIView+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TKCategory.h"; sourceTree = "<group>"; };
+		EB24403C1D184670001E4D27 /* UIView+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TKCategory.m"; sourceTree = "<group>"; };
+		EB24403E1D184670001E4D27 /* YRSideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRSideViewController.h; sourceTree = "<group>"; };
+		EB24403F1D184670001E4D27 /* YRSideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRSideViewController.m; sourceTree = "<group>"; };
+		EB2440401D184670001E4D27 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		EB2440411D184670001E4D27 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		EB2440441D184670001E4D27 /* EFFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFFileManager.h; sourceTree = "<group>"; };
+		EB2440451D184670001E4D27 /* EFFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFFileManager.m; sourceTree = "<group>"; };
+		EB24404C1D184670001E4D27 /* BlockAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockAlert.h; sourceTree = "<group>"; };
+		EB24404D1D184670001E4D27 /* BlockAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockAlert.m; sourceTree = "<group>"; };
+		EB24404E1D184670001E4D27 /* BlockButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockButton.h; sourceTree = "<group>"; };
+		EB24404F1D184670001E4D27 /* BlockButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockButton.m; sourceTree = "<group>"; };
+		EB2440511D184670001E4D27 /* UIButton+TouchAreaInsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+TouchAreaInsets.h"; sourceTree = "<group>"; };
+		EB2440521D184670001E4D27 /* UIButton+TouchAreaInsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+TouchAreaInsets.m"; sourceTree = "<group>"; };
+		EB2440541D184670001E4D27 /* KYTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTableView.h; sourceTree = "<group>"; };
+		EB2440551D184670001E4D27 /* KYTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTableView.m; sourceTree = "<group>"; };
+		EB2440561D184670001E4D27 /* EF_AlbumView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EF_AlbumView.h; sourceTree = "<group>"; };
+		EB2440571D184670001E4D27 /* EF_AlbumView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EF_AlbumView.m; sourceTree = "<group>"; };
+		EB2440591D184670001E4D27 /* EFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFHpple.h; sourceTree = "<group>"; };
+		EB24405A1D184670001E4D27 /* EFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFHpple.m; sourceTree = "<group>"; };
+		EB24405B1D184670001E4D27 /* EFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFHppleElement.h; sourceTree = "<group>"; };
+		EB24405C1D184670001E4D27 /* EFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFHppleElement.m; sourceTree = "<group>"; };
+		EB24405D1D184670001E4D27 /* EFXPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFXPathQuery.h; sourceTree = "<group>"; };
+		EB24405E1D184670001E4D27 /* EFXPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFXPathQuery.m; sourceTree = "<group>"; };
+		EB24405F1D184670001E4D27 /* EFMyAutoAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMyAutoAlertView.h; sourceTree = "<group>"; };
+		EB2440601D184670001E4D27 /* EFMyAutoAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMyAutoAlertView.m; sourceTree = "<group>"; };
+		EB2440611D184670001E4D27 /* EFPopupViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFPopupViewManager.h; sourceTree = "<group>"; };
+		EB2440621D184670001E4D27 /* EFPopupViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFPopupViewManager.m; sourceTree = "<group>"; };
+		EB2440631D184670001E4D27 /* EFShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFShareView.h; sourceTree = "<group>"; };
+		EB2440641D184670001E4D27 /* EFShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFShareView.m; sourceTree = "<group>"; };
+		EB2440661D184670001E4D27 /* HYDActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYDActivityIndicatorView.h; sourceTree = "<group>"; };
+		EB2440671D184670001E4D27 /* HYDActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYDActivityIndicatorView.m; sourceTree = "<group>"; };
+		EB2440681D184670001E4D27 /* HYDActivityMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYDActivityMessageView.h; sourceTree = "<group>"; };
+		EB2440691D184670001E4D27 /* HYDActivityMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYDActivityMessageView.m; sourceTree = "<group>"; };
+		EB24406A1D184670001E4D27 /* HYDActivityProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYDActivityProgressView.h; sourceTree = "<group>"; };
+		EB24406B1D184670001E4D27 /* HYDActivityProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYDActivityProgressView.m; sourceTree = "<group>"; };
+		EB24406D1D184670001E4D27 /* HYDAsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYDAsyncImageView.h; sourceTree = "<group>"; };
+		EB24406E1D184670001E4D27 /* HYDAsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYDAsyncImageView.m; sourceTree = "<group>"; };
+		EB24406F1D184670001E4D27 /* HYDFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYDFileManager.h; sourceTree = "<group>"; };
+		EB2440701D184670001E4D27 /* HYDFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYDFileManager.m; sourceTree = "<group>"; };
+		EB2440711D184670001E4D27 /* HYDImageCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYDImageCategory.h; sourceTree = "<group>"; };
+		EB2440721D184670001E4D27 /* KYDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYDatePickerView.h; sourceTree = "<group>"; };
+		EB2440731D184670001E4D27 /* KYDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYDatePickerView.m; sourceTree = "<group>"; };
+		EB2440741D184670001E4D27 /* KYMHButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYMHButton.h; sourceTree = "<group>"; };
+		EB2440751D184670001E4D27 /* KYMHButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYMHButton.m; sourceTree = "<group>"; };
+		EB2440761D184670001E4D27 /* KYMHImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYMHImageView.h; sourceTree = "<group>"; };
+		EB2440771D184670001E4D27 /* KYMHImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYMHImageView.m; sourceTree = "<group>"; };
+		EB2440781D184670001E4D27 /* KYMHLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYMHLabel.h; sourceTree = "<group>"; };
+		EB2440791D184670001E4D27 /* KYMHLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYMHLabel.m; sourceTree = "<group>"; };
+		EB24407A1D184670001E4D27 /* KYShaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYShaker.h; sourceTree = "<group>"; };
+		EB24407B1D184670001E4D27 /* KYShaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYShaker.m; sourceTree = "<group>"; };
+		EB24407C1D184670001E4D27 /* KYTableViewNoDataCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTableViewNoDataCategory.h; sourceTree = "<group>"; };
+		EB24407D1D184670001E4D27 /* KYTableViewNoDataCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTableViewNoDataCategory.m; sourceTree = "<group>"; };
+		EB24407F1D184670001E4D27 /* LocationUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationUtil.h; sourceTree = "<group>"; };
+		EB2440801D184670001E4D27 /* LocationUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationUtil.m; sourceTree = "<group>"; };
+		EB2440811D184670001E4D27 /* mapLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mapLocation.h; sourceTree = "<group>"; };
+		EB2440821D184670001E4D27 /* mapLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mapLocation.m; sourceTree = "<group>"; };
+		EB2440831D184670001E4D27 /* WGS84TOGCJ02.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGS84TOGCJ02.h; sourceTree = "<group>"; };
+		EB2440841D184670001E4D27 /* WGS84TOGCJ02.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGS84TOGCJ02.m; sourceTree = "<group>"; };
+		EB2440861D184670001E4D27 /* UIImageView+UIActivityIndicatorForSDWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+UIActivityIndicatorForSDWebImage.h"; sourceTree = "<group>"; };
+		EB2440871D184670001E4D27 /* UIImageView+UIActivityIndicatorForSDWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+UIActivityIndicatorForSDWebImage.m"; sourceTree = "<group>"; };
+		EB2440881D184670001E4D27 /* StarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarView.h; sourceTree = "<group>"; };
+		EB2440891D184670001E4D27 /* StarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarView.m; sourceTree = "<group>"; };
+		EB24408A1D184670001E4D27 /* UIColor+UIColor_Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+UIColor_Hex.h"; sourceTree = "<group>"; };
+		EB24408B1D184670001E4D27 /* UIColor+UIColor_Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+UIColor_Hex.m"; sourceTree = "<group>"; };
+		EB24408C1D184670001E4D27 /* UIUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIUtil.h; sourceTree = "<group>"; };
+		EB24408D1D184670001E4D27 /* UIUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIUtil.m; sourceTree = "<group>"; };
+		EB24408E1D184670001E4D27 /* UIView+JSMAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JSMAdd.h"; sourceTree = "<group>"; };
+		EB24408F1D184670001E4D27 /* UIView+JSMAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JSMAdd.m"; sourceTree = "<group>"; };
+		EB2440901D184670001E4D27 /* WebUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebUtil.h; sourceTree = "<group>"; };
+		EB2440911D184670001E4D27 /* WebUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebUtil.m; sourceTree = "<group>"; };
+		EB2440921D184670001E4D27 /* XYAttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYAttributedString.h; sourceTree = "<group>"; };
+		EB2440931D184670001E4D27 /* XYAttributedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYAttributedString.m; sourceTree = "<group>"; };
+		EB2440951D184670001E4D27 /* EFViewControllerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFViewControllerManager.h; sourceTree = "<group>"; };
+		EB2440961D184670001E4D27 /* EFViewControllerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFViewControllerManager.m; sourceTree = "<group>"; };
+		EB2440981D184670001E4D27 /* EFForgetPasswordRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFForgetPasswordRequest.h; sourceTree = "<group>"; };
+		EB2440991D184670001E4D27 /* EFForgetPasswordRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFForgetPasswordRequest.m; sourceTree = "<group>"; };
+		EB24409A1D184670001E4D27 /* EFForgetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFForgetPasswordViewController.h; sourceTree = "<group>"; };
+		EB24409B1D184670001E4D27 /* EFForgetPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFForgetPasswordViewController.m; sourceTree = "<group>"; };
+		EB24409C1D184670001E4D27 /* EFForgetPasswordViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFForgetPasswordViewModel.h; sourceTree = "<group>"; };
+		EB24409D1D184670001E4D27 /* EFForgetPasswordViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFForgetPasswordViewModel.m; sourceTree = "<group>"; };
+		EB24409F1D184670001E4D27 /* EFLoginRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFLoginRequest.h; sourceTree = "<group>"; };
+		EB2440A01D184670001E4D27 /* EFLoginRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFLoginRequest.m; sourceTree = "<group>"; };
+		EB2440A11D184670001E4D27 /* EFLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFLoginViewController.h; sourceTree = "<group>"; };
+		EB2440A21D184670001E4D27 /* EFLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFLoginViewController.m; sourceTree = "<group>"; };
+		EB2440A31D184670001E4D27 /* EFLoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFLoginViewModel.h; sourceTree = "<group>"; };
+		EB2440A41D184670001E4D27 /* EFLoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFLoginViewModel.m; sourceTree = "<group>"; };
+		EB2440A51D184670001E4D27 /* EFLoginWithThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFLoginWithThirdViewController.h; sourceTree = "<group>"; };
+		EB2440A61D184670001E4D27 /* EFLoginWithThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFLoginWithThirdViewController.m; sourceTree = "<group>"; };
+		EB2440A71D184670001E4D27 /* EFThirdPartyLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFThirdPartyLoginView.h; sourceTree = "<group>"; };
+		EB2440A81D184670001E4D27 /* EFThirdPartyLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFThirdPartyLoginView.m; sourceTree = "<group>"; };
+		EB2440A91D184670001E4D27 /* EFThirdPartyLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EFThirdPartyLoginView.xib; sourceTree = "<group>"; };
+		EB2440AA1D184670001E4D27 /* EFVerticalButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFVerticalButton.h; sourceTree = "<group>"; };
+		EB2440AB1D184670001E4D27 /* EFVerticalButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFVerticalButton.m; sourceTree = "<group>"; };
+		EB2440AC1D184670001E4D27 /* resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = resource.bundle; sourceTree = "<group>"; };
+		EB2440AD1D184670001E4D27 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		EB2440AE1D184670001E4D27 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		EB2440B01D184670001E4D27 /* EFMineCenterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMineCenterCell.h; sourceTree = "<group>"; };
+		EB2440B11D184670001E4D27 /* EFMineCenterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMineCenterCell.m; sourceTree = "<group>"; };
+		EB2440B21D184670001E4D27 /* EFMineCenterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMineCenterVC.h; sourceTree = "<group>"; };
+		EB2440B31D184670001E4D27 /* EFMineCenterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMineCenterVC.m; sourceTree = "<group>"; };
+		EB2440B51D184670001E4D27 /* EFRegisterRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFRegisterRequest.h; sourceTree = "<group>"; };
+		EB2440B61D184670001E4D27 /* EFRegisterRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFRegisterRequest.m; sourceTree = "<group>"; };
+		EB2440B71D184670001E4D27 /* EFRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFRegisterViewController.h; sourceTree = "<group>"; };
+		EB2440B81D184670001E4D27 /* EFRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFRegisterViewController.m; sourceTree = "<group>"; };
+		EB2440B91D184670001E4D27 /* EFRegisterViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFRegisterViewModel.h; sourceTree = "<group>"; };
+		EB2440BA1D184670001E4D27 /* EFRegisterViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFRegisterViewModel.m; sourceTree = "<group>"; };
+		EB2440BC1D184670001E4D27 /* EFAccountSettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFAccountSettingVC.h; sourceTree = "<group>"; };
+		EB2440BD1D184670001E4D27 /* EFAccountSettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFAccountSettingVC.m; sourceTree = "<group>"; };
+		EB2440BE1D184670001E4D27 /* EFEditCommonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFEditCommonCell.h; sourceTree = "<group>"; };
+		EB2440BF1D184670001E4D27 /* EFEditCommonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFEditCommonCell.m; sourceTree = "<group>"; };
+		EB2440C01D184670001E4D27 /* EFEditCommonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EFEditCommonCell.xib; sourceTree = "<group>"; };
+		EB2440C11D184670001E4D27 /* EFEditMineProfileVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFEditMineProfileVC.h; sourceTree = "<group>"; };
+		EB2440C21D184670001E4D27 /* EFEditMineProfileVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFEditMineProfileVC.m; sourceTree = "<group>"; };
+		EB2440C31D184670001E4D27 /* EFEditNicknameVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFEditNicknameVC.h; sourceTree = "<group>"; };
+		EB2440C41D184670001E4D27 /* EFEditNicknameVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFEditNicknameVC.m; sourceTree = "<group>"; };
+		EB2440C51D184670001E4D27 /* EFMineProfileCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMineProfileCell.h; sourceTree = "<group>"; };
+		EB2440C61D184670001E4D27 /* EFMineProfileCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMineProfileCell.m; sourceTree = "<group>"; };
+		EB2440C71D184670001E4D27 /* EFMineProfileCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EFMineProfileCell.xib; sourceTree = "<group>"; };
+		EB2440C81D184670001E4D27 /* EFSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFSettingCell.h; sourceTree = "<group>"; };
+		EB2440C91D184670001E4D27 /* EFSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFSettingCell.m; sourceTree = "<group>"; };
+		EB2440CA1D184670001E4D27 /* EFSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFSettingViewController.h; sourceTree = "<group>"; };
+		EB2440CB1D184670001E4D27 /* EFSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFSettingViewController.m; sourceTree = "<group>"; };
+		EB2440CC1D184670001E4D27 /* EFUserAvatarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFUserAvatarCell.h; sourceTree = "<group>"; };
+		EB2440CD1D184670001E4D27 /* EFUserAvatarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFUserAvatarCell.m; sourceTree = "<group>"; };
+		EB2440CE1D184670001E4D27 /* EFUserAvatarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EFUserAvatarCell.xib; sourceTree = "<group>"; };
+		EB2440D21D184670001E4D27 /* EFAgencyInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFAgencyInfoVC.h; sourceTree = "<group>"; };
+		EB2440D31D184670001E4D27 /* EFAgencyInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFAgencyInfoVC.m; sourceTree = "<group>"; };
+		EB2440D41D184670001E4D27 /* EFGoodsCommentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFGoodsCommentVC.h; sourceTree = "<group>"; };
+		EB2440D51D184670001E4D27 /* EFGoodsCommentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFGoodsCommentVC.m; sourceTree = "<group>"; };
+		EB2440D61D184670001E4D27 /* EFMallDetailsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMallDetailsVC.h; sourceTree = "<group>"; };
+		EB2440D71D184670001E4D27 /* EFMallDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMallDetailsVC.m; sourceTree = "<group>"; };
+		EB2440D81D184670001E4D27 /* EFMallVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMallVC.h; sourceTree = "<group>"; };
+		EB2440D91D184670001E4D27 /* EFMallVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMallVC.m; sourceTree = "<group>"; };
+		EB2440DA1D184670001E4D27 /* EFMyOrderVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMyOrderVC.h; sourceTree = "<group>"; };
+		EB2440DB1D184670001E4D27 /* EFMyOrderVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMyOrderVC.m; sourceTree = "<group>"; };
+		EB2440DC1D184670001E4D27 /* EFOrderConfirmVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFOrderConfirmVC.h; sourceTree = "<group>"; };
+		EB2440DD1D184670001E4D27 /* EFOrderConfirmVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFOrderConfirmVC.m; sourceTree = "<group>"; };
+		EB2440DE1D184670001E4D27 /* EFOrderDetailTwoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFOrderDetailTwoVC.h; sourceTree = "<group>"; };
+		EB2440DF1D184670001E4D27 /* EFOrderDetailTwoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFOrderDetailTwoVC.m; sourceTree = "<group>"; };
+		EB2440E01D184670001E4D27 /* EFOrderDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFOrderDetailVC.h; sourceTree = "<group>"; };
+		EB2440E11D184670001E4D27 /* EFOrderDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFOrderDetailVC.m; sourceTree = "<group>"; };
+		EB2440E21D184670001E4D27 /* EFSearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFSearchVC.h; sourceTree = "<group>"; };
+		EB2440E31D184670001E4D27 /* EFSearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFSearchVC.m; sourceTree = "<group>"; };
+		EB2440E41D184670001E4D27 /* EFShopCartVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFShopCartVC.h; sourceTree = "<group>"; };
+		EB2440E51D184670001E4D27 /* EFShopCartVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFShopCartVC.m; sourceTree = "<group>"; };
+		EB2440E61D184670001E4D27 /* EFStoreVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFStoreVC.h; sourceTree = "<group>"; };
+		EB2440E71D184670001E4D27 /* EFStoreVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFStoreVC.m; sourceTree = "<group>"; };
+		EB2440E91D184670001E4D27 /* EFCartModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFCartModel.h; sourceTree = "<group>"; };
+		EB2440EA1D184670001E4D27 /* EFCartModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFCartModel.m; sourceTree = "<group>"; };
+		EB2440EB1D184670001E4D27 /* EFGoodModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFGoodModel.h; sourceTree = "<group>"; };
+		EB2440EC1D184670001E4D27 /* EFGoodModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFGoodModel.m; sourceTree = "<group>"; };
+		EB2440ED1D184670001E4D27 /* EFMallListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMallListModel.h; sourceTree = "<group>"; };
+		EB2440EE1D184670001E4D27 /* EFMallListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMallListModel.m; sourceTree = "<group>"; };
+		EB2440EF1D184670001E4D27 /* GoodModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodModel.h; sourceTree = "<group>"; };
+		EB2440F01D184670001E4D27 /* GoodModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodModel.m; sourceTree = "<group>"; };
+		EB2440F21D184670001E4D27 /* EFMallRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMallRequest.h; sourceTree = "<group>"; };
+		EB2440F31D184670001E4D27 /* EFMallRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMallRequest.m; sourceTree = "<group>"; };
+		EB2440F51D184670001E4D27 /* EFAgencyInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFAgencyInfoCell.h; sourceTree = "<group>"; };
+		EB2440F61D184670001E4D27 /* EFAgencyInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFAgencyInfoCell.m; sourceTree = "<group>"; };
+		EB2440F71D184670001E4D27 /* EFAgencyPictureCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFAgencyPictureCell.h; sourceTree = "<group>"; };
+		EB2440F81D184670001E4D27 /* EFAgencyPictureCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFAgencyPictureCell.m; sourceTree = "<group>"; };
+		EB2440F91D184670001E4D27 /* EFGoodsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFGoodsCell.h; sourceTree = "<group>"; };
+		EB2440FA1D184670001E4D27 /* EFGoodsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFGoodsCell.m; sourceTree = "<group>"; };
+		EB2440FB1D184670001E4D27 /* EFGoodsCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFGoodsCommentCell.h; sourceTree = "<group>"; };
+		EB2440FC1D184670001E4D27 /* EFGoodsCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFGoodsCommentCell.m; sourceTree = "<group>"; };
+		EB2440FD1D184670001E4D27 /* EFGoodsTwoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFGoodsTwoCell.h; sourceTree = "<group>"; };
+		EB2440FE1D184670001E4D27 /* EFGoodsTwoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFGoodsTwoCell.m; sourceTree = "<group>"; };
+		EB2440FF1D184670001E4D27 /* EFMallCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMallCell.h; sourceTree = "<group>"; };
+		EB2441001D184670001E4D27 /* EFMallCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMallCell.m; sourceTree = "<group>"; };
+		EB2441011D184670001E4D27 /* EFMallDetailsStoreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMallDetailsStoreCell.h; sourceTree = "<group>"; };
+		EB2441021D184670001E4D27 /* EFMallDetailsStoreCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMallDetailsStoreCell.m; sourceTree = "<group>"; };
+		EB2441031D184670001E4D27 /* EFMallDetailsTopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMallDetailsTopCell.h; sourceTree = "<group>"; };
+		EB2441041D184670001E4D27 /* EFMallDetailsTopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMallDetailsTopCell.m; sourceTree = "<group>"; };
+		EB2441051D184670001E4D27 /* EFOrderDetailTwoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFOrderDetailTwoCell.h; sourceTree = "<group>"; };
+		EB2441061D184670001E4D27 /* EFOrderDetailTwoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFOrderDetailTwoCell.m; sourceTree = "<group>"; };
+		EB2441071D184670001E4D27 /* EFOrderInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFOrderInfoCell.h; sourceTree = "<group>"; };
+		EB2441081D184670001E4D27 /* EFOrderInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFOrderInfoCell.m; sourceTree = "<group>"; };
+		EB2441091D184670001E4D27 /* EFOrderStatusCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFOrderStatusCell.h; sourceTree = "<group>"; };
+		EB24410A1D184670001E4D27 /* EFOrderStatusCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFOrderStatusCell.m; sourceTree = "<group>"; };
+		EB24410B1D184670001E4D27 /* EFSearchHistroyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFSearchHistroyCell.h; sourceTree = "<group>"; };
+		EB24410C1D184670001E4D27 /* EFSearchHistroyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFSearchHistroyCell.m; sourceTree = "<group>"; };
+		EB24410D1D184670001E4D27 /* EFShopCartCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFShopCartCell.h; sourceTree = "<group>"; };
+		EB24410E1D184670001E4D27 /* EFShopCartCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFShopCartCell.m; sourceTree = "<group>"; };
+		EB24410F1D184670001E4D27 /* EFShopCartHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFShopCartHeadView.h; sourceTree = "<group>"; };
+		EB2441101D184670001E4D27 /* EFShopCartHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFShopCartHeadView.m; sourceTree = "<group>"; };
+		EB2441121D184670001E4D27 /* EFMallViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMallViewModel.h; sourceTree = "<group>"; };
+		EB2441131D184670001E4D27 /* EFMallViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMallViewModel.m; sourceTree = "<group>"; };
+		EB2441161D184670001E4D27 /* UIButton+LXMImagePosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+LXMImagePosition.h"; sourceTree = "<group>"; };
+		EB2441171D184670001E4D27 /* UIButton+LXMImagePosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+LXMImagePosition.m"; sourceTree = "<group>"; };
+		EB24411A1D184670001E4D27 /* HowToUse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HowToUse.h; sourceTree = "<group>"; };
+		EB24411B1D184670001E4D27 /* YJSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJSegmentedControl.h; sourceTree = "<group>"; };
+		EB24411C1D184670001E4D27 /* YJSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJSegmentedControl.m; sourceTree = "<group>"; };
+		EB24411E1D184670001E4D27 /* EFCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFCarousel.h; sourceTree = "<group>"; };
+		EB24411F1D184670001E4D27 /* EFCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFCarousel.m; sourceTree = "<group>"; };
+		EB2441201D184670001E4D27 /* EFCarouselObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFCarouselObject.h; sourceTree = "<group>"; };
+		EB2441211D184670001E4D27 /* EFCarouselObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFCarouselObject.m; sourceTree = "<group>"; };
+		EB2441231D184670001E4D27 /* DCPaymentAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPaymentAlert.h; sourceTree = "<group>"; };
+		EB2441241D184670001E4D27 /* DCPaymentAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCPaymentAlert.m; sourceTree = "<group>"; };
+		EB2441251D184670001E4D27 /* DCPaymentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPaymentView.h; sourceTree = "<group>"; };
+		EB2441261D184670001E4D27 /* DCPaymentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCPaymentView.m; sourceTree = "<group>"; };
+		EB2441271D184670001E4D27 /* DCPwdTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPwdTextField.h; sourceTree = "<group>"; };
+		EB2441281D184670001E4D27 /* DCPwdTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCPwdTextField.m; sourceTree = "<group>"; };
+		EB24412A1D184670001E4D27 /* EFPayAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFPayAlertView.h; sourceTree = "<group>"; };
+		EB24412B1D184670001E4D27 /* EFPayAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFPayAlertView.m; sourceTree = "<group>"; };
+		EB24412C1D184670001E4D27 /* EFSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFSelectView.h; sourceTree = "<group>"; };
+		EB24412D1D184670001E4D27 /* EFSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFSelectView.m; sourceTree = "<group>"; };
+		EB24412F1D184670001E4D27 /* back_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_button@2x.png"; sourceTree = "<group>"; };
+		EB2441301D184670001E4D27 /* cart_addBtn_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cart_addBtn_highlight@2x.png"; sourceTree = "<group>"; };
+		EB2441311D184670001E4D27 /* cart_addBtn_nomal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cart_addBtn_nomal@2x.png"; sourceTree = "<group>"; };
+		EB2441321D184670001E4D27 /* cart_cutBtn_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cart_cutBtn_highlight@2x.png"; sourceTree = "<group>"; };
+		EB2441331D184670001E4D27 /* cart_cutBtn_nomal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cart_cutBtn_nomal@2x.png"; sourceTree = "<group>"; };
+		EB2441341D184670001E4D27 /* cart_default_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cart_default_bg.png; sourceTree = "<group>"; };
+		EB2441351D184670001E4D27 /* cart_selected_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cart_selected_btn@2x.png"; sourceTree = "<group>"; };
+		EB2441361D184670001E4D27 /* cart_unSelect_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cart_unSelect_btn@2x.png"; sourceTree = "<group>"; };
+		EB2441371D184670001E4D27 /* ic_pass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_pass@2x.png"; sourceTree = "<group>"; };
+		EB2441381D184670001E4D27 /* ic_pass@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_pass@3x.png"; sourceTree = "<group>"; };
+		EB2441391D184670001E4D27 /* ic_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_select@2x.png"; sourceTree = "<group>"; };
+		EB24413A1D184670001E4D27 /* ic_select@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_select@3x.png"; sourceTree = "<group>"; };
+		EB9219C41D0EF11E00F2AA65 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EC6B7EA31D0FB9580056140F /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
+		EC6CB5E91D0E436E00529B0B /* EF_MallDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EF_MallDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC6CB5ED1D0E436E00529B0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EC6CB5EF1D0E436E00529B0B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EC6CB5F01D0E436E00529B0B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EC6CB5F21D0E436E00529B0B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EC6CB5F31D0E436E00529B0B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EC6CB5F61D0E436E00529B0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC6CB5F81D0E436E00529B0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC6CB5FB1D0E436E00529B0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC6CB5FD1D0E436E00529B0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC6CB6021D0E436E00529B0B /* EF_MallDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EF_MallDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC6CB6061D0E436E00529B0B /* EF_MallDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EF_MallDemoTests.m; sourceTree = "<group>"; };
+		EC6CB6081D0E436E00529B0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC6CB60D1D0E436E00529B0B /* EF_MallDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EF_MallDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC6CB6111D0E436E00529B0B /* EF_MallDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EF_MallDemoUITests.m; sourceTree = "<group>"; };
+		EC6CB6131D0E436E00529B0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC6CB6201D0E43D300529B0B /* EasyFrame_.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EasyFrame_.plist; sourceTree = "<group>"; };
+		EC6CB6221D0E43E200529B0B /* MallHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MallHeader.h; sourceTree = "<group>"; };
+		EC6CB6251D0E478A00529B0B /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC6CB5E61D0E436E00529B0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC6B7EA41D0FB9580056140F /* libxml2.2.tbd in Frameworks */,
+				EB9219C51D0EF11F00F2AA65 /* UIKit.framework in Frameworks */,
+				573857EACE5CECB6373F6827 /* libPods-EF_MallDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC6CB5FF1D0E436E00529B0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC6CB60A1D0E436E00529B0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		92E7A707C5E1377CC037AC74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				104EC8CCEF17BCF95B720D00 /* Pods-EF_MallDemo.debug.xcconfig */,
+				629978147C50CD55CF71C09E /* Pods-EF_MallDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EB243FFE1D18466F001E4D27 /* EasyFrame_iOS2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				EB243FFF1D18466F001E4D27 /* EasyFrame_iOS2.0 */,
+				EB2440001D18466F001E4D27 /* EasyFrame_iOS2.0.xcodeproj */,
+				EB2440031D184670001E4D27 /* EasyFrameBase */,
+				EB2440941D184670001E4D27 /* EasyFrameComponent */,
+				EB2440CF1D184670001E4D27 /* EasyFrameShop */,
+			);
+			path = EasyFrame_iOS2.0;
+			sourceTree = "<group>";
+		};
+		EB243FFF1D18466F001E4D27 /* EasyFrame_iOS2.0 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EasyFrame_iOS2.0;
+			sourceTree = "<group>";
+		};
+		EB2440011D18466F001E4D27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB2441C81D184670001E4D27 /* libEasyFrame_iOS2.0.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB2440031D184670001E4D27 /* EasyFrameBase */ = {
+			isa = PBXGroup;
+			children = (
+				EB2440041D184670001E4D27 /* EasyFrame.plist */,
+				EB2440051D184670001E4D27 /* EFAppHeader.h */,
+				EB2440061D184670001E4D27 /* EFAppManager.h */,
+				EB2440071D184670001E4D27 /* EFAppManager.m */,
+				EB2440081D184670001E4D27 /* Frame */,
+				EB2440361D184670001E4D27 /* Header.h */,
+				EB2440371D184670001E4D27 /* Libs */,
+				EB2440401D184670001E4D27 /* PrefixHeader.pch */,
+				EB2440411D184670001E4D27 /* readme.txt */,
+				EB2440421D184670001E4D27 /* Tools */,
+			);
+			path = EasyFrameBase;
+			sourceTree = "<group>";
+		};
+		EB2440081D184670001E4D27 /* Frame */ = {
+			isa = PBXGroup;
+			children = (
+				EB2440091D184670001E4D27 /* MainLayout */,
+				EB2440221D184670001E4D27 /* MVVM */,
+				EB2440321D184670001E4D27 /* SkinTheme */,
+			);
+			path = Frame;
+			sourceTree = "<group>";
+		};
+		EB2440091D184670001E4D27 /* MainLayout */ = {
+			isa = PBXGroup;
+			children = (
+				EB24400A1D184670001E4D27 /* BaseNavication */,
+				EB24400D1D184670001E4D27 /* BaseViewController */,
+				EB2440101D184670001E4D27 /* SideAndTabHome */,
+				EB2440131D184670001E4D27 /* SideHome */,
+				EB24401C1D184670001E4D27 /* SingleHome */,
+				EB24401F1D184670001E4D27 /* TabHome */,
+			);
+			path = MainLayout;
+			sourceTree = "<group>";
+		};
+		EB24400A1D184670001E4D27 /* BaseNavication */ = {
+			isa = PBXGroup;
+			children = (
+				EB24400B1D184670001E4D27 /* EFBaseNavigationController.h */,
+				EB24400C1D184670001E4D27 /* EFBaseNavigationController.m */,
+			);
+			path = BaseNavication;
+			sourceTree = "<group>";
+		};
+		EB24400D1D184670001E4D27 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EB24400E1D184670001E4D27 /* EFBaseViewController.h */,
+				EB24400F1D184670001E4D27 /* EFBaseViewController.m */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		EB2440101D184670001E4D27 /* SideAndTabHome */ = {
+			isa = PBXGroup;
+			children = (
+				EB2440111D184670001E4D27 /* EFHomeSideAndTabViewController.h */,
+				EB2440121D184670001E4D27 /* EFHomeSideAndTabViewController.m */,
+			);
+			path = SideAndTabHome;
+			sourceTree = "<group>";
+		};
+		EB2440131D184670001E4D27 /* SideHome */ = {
+			isa = PBXGroup;
+			children = (
+				EB2440141D184670001E4D27 /* EFHomeSideViewController.h */,
+				EB2440151D184670001E4D27 /* EFHomeSideViewController.m */,
+				EB2440161D184670001E4D27 /* EFSideMenuCell.h */,
+				EB2440171D184670001E4D27 /* EFSideMenuCell.m */,
+				EB2440181D184670001E4D27 /* EFSideMenuViewController.h */,
+				EB2440191D184670001E4D27 /* EFSideMenuViewController.m */,
+				EB24401A1D184670001E4D27 /* HomeViewController.h */,
+				EB24401B1D184670001E4D27 /* HomeViewController.m */,
+			);
+			path = SideHome;
+			sourceTree = "<group>";
+		};
+		EB24401C1D184670001E4D27 /* SingleHome */ = {
+			isa = PBXGroup;
+			children = (
+				EB24401D1D184670001E4D27 /* EFHomeSingleViewController.h */,
+				EB24401E1D184670001E4D27 /* EFHomeSingleViewController.m */,
+			);
+			path = SingleHome;
+			sourceTree = "<group>";
+		};
+		EB24401F1D184670001E4D27 /* TabHome */ = {
+			isa = PBXGroup;
+			children = (
+				EB2440201D184670001E4D27 /* EFHomeTabBarController.h */,
+				EB2440211D184670001E4D27 /* EFHomeTabBarController.m */,
+			);
+			path = TabHome;
+			sourceTree = "<group>";
+		};
+		EB2440221D184670001E4D27 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				EB2440231D184670001E4D27 /* EFBaseViewModel.h */,
+				EB2440241D184670001E4D27 /* EFBaseViewModel.m */,
+				EB2440251D184670001E4D27 /* EFPageRequest.h */,
+				EB2440261D184670001E4D27 /* EFPageRequest.m */,
+				EB2440271D184670001E4D27 /* EFPageViewModel.h */,
+				EB2440281D184670001E4D27 /* EFPageViewModel.m */,
+				EB2440291D184670001E4D27 /* EFRequest.h */,
+				EB24402A1D184670001E4D27 /* EFRequest.m */,
+				EB24402B1D184670001E4D27 /* EFRequestManager.h */,
+				EB24402C1D184670001E4D27 /* EFRequestManager.m */,
+				EB24402D1D184670001E4D27 /* InputError.h */,
+				EB24402E1D184670001E4D27 /* InputError.m */,
+				EB24402F1D184670001E4D27 /* NetworkModel.h */,
+				EB2440301D184670001E4D27 /* NetworkModel.m */,
+				EB2440311D184670001E4D27 /* readme.txt */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		EB2440321D184670001E4D27 /* SkinTheme */ = {
+			isa = PBXGroup;
+			children = (
+				EB2440331D184670001E4D27 /* EFSkinThemeManager.h */,
+				EB2440341D184670001E4D27 /* EFSkinThemeManager.m */,
+				EB2440351D184670001E4D27 /* readme.txt */,
+			);
+			path = SkinTheme;
+			sourceTree = "<group>";
+		};
+		EB2440371D184670001E4D27 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				EB2440381D184670001E4D27 /* TKAlertCommon */,
+				EB24403D1D184670001E4D27 /* YRSideViewController */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		EB2440381D184670001E4D27 /* TKAlertCommon */ = {
+			isa = PBXGroup;
+			children = (
+				EB2440391D184670001E4D27 /* TKAlertCenter.h */,
+				EB24403A1D184670001E4D27 /* TKAlertCenter.m */,
+				EB24403B1D184670001E4D27 /* UIView+TKCategory.h */,
+				EB24403C1D184670001E4D27 /* UIView+TKCategory.m */,
+			);
+			path = TKAlertCommon;
+			sourceTree = "<group>";
+		};
+		EB24403D1D184670001E4D27 /* YRSideViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EB24403E1D184670001E4D27 /* YRSideViewController.h */,
+				EB24403F1D184670001E4D27 /* YRSideViewController.m */,
+			);
+			path = YRSideViewController;
+			sourceTree = "<group>";
+		};
+		EB2440421D184670001E4D27 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				EB2440431D184670001E4D27 /* FileTool */,
+				EB2440461D184670001E4D27 /* ImageTool */,
+				EB2440471D184670001E4D27 /* LableTool */,
+				EB2440481D184670001E4D27 /* MapTool */,
+				EB2440491D184670001E4D27 /* TextTool */,
+				EB24404A1D184670001E4D27 /* UITool */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		EB2440431D184670001E4D27 /* FileTool */ = {
+			isa = PBXGroup;
+			children = (
+				EB2440441D184670001E4D27 /* EFFileManager.h */,
+				EB2440451D184670001E4D27 /* EFFileManager.m */,
+			);
+			path = FileTool;
+			sourceTree = "<group>";
+		};
+		EB2440461D184670001E4D27 /* ImageTool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ImageTool;
+			sourceTree = "<group>";
+		};
+		EB2440471D184670001E4D27 /* LableTool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LableTool;
+			sourceTree = "<group>";
+		};
+		EB2440481D184670001E4D27 /* MapTool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MapTool;
+			sourceTree = "<group>";
+		};
+		EB2440491D184670001E4D27 /* TextTool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TextTool;
+			sourceTree = "<group>";
+		};
+		EB24404A1D184670001E4D27 /* UITool */ = {
+			isa = PBXGroup;
+			children = (
+				EB24404B1D184670001E4D27 /* BlockUI */,
+				EB2440501D184670001E4D27 /* Category */,
+				EB2440531D184670001E4D27 /* Common */,
+				EB2440561D184670001E4D27 /* EF_AlbumView.h */,
+				EB2440571D184670001E4D27 /* EF_AlbumView.m */,
+				EB2440581D184670001E4D27 /* EFHpple */,
+				EB24405F1D184670001E4D27 /* EFMyAutoAlertView.h */,
+				EB2440601D184670001E4D27 /* EFMyAutoAlertView.m */,
+				EB2440611D184670001E4D27 /* EFPopupViewManager.h */,
+				EB2440621D184670001E4D27 /* EFPopupViewManager.m */,
+				EB2440631D184670001E4D27 /* EFShareView.h */,
+				EB2440641D184670001E4D27 /* EFShareView.m */,
+				EB2440651D184670001E4D27 /* HYDActivityIndicatorKit */,
+				EB24406C1D184670001E4D27 /* HYDImageCommon */,
+				EB2440721D184670001E4D27 /* KYDatePickerView.h */,
+				EB2440731D184670001E4D27 /* KYDatePickerView.m */,
+				EB2440741D184670001E4D27 /* KYMHButton.h */,
+				EB2440751D184670001E4D27 /* KYMHButton.m */,
+				EB2440761D184670001E4D27 /* KYMHImageView.h */,
+				EB2440771D184670001E4D27 /* KYMHImageView.m */,
+				EB2440781D184670001E4D27 /* KYMHLabel.h */,
+				EB2440791D184670001E4D27 /* KYMHLabel.m */,
+				EB24407A1D184670001E4D27 /* KYShaker.h */,
+				EB24407B1D184670001E4D27 /* KYShaker.m */,
+				EB24407C1D184670001E4D27 /* KYTableViewNoDataCategory.h */,
+				EB24407D1D184670001E4D27 /* KYTableViewNoDataCategory.m */,
+				EB24407E1D184670001E4D27 /* Location */,
+				EB2440851D184670001E4D27 /* SDWebImagePlus */,
+				EB2440881D184670001E4D27 /* StarView.h */,
+				EB2440891D184670001E4D27 /* StarView.m */,
+				EB24408A1D184670001E4D27 /* UIColor+UIColor_Hex.h */,
+				EB24408B1D184670001E4D27 /* UIColor+UIColor_Hex.m */,
+				EB24408C1D184670001E4D27 /* UIUtil.h */,
+				EB24408D1D184670001E4D27 /* UIUtil.m */,
+				EB24408E1D184670001E4D27 /* UIView+JSMAdd.h */,
+				EB24408F1D184670001E4D27 /* UIView+JSMAdd.m */,
+				EB2440901D184670001E4D27 /* WebUtil.h */,
+				EB2440911D184670001E4D27 /* WebUtil.m */,
+				EB2440921D184670001E4D27 /* XYAttributedString.h */,
+				EB2440931D184670001E4D27 /* XYAttributedString.m */,
+			);
+			path = UITool;
+			sourceTree = "<group>";
+		};
+		EB24404B1D184670001E4D27 /* BlockUI */ = {
+			isa = PBXGroup;
+			children = (
+				EB24404C1D184670001E4D27 /* BlockAlert.h */,
+				EB24404D1D184670001E4D27 /* BlockAlert.m */,
+				EB24404E1D184670001E4D27 /* BlockButton.h */,
+				EB24404F1D184670001E4D27 /* BlockButton.m */,
+			);
+			path = BlockUI;
+			sourceTree = "<group>";
+		};
+		EB2440501D184670001E4D27 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				EB2440511D184670001E4D27 /* UIButton+TouchAreaInsets.h */,
+				EB2440521D184670001E4D27 /* UIButton+TouchAreaInsets.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		EB2440531D184670001E4D27 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EB2440541D184670001E4D27 /* KYTableView.h */,
+				EB2440551D184670001E4D27 /* KYTableView.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		EB2440581D184670001E4D27 /* EFHpple */ = {
+			isa = PBXGroup;
+			children = (
+				EB2440591D184670001E4D27 /* EFHpple.h */,
+				EB24405A1D184670001E4D27 /* EFHpple.m */,
+				EB24405B1D184670001E4D27 /* EFHppleElement.h */,
+				EB24405C1D184670001E4D27 /* EFHppleElement.m */,
+				EB24405D1D184670001E4D27 /* EFXPathQuery.h */,
+				EB24405E1D184670001E4D27 /* EFXPathQuery.m */,
+			);
+			path = EFHpple;
+			sourceTree = "<group>";
+		};
+		EB2440651D184670001E4D27 /* HYDActivityIndicatorKit */ = {
+			isa = PBXGroup;
+			children = (
+				EB2440661D184670001E4D27 /* HYDActivityIndicatorView.h */,
+				EB2440671D184670001E4D27 /* HYDActivityIndicatorView.m */,
+				EB2440681D184670001E4D27 /* HYDActivityMessageView.h */,
+				EB2440691D184670001E4D27 /* HYDActivityMessageView.m */,
+				EB24406A1D184670001E4D27 /* HYDActivityProgressView.h */,
+				EB24406B1D184670001E4D27 /* HYDActivityProgressView.m */,
+			);
+			path = HYDActivityIndicatorKit;
+			sourceTree = "<group>";
+		};
+		EB24406C1D184670001E4D27 /* HYDImageCommon */ = {
+			isa = PBXGroup;
+			children = (
+				EB24406D1D184670001E4D27 /* HYDAsyncImageView.h */,
+				EB24406E1D184670001E4D27 /* HYDAsyncImageView.m */,
+				EB24406F1D184670001E4D27 /* HYDFileManager.h */,
+				EB2440701D184670001E4D27 /* HYDFileManager.m */,
+				EB2440711D184670001E4D27 /* HYDImageCategory.h */,
+			);
+			path = HYDImageCommon;
+			sourceTree = "<group>";
+		};
+		EB24407E1D184670001E4D27 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				EB24407F1D184670001E4D27 /* LocationUtil.h */,
+				EB2440801D184670001E4D27 /* LocationUtil.m */,
+				EB2440811D184670001E4D27 /* mapLocation.h */,
+				EB2440821D184670001E4D27 /* mapLocation.m */,
+				EB2440831D184670001E4D27 /* WGS84TOGCJ02.h */,
+				EB2440841D184670001E4D27 /* WGS84TOGCJ02.m */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		EB2440851D184670001E4D27 /* SDWebImagePlus */ = {
+			isa = PBXGroup;
+			children = (
+				EB2440861D184670001E4D27 /* UIImageView+UIActivityIndicatorForSDWebImage.h */,
+				EB2440871D184670001E4D27 /* UIImageView+UIActivityIndicatorForSDWebImage.m */,
+			);
+			path = SDWebImagePlus;
+			sourceTree = "<group>";
+		};
+		EB2440941D184670001E4D27 /* EasyFrameComponent */ = {
+			isa = PBXGroup;
+			children = (
+				EB2440951D184670001E4D27 /* EFViewControllerManager.h */,
+				EB2440961D184670001E4D27 /* EFViewControllerManager.m */,
+				EB2440971D184670001E4D27 /* ForgetPassword */,
+				EB24409E1D184670001E4D27 /* Login */,
+				EB2440AF1D184670001E4D27 /* MineCenter */,
+				EB2440B41D184670001E4D27 /* Register */,
+				EB2440BB1D184670001E4D27 /* Setting */,
+			);
+			path = EasyFrameComponent;
+			sourceTree = "<group>";
+		};
+		EB2440971D184670001E4D27 /* ForgetPassword */ = {
+			isa = PBXGroup;
+			children = (
+				EB2440981D184670001E4D27 /* EFForgetPasswordRequest.h */,
+				EB2440991D184670001E4D27 /* EFForgetPasswordRequest.m */,
+				EB24409A1D184670001E4D27 /* EFForgetPasswordViewController.h */,
+				EB24409B1D184670001E4D27 /* EFForgetPasswordViewController.m */,
+				EB24409C1D184670001E4D27 /* EFForgetPasswordViewModel.h */,
+				EB24409D1D184670001E4D27 /* EFForgetPasswordViewModel.m */,
+			);
+			path = ForgetPassword;
+			sourceTree = "<group>";
+		};
+		EB24409E1D184670001E4D27 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EB24409F1D184670001E4D27 /* EFLoginRequest.h */,
+				EB2440A01D184670001E4D27 /* EFLoginRequest.m */,
+				EB2440A11D184670001E4D27 /* EFLoginViewController.h */,
+				EB2440A21D184670001E4D27 /* EFLoginViewController.m */,
+				EB2440A31D184670001E4D27 /* EFLoginViewModel.h */,
+				EB2440A41D184670001E4D27 /* EFLoginViewModel.m */,
+				EB2440A51D184670001E4D27 /* EFLoginWithThirdViewController.h */,
+				EB2440A61D184670001E4D27 /* EFLoginWithThirdViewController.m */,
+				EB2440A71D184670001E4D27 /* EFThirdPartyLoginView.h */,
+				EB2440A81D184670001E4D27 /* EFThirdPartyLoginView.m */,
+				EB2440A91D184670001E4D27 /* EFThirdPartyLoginView.xib */,
+				EB2440AA1D184670001E4D27 /* EFVerticalButton.h */,
+				EB2440AB1D184670001E4D27 /* EFVerticalButton.m */,
+				EB2440AC1D184670001E4D27 /* resource.bundle */,
+				EB2440AD1D184670001E4D27 /* UserModel.h */,
+				EB2440AE1D184670001E4D27 /* UserModel.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		EB2440AF1D184670001E4D27 /* MineCenter */ = {
+			isa = PBXGroup;
+			children = (
+				EB2440B01D184670001E4D27 /* EFMineCenterCell.h */,
+				EB2440B11D184670001E4D27 /* EFMineCenterCell.m */,
+				EB2440B21D184670001E4D27 /* EFMineCenterVC.h */,
+				EB2440B31D184670001E4D27 /* EFMineCenterVC.m */,
+			);
+			path = MineCenter;
+			sourceTree = "<group>";
+		};
+		EB2440B41D184670001E4D27 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				EB2440B51D184670001E4D27 /* EFRegisterRequest.h */,
+				EB2440B61D184670001E4D27 /* EFRegisterRequest.m */,
+				EB2440B71D184670001E4D27 /* EFRegisterViewController.h */,
+				EB2440B81D184670001E4D27 /* EFRegisterViewController.m */,
+				EB2440B91D184670001E4D27 /* EFRegisterViewModel.h */,
+				EB2440BA1D184670001E4D27 /* EFRegisterViewModel.m */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		EB2440BB1D184670001E4D27 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				EB2440BC1D184670001E4D27 /* EFAccountSettingVC.h */,
+				EB2440BD1D184670001E4D27 /* EFAccountSettingVC.m */,
+				EB2440BE1D184670001E4D27 /* EFEditCommonCell.h */,
+				EB2440BF1D184670001E4D27 /* EFEditCommonCell.m */,
+				EB2440C01D184670001E4D27 /* EFEditCommonCell.xib */,
+				EB2440C11D184670001E4D27 /* EFEditMineProfileVC.h */,
+				EB2440C21D184670001E4D27 /* EFEditMineProfileVC.m */,
+				EB2440C31D184670001E4D27 /* EFEditNicknameVC.h */,
+				EB2440C41D184670001E4D27 /* EFEditNicknameVC.m */,
+				EB2440C51D184670001E4D27 /* EFMineProfileCell.h */,
+				EB2440C61D184670001E4D27 /* EFMineProfileCell.m */,
+				EB2440C71D184670001E4D27 /* EFMineProfileCell.xib */,
+				EB2440C81D184670001E4D27 /* EFSettingCell.h */,
+				EB2440C91D184670001E4D27 /* EFSettingCell.m */,
+				EB2440CA1D184670001E4D27 /* EFSettingViewController.h */,
+				EB2440CB1D184670001E4D27 /* EFSettingViewController.m */,
+				EB2440CC1D184670001E4D27 /* EFUserAvatarCell.h */,
+				EB2440CD1D184670001E4D27 /* EFUserAvatarCell.m */,
+				EB2440CE1D184670001E4D27 /* EFUserAvatarCell.xib */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		EB2440CF1D184670001E4D27 /* EasyFrameShop */ = {
+			isa = PBXGroup;
+			children = (
+				EB2440D01D184670001E4D27 /* Mall */,
+				EB2441141D184670001E4D27 /* Other */,
+			);
+			path = EasyFrameShop;
+			sourceTree = "<group>";
+		};
+		EB2440D01D184670001E4D27 /* Mall */ = {
+			isa = PBXGroup;
+			children = (
+				EB2440D11D184670001E4D27 /* Controller */,
+				EB2440E81D184670001E4D27 /* Model */,
+				EB2440F11D184670001E4D27 /* Request */,
+				EB2440F41D184670001E4D27 /* View */,
+				EB2441111D184670001E4D27 /* ViewModel */,
+			);
+			path = Mall;
+			sourceTree = "<group>";
+		};
+		EB2440D11D184670001E4D27 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB2440D21D184670001E4D27 /* EFAgencyInfoVC.h */,
+				EB2440D31D184670001E4D27 /* EFAgencyInfoVC.m */,
+				EB2440D41D184670001E4D27 /* EFGoodsCommentVC.h */,
+				EB2440D51D184670001E4D27 /* EFGoodsCommentVC.m */,
+				EB2440D61D184670001E4D27 /* EFMallDetailsVC.h */,
+				EB2440D71D184670001E4D27 /* EFMallDetailsVC.m */,
+				EB2440D81D184670001E4D27 /* EFMallVC.h */,
+				EB2440D91D184670001E4D27 /* EFMallVC.m */,
+				EB2440DA1D184670001E4D27 /* EFMyOrderVC.h */,
+				EB2440DB1D184670001E4D27 /* EFMyOrderVC.m */,
+				EB2440DC1D184670001E4D27 /* EFOrderConfirmVC.h */,
+				EB2440DD1D184670001E4D27 /* EFOrderConfirmVC.m */,
+				EB2440DE1D184670001E4D27 /* EFOrderDetailTwoVC.h */,
+				EB2440DF1D184670001E4D27 /* EFOrderDetailTwoVC.m */,
+				EB2440E01D184670001E4D27 /* EFOrderDetailVC.h */,
+				EB2440E11D184670001E4D27 /* EFOrderDetailVC.m */,
+				EB2440E21D184670001E4D27 /* EFSearchVC.h */,
+				EB2440E31D184670001E4D27 /* EFSearchVC.m */,
+				EB2440E41D184670001E4D27 /* EFShopCartVC.h */,
+				EB2440E51D184670001E4D27 /* EFShopCartVC.m */,
+				EB2440E61D184670001E4D27 /* EFStoreVC.h */,
+				EB2440E71D184670001E4D27 /* EFStoreVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EB2440E81D184670001E4D27 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB2440E91D184670001E4D27 /* EFCartModel.h */,
+				EB2440EA1D184670001E4D27 /* EFCartModel.m */,
+				EB2440EB1D184670001E4D27 /* EFGoodModel.h */,
+				EB2440EC1D184670001E4D27 /* EFGoodModel.m */,
+				EB2440ED1D184670001E4D27 /* EFMallListModel.h */,
+				EB2440EE1D184670001E4D27 /* EFMallListModel.m */,
+				EB2440EF1D184670001E4D27 /* GoodModel.h */,
+				EB2440F01D184670001E4D27 /* GoodModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB2440F11D184670001E4D27 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				EB2440F21D184670001E4D27 /* EFMallRequest.h */,
+				EB2440F31D184670001E4D27 /* EFMallRequest.m */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		EB2440F41D184670001E4D27 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB2440F51D184670001E4D27 /* EFAgencyInfoCell.h */,
+				EB2440F61D184670001E4D27 /* EFAgencyInfoCell.m */,
+				EB2440F71D184670001E4D27 /* EFAgencyPictureCell.h */,
+				EB2440F81D184670001E4D27 /* EFAgencyPictureCell.m */,
+				EB2440F91D184670001E4D27 /* EFGoodsCell.h */,
+				EB2440FA1D184670001E4D27 /* EFGoodsCell.m */,
+				EB2440FB1D184670001E4D27 /* EFGoodsCommentCell.h */,
+				EB2440FC1D184670001E4D27 /* EFGoodsCommentCell.m */,
+				EB2440FD1D184670001E4D27 /* EFGoodsTwoCell.h */,
+				EB2440FE1D184670001E4D27 /* EFGoodsTwoCell.m */,
+				EB2440FF1D184670001E4D27 /* EFMallCell.h */,
+				EB2441001D184670001E4D27 /* EFMallCell.m */,
+				EB2441011D184670001E4D27 /* EFMallDetailsStoreCell.h */,
+				EB2441021D184670001E4D27 /* EFMallDetailsStoreCell.m */,
+				EB2441031D184670001E4D27 /* EFMallDetailsTopCell.h */,
+				EB2441041D184670001E4D27 /* EFMallDetailsTopCell.m */,
+				EB2441051D184670001E4D27 /* EFOrderDetailTwoCell.h */,
+				EB2441061D184670001E4D27 /* EFOrderDetailTwoCell.m */,
+				EB2441071D184670001E4D27 /* EFOrderInfoCell.h */,
+				EB2441081D184670001E4D27 /* EFOrderInfoCell.m */,
+				EB2441091D184670001E4D27 /* EFOrderStatusCell.h */,
+				EB24410A1D184670001E4D27 /* EFOrderStatusCell.m */,
+				EB24410B1D184670001E4D27 /* EFSearchHistroyCell.h */,
+				EB24410C1D184670001E4D27 /* EFSearchHistroyCell.m */,
+				EB24410D1D184670001E4D27 /* EFShopCartCell.h */,
+				EB24410E1D184670001E4D27 /* EFShopCartCell.m */,
+				EB24410F1D184670001E4D27 /* EFShopCartHeadView.h */,
+				EB2441101D184670001E4D27 /* EFShopCartHeadView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB2441111D184670001E4D27 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EB2441121D184670001E4D27 /* EFMallViewModel.h */,
+				EB2441131D184670001E4D27 /* EFMallViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EB2441141D184670001E4D27 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				EB2441151D184670001E4D27 /* Category */,
+				EB2441181D184670001E4D27 /* CustomView */,
+				EB24411D1D184670001E4D27 /* DCPayAlertDemo */,
+				EB24411E1D184670001E4D27 /* EFCarousel.h */,
+				EB24411F1D184670001E4D27 /* EFCarousel.m */,
+				EB2441201D184670001E4D27 /* EFCarouselObject.h */,
+				EB2441211D184670001E4D27 /* EFCarouselObject.m */,
+				EB2441221D184670001E4D27 /* EFInputPayPasswordView */,
+				EB2441291D184670001E4D27 /* EFPayView */,
+				EB24412C1D184670001E4D27 /* EFSelectView.h */,
+				EB24412D1D184670001E4D27 /* EFSelectView.m */,
+				EB24412E1D184670001E4D27 /* TestImage */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		EB2441151D184670001E4D27 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				EB2441161D184670001E4D27 /* UIButton+LXMImagePosition.h */,
+				EB2441171D184670001E4D27 /* UIButton+LXMImagePosition.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		EB2441181D184670001E4D27 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				EB2441191D184670001E4D27 /* YJSegmentedControl */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		EB2441191D184670001E4D27 /* YJSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				EB24411A1D184670001E4D27 /* HowToUse.h */,
+				EB24411B1D184670001E4D27 /* YJSegmentedControl.h */,
+				EB24411C1D184670001E4D27 /* YJSegmentedControl.m */,
+			);
+			path = YJSegmentedControl;
+			sourceTree = "<group>";
+		};
+		EB24411D1D184670001E4D27 /* DCPayAlertDemo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DCPayAlertDemo;
+			sourceTree = "<group>";
+		};
+		EB2441221D184670001E4D27 /* EFInputPayPasswordView */ = {
+			isa = PBXGroup;
+			children = (
+				EB2441231D184670001E4D27 /* DCPaymentAlert.h */,
+				EB2441241D184670001E4D27 /* DCPaymentAlert.m */,
+				EB2441251D184670001E4D27 /* DCPaymentView.h */,
+				EB2441261D184670001E4D27 /* DCPaymentView.m */,
+				EB2441271D184670001E4D27 /* DCPwdTextField.h */,
+				EB2441281D184670001E4D27 /* DCPwdTextField.m */,
+			);
+			path = EFInputPayPasswordView;
+			sourceTree = "<group>";
+		};
+		EB2441291D184670001E4D27 /* EFPayView */ = {
+			isa = PBXGroup;
+			children = (
+				EB24412A1D184670001E4D27 /* EFPayAlertView.h */,
+				EB24412B1D184670001E4D27 /* EFPayAlertView.m */,
+			);
+			path = EFPayView;
+			sourceTree = "<group>";
+		};
+		EB24412E1D184670001E4D27 /* TestImage */ = {
+			isa = PBXGroup;
+			children = (
+				EB24412F1D184670001E4D27 /* back_button@2x.png */,
+				EB2441301D184670001E4D27 /* cart_addBtn_highlight@2x.png */,
+				EB2441311D184670001E4D27 /* cart_addBtn_nomal@2x.png */,
+				EB2441321D184670001E4D27 /* cart_cutBtn_highlight@2x.png */,
+				EB2441331D184670001E4D27 /* cart_cutBtn_nomal@2x.png */,
+				EB2441341D184670001E4D27 /* cart_default_bg.png */,
+				EB2441351D184670001E4D27 /* cart_selected_btn@2x.png */,
+				EB2441361D184670001E4D27 /* cart_unSelect_btn@2x.png */,
+				EB2441371D184670001E4D27 /* ic_pass@2x.png */,
+				EB2441381D184670001E4D27 /* ic_pass@3x.png */,
+				EB2441391D184670001E4D27 /* ic_select@2x.png */,
+				EB24413A1D184670001E4D27 /* ic_select@3x.png */,
+			);
+			path = TestImage;
+			sourceTree = "<group>";
+		};
+		EC6CB5E01D0E436E00529B0B = {
+			isa = PBXGroup;
+			children = (
+				EB243FFE1D18466F001E4D27 /* EasyFrame_iOS2.0 */,
+				EC6CB5EB1D0E436E00529B0B /* EF_MallDemo */,
+				EC6CB6051D0E436E00529B0B /* EF_MallDemoTests */,
+				EC6CB6101D0E436E00529B0B /* EF_MallDemoUITests */,
+				EC6CB5EA1D0E436E00529B0B /* Products */,
+				F9A4F44051EB760E51467E0E /* Frameworks */,
+				92E7A707C5E1377CC037AC74 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		EC6CB5EA1D0E436E00529B0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC6CB5E91D0E436E00529B0B /* EF_MallDemo.app */,
+				EC6CB6021D0E436E00529B0B /* EF_MallDemoTests.xctest */,
+				EC6CB60D1D0E436E00529B0B /* EF_MallDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC6CB5EB1D0E436E00529B0B /* EF_MallDemo */ = {
+			isa = PBXGroup;
+			children = (
+				EC6CB5EF1D0E436E00529B0B /* AppDelegate.h */,
+				EC6CB5F01D0E436E00529B0B /* AppDelegate.m */,
+				EC6CB5F21D0E436E00529B0B /* ViewController.h */,
+				EC6CB5F31D0E436E00529B0B /* ViewController.m */,
+				EC6CB5F51D0E436E00529B0B /* Main.storyboard */,
+				EC6CB5F81D0E436E00529B0B /* Assets.xcassets */,
+				EC6CB5FA1D0E436E00529B0B /* LaunchScreen.storyboard */,
+				EC6CB5FD1D0E436E00529B0B /* Info.plist */,
+				EC6CB5EC1D0E436E00529B0B /* Supporting Files */,
+			);
+			path = EF_MallDemo;
+			sourceTree = "<group>";
+		};
+		EC6CB5EC1D0E436E00529B0B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC6CB6201D0E43D300529B0B /* EasyFrame_.plist */,
+				EC6CB5ED1D0E436E00529B0B /* main.m */,
+				EC6CB6221D0E43E200529B0B /* MallHeader.h */,
+				EC6CB6251D0E478A00529B0B /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC6CB6051D0E436E00529B0B /* EF_MallDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC6CB6061D0E436E00529B0B /* EF_MallDemoTests.m */,
+				EC6CB6081D0E436E00529B0B /* Info.plist */,
+			);
+			path = EF_MallDemoTests;
+			sourceTree = "<group>";
+		};
+		EC6CB6101D0E436E00529B0B /* EF_MallDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EC6CB6111D0E436E00529B0B /* EF_MallDemoUITests.m */,
+				EC6CB6131D0E436E00529B0B /* Info.plist */,
+			);
+			path = EF_MallDemoUITests;
+			sourceTree = "<group>";
+		};
+		F9A4F44051EB760E51467E0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC6B7EA31D0FB9580056140F /* libxml2.2.tbd */,
+				EB9219C41D0EF11E00F2AA65 /* UIKit.framework */,
+				8F237CF2B66CBF41FDE699AF /* libPods-EF_MallDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC6CB5E81D0E436E00529B0B /* EF_MallDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC6CB6161D0E436E00529B0B /* Build configuration list for PBXNativeTarget "EF_MallDemo" */;
+			buildPhases = (
+				3BE245C3ECA342AB1405D012 /* [CP] Check Pods Manifest.lock */,
+				EC6CB5E51D0E436E00529B0B /* Sources */,
+				EC6CB5E61D0E436E00529B0B /* Frameworks */,
+				EC6CB5E71D0E436E00529B0B /* Resources */,
+				3971B218168D9C7F8E13F196 /* [CP] Embed Pods Frameworks */,
+				5F9BA6203AAA04A3523DE1E7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EF_MallDemo;
+			productName = EF_MallDemo;
+			productReference = EC6CB5E91D0E436E00529B0B /* EF_MallDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC6CB6011D0E436E00529B0B /* EF_MallDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC6CB6191D0E436E00529B0B /* Build configuration list for PBXNativeTarget "EF_MallDemoTests" */;
+			buildPhases = (
+				EC6CB5FE1D0E436E00529B0B /* Sources */,
+				EC6CB5FF1D0E436E00529B0B /* Frameworks */,
+				EC6CB6001D0E436E00529B0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC6CB6041D0E436E00529B0B /* PBXTargetDependency */,
+			);
+			name = EF_MallDemoTests;
+			productName = EF_MallDemoTests;
+			productReference = EC6CB6021D0E436E00529B0B /* EF_MallDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EC6CB60C1D0E436E00529B0B /* EF_MallDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC6CB61C1D0E436E00529B0B /* Build configuration list for PBXNativeTarget "EF_MallDemoUITests" */;
+			buildPhases = (
+				EC6CB6091D0E436E00529B0B /* Sources */,
+				EC6CB60A1D0E436E00529B0B /* Frameworks */,
+				EC6CB60B1D0E436E00529B0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC6CB60F1D0E436E00529B0B /* PBXTargetDependency */,
+			);
+			name = EF_MallDemoUITests;
+			productName = EF_MallDemoUITests;
+			productReference = EC6CB60D1D0E436E00529B0B /* EF_MallDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC6CB5E11D0E436E00529B0B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = MH;
+				TargetAttributes = {
+					EC6CB5E81D0E436E00529B0B = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = LTWCU7MZL7;
+					};
+					EC6CB6011D0E436E00529B0B = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = EC6CB5E81D0E436E00529B0B;
+					};
+					EC6CB60C1D0E436E00529B0B = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = EC6CB5E81D0E436E00529B0B;
+					};
+				};
+			};
+			buildConfigurationList = EC6CB5E41D0E436E00529B0B /* Build configuration list for PBXProject "EF_MallDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC6CB5E01D0E436E00529B0B;
+			productRefGroup = EC6CB5EA1D0E436E00529B0B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EB2440011D18466F001E4D27 /* Products */;
+					ProjectRef = EB2440001D18466F001E4D27 /* EasyFrame_iOS2.0.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				EC6CB5E81D0E436E00529B0B /* EF_MallDemo */,
+				EC6CB6011D0E436E00529B0B /* EF_MallDemoTests */,
+				EC6CB60C1D0E436E00529B0B /* EF_MallDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		EB2441C81D184670001E4D27 /* libEasyFrame_iOS2.0.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libEasyFrame_iOS2.0.a;
+			remoteRef = EB2441C71D184670001E4D27 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC6CB5E71D0E436E00529B0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB2441C41D184670001E4D27 /* ic_select@2x.png in Resources */,
+				EB2441BB1D184670001E4D27 /* cart_addBtn_highlight@2x.png in Resources */,
+				EB2441BC1D184670001E4D27 /* cart_addBtn_nomal@2x.png in Resources */,
+				EB2441C01D184670001E4D27 /* cart_selected_btn@2x.png in Resources */,
+				EB24414D1D184670001E4D27 /* readme.txt in Resources */,
+				EC6CB5FC1D0E436E00529B0B /* LaunchScreen.storyboard in Resources */,
+				EC6CB5F91D0E436E00529B0B /* Assets.xcassets in Resources */,
+				EB2441BA1D184670001E4D27 /* back_button@2x.png in Resources */,
+				EB24418D1D184670001E4D27 /* EFMineProfileCell.xib in Resources */,
+				EB2441C51D184670001E4D27 /* ic_select@3x.png in Resources */,
+				EC6CB6211D0E43D300529B0B /* EasyFrame_.plist in Resources */,
+				EB2441BE1D184670001E4D27 /* cart_cutBtn_nomal@2x.png in Resources */,
+				EB2441891D184670001E4D27 /* EFEditCommonCell.xib in Resources */,
+				EB24414F1D184670001E4D27 /* readme.txt in Resources */,
+				EB2441C11D184670001E4D27 /* cart_unSelect_btn@2x.png in Resources */,
+				EB24417E1D184670001E4D27 /* EFThirdPartyLoginView.xib in Resources */,
+				EB2441C31D184670001E4D27 /* ic_pass@3x.png in Resources */,
+				EB2441BD1D184670001E4D27 /* cart_cutBtn_highlight@2x.png in Resources */,
+				EB2441BF1D184670001E4D27 /* cart_default_bg.png in Resources */,
+				EB24413B1D184670001E4D27 /* EasyFrame.plist in Resources */,
+				EB2441C21D184670001E4D27 /* ic_pass@2x.png in Resources */,
+				EB2441801D184670001E4D27 /* resource.bundle in Resources */,
+				EB2441911D184670001E4D27 /* EFUserAvatarCell.xib in Resources */,
+				EB2441531D184670001E4D27 /* readme.txt in Resources */,
+				EC6CB5F71D0E436E00529B0B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC6CB6001D0E436E00529B0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC6CB60B1D0E436E00529B0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3971B218168D9C7F8E13F196 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EF_MallDemo/Pods-EF_MallDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3BE245C3ECA342AB1405D012 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5F9BA6203AAA04A3523DE1E7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EF_MallDemo/Pods-EF_MallDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC6CB5E51D0E436E00529B0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB24416B1D184670001E4D27 /* LocationUtil.m in Sources */,
+				EB24414B1D184670001E4D27 /* InputError.m in Sources */,
+				EB24415C1D184670001E4D27 /* EFXPathQuery.m in Sources */,
+				EB2441B81D184670001E4D27 /* EFPayAlertView.m in Sources */,
+				EB24414A1D184670001E4D27 /* EFRequestManager.m in Sources */,
+				EB2441611D184670001E4D27 /* HYDActivityMessageView.m in Sources */,
+				EB2441B21D184670001E4D27 /* YJSegmentedControl.m in Sources */,
+				EB2441901D184670001E4D27 /* EFUserAvatarCell.m in Sources */,
+				EB2441621D184670001E4D27 /* HYDActivityProgressView.m in Sources */,
+				EB24419C1D184670001E4D27 /* EFStoreVC.m in Sources */,
+				EB2441861D184670001E4D27 /* EFRegisterViewModel.m in Sources */,
+				EB24416F1D184670001E4D27 /* StarView.m in Sources */,
+				EB2441A61D184670001E4D27 /* EFGoodsTwoCell.m in Sources */,
+				EB2441B31D184670001E4D27 /* EFCarousel.m in Sources */,
+				EB2441871D184670001E4D27 /* EFAccountSettingVC.m in Sources */,
+				EB2441951D184670001E4D27 /* EFMallVC.m in Sources */,
+				EB24418C1D184670001E4D27 /* EFMineProfileCell.m in Sources */,
+				EB24419B1D184670001E4D27 /* EFShopCartVC.m in Sources */,
+				EB24414E1D184670001E4D27 /* EFSkinThemeManager.m in Sources */,
+				EB2441481D184670001E4D27 /* EFPageViewModel.m in Sources */,
+				EB2441581D184670001E4D27 /* KYTableView.m in Sources */,
+				EB24419E1D184670001E4D27 /* EFGoodModel.m in Sources */,
+				EB2441411D184670001E4D27 /* EFSideMenuCell.m in Sources */,
+				EB2441451D184670001E4D27 /* EFHomeTabBarController.m in Sources */,
+				EB24413C1D184670001E4D27 /* EFAppManager.m in Sources */,
+				EB2441511D184670001E4D27 /* UIView+TKCategory.m in Sources */,
+				EB2441521D184670001E4D27 /* YRSideViewController.m in Sources */,
+				EB2441681D184670001E4D27 /* KYMHLabel.m in Sources */,
+				EC6CB5F41D0E436E00529B0B /* ViewController.m in Sources */,
+				EB24413E1D184670001E4D27 /* EFBaseViewController.m in Sources */,
+				EB2441A11D184670001E4D27 /* EFMallRequest.m in Sources */,
+				EB24417C1D184670001E4D27 /* EFLoginWithThirdViewController.m in Sources */,
+				EB24418E1D184670001E4D27 /* EFSettingCell.m in Sources */,
+				EB2441A21D184670001E4D27 /* EFAgencyInfoCell.m in Sources */,
+				EB24415F1D184670001E4D27 /* EFShareView.m in Sources */,
+				EB2441B11D184670001E4D27 /* UIButton+LXMImagePosition.m in Sources */,
+				EB2441721D184670001E4D27 /* UIView+JSMAdd.m in Sources */,
+				EB2441541D184670001E4D27 /* EFFileManager.m in Sources */,
+				EB2441811D184670001E4D27 /* UserModel.m in Sources */,
+				EB2441A01D184670001E4D27 /* GoodModel.m in Sources */,
+				EB2441751D184670001E4D27 /* EFViewControllerManager.m in Sources */,
+				EB2441821D184670001E4D27 /* EFMineCenterCell.m in Sources */,
+				EB2441881D184670001E4D27 /* EFEditCommonCell.m in Sources */,
+				EB2441671D184670001E4D27 /* KYMHImageView.m in Sources */,
+				EB2441491D184670001E4D27 /* EFRequest.m in Sources */,
+				EB2441651D184670001E4D27 /* KYDatePickerView.m in Sources */,
+				EB2441A91D184670001E4D27 /* EFMallDetailsTopCell.m in Sources */,
+				EB2441841D184670001E4D27 /* EFRegisterRequest.m in Sources */,
+				EB24418A1D184670001E4D27 /* EFEditMineProfileVC.m in Sources */,
+				EB2441A51D184670001E4D27 /* EFGoodsCommentCell.m in Sources */,
+				EB2441B41D184670001E4D27 /* EFCarouselObject.m in Sources */,
+				EB2441731D184670001E4D27 /* WebUtil.m in Sources */,
+				EB2441A31D184670001E4D27 /* EFAgencyPictureCell.m in Sources */,
+				EB2441AB1D184670001E4D27 /* EFOrderInfoCell.m in Sources */,
+				EB2441AC1D184670001E4D27 /* EFOrderStatusCell.m in Sources */,
+				EB2441781D184670001E4D27 /* EFForgetPasswordViewModel.m in Sources */,
+				EB2441931D184670001E4D27 /* EFGoodsCommentVC.m in Sources */,
+				EB2441A41D184670001E4D27 /* EFGoodsCell.m in Sources */,
+				EB2441AA1D184670001E4D27 /* EFOrderDetailTwoCell.m in Sources */,
+				EB2441921D184670001E4D27 /* EFAgencyInfoVC.m in Sources */,
+				EB2441471D184670001E4D27 /* EFPageRequest.m in Sources */,
+				EB2441A71D184670001E4D27 /* EFMallCell.m in Sources */,
+				EB2441B91D184670001E4D27 /* EFSelectView.m in Sources */,
+				EB2441B01D184670001E4D27 /* EFMallViewModel.m in Sources */,
+				EB24416C1D184670001E4D27 /* mapLocation.m in Sources */,
+				EB2441AF1D184670001E4D27 /* EFShopCartHeadView.m in Sources */,
+				EB24417D1D184670001E4D27 /* EFThirdPartyLoginView.m in Sources */,
+				EB2441441D184670001E4D27 /* EFHomeSingleViewController.m in Sources */,
+				EB24416A1D184670001E4D27 /* KYTableViewNoDataCategory.m in Sources */,
+				EB2441741D184670001E4D27 /* XYAttributedString.m in Sources */,
+				EC6CB5F11D0E436E00529B0B /* AppDelegate.m in Sources */,
+				EB2441591D184670001E4D27 /* EF_AlbumView.m in Sources */,
+				EB2441B61D184670001E4D27 /* DCPaymentView.m in Sources */,
+				EB24419D1D184670001E4D27 /* EFCartModel.m in Sources */,
+				EB24419F1D184670001E4D27 /* EFMallListModel.m in Sources */,
+				EB2441761D184670001E4D27 /* EFForgetPasswordRequest.m in Sources */,
+				EB2441711D184670001E4D27 /* UIUtil.m in Sources */,
+				EB2441551D184670001E4D27 /* BlockAlert.m in Sources */,
+				EB2441971D184670001E4D27 /* EFOrderConfirmVC.m in Sources */,
+				EB24415A1D184670001E4D27 /* EFHpple.m in Sources */,
+				EB2441791D184670001E4D27 /* EFLoginRequest.m in Sources */,
+				EB2441851D184670001E4D27 /* EFRegisterViewController.m in Sources */,
+				EB24414C1D184670001E4D27 /* NetworkModel.m in Sources */,
+				EB24417A1D184670001E4D27 /* EFLoginViewController.m in Sources */,
+				EB2441941D184670001E4D27 /* EFMallDetailsVC.m in Sources */,
+				EB2441961D184670001E4D27 /* EFMyOrderVC.m in Sources */,
+				EB24413F1D184670001E4D27 /* EFHomeSideAndTabViewController.m in Sources */,
+				EB2441561D184670001E4D27 /* BlockButton.m in Sources */,
+				EB2441431D184670001E4D27 /* HomeViewController.m in Sources */,
+				EB2441401D184670001E4D27 /* EFHomeSideViewController.m in Sources */,
+				EB24415B1D184670001E4D27 /* EFHppleElement.m in Sources */,
+				EB2441B71D184670001E4D27 /* DCPwdTextField.m in Sources */,
+				EB2441991D184670001E4D27 /* EFOrderDetailVC.m in Sources */,
+				EB2441641D184670001E4D27 /* HYDFileManager.m in Sources */,
+				EB2441B51D184670001E4D27 /* DCPaymentAlert.m in Sources */,
+				EB24417F1D184670001E4D27 /* EFVerticalButton.m in Sources */,
+				EB2441461D184670001E4D27 /* EFBaseViewModel.m in Sources */,
+				EB2441631D184670001E4D27 /* HYDAsyncImageView.m in Sources */,
+				EB2441AD1D184670001E4D27 /* EFSearchHistroyCell.m in Sources */,
+				EB2441771D184670001E4D27 /* EFForgetPasswordViewController.m in Sources */,
+				EB2441501D184670001E4D27 /* TKAlertCenter.m in Sources */,
+				EB2441571D184670001E4D27 /* UIButton+TouchAreaInsets.m in Sources */,
+				EB24419A1D184670001E4D27 /* EFSearchVC.m in Sources */,
+				EB2441A81D184670001E4D27 /* EFMallDetailsStoreCell.m in Sources */,
+				EB24416D1D184670001E4D27 /* WGS84TOGCJ02.m in Sources */,
+				EB2441661D184670001E4D27 /* KYMHButton.m in Sources */,
+				EB2441421D184670001E4D27 /* EFSideMenuViewController.m in Sources */,
+				EB24418B1D184670001E4D27 /* EFEditNicknameVC.m in Sources */,
+				EB2441981D184670001E4D27 /* EFOrderDetailTwoVC.m in Sources */,
+				EC6CB5EE1D0E436E00529B0B /* main.m in Sources */,
+				EB2441691D184670001E4D27 /* KYShaker.m in Sources */,
+				EB2441701D184670001E4D27 /* UIColor+UIColor_Hex.m in Sources */,
+				EB24413D1D184670001E4D27 /* EFBaseNavigationController.m in Sources */,
+				EB2441AE1D184670001E4D27 /* EFShopCartCell.m in Sources */,
+				EB2441601D184670001E4D27 /* HYDActivityIndicatorView.m in Sources */,
+				EB2441831D184670001E4D27 /* EFMineCenterVC.m in Sources */,
+				EB24415D1D184670001E4D27 /* EFMyAutoAlertView.m in Sources */,
+				EB24418F1D184670001E4D27 /* EFSettingViewController.m in Sources */,
+				EB24417B1D184670001E4D27 /* EFLoginViewModel.m in Sources */,
+				EB24416E1D184670001E4D27 /* UIImageView+UIActivityIndicatorForSDWebImage.m in Sources */,
+				EB24415E1D184670001E4D27 /* EFPopupViewManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC6CB5FE1D0E436E00529B0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC6CB6071D0E436E00529B0B /* EF_MallDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC6CB6091D0E436E00529B0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC6CB6121D0E436E00529B0B /* EF_MallDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC6CB6041D0E436E00529B0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC6CB5E81D0E436E00529B0B /* EF_MallDemo */;
+			targetProxy = EC6CB6031D0E436E00529B0B /* PBXContainerItemProxy */;
+		};
+		EC6CB60F1D0E436E00529B0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC6CB5E81D0E436E00529B0B /* EF_MallDemo */;
+			targetProxy = EC6CB60E1D0E436E00529B0B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC6CB5F51D0E436E00529B0B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC6CB5F61D0E436E00529B0B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC6CB5FA1D0E436E00529B0B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC6CB5FB1D0E436E00529B0B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC6CB6141D0E436E00529B0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: ZHANG JIE (3KRLQJ5LCL)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC6CB6151D0E436E00529B0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: ZHANG JIE (LTWCU7MZL7)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC6CB6171D0E436E00529B0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 104EC8CCEF17BCF95B720D00 /* Pods-EF_MallDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/AMapLocation\"",
+					"\"${PODS_ROOT}/AMapNavi\"",
+					"\"${PODS_ROOT}/AMapSearch\"",
+					"\"${PODS_ROOT}/AlipaySDK-2.0\"",
+					"\"${PODS_ROOT}/TencentOpenApiSDK/Basic\"",
+					"\"${PODS_ROOT}/UMengAnalytics-NO-IDFA/umsdk_IOS_analyics_no-idfa_v4.0.3\"",
+					/usr/lib/libxml2.dylib,
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/EF_MallDemo/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../EasyFrame_iOS2.0\"",
+					"$(SDKROOT)/usr/include/libxml2",
+				);
+				INFOPLIST_FILE = EF_MallDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dentist.kingyon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+			};
+			name = Debug;
+		};
+		EC6CB6181D0E436E00529B0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 629978147C50CD55CF71C09E /* Pods-EF_MallDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/AMapLocation\"",
+					"\"${PODS_ROOT}/AMapNavi\"",
+					"\"${PODS_ROOT}/AMapSearch\"",
+					"\"${PODS_ROOT}/AlipaySDK-2.0\"",
+					"\"${PODS_ROOT}/TencentOpenApiSDK/Basic\"",
+					"\"${PODS_ROOT}/UMengAnalytics-NO-IDFA/umsdk_IOS_analyics_no-idfa_v4.0.3\"",
+					/usr/lib/libxml2.dylib,
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/EF_MallDemo/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../EasyFrame_iOS2.0\"",
+					"$(SDKROOT)/usr/include/libxml2",
+				);
+				INFOPLIST_FILE = EF_MallDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dentist.kingyon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+			};
+			name = Release;
+		};
+		EC6CB61A1D0E436E00529B0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EF_MallDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mh.EF-MallDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EF_MallDemo.app/EF_MallDemo";
+			};
+			name = Debug;
+		};
+		EC6CB61B1D0E436E00529B0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EF_MallDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mh.EF-MallDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EF_MallDemo.app/EF_MallDemo";
+			};
+			name = Release;
+		};
+		EC6CB61D1D0E436E00529B0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EF_MallDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mh.EF-MallDemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EF_MallDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		EC6CB61E1D0E436E00529B0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EF_MallDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mh.EF-MallDemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EF_MallDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC6CB5E41D0E436E00529B0B /* Build configuration list for PBXProject "EF_MallDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC6CB6141D0E436E00529B0B /* Debug */,
+				EC6CB6151D0E436E00529B0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC6CB6161D0E436E00529B0B /* Build configuration list for PBXNativeTarget "EF_MallDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC6CB6171D0E436E00529B0B /* Debug */,
+				EC6CB6181D0E436E00529B0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC6CB6191D0E436E00529B0B /* Build configuration list for PBXNativeTarget "EF_MallDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC6CB61A1D0E436E00529B0B /* Debug */,
+				EC6CB61B1D0E436E00529B0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC6CB61C1D0E436E00529B0B /* Build configuration list for PBXNativeTarget "EF_MallDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC6CB61D1D0E436E00529B0B /* Debug */,
+				EC6CB61E1D0E436E00529B0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC6CB5E11D0E436E00529B0B /* Project object */;
+}

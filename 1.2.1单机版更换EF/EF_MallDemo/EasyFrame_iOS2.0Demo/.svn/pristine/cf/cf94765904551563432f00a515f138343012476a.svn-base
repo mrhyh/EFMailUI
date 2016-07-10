@@ -1,0 +1,59 @@
+PODS:
+  - AFNetworking (2.5.4):
+    - AFNetworking/NSURLConnection (= 2.5.4)
+    - AFNetworking/NSURLSession (= 2.5.4)
+    - AFNetworking/Reachability (= 2.5.4)
+    - AFNetworking/Security (= 2.5.4)
+    - AFNetworking/Serialization (= 2.5.4)
+    - AFNetworking/UIKit (= 2.5.4)
+  - AFNetworking/NSURLConnection (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.4)
+  - AFNetworking/Security (2.5.4)
+  - AFNetworking/Serialization (2.5.4)
+  - AFNetworking/UIKit (2.5.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - FDFullscreenPopGesture (1.1)
+  - IQKeyboardManager (3.3.7)
+  - MJRefresh (3.1.0)
+  - Reachability (3.0.0)
+  - SDAutoLayout (2.0.0)
+  - SDWebImage (3.7.6):
+    - SDWebImage/Core (= 3.7.6)
+  - SDWebImage/Core (3.7.6)
+  - SFHFKeychainUtils (0.0.1)
+  - UIScrollView+PullBig (1.0.1)
+  - YYModel (1.0.3)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.5.4)
+  - FDFullscreenPopGesture
+  - IQKeyboardManager
+  - MJRefresh (~> 3.1.0)
+  - Reachability (~> 3.0.0)
+  - SDAutoLayout
+  - SDWebImage (~> 3.7.2)
+  - SFHFKeychainUtils
+  - UIScrollView+PullBig
+  - YYModel
+
+SPEC CHECKSUMS:
+  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  IQKeyboardManager: 249c3946acf61345c18b038eb50863fe2793e3a8
+  MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
+  Reachability: 31e4272bd8378e094beaf6609dc182c85c4e6574
+  SDAutoLayout: ae98d238e4721c1566abec57bcb2fa1fbe62a0df
+  SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
+  SFHFKeychainUtils: 9576b411a79a058f4d5381ace6f3242b9a62e664
+  UIScrollView+PullBig: 60f3107f44cb958c9c4071bfb67e27a1f85a0350
+  YYModel: 63142c2f07c5c8c9d1c261689cf3827ea6ab2886
+
+COCOAPODS: 0.38.0

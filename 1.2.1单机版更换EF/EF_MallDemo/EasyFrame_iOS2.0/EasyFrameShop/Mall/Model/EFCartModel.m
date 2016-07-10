@@ -1,0 +1,30 @@
+
+
+//  Created by ylgwhyh on 16/6/13.
+//  Copyright © 2016年 MH. All rights reserved.
+//
+
+#import "EFCartModel.h"
+
+@implementation EFCartModel
+
+
++ (NSDictionary *)objectClassInArray{
+    return @{@"content" : [GoodContent class]};
+}
+@end
+@implementation GoodContent
+
+@end
+
+
+@implementation Productitem
+
+@end
+
+
+@implementation Image
+
+@end
+
+

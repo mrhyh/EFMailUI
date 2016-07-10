@@ -1,0 +1,81 @@
+//
+//  EFShopCartHeadView.m
+//  EF_MallDemo
+//
+//  Created by ylgwhyh on 16/6/15.
+//  Copyright © 2016年 MH. All rights reserved.
+//
+
+#import "EFShopCartHeadView.h"
+
+
+@implementation EFShopCartHeadView {
+    CGFloat segmentH;
+    CGFloat spaceToLeft;
+    CGFloat sectionViewH;
+    CGFloat sectionImageH;
+    CGFloat sectionFontSize;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame andSelectBlock:(EFShopCartHeadViewBlock)block {
+    
+    self = [super initWithFrame:frame];
+    if(self ) {
+        callBack = block;
+        segmentH = frame.size.height;
+        spaceToLeft = 10;
+        sectionViewH = 30;
+        sectionImageH = 17;
+        sectionFontSize = 13;
+        
+        UIView *headView = [[UIView alloc] initWithFrame:frame];
+        headView.backgroundColor = RGBColor(248, 249, 248);
+        [self addSubview:headView];
+        
+        _button = [KYMHButton new];
+        [_button setImage:Img(@"ic_pass") forState:UIControlStateNormal];
+        [_button setImage:Img(@"ic_select") forState:UIControlStateSelected];
+        
+        _nameLabel = [KYMHLabel new];
+        _nameLabel.textColor = EF_TextColor_TextColorPrimary;
+        _nameLabel.textAlignment = NSTextAlignmentLeft;
+        _nameLabel.font = Font(sectionFontSize);
+        
+        _indicatorImageView = [KYMHImageView new];
+        
+        [headView addSubview:_button];
+        [headView addSubview:_nameLabel];
+        [headView addSubview:_indicatorImageView];
+        
+        
+        //更新数据
+        _nameLabel.text = @"仁恒美光牙科";
+        _indicatorImageView.image = Img(@"");
+        _indicatorImageView.backgroundColor = [UIColor grayColor];
+        
+        //布局
+        CGFloat spaceToTop = (sectionViewH-sectionImageH)/2;
+        _button.sd_layout
+        .leftSpaceToView(headView, spaceToLeft)
+        .topSpaceToView(headView, spaceToTop)
+        .widthIs(sectionImageH)
+        .heightIs(sectionImageH);
+        
+        
+        _nameLabel.sd_layout
+        .leftSpaceToView(_button, spaceToLeft)
+        .topSpaceToView(headView, spaceToTop)
+        .heightIs(sectionImageH);
+        [_nameLabel setSingleLineAutoResizeWithMaxWidth:200];
+        
+        _indicatorImageView.sd_layout
+        .leftSpaceToView(_nameLabel, spaceToLeft)
+        .topSpaceToView(headView, spaceToTop)
+        .widthIs(sectionImageH)
+        .heightIs(sectionImageH);
+    }
+    
+    return self;
+}
+
+@end

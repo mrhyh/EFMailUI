@@ -1,0 +1,43 @@
+//
+//  EFMallViewModel.h
+//  EF_MallDemo
+//
+//  Created by HqLee on 16/6/15.
+//  Copyright © 2016年 MH. All rights reserved.
+//
+
+#import "EFBaseViewModel.h"
+#import "EFMallModel.h"
+typedef NS_ENUM(EFViewControllerCallBackAction,EFMallViewModelCallBackAction){
+    EFMallViewModelCallBackActionGetAddressList = 1,
+    EFMallViewModelCallBackActionAddAddress = 2,
+    EFMallViewModelCallBackActionSaveAddress = 3,
+    EFMallViewModelCallBackActionDelAddress = 4
+};
+
+@interface EFMallViewModel : EFBaseViewModel
+/**
+ *  获取收货地址列表
+ */
+- (void)getAllConsigneeAddressList;
+
+/**
+ *  添加一个收货地址
+ *
+ *  @param consigneeModel 收货地址模型
+ */
+- (void)addConsigneeAddress:(EFMallConsigneeModel *)consigneeModel;
+
+/**
+ *  保存一个收货地址
+ *
+ *  @param consigneeModel 收货地址模型
+ */
+- (void)saveConsigneeAddress:(EFMallConsigneeModel *)consigneeModel;
+/**
+ *  删除一个收货地址
+ *
+ *  @param objectId 收货地址的Id
+ */
+- (void)delConsigneeAddress:(NSString *)objectId;
+@end

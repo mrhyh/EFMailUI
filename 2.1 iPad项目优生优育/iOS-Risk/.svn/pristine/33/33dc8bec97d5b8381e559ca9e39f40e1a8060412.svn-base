@@ -1,0 +1,92 @@
+//
+//  RSVAVisitRecordCell.m
+//  Risk
+//
+//  Created by ylgwhyh on 16/7/7.
+//  Copyright © 2016年 com.risk.kingyon. All rights reserved.
+//
+
+#import "RSVAVisitRecordCell.h"
+
+
+
+@interface RSVAVisitRecordCell ()
+
+@property (nonatomic, strong) KYMHImageView *leftImageView;
+@property (nonatomic, strong) KYMHLabel *topLabel;
+@property (nonatomic, strong) KYMHLabel *bottomLabel;
+@property (nonatomic, strong) UIView *lineView;
+
+@end
+
+@implementation RSVAVisitRecordCell
+
+
+
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        [self setup];
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
+    }
+    return self;
+}
+
+- (void) setup {
+    
+    _leftImageView = [KYMHImageView new];
+    _leftImageView.contentMode = UIViewContentModeScaleAspectFill;
+    _leftImageView.clipsToBounds = YES;
+    
+    _topLabel = [KYMHLabel new];
+    _topLabel.font = Font(smallFontSize);
+    _topLabel.textColor = EF_TextColor_TextColorPrimary;
+    _topLabel.textAlignment = NSTextAlignmentLeft;
+    
+    _bottomLabel = [KYMHLabel new];
+    _bottomLabel.font = Font(smallFontSize-2);
+    _bottomLabel.textColor = EF_TextColor_TextColorSecondary;
+    _bottomLabel.textAlignment = NSTextAlignmentLeft;
+    
+    _lineView = [UIView new];
+    
+    
+    NSArray *views = @[_leftImageView, _bottomLabel, _lineView];
+    
+    [self.contentView sd_addSubviews:views];
+    UIView *contentView = self.contentView;
+    
+    CGFloat spaceToLeft = 20;
+    
+    _leftImageView.sd_layout
+    .topSpaceToView(contentView, 10)
+    .leftSpaceToView(contentView, spaceToLeft)
+    .widthIs(16)
+    .heightIs(20);
+    
+    _topLabel.sd_layout
+    .topEqualToView(_leftImageView)
+    .leftSpaceToView(_leftImageView, 10)
+    .widthIs(SCREEN_WIDTH/2-2*(spaceToLeft-10-16))
+    .heightIs(15);
+    
+    _lineView.sd_layout
+    .topSpaceToView(_bottomLabel, 10)
+    .heightIs(0.5)
+    .widthIs(SCREEN_WIDTH/2-20);
+    
+}
+
+
+- (void) setModel:(RSVAArchivesModel *)model {
+    _model = model;
+    
+
+    
+    //cell高度适配
+    UIView *bottomView;
+    bottomView = _lineView;
+    [self setupAutoHeightWithBottomView:bottomView bottomMargin:0];
+}
+
+@end

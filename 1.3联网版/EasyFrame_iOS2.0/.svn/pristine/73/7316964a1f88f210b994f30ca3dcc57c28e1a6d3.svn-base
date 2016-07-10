@@ -1,0 +1,67 @@
+//
+//  EFMallRequest.h
+//  EF_MallDemo
+//
+//  Created by HqLee on 16/6/15.
+//  Copyright © 2016年 MH. All rights reserved.
+//
+
+#import "EFRequest.h"
+#import "EFMallModel.h"
+/**
+ *  获取地址列表
+ */
+@interface EFMallGetAddressListRequest : EFRequest
+
+@end
+/**
+ *  添加一个收货地址
+ */
+@interface EFMallAddAddressRequest : EFRequest
+@property (nonatomic, strong) EFMallConsigneeModel *consigneeModel;
+@end
+/**
+ *  保存一个收货地址
+ */
+@interface EFMallSaveAddressRequest : EFRequest
+@property (nonatomic, copy) EFMallConsigneeModel *consigneeModel;
+@end
+/**
+ *  删除一个收货地址
+ */
+@interface EFMallDelAddressRequest : EFRequest
+@property (nonatomic, copy) NSString *objectId;
+@end
+/**
+ * 添加一个商品到购物车
+ */
+@interface EFMallAddGoodToShopCardRequest : EFRequest
+@property (nonatomic, copy) NSString *productId;
+@property (nonatomic, copy) NSString *quantity;
+@end
+/**
+ *  获取商品列表
+ */
+@interface EFMallGetGoodListRequest : EFRequest
+@property (nonatomic, strong) StoreRequestParamsModel *requestParams;
+@end
+/**
+ *  商品详情
+ */
+@interface EFGoodDetailRequest : EFRequest
+@property (nonatomic, copy) NSString *productId;
+@end
+/**
+ *  店铺详情
+ */
+@interface EFStoreDetailRequest : EFRequest
+@property (nonatomic, copy) NSString *shopId;
+@end
+/**
+ *  店铺详情
+ */
+@interface EFCommentListRequest : EFRequest
+@property (nonatomic, copy) NSString *productId;
+@property (nonatomic, assign) NSInteger page;
+@property (nonatomic, assign) NSInteger size;
+@end

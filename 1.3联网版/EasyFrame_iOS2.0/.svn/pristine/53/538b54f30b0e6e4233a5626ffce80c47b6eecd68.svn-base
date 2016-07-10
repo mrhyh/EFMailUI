@@ -1,0 +1,22 @@
+//
+//  EFMallModel.m
+//  EF_MallDemo
+//
+//  Created by HqLee on 16/6/17.
+//  Copyright © 2016年 MH. All rights reserved.
+//
+
+#import "EFMallModel.h"
+//收货地址模型
+@implementation EFMallConsigneeModel
+@end
+//商品列表模型
+@implementation EFMallGoodListModel
+@end
+@implementation Image
+@end
+@implementation Shop
+@end
+//商品列表请求参数模型
+@implementation StoreRequestParamsModel
+@end

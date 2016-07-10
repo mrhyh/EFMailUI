@@ -1,0 +1,72 @@
+//
+//  EFMallViewModel.m
+//  EF_MallDemo
+//
+//  Created by HqLee on 16/6/15.
+//  Copyright © 2016年 MH. All rights reserved.
+//
+
+#import "EFMallViewModel.h"
+#import "EFMallRequest.h"
+
+@implementation EFMallViewModel
+/**
+ *  获取所有的收货人
+ */
+- (void)getAllConsigneeAddressList{
+    EFMallGetAddressListRequest *request = [EFMallGetAddressListRequest requestWithGET];
+    
+    [self startCallBack:^(CallBackStatus callBackStatus, NetworkModel *result) {
+        [self delRequestWithTag:EFMallViewModelCallBackActionGetAddressList];
+        
+        [self.viewController callBackAction:EFMallViewModelCallBackActionGetAddressList Result:result];
+    } Request:request WithTag:EFMallViewModelCallBackActionGetAddressList];
+}
+
+/**
+ *  添加一个收货地址
+ *
+ *  @param consigneeModel 收货地址模型
+ */
+- (void)addConsigneeAddress:(EFMallConsigneeModel *)consigneeModel{
+    EFMallAddAddressRequest *request = [EFMallAddAddressRequest requestWithPOST];
+    request.consigneeModel = consigneeModel;
+    
+    [self startCallBack:^(CallBackStatus callBackStatus, NetworkModel *result) {
+        [self delRequestWithTag:EFMallViewModelCallBackActionAddAddress];
+        
+        [self.viewController callBackAction:EFMallViewModelCallBackActionAddAddress Result:result];
+    } Request:request WithTag:EFMallViewModelCallBackActionAddAddress];
+}
+
+/**
+ *  保存一个收货地址
+ *
+ *  @param objectId 收货地址的Id
+ */
+- (void)saveConsigneeAddress:(EFMallConsigneeModel *)consigneeModel{
+    EFMallSaveAddressRequest *request = [EFMallSaveAddressRequest requestWithPOST];
+    request.consigneeModel = consigneeModel;
+    
+    [self startCallBack:^(CallBackStatus callBackStatus, NetworkModel *result) {
+        [self delRequestWithTag:EFMallViewModelCallBackActionSaveAddress];
+        
+        [self.viewController callBackAction:EFMallViewModelCallBackActionSaveAddress Result:result];
+    } Request:request WithTag:EFMallViewModelCallBackActionSaveAddress];
+}
+/**
+ *  删除一个收货地址
+ *
+ *  @param objectId 收货地址的Id
+ */
+- (void)delConsigneeAddress:(NSString *)objectId{
+    EFMallDelAddressRequest *request = [EFMallDelAddressRequest requestWithPOST];
+    request.objectId = objectId;
+    
+    [self startCallBack:^(CallBackStatus callBackStatus, NetworkModel *result) {
+        [self delRequestWithTag:EFMallViewModelCallBackActionDelAddress];
+        
+        [self.viewController callBackAction:EFMallViewModelCallBackActionDelAddress Result:result];
+    } Request:request WithTag:EFMallViewModelCallBackActionDelAddress];
+}
+@end

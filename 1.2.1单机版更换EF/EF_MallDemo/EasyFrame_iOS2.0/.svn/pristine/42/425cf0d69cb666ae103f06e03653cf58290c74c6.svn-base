@@ -1,0 +1,34 @@
+//
+//  GoodsCommentCell.m
+//  hujinrong
+//
+//  Created by HqLee on 16/5/17.
+//  Copyright © 2016年 MH. All rights reserved.
+//
+
+#import "EFGoodsCommentCell.h"
+#import "StarView.h"
+
+@interface EFGoodsCommentCell()
+@property (weak, nonatomic) IBOutlet UILabel *userNameLabel;
+@property (weak, nonatomic) IBOutlet StarView *startView;
+@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *commentLabel;
+
+@end
+@implementation EFGoodsCommentCell
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    
+    self.startView.starLevel = 3.5f;
+    self.startView.starScale = 0.5;
+}
+
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+    [super setSelected:selected animated:animated];
+
+    // Configure the view for the selected state
+}
+
+@end

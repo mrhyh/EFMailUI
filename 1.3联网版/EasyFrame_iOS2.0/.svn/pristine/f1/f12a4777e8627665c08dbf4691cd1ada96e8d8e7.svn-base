@@ -1,0 +1,38 @@
+//
+//  QFBaseViewController.m
+//  QuickFix
+//
+//  Created by Jack on 4/8/15.
+//  Copyright (c) 2015 KingYon LLC. All rights reserved.
+//
+
+#import "EFBaseViewController.h"
+
+@implementation EFBaseViewController
+
+- (void)viewDidLoad{
+    [super viewDidLoad];
+    self.view.backgroundColor = EF_BGColor_Primary;
+    //设置title颜色
+    UIColor * color = EF_TextColor_TextColorNavigation;
+    UIColor * mainColor = EF_MainColor;
+    [[UINavigationBar appearance] setBarTintColor:mainColor];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:color}];
+    [[UINavigationBar appearance] setTintColor:color];
+    [self skinChange];
+    
+    //监听是否启用一键换肤的操作
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(skinChange) name:EFSkinThemeViewChange object:nil];
+}
+
+- (void)skinChange{
+    self.view.backgroundColor = EF_BGColor_Primary;
+    //设置title颜色
+    UIColor * color = EF_TextColor_TextColorNavigation;
+    UIColor * mainColor = EF_MainColor;
+    [[UINavigationBar appearance] setBarTintColor:mainColor];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:color}];
+    [[UINavigationBar appearance] setTintColor:color];
+
+}
+@end

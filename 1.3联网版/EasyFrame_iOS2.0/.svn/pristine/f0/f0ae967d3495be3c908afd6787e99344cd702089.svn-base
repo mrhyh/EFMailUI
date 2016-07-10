@@ -1,0 +1,97 @@
+//
+//  EFShopCartRequest.h
+//  EF_MallDemo
+//
+//  Created by ylgwhyh on 16/6/20.
+//  Copyright © 2016年 MH. All rights reserved.
+//
+
+#import "EFRequest.h"
+
+/*********************商城-购物车信息管理rest接口************************/
+@interface EFShopCartRequest : EFRequest
+
+@end
+
+
+/**
+ *  清空我的购物车
+ */
+@interface EFClearItemsRequest : EFRequest
+
+@end
+
+/**
+ *  返回购物车购物项
+ */
+@interface EFGetShopCartItemsRequest : EFRequest
+@property (nonatomic, assign) int page;
+@property (nonatomic, assign) int size;
+@end
+
+/**
+ *  从我的购物车当中删除购物项
+ */
+@interface EFRemoveItemsRequest : EFRequest
+@property (nonatomic, assign) NSInteger productIds;
+@end
+
+/**
+ *  修改购物项目数量
+ */
+@interface EFUpdateItemQuantityRequest : EFRequest
+@property (nonatomic, assign) NSInteger productId;
+@property (nonatomic, assign) NSInteger quantity;
+@end
+
+/****************商城-订单管理服务rest接口**************/
+
+
+/***  创建订单*/
+@interface CreateOrder : EFRequest
+
+@end
+
+/***  返回我的订单列表*/
+@interface MyOrderList : EFRequest
+@property (nonatomic, assign) NSInteger page;
+@property (nonatomic, assign) NSInteger size;
+@end
+
+
+/***  取消订单*/
+@interface CancelOrder : EFRequest
+@property (nonatomic, assign) NSInteger orderId;
+@property (nonatomic, copy) NSString *caulse;
+@end
+
+
+/***  确认订单*/
+@interface ConfirmOrder : EFRequest
+@property (nonatomic, assign) NSInteger orderId;
+@end
+
+
+/***  刪除订单*/
+@interface DeleteOrder : EFRequest
+@property (nonatomic, assign) NSInteger orderId;
+@end
+
+
+/***  完成订单*/
+@interface FinishOrder : EFRequest
+@property (nonatomic, assign) NSInteger orderId;
+@end
+
+
+/***  支付订单*/
+@interface PayOrder : EFRequest
+@property (nonatomic, assign) NSInteger orderId;
+@end
+
+
+
+
+
+
+

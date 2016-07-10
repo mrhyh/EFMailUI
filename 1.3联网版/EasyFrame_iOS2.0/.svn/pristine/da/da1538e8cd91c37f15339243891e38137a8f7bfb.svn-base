@@ -1,0 +1,64 @@
+//
+//  LoginModel.h
+//  demo
+//
+//  Created by MH on 16/5/25.
+//  Copyright © 2016年 KingYon LLC. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import "UserModel.h"
+@class Content,Inputerror,Fielderrors,Objecterrors;
+@interface LoginModel : NSObject
+@property (nonatomic, assign) NSInteger status;
+
+@property (nonatomic, copy) NSString *message;
+
+@property (nonatomic, strong) Content *content;
+
+@property (nonatomic, strong) Inputerror *inputError;
+
+@end
+@interface Content : NSObject
+
+@property (nonatomic, copy) NSString *token;
+
+@property (nonatomic, copy) NSString *mobile;
+
+@property (nonatomic, copy) NSString *nickname;
+
+@property (nonatomic, assign) long long birthDate;
+
+@property (nonatomic, assign) long long expireDate;
+
+@property (nonatomic, strong) Head *head;
+
+@property (nonatomic, assign) int objectId;
+
+@property (nonatomic, copy) NSString *sign;
+
+@property (nonatomic, copy) NSString *sex;
+
+@end
+
+@interface Inputerror : NSObject
+
+@property (nonatomic, strong) NSArray<Fielderrors *> *fieldErrors;
+
+@property (nonatomic, strong) NSArray<Objecterrors *> *objectErrors;
+
+@property (nonatomic, assign) BOOL empty;
+
+@end
+
+@interface Fielderrors : NSObject
+
+@property (nonatomic, strong) NSArray<NSString *> *key;
+
+@end
+
+@interface Objecterrors : NSObject
+
+@property (nonatomic, strong) NSArray<NSString *> *key;
+
+@end

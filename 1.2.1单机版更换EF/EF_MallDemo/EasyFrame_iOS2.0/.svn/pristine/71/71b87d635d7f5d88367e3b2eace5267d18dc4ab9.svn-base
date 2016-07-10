@@ -1,0 +1,91 @@
+//
+//  QFBaseViewController.m
+//  QuickFix
+//
+//  Created by Jack on 4/8/15.
+//  Copyright (c) 2015 KingYon LLC. All rights reserved.
+//
+
+#import "EFBaseViewController.h"
+
+@implementation EFBaseViewController
+
+- (void)viewDidLoad{
+    [super viewDidLoad];
+//    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+
+//    if (CurrentSystemVersion > 8.2) {
+//        [self.navigationController.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:20 weight:UIFontWeightMedium],NSForegroundColorAttributeName:color}];
+//    }else{
+//        [self.navigationController.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:20],NSForegroundColorAttributeName:color}];
+//    }
+    self.view.backgroundColor = EF_BGColor_Primary;
+    //设置title颜色
+    UIColor * color = EF_TextColor_TextColorNavigation;
+    UIColor * mainColor = EF_MainColor;
+    [[UINavigationBar appearance] setBarTintColor:mainColor];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:color}];
+    [[UINavigationBar appearance] setTintColor:color];
+    [self skinChange];
+    
+    //监听是否启用一键换肤的操作
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(skinChange) name:EFSkinThemeViewChange object:nil];
+}
+
+- (void)skinChange{
+    self.view.backgroundColor = EF_BGColor_Primary;
+    //设置title颜色
+    UIColor * color = EF_TextColor_TextColorNavigation;
+    UIColor * mainColor = EF_MainColor;
+    [[UINavigationBar appearance] setBarTintColor:mainColor];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:color}];
+    [[UINavigationBar appearance] setTintColor:color];
+
+}
+
+//- (void)backAction{
+//    [self.navigationController popViewControllerAnimated:YES];
+//}
+
+//- (BOOL)isShowBackButton{
+//    if ([[self.navigationController viewControllers] indexOfObject:self] == 0) {
+//        return NO;
+//    }
+//    return YES;
+//}
+
+
+//- (void)makeTabBarHidden:(BOOL)hide
+//{
+//    if ( [self.tabBarController.view.subviews count] < 2 )
+//    {
+//        return;
+//    }
+//    UIView *contentView;
+//    if ( [[self.tabBarController.view.subviews objectAtIndex:0] isKindOfClass:[UITabBar class]] )
+//    {
+//        contentView = [self.tabBarController.view.subviews objectAtIndex:1];
+//    }
+//    else
+//    {
+//        contentView = [self.tabBarController.view.subviews objectAtIndex:0];
+//    }
+//    //    [UIView beginAnimations:@"TabbarHide" context:nil];
+//    if ( hide )
+//    {
+//        contentView.frame = self.tabBarController.view.bounds;
+//    }
+//    else
+//    {
+//        contentView.frame = CGRectMake(self.tabBarController.view.bounds.origin.x,
+//                                       self.tabBarController.view.bounds.origin.y,
+//                                       self.tabBarController.view.bounds.size.width,
+//                                       self.tabBarController.view.bounds.size.height - self.tabBarController.tabBar.frame.size.height);
+//    }
+//    
+//    self.tabBarController.tabBar.hidden = hide;
+//    //    [UIView commitAnimations];
+//}
+
+
+@end

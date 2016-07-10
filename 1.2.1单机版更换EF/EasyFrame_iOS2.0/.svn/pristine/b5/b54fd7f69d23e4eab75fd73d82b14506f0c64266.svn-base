@@ -1,0 +1,20 @@
+//
+//  CitySelectView.h
+//  pdb
+//
+//  Created by mini珍 on 15/12/9.
+//  Copyright © 2015年 MH. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+#if NS_BLOCKS_AVAILABLE
+typedef void (^EFSelectViewBlock)(NSDictionary * dict);
+#endif
+
+@interface EFSelectView : UIView
+{
+    __strong EFSelectViewBlock callBack;
+}
+- (instancetype)initWithFrame:(CGRect)frame ObjectId:(int)objectId Array:(NSMutableArray*)array andSelectBlock:(EFSelectViewBlock)block;
+@end

@@ -1,0 +1,69 @@
+//
+//  TestSplitVC.m
+//  Risk
+//
+//  Created by ylgwhyh on 16/6/30.
+//  Copyright © 2016年 com.risk.kingyon. All rights reserved.
+//
+
+#import "TestSplitVC.h"
+#import "RiskTypesLeftVC.h"
+#import "RiskTypesRightVC.h"
+
+
+@interface TestSplitVC ( ) <UISplitViewControllerDelegate>
+
+@property (nonatomic, strong)  UISplitViewController  *splitViewController;
+
+@end
+
+@implementation TestSplitVC
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    self.view.backgroundColor = [UIColor redColor];
+    
+    _splitViewController = [[UISplitViewController alloc] init];
+    _splitViewController.delegate = self;
+    RiskTypesLeftVC *leftVC = [[RiskTypesLeftVC alloc] init];
+    RiskTypesRightVC *rightVC = [[RiskTypesRightVC alloc] init];
+    
+    _splitViewController.viewControllers = [NSArray arrayWithObjects:leftVC, rightVC, nil];
+    [self.view addSubview:_splitViewController.view];
+    
+}
+
+
+
+- (void)splitViewController: (UISplitViewController*)svc
+     willHideViewController:(UIViewController *)aViewController
+          withBarButtonItem:(UIBarButtonItem*)barButtonItem
+       forPopoverController: (UIPopoverController*)pc
+{
+    barButtonItem.title = @"Master View";
+    [self.navigationItem setRightBarButtonItem:barButtonItem animated:YES];
+
+}
+
+
+// Called when the view is shown again in the split view, invalidating the button and popover controller.
+- (void)splitViewController:(UISplitViewController *)svc
+     willShowViewController:(UIViewController *)aViewController
+  invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem
+{
+    [self.navigationItem setRightBarButtonItem:nil animated:YES];
+
+}
+
+- (void)splitViewController:(UISplitViewController *)svc
+          popoverController:(UIPopoverController *)pc
+  willPresentViewController:(UIViewController *)aViewController
+{
+    if (UIInterfaceOrientationIsLandscape(self.interfaceOrientation)) {
+        NSLog(@"ERR_POPOVER_IN_LANDSCAPE");
+    }
+}
+
+
+@end

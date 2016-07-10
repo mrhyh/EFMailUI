@@ -1,0 +1,25 @@
+//
+//  QFBaseViewController.h
+//  QuickFix
+//
+//  Created by Jack on 4/8/15.
+//  Copyright (c) 2015 KingYon LLC. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "UINavigationController+FDFullscreenPopGesture.h"
+#import <UIView+SDAutoLayout.h>
+
+@interface EFBaseViewController : UIViewController<UIGestureRecognizerDelegate>{
+    
+}
+
+- (void)skinChange;
+
+//- (BOOL)isShowBackButton;
+//- (void)backAction;
+//- (void)makeTabBarHidden:(BOOL)hide;
+
+//- (void)setHiddenNaviBottomBlackLine:(BOOL)hidden;
+
+@end

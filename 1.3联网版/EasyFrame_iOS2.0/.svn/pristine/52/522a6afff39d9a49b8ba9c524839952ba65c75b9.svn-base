@@ -1,0 +1,99 @@
+//
+//  EFShopCartModel.m
+//  EF_MallDemo
+//
+//  Created by ylgwhyh on 16/6/20.
+//  Copyright © 2016年 MH. All rights reserved.
+//
+
+#import "EFShopCartModel.h"
+#import "EFShopCartRequest.h"
+
+@implementation EFShopCartModel
+
+/****************商城-购物车信息管理******************/
+- (void)EFClearItems {
+    EFClearItemsRequest *request = [EFClearItemsRequest requestWithPOST];
+
+    [self startCallBack:^(CallBackStatus callBackStatus, NetworkModel *result) {
+        [self delRequestWithTag:EFMailShopCart_ClearItems];
+        if (callBackStatus == CallBackStatusRequestFailure) {
+            //            [UIUtil alert:@"服务器出错"];
+            return ;
+        }else if (callBackStatus == CallBackStatusRequestError){
+            
+        }else if (callBackStatus == CallBackStatusSuccess){
+            
+        }
+        [self.viewController callBackAction:EFMailShopCart_ClearItems Result:result];
+    } Request:request WithTag:EFMailShopCart_ClearItems];
+}
+
+- (void)EFGetShopCartItems:(int)_page Size:(int) _size{
+    
+    EFViewControllerCallBackAction efViewControllerCallBackAction = EFMailShopCart_Items;
+    EFGetShopCartItemsRequest *request = [EFGetShopCartItemsRequest requestWithPOST];
+    request.page = _page;
+    request.size = _size;
+    
+    [self startCallBack:^(CallBackStatus callBackStatus, NetworkModel *result) {
+        
+        
+        [self delRequestWithTag:efViewControllerCallBackAction];
+        if (callBackStatus == CallBackStatusRequestFailure) {
+            //            [UIUtil alert:@"服务器出错"];
+            return ;
+        }else if (callBackStatus == CallBackStatusRequestError){
+              [self.viewController callBackAction:efViewControllerCallBackAction Result:result];
+        }else if (callBackStatus == CallBackStatusSuccess){
+            
+        }
+        [self.viewController callBackAction:efViewControllerCallBackAction Result:result];
+    } Request:request WithTag:(int)efViewControllerCallBackAction];
+}
+
+/*从我的购物车当中删除购物项*/
+- (void)EFRemoveItemsWithProductIds:(int)_productIds{
+    EFViewControllerCallBackAction efViewControllerCallBackAction = EFMailShopCart_RemoveItems;
+    EFRemoveItemsRequest *request = [EFRemoveItemsRequest requestWithPOST];
+    request.productIds = _productIds;
+    
+    [self startCallBack:^(CallBackStatus callBackStatus, NetworkModel *result) {
+        
+        
+        [self delRequestWithTag:efViewControllerCallBackAction];
+        if (callBackStatus == CallBackStatusRequestFailure) {
+            //            [UIUtil alert:@"服务器出错"];
+            return ;
+        }else if (callBackStatus == CallBackStatusRequestError){
+            [self.viewController callBackAction:efViewControllerCallBackAction Result:result];
+        }else if (callBackStatus == CallBackStatusSuccess){
+            
+        }
+        [self.viewController callBackAction:efViewControllerCallBackAction Result:result];
+    } Request:request WithTag:(int)efViewControllerCallBackAction];
+}
+/* 修改购物项目数量*/
+- (void)UpdateItemQuantityWithProductId:(int)_productIds Quantity:(int)_quantity{
+    EFViewControllerCallBackAction efViewControllerCallBackAction = EFMailShopCart_UpdateItemQuantity;
+    EFUpdateItemQuantityRequest *request = [EFUpdateItemQuantityRequest requestWithPOST];
+    request.productId = _productIds;
+    request.quantity = _quantity;
+    
+    [self startCallBack:^(CallBackStatus callBackStatus, NetworkModel *result) {
+        
+        
+        [self delRequestWithTag:efViewControllerCallBackAction];
+        if (callBackStatus == CallBackStatusRequestFailure) {
+            //            [UIUtil alert:@"服务器出错"];
+            return ;
+        }else if (callBackStatus == CallBackStatusRequestError){
+            [self.viewController callBackAction:efViewControllerCallBackAction Result:result];
+        }else if (callBackStatus == CallBackStatusSuccess){
+            
+        }
+        [self.viewController callBackAction:efViewControllerCallBackAction Result:result];
+    } Request:request WithTag:(int)efViewControllerCallBackAction];
+}
+
+@end

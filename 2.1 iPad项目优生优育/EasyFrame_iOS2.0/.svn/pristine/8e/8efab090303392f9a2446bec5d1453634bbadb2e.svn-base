@@ -1,0 +1,38 @@
+//
+//  EFOrderStatusCell.m
+//  EF_MallDemo
+//
+//  Created by ylgwhyh on 16/6/14.
+//  Copyright © 2016年 MH. All rights reserved.
+//
+
+#import "EFOrderStatusCell.h"
+
+@implementation EFOrderStatusCell
+
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        [self setup];
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
+    }
+    return self;
+}
+
+//1. 创建控件
+- (void)setup {
+    
+}
+
+
+- (void)awakeFromNib {
+    // Initialization code
+}
+
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+    [super setSelected:selected animated:animated];
+
+    // Configure the view for the selected state
+}
+
+@end
