@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '5B9670037478120AE1E10225B2AA1CDC'
+               BlueprintIdentifier = 'DA63990116F92B6CC22318D50C9582D3'
                BlueprintName = 'UIScrollView+PullBig'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libUIScrollView+PullBig.a'>
